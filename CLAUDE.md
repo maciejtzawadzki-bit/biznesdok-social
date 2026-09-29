@@ -14,7 +14,7 @@ Zasady biznesowe, decyzja właściciela i konfiguracja: repo `maciejtzawadzki-bi
 ## Tryb 1 — codzienna publikacja (pn–pt)
 
 1. `cd tools && npm install --silent && cd ..`
-2. `node tools/run.mjs` — publikuje posty z kolejki, których data/godzina (czas warszawski) już minęła, w statusie `planned`. Sam renderuje grafiki, wypycha je, czeka aż będą publiczne, publikuje i zapisuje status + `DZIENNIK.md`.
+2. `node tools/run.mjs --now` — publikuje wszystkie posty z dzisiejszą datą (czas warszawski) w statusie `planned` (feed i relację w jednym przebiegu — jedna sesja dziennie) oraz zaległe posty w feedzie do 3 dni wstecz. Sam renderuje grafiki, wypycha je, czeka aż będą publiczne, publikuje i zapisuje status + `DZIENNIK.md`.
 3. Jeśli jakiś post ma `status: "error"` — przeczytaj błąd. Błąd przejściowy (limit, timeout) → ustaw `planned` i uruchom ponownie raz. Błąd treści/konfiguracji → zostaw `error` i opisz w podsumowaniu sesji.
 4. Podsumuj jednym-dwoma zdaniami: co opublikowano (permalinki), co pominięto, błędy.
 
@@ -24,13 +24,14 @@ Nie publikuj niczego spoza kolejki. Nie zmieniaj treści zaplanowanych postów w
 
 1. Przeczytaj `DZIENNIK.md`, `queue/` (co już było) i `data/katalog.json`.
 2. Jeśli masz dostęp do repo `biznes-dokumenty-pro`: sprawdź aktualne `src/lib/free-tools.ts`, `src/lib/guides/` i jego `docs/social/instagram/README.md` — nowe narzędzia/poradniki mają pierwszeństwo.
-3. Utwórz pliki `queue/RRRR-MM-DD-<slug>.json` na kolejny tydzień (pn–pt) wg rytmu:
+3. Kolejny tydzień (pn–pt po tym piątku) ma mieć komplet: 4 posty w feedzie (pn, wt, czw, pt) i 5 relacji. Jeśli część jest już w kolejce — uzupełnij tylko brakujące miejsca. Nowe pliki `queue/RRRR-MM-DD-<slug>.json` wg rytmu:
    - pn: feed — bezpłatne narzędzie; wt: karuzela (3–6 slajdów) z poradnika; czw: feed — płatny dokument (seria „…przygotowujesz i trzymasz w BiznesDOK.”); pt: feed — bezpłatny dokument („…przygotujesz w BiznesDOK — bezpłatnie, bez konta.”) albo Subskrypcja,
    - relacja codziennie pn–pt o 12:30 (narzędzie lub bezpłatny dokument, adres na grafice w polu `note`),
    - feed o 08:30. Nie powtarzaj tematu z ostatnich 3 tygodni, jeśli są inne dostępne.
 4. `node tools/render.mjs queue/<plik>.json rendered` dla każdego nowego posta i obejrzyj PNG (Read). Popraw złamania wierszy/długość, jeśli coś wygląda źle (`size` w slajdzie).
 5. Zrób podgląd tygodnia: `node tools/preview.mjs RRRR-MM-DD` (data poniedziałku) → `preview/tydzien-RRRR-MM-DD.png`.
-6. Commit + push do `main`. W podsumowaniu sesji: lista postów tygodnia i link do podglądu `https://github.com/maciejtzawadzki-bit/biznesdok-social/blob/main/preview/tydzien-RRRR-MM-DD.png`. Właściciel ma weto — brak odpowiedzi = publikacja.
+6. Raport tygodnia: dla postów `published` z ostatnich 7 dni pobierz statystyki (GET `/{mediaId}/insights?metric=reach,saved,shares,likes,comments` dla feedu; przy błędzie metryki pomiń ją) oraz liczbę obserwujących (GET `/17841415756005690?fields=followers_count,media_count`). Dopisz krótki raport do `RAPORTY.md` (data, obserwujący, posty, zasięgi, najlepszy post, wniosek na kolejny tydzień).
+7. Commit + push do `main`. W podsumowaniu sesji: lista postów tygodnia i link do podglądu `https://github.com/maciejtzawadzki-bit/biznesdok-social/blob/main/preview/tydzien-RRRR-MM-DD.png`. Właściciel ma weto — brak odpowiedzi = publikacja.
 
 ## Weto właściciela
 
