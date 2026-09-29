@@ -1,0 +1,9 @@
+{
+  "name": "biznesdok-instagram-tools",
+  "private": true,
+  "type": "module",
+  "description": "Renderer i publikator postów Instagram BiznesDOK (poza aplikacją WWW).",
+  "dependencies": {
+    "playwright-core": "1.56.1"
+  }
+}

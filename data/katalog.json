@@ -1,0 +1,322 @@
+{
+  "stan": "2026-09-29",
+  "zrodlo": "document_catalog (status=active, is_visible), src/lib/free-tools.ts, src/lib/guides — repo biznes-dokumenty-pro",
+  "uwaga": "Zrzut; nowe produkty i narzędzia sprawdzaj w repo biznes-dokumenty-pro, jeśli jest dostępne.",
+  "narzedzia": [
+    {
+      "path": "/kalkulator-wynagrodzen",
+      "title": "Kalkulator wynagrodzeń brutto–netto",
+      "text": "Policz, ile z umowy o pracę dostanie pracownik i ile wyniesie pełny koszt pracodawcy — miesiąc po miesiącu, ze stawkami na 2026 r."
+    },
+    {
+      "path": "/kalkulator-urlopu",
+      "title": "Kalkulator urlopu wypoczynkowego",
+      "text": "Sprawdź, czy przysługuje 20 czy 26 dni urlopu: staż pracy, szkoła wliczana do stażu i niepełny etat."
+    },
+    {
+      "path": "/kalkulator-okresu-wypowiedzenia",
+      "title": "Kalkulator okresu wypowiedzenia",
+      "text": "Policz okres wypowiedzenia umowy o pracę i dzień jej rozwiązania — także gdy staż rośnie w trakcie wypowiedzenia."
+    },
+    {
+      "path": "/kalkulator-odsetek",
+      "title": "Kalkulator odsetek od niezapłaconych faktur",
+      "text": "Policz odsetki ustawowe za opóźnienie w transakcjach handlowych dla jednej lub kilku faktur. Widzisz stawki i sposób obliczenia."
+    },
+    {
+      "path": "/kwota-slownie",
+      "title": "Kwota słownie",
+      "text": "Zamień kwotę na słowa — w formie używanej na fakturach, w umowach i wezwaniach do zapłaty. Złote i grosze w poprawnej formie."
+    },
+    {
+      "path": "/kalkulator-dni-roboczych",
+      "title": "Kalkulator dni roboczych",
+      "text": "Policz dni robocze między dwiema datami — bez weekendów i świąt, z Wigilią wolną od 2025 r."
+    },
+    {
+      "path": "/okres-przechowywania-dokumentacji-pracowniczej",
+      "title": "Jak długo przechowywać akta pracownika",
+      "text": "Sprawdź, do kiedy przechowywać dokumentację pracowniczą: 10 czy 50 lat, z raportem ZUS RIA lub bez."
+    },
+    {
+      "path": "/weryfikacja",
+      "title": "Weryfikacja dokumentu BiznesDOK",
+      "text": "Sprawdź, czy dokument o podanym identyfikatorze został przygotowany na platformie BiznesDOK."
+    }
+  ],
+  "poradniki": [
+    {
+      "path": "/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
+      "title": "Zmiana członka zarządu w spółce z o.o."
+    },
+    {
+      "path": "/poradniki/zatrudnienie-pracownika-na-umowe-o-prace",
+      "title": "Zatrudnienie pracownika na umowę o pracę"
+    }
+  ],
+  "dokumenty": [
+    {
+      "bezplatny": false,
+      "kategoria": null,
+      "short_description": "Informacja o adresie siedziby jedynego udziałowca spółki z o.o. będącego osobą prawną.",
+      "slug": "informacja-o-adresie-siedziby-udzialowca",
+      "title": "Informacja o adresie siedziby udziałowca",
+      "url": "https://biznesdok.pl/dokument/informacja-o-adresie-siedziby-udzialowca"
+    },
+    {
+      "bezplatny": true,
+      "kategoria": null,
+      "short_description": "Informacja dla pracownika o okresie przechowywania dokumentacji pracowniczej, możliwości jej odbioru i dalszym postępowaniu z dokumentacją.",
+      "slug": "informacja-o-przechowywaniu-dokumentacji-pracowniczej",
+      "title": "Informacja o przechowywaniu dokumentacji pracowniczej",
+      "url": "https://biznesdok.pl/dokument/informacja-o-przechowywaniu-dokumentacji-pracowniczej"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": null,
+      "short_description": "Księga udziałów spółki z o.o. — wspólnicy, liczba i wartość udziałów oraz zmiany ich własności.",
+      "slug": "ksiega-udzialow",
+      "title": "Księga udziałów",
+      "url": "https://biznesdok.pl/dokument/ksiega-udzialow"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": null,
+      "short_description": "Lista uprawnionych do powołania członków zarządu spółki z o.o., gdy wspólnikiem jest osoba prawna — z organem reprezentacji i adresem do doręczeń.",
+      "slug": "lista-osob-uprawnionych-do-powolania-zarzadu",
+      "title": "Lista osób uprawnionych do powołania Zarządu",
+      "url": "https://biznesdok.pl/dokument/lista-osob-uprawnionych-do-powolania-zarzadu"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": "Umowy i współpraca",
+      "short_description": "Lista wspólników sp. z o.o. do KRS: wspólnicy, liczba i wartość nominalna udziałów, stan na wskazany dzień i podpisy Zarządu.",
+      "slug": "lista-wspolnikow",
+      "title": "Lista wspólników",
+      "url": "https://biznesdok.pl/dokument/lista-wspolnikow"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": null,
+      "short_description": "Wezwanie przed skierowaniem sprawy do sądu — dane stron, lista niezapłaconych faktur, odsetki, termin zapłaty.",
+      "slug": "ostateczne-wezwanie-do-zaplaty",
+      "title": "Ostateczne wezwanie do zapłaty",
+      "url": "https://biznesdok.pl/dokument/ostateczne-wezwanie-do-zaplaty"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": null,
+      "short_description": "Dokument zawierający aktualne adresy do doręczeń członków zarządu, składany na potrzeby rejestrowe spółki.",
+      "slug": "oswiadczenie-zarzadu-o-adresach-czlonkow-zarzadu",
+      "title": "Oświadczenie Zarządu o adresach członków Zarządu",
+      "url": "https://biznesdok.pl/dokument/oswiadczenie-zarzadu-o-adresach-czlonkow-zarzadu"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": null,
+      "short_description": "Oświadczenie członków zarządu spółki z o.o., że wkłady pieniężne na kapitał zakładowy zostały w całości wniesione — przy podwyższeniu kapitału.",
+      "slug": "oswiadczenie-zarzadu-o-wniesieniu-kapitalu-zakladowego",
+      "title": "Oświadczenie Zarządu o wniesieniu wkładów na podwyższony kapitał",
+      "url": "https://biznesdok.pl/dokument/oswiadczenie-zarzadu-o-wniesieniu-kapitalu-zakladowego"
+    },
+    {
+      "bezplatny": true,
+      "kategoria": null,
+      "short_description": "Bezpłatne oświadczenie zleceniobiorcy do ZUS i PIT: dane osobowe, adresy, urząd skarbowy, rachunek i oświadczenia o ubezpieczeniach.",
+      "slug": "oswiadczenie-zleceniobiorcy",
+      "title": "Oświadczenie zleceniobiorcy do ZUS i PIT",
+      "url": "https://biznesdok.pl/dokument/oswiadczenie-zleceniobiorcy"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": "Umowy i współpraca",
+      "short_description": "Dokument pozwalający zgodnie zakończyć umowę zlecenia za porozumieniem stron, określić datę rozwiązania oraz zasady końcowych rozliczeń i obowiązków stron.",
+      "slug": "porozumienie-w-sprawie-rozwiazania-umowy-zlecenia",
+      "title": "Porozumienie w sprawie rozwiązania umowy zlecenia",
+      "url": "https://biznesdok.pl/dokument/porozumienie-w-sprawie-rozwiazania-umowy-zlecenia"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": "Umowy i współpraca",
+      "short_description": "Porozumienie zmieniające warunki pracy i płacy: nowy wymiar etatu i nowe wynagrodzenie od wskazanego dnia.",
+      "slug": "aneks-do-umowy",
+      "title": "Porozumienie zmieniające wymiar etatu i wynagrodzenie",
+      "url": "https://biznesdok.pl/dokument/aneks-do-umowy"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": null,
+      "short_description": "Protokół nadzwyczajnego zgromadzenia wspólników z uchwałą o wynagrodzeniu członka zarządu.",
+      "slug": "protokol-nzw-wynagrodzenie-czlonka-zarzadu",
+      "title": "Protokół NZW — wynagrodzenie członka Zarządu",
+      "url": "https://biznesdok.pl/dokument/protokol-nzw-wynagrodzenie-czlonka-zarzadu"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": null,
+      "short_description": "Protokół nadzwyczajnego zgromadzenia wspólników z uchwałą o zgodzie na zbycie udziałów, a gdy trzeba — ze zrzeczeniem się prawa pierwszeństwa.",
+      "slug": "protokol-nzw-zgoda-na-zbycie-udzialow",
+      "title": "Protokół NZW — zgoda na zbycie udziałów",
+      "url": "https://biznesdok.pl/dokument/protokol-nzw-zgoda-na-zbycie-udzialow"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": "Umowy i współpraca",
+      "short_description": "Protokół Nadzwyczajnego Zgromadzenia Wspólników sp. z o.o. z uchwałą o zmianie w Zarządzie: odwołanie członka Zarządu albo odwołanie i powołanie nowego.",
+      "slug": "protokol-nadzwyczajnego-zgromadzenia-wspolnikow",
+      "title": "Protokół NZW — zmiana w Zarządzie",
+      "url": "https://biznesdok.pl/dokument/protokol-nadzwyczajnego-zgromadzenia-wspolnikow"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": "Umowy i współpraca",
+      "short_description": "Protokół z posiedzenia Zarządu sp. z o.o. z uchwałą o przyjęciu dokumentu wewnętrznego (np. regulaminu) i dniu, od którego obowiązuje.",
+      "slug": "protokol-z-posiedzenia-zarzadu",
+      "title": "Protokół z posiedzenia Zarządu — przyjęcie regulaminu",
+      "url": "https://biznesdok.pl/dokument/protokol-z-posiedzenia-zarzadu"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": "Umowy i współpraca",
+      "short_description": "Protokół Zwyczajnego Zgromadzenia Wspólników sp. z o.o.: zatwierdzenie sprawozdania finansowego, podział zysku albo pokrycie straty i absolutorium dla Zarządu.",
+      "slug": "uchwala-o-zatwierdzeniu-sprawozdania-finansowego",
+      "title": "Protokół ZZW — sprawozdanie finansowe, wynik i absolutorium",
+      "url": "https://biznesdok.pl/dokument/uchwala-o-zatwierdzeniu-sprawozdania-finansowego"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": "Umowy i współpraca",
+      "short_description": "Pismo członka Zarządu sp. z o.o. o rezygnacji z pełnionej funkcji z określoną datą, skierowane do spółki.",
+      "slug": "rezygnacja-czlonka-zarzadu",
+      "title": "Rezygnacja członka Zarządu",
+      "url": "https://biznesdok.pl/dokument/rezygnacja-czlonka-zarzadu"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": "Umowy i współpraca",
+      "short_description": "Roczne sprawozdanie Zarządu z działalności spółki z o.o.: informacje korporacyjne, kapitał, skład Zarządu, wspólnicy, wyniki finansowe i zatrudnienie.",
+      "slug": "sprawozdanie-z-dzialalnosci-zarzadu",
+      "title": "Sprawozdanie z działalności Zarządu",
+      "url": "https://biznesdok.pl/dokument/sprawozdanie-z-dzialalnosci-zarzadu"
+    },
+    {
+      "bezplatny": true,
+      "kategoria": "Zatrudnienie",
+      "short_description": "Bezpłatne świadectwo pracy: okresy i wymiar zatrudnienia, stanowisko, sposób rozwiązania stosunku pracy, urlopy i inne uprawnienia, pouczenie.",
+      "slug": "swiadectwo-pracy",
+      "title": "Świadectwo pracy",
+      "url": "https://biznesdok.pl/dokument/swiadectwo-pracy"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": "Umowy i współpraca",
+      "short_description": "Uchwała zgromadzenia wspólników sp. z o.o. o odwołaniu członka Zarządu — opcjonalnie z przyczyną odwołania i zastrzeżeniem co do umowy ze spółką.",
+      "slug": "uchwala-o-odwolaniu-czlonka-zarzadu",
+      "title": "Uchwała o odwołaniu członka Zarządu",
+      "url": "https://biznesdok.pl/dokument/uchwala-o-odwolaniu-czlonka-zarzadu"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": "Umowy i współpraca",
+      "short_description": "Uchwała zgromadzenia wspólników sp. z o.o. o powołaniu członka Zarządu i powierzeniu mu funkcji — z okresem powołania i wynikiem głosowania.",
+      "slug": "uchwala-o-powolaniu-czlonka-zarzadu",
+      "title": "Uchwała o powołaniu członka Zarządu",
+      "url": "https://biznesdok.pl/dokument/uchwala-o-powolaniu-czlonka-zarzadu"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": null,
+      "short_description": "Umowa o pracę na czas nieokreślony z załącznikami: zakres obowiązków i informacja o warunkach zatrudnienia. Dla spółki lub JDG.",
+      "slug": "umowa-o-prace-na-czas-nieokreslony",
+      "title": "Umowa o pracę na czas nieokreślony",
+      "url": "https://biznesdok.pl/dokument/umowa-o-prace-na-czas-nieokreslony"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": null,
+      "short_description": "Umowa określająca warunki zatrudnienia pracownika na ustalony czas, w tym stanowisko, wynagrodzenie, wymiar pracy i okres obowiązywania.",
+      "slug": "umowa-o-prace-na-czas-okreslony",
+      "title": "Umowa o pracę na czas określony",
+      "url": "https://biznesdok.pl/dokument/umowa-o-prace-na-czas-okreslony"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": "Umowy i współpraca",
+      "short_description": "Umowa B2B z przedsiębiorcą (JDG) świadczącym usługi: przedmiot usług, ryczałt miesięczny lub stawka godzinowa, poufność, opcjonalny zakaz konkurencji.",
+      "slug": "umowa-o-wspolpracy-biznesowej",
+      "title": "Umowa o współpracy B2B",
+      "url": "https://biznesdok.pl/dokument/umowa-o-wspolpracy-biznesowej"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": "Umowy i współpraca",
+      "short_description": "Umowa sprzedaży udziałów w spółce z o.o. między osobami fizycznymi lub spółkami: cena, termin zapłaty, przejście własności i zgoda wspólników.",
+      "slug": "umowa-sprzedazy-udzialow-w-spolce-z-o-o",
+      "title": "Umowa sprzedaży udziałów w spółce z o.o.",
+      "url": "https://biznesdok.pl/dokument/umowa-sprzedazy-udzialow-w-spolce-z-o-o"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": null,
+      "short_description": "Umowa zlecenia dla spółki lub JDG: zadania zleceniobiorcy, czas trwania, wynagrodzenie godzinowe lub miesięczne, poufność, zakaz konkurencji i wypowiedzenie.",
+      "slug": "umowa-zlecenia",
+      "title": "Umowa zlecenia",
+      "url": "https://biznesdok.pl/dokument/umowa-zlecenia"
+    },
+    {
+      "bezplatny": true,
+      "kategoria": "Zatrudnienie",
+      "short_description": "Wniosek pracownika z wyborem urlopu wypoczynkowego, na żądanie, okolicznościowego lub bezpłatnego albo odbioru dnia wolnego. Zawiera termin, liczbę dni i godzin oraz miejsca na podpisy pracownika i przełożonego.",
+      "slug": "wniosek-o-urlop-wypoczynkowy",
+      "title": "Wniosek o urlop lub odbiór dnia wolnego",
+      "url": "https://biznesdok.pl/dokument/wniosek-o-urlop-wypoczynkowy"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": "Zatrudnienie",
+      "short_description": "Dokument służący do rozwiązania umowy o pracę na czas nieokreślony z zachowaniem wymaganych zasad",
+      "slug": "wypowiedzenie-umowy-o-prace-przez-pracodawce",
+      "title": "Wypowiedzenie umowy o pracę na czas nieokreślony przez pracodawcę",
+      "url": "https://biznesdok.pl/dokument/wypowiedzenie-umowy-o-prace-przez-pracodawce"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": "Umowy i współpraca",
+      "short_description": "Wypowiedzenie umowy zlecenia przez zleceniodawcę z zachowaniem okresu wypowiedzenia z umowy, z obowiązkiem zwrotu materiałów i poufności.",
+      "slug": "wypowiedzenie-umowy-zlecenia",
+      "title": "Wypowiedzenie umowy zlecenia przez zleceniodawcę",
+      "url": "https://biznesdok.pl/dokument/wypowiedzenie-umowy-zlecenia"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": "Zatrudnienie",
+      "short_description": "Dokument służący do zmiany warunków pracy lub wynagrodzenia pracownika z zachowaniem zasad dotyczących wypowiedzenia zmieniającego.",
+      "slug": "wypowiedzenie-zmieniajace-warunki-pracy-lub-placy",
+      "title": "Wypowiedzenie zmieniające warunki pracy lub płacy",
+      "url": "https://biznesdok.pl/dokument/wypowiedzenie-zmieniajace-warunki-pracy-lub-placy"
+    },
+    {
+      "bezplatny": false,
+      "kategoria": null,
+      "short_description": "Pisemna zgoda osoby powoływanej na pełnienie funkcji w zarządzie spółki z o.o., z adresem do doręczeń.",
+      "slug": "zgoda-na-powolanie-do-zarzadu",
+      "title": "Zgoda na powołanie do Zarządu",
+      "url": "https://biznesdok.pl/dokument/zgoda-na-powolanie-do-zarzadu"
+    },
+    {
+      "bezplatny": true,
+      "kategoria": "Poufność i dane",
+      "short_description": "Bezpłatna zgoda pracownika na wykorzystanie wizerunku przez spółkę: intranet, social media, strona internetowa, materiały marketingowe — z klauzulą informacyjną RODO.",
+      "slug": "zgoda-na-wykorzystanie-wizerunku",
+      "title": "Zgoda na wykorzystanie wizerunku",
+      "url": "https://biznesdok.pl/dokument/zgoda-na-wykorzystanie-wizerunku"
+    }
+  ],
+  "inne": [
+    {
+      "path": "/subskrypcja",
+      "title": "Subskrypcja BiznesDOK",
+      "uwaga": "opis tylko z publicznej strony /subskrypcja; bez ceny na grafice"
+    }
+  ]
+}

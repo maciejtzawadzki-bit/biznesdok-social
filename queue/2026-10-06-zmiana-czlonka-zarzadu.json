@@ -1,0 +1,67 @@
+{
+  "id": "2026-10-06-zmiana-czlonka-zarzadu",
+  "date": "2026-10-06",
+  "time": "08:30",
+  "type": "carousel",
+  "status": "planned",
+  "pillar": "poradnik + dokumenty",
+  "link": "https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Spółka z o.o.",
+      "text": "Zmiana członka zarządu: [[dokumenty i wniosek do KRS]] krok po kroku."
+    },
+    {
+      "layout": "headline",
+      "eyebrow": "Kiedy zmiana jest skuteczna",
+      "size": 76,
+      "text": "Liczy się [[data uchwały]] albo skutecznej rezygnacji — nie data wpisu do KRS.",
+      "sub": "Wpis w rejestrze potwierdza zmianę, która już nastąpiła."
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Krok po kroku",
+      "size": 60,
+      "text": "Kolejność działań",
+      "items": [
+        [
+          "Uchwała o odwołaniu albo rezygnacja",
+          ""
+        ],
+        [
+          "Uchwała o powołaniu nowego członka",
+          ""
+        ],
+        [
+          "Zgoda na powołanie z adresem do doręczeń",
+          "gdy nowy członek nie podpisuje wniosku"
+        ],
+        [
+          "Oświadczenie o adresach i lista osób uprawnionych",
+          ""
+        ],
+        [
+          "Wniosek do KRS w ciągu 7 dni",
+          "elektronicznie, w Portalu Rejestrów Sądowych"
+        ]
+      ]
+    },
+    {
+      "layout": "headline",
+      "eyebrow": "Wniosek do KRS",
+      "size": 76,
+      "text": "Opłata: [[250 zł]]. Bez dodatkowych 100 zł za ogłoszenie w MSiG.",
+      "sub": "Od 29 listopada 2025 r. — kwoty 350 zł ze starszych poradników są nieaktualne."
+    },
+    {
+      "layout": "headline",
+      "eyebrow": "Dokumenty",
+      "size": 84,
+      "text": "Uchwały, protokół i oświadczenia do KRS [[przygotujesz w BiznesDOK.]]",
+      "sub": "Podajesz dane, a dokument uzupełnia się na wzorze przygotowanym przez prawnika.",
+      "note": "Pełny poradnik: link w bio"
+    }
+  ],
+  "caption": "Odwołanie, powołanie albo rezygnacja członka zarządu to kilka dokumentów i jeden wniosek do KRS. W karuzeli: kiedy zmiana jest skuteczna, kolejność działań, termin i opłata.\n\nW BiznesDOK przygotujesz uchwały, protokół NZW, zgodę na powołanie, oświadczenie o adresach i listę osób uprawnionych — na wzorach przygotowanych przez prawnika. Sam wniosek składasz w Portalu Rejestrów Sądowych.\n\nPełny poradnik z listą dokumentów: link w bio → Poradniki.\n\n#spółkazoo #zarząd #krs #członekzarządu #prawowbiznesie #biznesdok"
+}

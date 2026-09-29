@@ -1,0 +1,19 @@
+{
+  "id": "2026-10-05-story-kalkulator-urlopu",
+  "date": "2026-10-05",
+  "time": "12:30",
+  "type": "story",
+  "status": "planned",
+  "pillar": "bezpłatne narzędzie",
+  "link": "https://biznesdok.pl/kalkulator-urlopu",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Kalkulator urlopu",
+      "text": "20 czy 26 dni urlopu? [[Sprawdzisz w BiznesDOK.]]",
+      "sub": "Staż pracy, szkoła wliczana do stażu i niepełny etat. Bezpłatnie, bez konta.",
+      "note": "biznesdok.pl/kalkulator-urlopu"
+    }
+  ],
+  "caption": ""
+}

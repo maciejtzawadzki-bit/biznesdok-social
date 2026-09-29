@@ -1,0 +1,19 @@
+{
+  "id": "2026-10-07-story-dni-robocze",
+  "date": "2026-10-07",
+  "time": "12:30",
+  "type": "story",
+  "status": "planned",
+  "pillar": "relacja",
+  "link": "https://biznesdok.pl/kalkulator-dni-roboczych",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Kalkulator dni roboczych",
+      "text": "Dni robocze między dwiema datami — [[bez weekendów i świąt.]]",
+      "sub": "Z Wigilią wolną od 2025 r. Bezpłatnie, bez konta.",
+      "note": "biznesdok.pl/kalkulator-dni-roboczych"
+    }
+  ],
+  "caption": ""
+}

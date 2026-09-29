@@ -1,0 +1,19 @@
+{
+  "id": "2026-10-09-story-weryfikacja",
+  "date": "2026-10-09",
+  "time": "12:30",
+  "type": "story",
+  "status": "planned",
+  "pillar": "relacja",
+  "link": "https://biznesdok.pl/weryfikacja",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Weryfikacja dokumentu",
+      "text": "Każdy dokument z BiznesDOK [[zweryfikujesz po identyfikatorze.]]",
+      "sub": "Sprawdź, czy dokument został przygotowany na platformie BiznesDOK.",
+      "note": "biznesdok.pl/weryfikacja"
+    }
+  ],
+  "caption": ""
+}
