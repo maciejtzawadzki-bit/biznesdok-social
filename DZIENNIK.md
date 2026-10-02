@@ -13,3 +13,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - Opublikowano: 2026-09-29 13:08 (Warszawa)
 - Permalink: https://www.instagram.com/p/Dd3nb8NjmVN/ (potwierdzony przez GET Graph API)
 - Push na `main`: bez błędów (gałąź nie blokuje zapisu).
+- 2026-10-02 22:26 · feed · 2026-10-02-kalkulator-okresu-wypowiedzenia · https://www.instagram.com/p/DeAVzImDkeH/
