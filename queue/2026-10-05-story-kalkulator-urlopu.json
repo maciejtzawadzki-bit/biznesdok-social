@@ -3,7 +3,7 @@
   "date": "2026-10-05",
   "time": "12:30",
   "type": "story",
-  "status": "planned",
+  "status": "published",
   "pillar": "bezpłatne narzędzie",
   "link": "https://biznesdok.pl/kalkulator-urlopu",
   "slides": [
@@ -15,5 +15,8 @@
       "note": "biznesdok.pl/kalkulator-urlopu"
     }
   ],
-  "caption": ""
+  "caption": "",
+  "publishedAt": "2026-10-05T06:44:23.021Z",
+  "permalink": "https://www.instagram.com/stories/biznesdok.pl/4001052583204394832",
+  "mediaId": "17909254527557957"
 }
