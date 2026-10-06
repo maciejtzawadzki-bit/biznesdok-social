@@ -16,3 +16,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-10-02 22:26 · feed · 2026-10-02-kalkulator-okresu-wypowiedzenia · https://www.instagram.com/p/DeAVzImDkeH/
 - 2026-10-05 08:43 · feed · 2026-10-05-kalkulator-odsetek · https://www.instagram.com/p/DeGl_2-DpVx/
 - 2026-10-05 08:43 · story · 2026-10-05-story-kalkulator-urlopu · https://www.instagram.com/stories/biznesdok.pl/4001052583204394832
+- 2026-10-06 08:44 · carousel · 2026-10-06-zmiana-czlonka-zarzadu · https://www.instagram.com/p/DeJK2Ignbzr/
