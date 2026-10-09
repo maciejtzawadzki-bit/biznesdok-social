@@ -1,0 +1,69 @@
+{
+  "id": "2026-10-13-zatrudnienie-pracownika",
+  "date": "2026-10-13",
+  "time": "08:30",
+  "type": "carousel",
+  "status": "planned",
+  "pillar": "poradnik + dokumenty",
+  "link": "https://biznesdok.pl/poradniki/zatrudnienie-pracownika-na-umowe-o-prace",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Zatrudnienie",
+      "text": "Zatrudniasz pracownika? [[Dokumenty i terminy]] krok po kroku."
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Przed pierwszym dniem pracy",
+      "size": 60,
+      "text": "Zanim pracownik zacznie",
+      "items": [
+        [
+          "Wybierz rodzaj umowy",
+          "czas nieokreślony, określony albo okres próbny"
+        ],
+        [
+          "Skieruj na badania wstępne",
+          ""
+        ],
+        [
+          "Szkolenie wstępne BHP",
+          "przed dopuszczeniem do pracy"
+        ],
+        [
+          "Umowa na piśmie",
+          "najpóźniej przed dopuszczeniem do pracy"
+        ]
+      ]
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Do 7 dni od rozpoczęcia pracy",
+      "size": 60,
+      "text": "W pierwszym tygodniu",
+      "items": [
+        [
+          "Informacja o warunkach zatrudnienia",
+          "w ciągu 7 dni od dopuszczenia do pracy"
+        ],
+        [
+          "Zgłoszenie do ZUS",
+          "w ciągu 7 dni od powstania obowiązku"
+        ],
+        [
+          "Akta osobowe",
+          "od pierwszego dnia zatrudnienia"
+        ]
+      ]
+    },
+    {
+      "layout": "headline",
+      "eyebrow": "Dokumenty",
+      "size": 84,
+      "text": "Umowę o pracę z załącznikami [[przygotujesz w BiznesDOK.]]",
+      "sub": "Podajesz dane, a dokument uzupełnia się na wzorze przygotowanym przez prawnika.",
+      "note": "Pełny poradnik: link w bio"
+    }
+  ],
+  "caption": "Zatrudnienie pracownika to kilka obowiązków przed pierwszym dniem pracy i kilka w ciągu tygodnia po nim. W karuzeli: kolejność działań i terminy.\n\nW BiznesDOK przygotujesz umowę o pracę z informacją o warunkach zatrudnienia jako załącznikiem — na wzorze przygotowanym przez prawnika. Bezpłatnie dostępne są też kalkulatory wynagrodzeń i urlopu.\n\nPełny poradnik: link w bio → Poradniki.\n\n#zatrudnienie #umowaopracę #kadry #pracodawca #małafirma #biznesdok"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "2026-10-15-story-wniosek-o-urlop",
+  "date": "2026-10-15",
+  "time": "12:30",
+  "type": "story",
+  "status": "planned",
+  "pillar": "relacja",
+  "link": "https://biznesdok.pl/dokument/wniosek-o-urlop-wypoczynkowy",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Wniosek o urlop",
+      "text": "Wniosek o urlop lub odbiór dnia wolnego przygotujesz w BiznesDOK — [[bezpłatnie.]]",
+      "sub": "Miejsca na podpisy pracownika i przełożonego. Bez konta.",
+      "note": "biznesdok.pl/dokument/wniosek-o-urlop-wypoczynkowy"
+    }
+  ],
+  "caption": ""
+}

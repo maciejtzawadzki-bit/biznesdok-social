@@ -1,0 +1,19 @@
+{
+  "id": "2026-10-13-story-okres-wypowiedzenia",
+  "date": "2026-10-13",
+  "time": "12:30",
+  "type": "story",
+  "status": "planned",
+  "pillar": "relacja",
+  "link": "https://biznesdok.pl/kalkulator-okresu-wypowiedzenia",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Kalkulator okresu wypowiedzenia",
+      "text": "Okres wypowiedzenia i [[dzień rozwiązania umowy]] — policzone za Ciebie.",
+      "sub": "Także gdy staż rośnie w trakcie wypowiedzenia. Bezpłatnie, bez konta.",
+      "note": "biznesdok.pl/kalkulator-okresu-wypowiedzenia"
+    }
+  ],
+  "caption": ""
+}

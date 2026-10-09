@@ -1,0 +1,19 @@
+{
+  "id": "2026-10-16-story-zgoda-wizerunek",
+  "date": "2026-10-16",
+  "time": "12:30",
+  "type": "story",
+  "status": "planned",
+  "pillar": "relacja",
+  "link": "https://biznesdok.pl/dokument/zgoda-na-wykorzystanie-wizerunku",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Zgoda na wizerunek",
+      "text": "Zgodę na wykorzystanie wizerunku pracownika przygotujesz w BiznesDOK — [[bezpłatnie.]]",
+      "sub": "Z klauzulą informacyjną RODO. Bez konta.",
+      "note": "biznesdok.pl/dokument/zgoda-na-wykorzystanie-wizerunku"
+    }
+  ],
+  "caption": ""
+}

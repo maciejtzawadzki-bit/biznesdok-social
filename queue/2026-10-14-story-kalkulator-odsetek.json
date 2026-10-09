@@ -1,0 +1,19 @@
+{
+  "id": "2026-10-14-story-kalkulator-odsetek",
+  "date": "2026-10-14",
+  "time": "12:30",
+  "type": "story",
+  "status": "planned",
+  "pillar": "relacja",
+  "link": "https://biznesdok.pl/kalkulator-odsetek",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Kalkulator odsetek",
+      "text": "Odsetki od niezapłaconych faktur: [[stawki i sposób obliczenia]] na widoku.",
+      "sub": "Jedna faktura albo kilka naraz. Bezpłatnie, bez konta.",
+      "note": "biznesdok.pl/kalkulator-odsetek"
+    }
+  ],
+  "caption": ""
+}

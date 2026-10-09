@@ -1,0 +1,19 @@
+{
+  "id": "2026-10-12-story-kalkulator-wynagrodzen",
+  "date": "2026-10-12",
+  "time": "12:30",
+  "type": "story",
+  "status": "planned",
+  "pillar": "relacja",
+  "link": "https://biznesdok.pl/kalkulator-wynagrodzen",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Kalkulator wynagrodzeń",
+      "text": "Brutto–netto i [[pełny koszt pracodawcy]] — miesiąc po miesiącu.",
+      "sub": "Stawki na 2026 r. Bezpłatnie, bez konta.",
+      "note": "biznesdok.pl/kalkulator-wynagrodzen"
+    }
+  ],
+  "caption": ""
+}
