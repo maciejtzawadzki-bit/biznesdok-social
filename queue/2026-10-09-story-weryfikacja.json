@@ -3,7 +3,7 @@
   "date": "2026-10-09",
   "time": "12:30",
   "type": "story",
-  "status": "planned",
+  "status": "published",
   "pillar": "relacja",
   "link": "https://biznesdok.pl/weryfikacja",
   "slides": [
@@ -15,5 +15,8 @@
       "note": "biznesdok.pl/weryfikacja"
     }
   ],
-  "caption": ""
+  "caption": "",
+  "publishedAt": "2026-10-09T06:44:14.882Z",
+  "permalink": "https://www.instagram.com/stories/biznesdok.pl/4003951620824238869",
+  "mediaId": "18106256903628663"
 }

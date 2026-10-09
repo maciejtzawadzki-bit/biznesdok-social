@@ -23,3 +23,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-10-08 08:44 · feed · 2026-10-08-umowa-zlecenia · https://www.instagram.com/p/DeOUZm6DYX0/
 - 2026-10-08 08:44 · story · 2026-10-08-story-akta-pracownika · https://www.instagram.com/stories/biznesdok.pl/4003226959597599756
 - 2026-10-09 08:43 · feed · 2026-10-09-oswiadczenie-zleceniobiorcy · https://www.instagram.com/p/DeQ5KziCUDd/
+- 2026-10-09 08:43 · story · 2026-10-09-story-weryfikacja · https://www.instagram.com/stories/biznesdok.pl/4003951620824238869
