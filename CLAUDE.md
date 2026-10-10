@@ -33,6 +33,16 @@ Nie publikuj niczego spoza kolejki. Nie zmieniaj treści zaplanowanych postów w
 6. Raport tygodnia: dla postów `published` z ostatnich 7 dni pobierz statystyki (GET `/{mediaId}/insights?metric=reach,saved,shares,likes,comments` dla feedu; przy błędzie metryki pomiń ją) oraz liczbę obserwujących (GET `/17841415756005690?fields=followers_count,media_count`). Dopisz krótki raport do `RAPORTY.md` (data, obserwujący, posty, zasięgi, najlepszy post, wniosek na kolejny tydzień).
 7. Commit + push do `main`. W podsumowaniu sesji: lista postów tygodnia i link do podglądu `https://github.com/maciejtzawadzki-bit/biznesdok-social/blob/main/preview/tydzien-RRRR-MM-DD.png`. Właściciel ma weto — brak odpowiedzi = publikacja.
 
+## Tryb 3 — LinkedIn: post na kolejny tydzień (piątek, razem z trybem 2)
+
+Decyzja właściciela 10.10.2026: agent marketingu BiznesDOK prowadzi także stronę firmową na LinkedIn (zasady: `docs/BIZNESDOK_LINKEDIN_GUIDELINES.md` w repo biznes-dokumenty-pro — §3, §4, §6, §9, §10, §13; rytm z decyzji 06.10: **1 post tygodniowo, tylko z realną nowością**).
+
+1. Temat: najważniejsza realna nowość tygodnia — opublikowany poradnik, nowe narzędzie, nowy dokument w sprzedaży, film-demo, nowa funkcja LIVE. Jeśli nowości brak — post ze stałej serii produktowej (§6) o dokumencie w sprzedaży, którego na LinkedIn jeszcze nie było (sprawdź `linkedin/`). Nie powtarzaj tematu z ostatnich 6 tygodni.
+2. Plik `linkedin/RRRR-MM-DD-<slug>.json` (wtorek kolejnego tygodnia, `time` 09:00) — format jak post w feedzie (`type: "feed"`, `slides` 1 slajd, `link`), plus `caption` = treść posta LinkedIn: 500–1200 znaków, pierwszy wiersz konkretny (bez „Czy wiesz, że…?”), na końcu jeden link z `?utm_source=linkedin&utm_medium=social&utm_campaign=<slug>`, 3–5 hashtagów, w tym `#biznesdok`. `status`: `planned | vetoed | handed | published`.
+3. Grafika: `node tools/render.mjs linkedin/<plik>.json media/linkedin` i obejrzyj PNG (Read). Commit + push razem z trybem 2.
+4. Publikacja: **do czasu dostępu do API LinkedIn publikuje właściciel** — w podsumowaniu sesji podaj gotową treść posta i link do PNG (`https://github.com/maciejtzawadzki-bit/biznesdok-social/blob/main/media/linkedin/<id>-01.png`), datę i godzinę publikacji. Post z poprzedniego tygodnia ze statusem `planned` oznacz jako `handed` (przekazany właścicielowi). Po uzyskaniu API (L-LI1 / PN-37) publikator dostanie osobny tryb.
+5. Katalog `linkedin/` jest poza `queue/` celowo: `tools/run.mjs` i `tools/preview.mjs` czytają tylko `queue/` — posty LinkedIn nie mogą trafić na Instagram.
+
 ## Weto właściciela
 
 Właściciel może napisać w dowolnej sesji „wstrzymaj <post>” / „zmień …”. Wstrzymany post: `status: "vetoed"` (automat go pomija). Zmieniony post: popraw JSON, usuń stare PNG z `media/` dla tego id, zostaw `planned`.
