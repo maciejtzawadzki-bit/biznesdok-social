@@ -4,6 +4,7 @@
 //   IG_USER_ID        — opcjonalnie; bez niej ustalany z tokena (jedyne konto albo IG_USERNAME, domyślnie biznesdok.pl),
 //   IG_ACCESS_TOKEN   — token użytkownika systemowego Meta Business (nie wygasa),
 //   IG_MEDIA_BASE_URL — publiczny adres katalogu z PNG (Instagram pobiera obraz z URL),
+//   IG_VIDEO_BASE_URL — publiczny adres katalogu media/ dla wideo (typ video/mp4); bez niej IG_MEDIA_BASE_URL,
 //   IG_GRAPH_VERSION  — opcjonalnie, domyślnie v23.0.
 // Obsługiwane typy: feed (1 obraz), carousel (2–10 obrazów), story (1 obraz albo wideo),
 // reel (wideo). Wideo: pole `video` = plik w media/video/ (MP4, H.264 + AAC, 9:16).
@@ -63,7 +64,7 @@ export function imageUrls(post) {
 /** Publiczne adresy plików posta: wideo (media/video/) albo wyrenderowane PNG. */
 export function mediaUrls(post) {
   if (!post.video) return imageUrls(post);
-  const base = env("IG_MEDIA_BASE_URL").replace(/\/$/, "");
+  const base = (process.env.IG_VIDEO_BASE_URL ?? env("IG_MEDIA_BASE_URL")).replace(/\/$/, "");
   return [`${base}/video/${post.video}`];
 }
 

@@ -18,6 +18,9 @@ const QUEUE = path.join(ROOT, "queue");
 const MEDIA = path.join(ROOT, "media");
 const LOG = path.join(ROOT, "DZIENNIK.md");
 const RAW = "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media";
+// Wideo przez jsDelivr przypięty do commita: raw.githubusercontent.com podaje MP4 jako
+// application/octet-stream, jsDelivr — jako video/mp4 (limit 20 MB na plik).
+const VIDEO_CDN = "https://cdn.jsdelivr.net/gh/maciejtzawadzki-bit/biznesdok-social";
 process.env.IG_MEDIA_BASE_URL ??= RAW;
 
 // Posty z poprzednich dni: relacji nie nadrabiamy (są „na dziś”), posty w feedzie do 3 dni wstecz.
@@ -125,6 +128,7 @@ for (const item of due) {
   pushWithRetry();
   try {
     if (videoFile && !existsSync(videoFile)) throw new Error(`Brak pliku wideo media/video/${post.video}`);
+    if (videoFile) process.env.IG_VIDEO_BASE_URL = `${VIDEO_CDN}@${git("rev-parse", "HEAD")}/media`;
     await waitPublic(mediaUrls(post));
     const result = await publishPost(post);
     post.status = "published";

@@ -41,6 +41,7 @@ Publikujesz **wyłącznie** pliki z `data/wideo.json` (zatwierdzone przez właś
 - **Relacja wideo** (`type: "story"` z polem `video`) — urywek (`typ: "urywek"`), bez opisu. Dodatkowa względem codziennej relacji graficznej z rytmu, godzina 12:45.
 - **Rytm:** w czasie kampanii Google Ads T1 (16.10–05.11.2026) jedna relacja wideo co 2–3 dni robocze (rotacja urywków), potem co 2 tygodnie. Ten sam urywek nie częściej niż raz na 2 tygodnie.
 - Format wpisu: jak niżej, z polami `video` (nazwa pliku), `poster` (miniatura do podglądu tygodnia), `slides: []`; reel ma `caption`, relacja — pusty.
+- Publikator podaje Instagramowi wideo z jsDelivr przypiętego do commita (`video/mp4`); plik do 20 MB.
 
 ## Tryb 3 — LinkedIn: post na kolejny tydzień (piątek, razem z trybem 2)
 
