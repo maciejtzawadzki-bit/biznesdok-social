@@ -1,0 +1,49 @@
+{
+  "_opis": "Filmy i urywki zatwierdzone do publikacji na Instagramie. Agent publikuje WYŁĄCZNIE pliki z tej listy (media/video/). Nowe filmy dopisuje wykonawca prowadzący BiznesDOK (PN-18) po akceptacji właściciela.",
+  "filmy": [
+    {
+      "id": "film1-wezwanie",
+      "typ": "film",
+      "plik": "film1-wezwanie-9x16.mp4",
+      "miniatura": "film1-wezwanie-9x16.jpg",
+      "temat": "Ostateczne wezwanie do zapłaty — od NIP do gotowego dokumentu",
+      "dlugosc_s": 70,
+      "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
+      "zatwierdzony": "2026-10-10",
+      "uwagi": "Animacja z prawdziwych ekranów, dane przykładowe. Pokazuje ceny z ekranu kreatora (zatwierdzone przez właściciela). Publikacja jako reel — jeden raz."
+    },
+    {
+      "id": "film1-wezwanie-urywek-1",
+      "typ": "urywek",
+      "plik": "film1-wezwanie-urywek-1-dane-po-nip.mp4",
+      "miniatura": "film1-wezwanie-urywek-1-dane-po-nip.jpg",
+      "temat": "Dane firmy i kontrahenta po NIP",
+      "dlugosc_s": 17.6,
+      "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
+      "zatwierdzony": "2026-10-11",
+      "uwagi": "Wycinek filmu 1 (7,5–22,5 s) + plansza końcowa z hasłem i adresem."
+    },
+    {
+      "id": "film1-wezwanie-urywek-2",
+      "typ": "urywek",
+      "plik": "film1-wezwanie-urywek-2-kilka-faktur.mp4",
+      "miniatura": "film1-wezwanie-urywek-2-kilka-faktur.jpg",
+      "temat": "Kilka faktur w jednym wezwaniu — kwoty sumują się automatycznie",
+      "dlugosc_s": 12.6,
+      "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
+      "zatwierdzony": "2026-10-11",
+      "uwagi": "Wycinek filmu 1 (22,5–32,5 s) + plansza końcowa."
+    },
+    {
+      "id": "film1-wezwanie-urywek-3",
+      "typ": "urywek",
+      "plik": "film1-wezwanie-urywek-3-gotowy-dokument.mp4",
+      "miniatura": "film1-wezwanie-urywek-3-gotowy-dokument.jpg",
+      "temat": "Termin, rachunek, podgląd i format — gotowy dokument",
+      "dlugosc_s": 25.5,
+      "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
+      "zatwierdzony": "2026-10-11",
+      "uwagi": "Wycinek filmu 1 (42,5–68 s) z planszą końcową; pokazuje ceny z ekranu wyboru formatu."
+    }
+  ]
+}

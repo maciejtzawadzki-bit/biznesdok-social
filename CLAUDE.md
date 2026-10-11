@@ -14,7 +14,7 @@ Zasady biznesowe, decyzja właściciela i konfiguracja: repo `maciejtzawadzki-bi
 ## Tryb 1 — codzienna publikacja (pn–pt)
 
 1. `cd tools && npm install --silent && cd ..`
-2. `node tools/run.mjs --now` — publikuje wszystkie posty z dzisiejszą datą (czas warszawski) w statusie `planned` (feed i relację w jednym przebiegu — jedna sesja dziennie) oraz zaległe posty w feedzie do 3 dni wstecz. Sam renderuje grafiki, wypycha je, czeka aż będą publiczne, publikuje i zapisuje status + `DZIENNIK.md`.
+2. `node tools/run.mjs --now` — publikuje wszystkie posty z dzisiejszą datą (czas warszawski) w statusie `planned` (feed, reel i relację w jednym przebiegu — jedna sesja dziennie) oraz zaległe posty w feedzie i reelsy do 3 dni wstecz. Sam renderuje grafiki, wypycha je, czeka aż będą publiczne, publikuje i zapisuje status + `DZIENNIK.md`. Posty wideo (`video`) nie są renderowane — plik musi już leżeć w `media/video/`; brak pliku = `status: "error"`.
 3. Jeśli jakiś post ma `status: "error"` — przeczytaj błąd. Błąd przejściowy (limit, timeout) → ustaw `planned` i uruchom ponownie raz. Błąd treści/konfiguracji → zostaw `error` i opisz w podsumowaniu sesji.
 4. Podsumuj jednym-dwoma zdaniami: co opublikowano (permalinki), co pominięto, błędy.
 
@@ -33,6 +33,15 @@ Nie publikuj niczego spoza kolejki. Nie zmieniaj treści zaplanowanych postów w
 6. Raport tygodnia: dla postów `published` z ostatnich 7 dni pobierz statystyki (GET `/{mediaId}/insights?metric=reach,saved,shares,likes,comments` dla feedu; przy błędzie metryki pomiń ją) oraz liczbę obserwujących (GET `/17841415756005690?fields=followers_count,media_count`). Dopisz krótki raport do `RAPORTY.md` (data, obserwujący, posty, zasięgi, najlepszy post, wniosek na kolejny tydzień).
 7. Commit + push do `main`. W podsumowaniu sesji: lista postów tygodnia i link do podglądu `https://github.com/maciejtzawadzki-bit/biznesdok-social/blob/main/preview/tydzien-RRRR-MM-DD.png`. Właściciel ma weto — brak odpowiedzi = publikacja.
 
+### Wideo w trybie 2 (Reels i relacje wideo)
+
+Publikujesz **wyłącznie** pliki z `data/wideo.json` (zatwierdzone przez właściciela; leżą w `media/video/`). Sam nie tniesz ani nie montujesz wideo — nowe filmy i urywki dodaje wykonawca prowadzący BiznesDOK (PN-18).
+
+- **Reel** (`type: "reel"`) — cały film (`typ: "film"`), każdy film tylko raz; opis według zasad treści niżej (bez obietnic czasu typu „w 2 minuty”).
+- **Relacja wideo** (`type: "story"` z polem `video`) — urywek (`typ: "urywek"`), bez opisu. Dodatkowa względem codziennej relacji graficznej z rytmu, godzina 12:45.
+- **Rytm:** w czasie kampanii Google Ads T1 (16.10–05.11.2026) jedna relacja wideo co 2–3 dni robocze (rotacja urywków), potem co 2 tygodnie. Ten sam urywek nie częściej niż raz na 2 tygodnie.
+- Format wpisu: jak niżej, z polami `video` (nazwa pliku), `poster` (miniatura do podglądu tygodnia), `slides: []`; reel ma `caption`, relacja — pusty.
+
 ## Tryb 3 — LinkedIn: post na kolejny tydzień (piątek, razem z trybem 2)
 
 Decyzja właściciela 10.10.2026: agent marketingu BiznesDOK prowadzi także stronę firmową na LinkedIn (zasady: `docs/BIZNESDOK_LINKEDIN_GUIDELINES.md` w repo biznes-dokumenty-pro — §3, §4, §6, §9, §10, §13; rytm z decyzji 06.10: **1 post tygodniowo, tylko z realną nowością**).
@@ -40,12 +49,12 @@ Decyzja właściciela 10.10.2026: agent marketingu BiznesDOK prowadzi także str
 1. Temat: najważniejsza realna nowość tygodnia — opublikowany poradnik, nowe narzędzie, nowy dokument w sprzedaży, film-demo, nowa funkcja LIVE. Jeśli nowości brak — post ze stałej serii produktowej (§6) o dokumencie w sprzedaży, którego na LinkedIn jeszcze nie było (sprawdź `linkedin/`). Nie powtarzaj tematu z ostatnich 6 tygodni.
 2. Plik `linkedin/RRRR-MM-DD-<slug>.json` (wtorek kolejnego tygodnia, `time` 09:00) — format jak post w feedzie (`type: "feed"`, `slides` 1 slajd, `link`), plus `caption` = treść posta LinkedIn: 500–1200 znaków, pierwszy wiersz konkretny (bez „Czy wiesz, że…?”), na końcu jeden link z `?utm_source=linkedin&utm_medium=social&utm_campaign=<slug>`, 3–5 hashtagów, w tym `#biznesdok`. `status`: `planned | vetoed | handed | published`.
 3. Grafika: `node tools/render.mjs linkedin/<plik>.json media/linkedin` i obejrzyj PNG (Read). Commit + push razem z trybem 2.
-4. Publikacja: **do czasu dostępu do API LinkedIn publikuje właściciel** — w podsumowaniu sesji podaj gotową treść posta i link do PNG (`https://github.com/maciejtzawadzki-bit/biznesdok-social/blob/main/media/linkedin/<id>-01.png`), datę i godzinę publikacji. Post z poprzedniego tygodnia ze statusem `planned` oznacz jako `handed` (przekazany właścicielowi). Po uzyskaniu API (L-LI1 / PN-37) publikator dostanie osobny tryb.
+4. Publikacja: **tylko automatyczna** — właściciel nie publikuje ręcznie (decyzja 11.10.2026). Do czasu API LinkedIn (L-LI1 / PN-37) albo narzędzia zastępczego post zostaje w `linkedin/` ze statusem `planned`; w podsumowaniu sesji podaj tylko datę, temat i link do pliku. Po uruchomieniu publikacji automatycznej publikator dostanie osobny tryb.
 5. Katalog `linkedin/` jest poza `queue/` celowo: `tools/run.mjs` i `tools/preview.mjs` czytają tylko `queue/` — posty LinkedIn nie mogą trafić na Instagram.
 
 ## Weto właściciela
 
-Właściciel może napisać w dowolnej sesji „wstrzymaj <post>” / „zmień …”. Wstrzymany post: `status: "vetoed"` (automat go pomija). Zmieniony post: popraw JSON, usuń stare PNG z `media/` dla tego id, zostaw `planned`.
+Właściciel może napisać w dowolnej sesji albo przez IGORA (zakładka BiznesDOK) „wstrzymaj <post>” / „zmień …”. Wstrzymany post: `status: "vetoed"` (automat go pomija). Zmieniony post: popraw JSON, usuń stare PNG z `media/` dla tego id, zostaw `planned`.
 
 ## Zasady treści (obowiązkowe — publikacja jest automatyczna)
 
@@ -64,7 +73,7 @@ Właściciel może napisać w dowolnej sesji „wstrzymaj <post>” / „zmień 
 {
   "id": "2026-10-05-kalkulator-wynagrodzen",
   "date": "2026-10-05", "time": "08:30",
-  "type": "feed | carousel | story",
+  "type": "feed | carousel | story | reel",
   "status": "planned | vetoed | published | skipped | error",
   "pillar": "bezpłatne narzędzie",
   "link": "https://biznesdok.pl/...",
@@ -73,4 +82,4 @@ Właściciel może napisać w dowolnej sesji „wstrzymaj <post>” / „zmień 
 }
 ```
 
-`id` = nazwa pliku bez `.json`. Relacje: `caption` pusty, adres w `note`.
+`id` = nazwa pliku bez `.json`. Relacje: `caption` pusty, adres w `note`. Wideo: dodatkowo `"video": "<plik>.mp4"`, `"poster": "<plik>.jpg"` (oba z `data/wideo.json`), `"slides": []`; reel opcjonalnie `"thumbOffsetMs"` (klatka okładki).

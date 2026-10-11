@@ -5,7 +5,8 @@
 //   IG_ACCESS_TOKEN   — token użytkownika systemowego Meta Business (nie wygasa),
 //   IG_MEDIA_BASE_URL — publiczny adres katalogu z PNG (Instagram pobiera obraz z URL),
 //   IG_GRAPH_VERSION  — opcjonalnie, domyślnie v23.0.
-// Obsługiwane typy: feed (1 obraz), carousel (2–10 obrazów), story (1 obraz).
+// Obsługiwane typy: feed (1 obraz), carousel (2–10 obrazów), story (1 obraz albo wideo),
+// reel (wideo). Wideo: pole `video` = plik w media/video/ (MP4, H.264 + AAC, 9:16).
 import { readFile } from "node:fs/promises";
 
 const GRAPH = `https://graph.facebook.com/${process.env.IG_GRAPH_VERSION ?? "v23.0"}`;
@@ -29,15 +30,18 @@ async function graph(method, pathName, params) {
 }
 
 // Kontener musi mieć status FINISHED, zanim da się go opublikować.
-async function waitReady(containerId) {
-  for (let i = 0; i < 30; i += 1) {
+// Wideo Instagram przetwarza dłużej — do 5 minut.
+async function waitReady(containerId, { attempts = 30, intervalMs = 2000 } = {}) {
+  for (let i = 0; i < attempts; i += 1) {
     const { status_code: status } = await graph("GET", containerId, { fields: "status_code" });
     if (status === "FINISHED") return;
     if (status === "ERROR" || status === "EXPIRED") throw new Error(`Kontener ${containerId}: ${status}`);
-    await new Promise((r) => setTimeout(r, 2000));
+    await new Promise((r) => setTimeout(r, intervalMs));
   }
-  throw new Error(`Kontener ${containerId} nie jest gotowy po 60 s`);
+  throw new Error(`Kontener ${containerId} nie jest gotowy po ${Math.round((attempts * intervalMs) / 1000)} s`);
 }
+
+const VIDEO_WAIT = { attempts: 60, intervalMs: 5000 };
 
 // Konto Instagram powiązane ze stroną na Facebooku, do której token ma dostęp.
 async function igUserId() {
@@ -53,16 +57,36 @@ async function igUserId() {
 
 export function imageUrls(post) {
   const base = env("IG_MEDIA_BASE_URL").replace(/\/$/, "");
-  return post.slides.map((_, i) => `${base}/${post.id}-${String(i + 1).padStart(2, "0")}.png`);
+  return (post.slides ?? []).map((_, i) => `${base}/${post.id}-${String(i + 1).padStart(2, "0")}.png`);
+}
+
+/** Publiczne adresy plików posta: wideo (media/video/) albo wyrenderowane PNG. */
+export function mediaUrls(post) {
+  if (!post.video) return imageUrls(post);
+  const base = env("IG_MEDIA_BASE_URL").replace(/\/$/, "");
+  return [`${base}/video/${post.video}`];
 }
 
 export async function publishPost(post, { dryRun = false } = {}) {
-  const urls = imageUrls(post);
+  if (post.type === "reel" && !post.video) throw new Error("Reel wymaga pola video");
+  const urls = mediaUrls(post);
   if (dryRun) return { dryRun: true, type: post.type, urls, caption: post.caption };
   const user = await igUserId();
 
   let creationId;
-  if (post.type === "story") {
+  if (post.type === "reel") {
+    ({ id: creationId } = await graph("POST", `${user}/media`, {
+      media_type: "REELS",
+      video_url: urls[0],
+      caption: post.caption,
+      share_to_feed: "true",
+      thumb_offset: String(post.thumbOffsetMs ?? 1500),
+    }));
+    await waitReady(creationId, VIDEO_WAIT);
+  } else if (post.type === "story" && post.video) {
+    ({ id: creationId } = await graph("POST", `${user}/media`, { media_type: "STORIES", video_url: urls[0] }));
+    await waitReady(creationId, VIDEO_WAIT);
+  } else if (post.type === "story") {
     ({ id: creationId } = await graph("POST", `${user}/media`, { media_type: "STORIES", image_url: urls[0] }));
   } else if (post.type === "carousel") {
     if (urls.length < 2 || urls.length > 10) throw new Error("Karuzela wymaga 2–10 slajdów");
