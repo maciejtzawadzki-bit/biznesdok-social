@@ -11,13 +11,16 @@ import { execFileSync } from "node:child_process";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { renderPost } from "./render.mjs";
-import { publishPost, imageUrls } from "./publish.mjs";
+import { publishPost, mediaUrls } from "./publish.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const QUEUE = path.join(ROOT, "queue");
 const MEDIA = path.join(ROOT, "media");
 const LOG = path.join(ROOT, "DZIENNIK.md");
 const RAW = "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media";
+// Wideo przez jsDelivr przypięty do commita: raw.githubusercontent.com podaje MP4 jako
+// application/octet-stream, jsDelivr — jako video/mp4 (limit 20 MB na plik).
+const VIDEO_CDN = "https://cdn.jsdelivr.net/gh/maciejtzawadzki-bit/biznesdok-social";
 process.env.IG_MEDIA_BASE_URL ??= RAW;
 
 // Posty z poprzednich dni: relacji nie nadrabiamy (są „na dziś”), posty w feedzie do 3 dni wstecz.
@@ -66,7 +69,7 @@ async function waitPublic(urls) {
     if (codes.every((c) => c === 200)) return;
     await new Promise((r) => setTimeout(r, 5000));
   }
-  throw new Error(`Obrazy nie są publiczne po 150 s: ${urls.join(", ")}`);
+  throw new Error(`Pliki nie są publiczne po 150 s: ${urls.join(", ")}`);
 }
 
 async function loadQueue() {
@@ -109,23 +112,30 @@ for (const item of skipped) {
 
 for (const item of due) {
   const { post } = item;
-  const files = post.slides.map((_, i) => path.join(MEDIA, `${post.id}-${String(i + 1).padStart(2, "0")}.png`));
-  if (!files.every(existsSync)) await renderPost(post, MEDIA);
+  // Wideo nie wymaga renderu — plik leży w media/video/ i musi być tam przed publikacją.
+  const videoFile = post.video ? path.join(MEDIA, "video", post.video) : null;
+  if (!videoFile) {
+    const files = (post.slides ?? []).map((_, i) => path.join(MEDIA, `${post.id}-${String(i + 1).padStart(2, "0")}.png`));
+    if (!files.every(existsSync)) await renderPost(post, MEDIA);
+  }
   if (dryRun) {
+    if (videoFile && !existsSync(videoFile)) console.error(`Brak pliku wideo media/video/${post.video}`);
     console.log(JSON.stringify(await publishPost(post, { dryRun: true }), null, 2));
     continue;
   }
   git("add", "media", "queue");
   if (git("status", "--porcelain", "media")) git("commit", "-q", "-m", `media: ${post.id}`);
   pushWithRetry();
-  await waitPublic(imageUrls(post));
   try {
+    if (videoFile && !existsSync(videoFile)) throw new Error(`Brak pliku wideo media/video/${post.video}`);
+    if (videoFile) process.env.IG_VIDEO_BASE_URL = `${VIDEO_CDN}@${git("rev-parse", "HEAD")}/media`;
+    await waitPublic(mediaUrls(post));
     const result = await publishPost(post);
     post.status = "published";
     post.publishedAt = new Date().toISOString();
     post.permalink = result.permalink ?? null;
     post.mediaId = result.mediaId;
-    await appendFile(LOG, `- ${now.date} ${now.time} · ${post.type} · ${post.id} · ${post.permalink ?? "(relacja)"}\n`);
+    await appendFile(LOG, `- ${now.date} ${now.time} · ${post.type}${post.video ? " (wideo)" : ""} · ${post.id} · ${post.permalink ?? "(relacja)"}\n`);
     console.log(`Opublikowano ${post.id}: ${post.permalink ?? post.mediaId}`);
   } catch (error) {
     post.status = "error";

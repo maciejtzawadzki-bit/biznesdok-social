@@ -1,7 +1,7 @@
 // Podgląd tygodnia dla właściciela (weto): node tools/preview.mjs <data-poniedziałku RRRR-MM-DD>
 // Renderuje wszystkie posty z kolejki z pn–nd tego tygodnia i skleja je w preview/tydzien-<data>.png.
 import { readdir, readFile, mkdir } from "node:fs/promises";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -20,10 +20,16 @@ const files = [];
 for (const f of (await readdir(path.join(ROOT, "queue"))).sort()) {
   const post = JSON.parse(await readFile(path.join(ROOT, "queue", f), "utf8"));
   if (post.date < monday || post.date > end || post.status === "vetoed") continue;
+  // Wideo: w podglądzie miniatura z media/video/ (pole `poster`).
+  if (post.video) {
+    const poster = post.poster ? path.join(ROOT, "media", "video", post.poster) : null;
+    if (poster && existsSync(poster)) files.push({ file: poster, post });
+    continue;
+  }
   files.push(...(await renderPost(post, tmp)).map((file) => ({ file, post })));
 }
 const cells = files
-  .map(({ file, post }) => `<figure><img src="data:image/png;base64,${readFileSync(file).toString("base64")}"><figcaption><b>${post.date} ${post.time}</b> · ${post.type}<br>${path.basename(file, ".png")}</figcaption></figure>`)
+  .map(({ file, post }) => `<figure><img src="data:image/${file.endsWith(".jpg") ? "jpeg" : "png"};base64,${readFileSync(file).toString("base64")}"><figcaption><b>${post.date} ${post.time}</b> · ${post.type}${post.video ? " (wideo)" : ""}<br>${path.basename(file).replace(/\.(png|jpg)$/, "")}</figcaption></figure>`)
   .join("");
 await mkdir(path.join(ROOT, "preview"), { recursive: true });
 const out = path.join(ROOT, "preview", `tydzien-${monday}.png`);
