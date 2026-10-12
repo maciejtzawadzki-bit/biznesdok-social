@@ -3,7 +3,7 @@
   "date": "2026-10-12",
   "time": "12:30",
   "type": "story",
-  "status": "planned",
+  "status": "published",
   "pillar": "relacja",
   "link": "https://biznesdok.pl/kalkulator-wynagrodzen",
   "slides": [
@@ -15,5 +15,8 @@
       "note": "biznesdok.pl/kalkulator-wynagrodzen"
     }
   ],
-  "caption": ""
+  "caption": "",
+  "publishedAt": "2026-10-12T06:46:47.977Z",
+  "permalink": "https://www.instagram.com/stories/biznesdok.pl/4006127216199206646",
+  "mediaId": "18095530091379781"
 }

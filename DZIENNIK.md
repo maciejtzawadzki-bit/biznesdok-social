@@ -26,3 +26,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-10-09 08:43 · story · 2026-10-09-story-weryfikacja · https://www.instagram.com/stories/biznesdok.pl/4003951620824238869
 - 2026-10-12 08:45 · feed · 2026-10-12-kalkulator-urlopu · https://www.instagram.com/p/DeYnuXYlNlT/
 - 2026-10-12 08:45 · reel (wideo) · 2026-10-12-reel-film1-wezwanie · https://www.instagram.com/reel/DeYnwiTjnun/
+- 2026-10-12 08:45 · story · 2026-10-12-story-kalkulator-wynagrodzen · https://www.instagram.com/stories/biznesdok.pl/4006127216199206646
