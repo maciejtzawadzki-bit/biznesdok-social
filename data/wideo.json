@@ -44,6 +44,50 @@
       "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
       "zatwierdzony": "2026-10-11",
       "uwagi": "Wycinek filmu 1 (42,5–68 s) z planszą końcową; pokazuje ceny z ekranu wyboru formatu."
+    },
+    {
+      "id": "film2-zarzad",
+      "typ": "film",
+      "plik": "film2-zarzad-9x16.mp4",
+      "miniatura": "film2-zarzad-9x16.jpg",
+      "temat": "Zmiana członka zarządu w sp. z o.o. — od poradnika do protokołu zgromadzenia",
+      "dlugosc_s": 70,
+      "link": "https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
+      "zatwierdzony": "2026-10-12",
+      "uwagi": "Animacja z prawdziwych ekranów (produkcja 12.10), dane fikcyjne; odpowiedź rejestru po NIP podstawiona w nagraniu. Pokazuje ceny z poradnika i ekranu wyboru formatu (film zaakceptowany przez właściciela). Publikacja jako reel — jeden raz."
+    },
+    {
+      "id": "film2-zarzad-urywek-1",
+      "typ": "urywek",
+      "plik": "film2-zarzad-urywek-1-dane-po-nip.mp4",
+      "miniatura": "film2-zarzad-urywek-1-dane-po-nip.jpg",
+      "temat": "Dane spółki z KRS po NIP",
+      "dlugosc_s": 14,
+      "link": "https://biznesdok.pl/dokument/protokol-nadzwyczajnego-zgromadzenia-wspolnikow",
+      "zatwierdzony": "2026-10-12",
+      "uwagi": "Wycinek filmu 2 (13–23,75 s) + plansza końcowa."
+    },
+    {
+      "id": "film2-zarzad-urywek-2",
+      "typ": "urywek",
+      "plik": "film2-zarzad-urywek-2-wariant.mp4",
+      "miniatura": "film2-zarzad-urywek-2-wariant.jpg",
+      "temat": "Samo odwołanie albo odwołanie i powołanie — protokół dopasowuje się do wyboru",
+      "dlugosc_s": 18.2,
+      "link": "https://biznesdok.pl/dokument/protokol-nadzwyczajnego-zgromadzenia-wspolnikow",
+      "zatwierdzony": "2026-10-12",
+      "uwagi": "Wycinek filmu 2 (32,5–47,5 s) + plansza końcowa."
+    },
+    {
+      "id": "film2-zarzad-urywek-3",
+      "typ": "urywek",
+      "plik": "film2-zarzad-urywek-3-podglad-i-format.mp4",
+      "miniatura": "film2-zarzad-urywek-3-podglad-i-format.jpg",
+      "temat": "Podgląd protokołu i format PDF albo Word",
+      "dlugosc_s": 13.5,
+      "link": "https://biznesdok.pl/dokument/protokol-nadzwyczajnego-zgromadzenia-wspolnikow",
+      "zatwierdzony": "2026-10-12",
+      "uwagi": "Wycinek filmu 2 (52,5–66 s) z planszą końcową; pokazuje ceny z ekranu wyboru formatu."
     }
   ]
 }
