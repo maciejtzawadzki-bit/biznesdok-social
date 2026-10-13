@@ -3,7 +3,7 @@
   "date": "2026-10-13",
   "time": "12:30",
   "type": "story",
-  "status": "planned",
+  "status": "published",
   "pillar": "relacja",
   "link": "https://biznesdok.pl/kalkulator-okresu-wypowiedzenia",
   "slides": [
@@ -15,5 +15,8 @@
       "note": "biznesdok.pl/kalkulator-okresu-wypowiedzenia"
     }
   ],
-  "caption": ""
+  "caption": "",
+  "publishedAt": "2026-10-13T06:45:39.102Z",
+  "permalink": "https://www.instagram.com/stories/biznesdok.pl/4006851414777442609",
+  "mediaId": "18108557648523944"
 }

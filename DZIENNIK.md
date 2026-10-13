@@ -28,3 +28,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-10-12 08:45 · reel (wideo) · 2026-10-12-reel-film1-wezwanie · https://www.instagram.com/reel/DeYnwiTjnun/
 - 2026-10-12 08:45 · story · 2026-10-12-story-kalkulator-wynagrodzen · https://www.instagram.com/stories/biznesdok.pl/4006127216199206646
 - 2026-10-13 08:44 · carousel · 2026-10-13-zatrudnienie-pracownika · https://www.instagram.com/p/DebMgKtjwjt/
+- 2026-10-13 08:44 · story · 2026-10-13-story-okres-wypowiedzenia · https://www.instagram.com/stories/biznesdok.pl/4006851414777442609
