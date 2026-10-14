@@ -31,3 +31,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-10-13 08:44 · story · 2026-10-13-story-okres-wypowiedzenia · https://www.instagram.com/stories/biznesdok.pl/4006851414777442609
 - 2026-10-13 08:44 · story (wideo) · 2026-10-13-story-wideo-dane-po-nip · https://www.instagram.com/stories/biznesdok.pl/4006851852368785128
 - 2026-10-14 08:44 · reel (wideo) · 2026-10-14-reel-film2-zarzad · https://www.instagram.com/reel/DedxOEGlRem/
+- 2026-10-14 08:44 · BŁĄD · 2026-10-14-story-kalkulator-odsetek · Graph API 17841415756005690/media_publish: {"message":"Media ID is not available","type":"OAuthException","code":9007,"error_subcode":2207027,"is_transient":false,"error_user_title":"Nie można opublikować","error_user_msg":"Ten element multimedialny nie jest jeszcze gotowy do publikacji. Poczekaj chwilę.","fbtrace_id":"A6eYdz_rmSyRTQVAk8Wp4pn"}
