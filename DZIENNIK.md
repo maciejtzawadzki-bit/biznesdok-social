@@ -30,3 +30,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-10-13 08:44 · carousel · 2026-10-13-zatrudnienie-pracownika · https://www.instagram.com/p/DebMgKtjwjt/
 - 2026-10-13 08:44 · story · 2026-10-13-story-okres-wypowiedzenia · https://www.instagram.com/stories/biznesdok.pl/4006851414777442609
 - 2026-10-13 08:44 · story (wideo) · 2026-10-13-story-wideo-dane-po-nip · https://www.instagram.com/stories/biznesdok.pl/4006851852368785128
+- 2026-10-14 08:44 · reel (wideo) · 2026-10-14-reel-film2-zarzad · https://www.instagram.com/reel/DedxOEGlRem/
