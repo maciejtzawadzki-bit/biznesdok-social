@@ -34,3 +34,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-10-14 08:44 · BŁĄD · 2026-10-14-story-kalkulator-odsetek · Graph API 17841415756005690/media_publish: {"message":"Media ID is not available","type":"OAuthException","code":9007,"error_subcode":2207027,"is_transient":false,"error_user_title":"Nie można opublikować","error_user_msg":"Ten element multimedialny nie jest jeszcze gotowy do publikacji. Poczekaj chwilę.","fbtrace_id":"A6eYdz_rmSyRTQVAk8Wp4pn"}
 - 2026-10-14 08:46 · story · 2026-10-14-story-kalkulator-odsetek · https://www.instagram.com/stories/biznesdok.pl/4007576623611980364
 - 2026-10-15 08:44 · feed · 2026-10-15-umowa-o-prace-czas-nieokreslony · https://www.instagram.com/p/DegWAn3FR_p/
+- 2026-10-15 08:44 · story (wideo) · 2026-10-15-story-wideo-kilka-faktur · https://www.instagram.com/stories/biznesdok.pl/4008300736517637849
