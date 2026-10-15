@@ -3,7 +3,7 @@
   "date": "2026-10-15",
   "time": "12:30",
   "type": "story",
-  "status": "planned",
+  "status": "published",
   "pillar": "relacja",
   "link": "https://biznesdok.pl/dokument/wniosek-o-urlop-wypoczynkowy",
   "slides": [
@@ -15,5 +15,8 @@
       "note": "biznesdok.pl/dokument/wniosek-o-urlop-wypoczynkowy"
     }
   ],
-  "caption": ""
+  "caption": "",
+  "publishedAt": "2026-10-15T06:45:50.143Z",
+  "permalink": "https://www.instagram.com/stories/biznesdok.pl/4008301063858863548",
+  "mediaId": "18124245112823109"
 }

@@ -35,3 +35,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-10-14 08:46 · story · 2026-10-14-story-kalkulator-odsetek · https://www.instagram.com/stories/biznesdok.pl/4007576623611980364
 - 2026-10-15 08:44 · feed · 2026-10-15-umowa-o-prace-czas-nieokreslony · https://www.instagram.com/p/DegWAn3FR_p/
 - 2026-10-15 08:44 · story (wideo) · 2026-10-15-story-wideo-kilka-faktur · https://www.instagram.com/stories/biznesdok.pl/4008300736517637849
+- 2026-10-15 08:44 · story · 2026-10-15-story-wniosek-o-urlop · https://www.instagram.com/stories/biznesdok.pl/4008301063858863548
