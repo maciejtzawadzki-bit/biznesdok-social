@@ -1,0 +1,56 @@
+# Plan publikacji dla panelu KMZ (zakładka BiznesDOK): plan.json i miniatury w media/plan/ (tools/plan.mjs).
+# Po każdej zmianie kolejki, raz dziennie (okno planu przesuwa się z datą) i ręcznie z zakładki Actions.
+# Zapisuje wyłącznie plan.json i media/plan/ — publikator (run.mjs) i agent marketingu tych plików nie zmieniają,
+# więc ich pull --rebase przechodzi bez konfliktów. Commit z GITHUB_TOKEN nie uruchamia kolejnych przebiegów.
+# Na PR tylko próba: plan i miniatury jako artefakt, bez zapisu.
+name: plan
+on:
+  push:
+    branches: [main]
+    paths: ["queue/**", "linkedin/**", "data/**", "tools/plan.mjs", "tools/kontrola.mjs", "tools/render.mjs", ".github/workflows/plan.yml"]
+  pull_request:
+    paths: ["tools/plan.mjs", "tools/kontrola.mjs", "tools/render.mjs", ".github/workflows/plan.yml"]
+  schedule:
+    - cron: "10 4 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+# Jeden przebieg naraz; każdy zaczyna od najnowszego main (nie od commita, który go wywołał).
+concurrency:
+  group: ${{ github.event_name == 'pull_request' && github.ref || 'plan-main' }}
+  cancel-in-progress: false
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name != 'pull_request' && 'main' || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Zależności renderera
+        run: npm ci --prefix tools --silent
+      - name: Plan i miniatury
+        env:
+          CHROMIUM_PATH: /usr/bin/google-chrome
+        run: node tools/plan.mjs
+      - name: Próba na PR — plan i miniatury do obejrzenia
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: plan
+          path: |
+            plan.json
+            media/plan/
+      - name: Zapis do main
+        if: github.event_name != 'pull_request'
+        run: |
+          git add -A plan.json media/plan
+          if git diff --cached --quiet; then echo "Plan bez zmian"; exit 0; fi
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -q -m "plan: panel KMZ"
+          for i in 1 2 3 4 5; do
+            git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0
+            sleep $((i * 4))
+          done
+          exit 1
