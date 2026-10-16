@@ -31,7 +31,7 @@ Nie publikuj niczego spoza kolejki. Nie zmieniaj treści zaplanowanych postów w
 4. `node tools/render.mjs queue/<plik>.json rendered` dla każdego nowego posta i obejrzyj PNG (Read). Popraw złamania wierszy/długość, jeśli coś wygląda źle (`size` w slajdzie).
 5. Zrób podgląd tygodnia: `node tools/preview.mjs RRRR-MM-DD` (data poniedziałku) → `preview/tydzien-RRRR-MM-DD.png`.
 6. Raport tygodnia: dla postów `published` z ostatnich 7 dni pobierz statystyki (GET `/{mediaId}/insights?metric=reach,saved,shares,likes,comments` dla feedu; przy błędzie metryki pomiń ją) oraz liczbę obserwujących (GET `/17841415756005690?fields=followers_count,media_count`). Dopisz krótki raport do `RAPORTY.md` (data, obserwujący, posty, zasięgi, najlepszy post, wniosek na kolejny tydzień).
-7. Commit + push do `main`. W podsumowaniu sesji: lista postów tygodnia i link do podglądu `https://github.com/maciejtzawadzki-bit/biznesdok-social/blob/main/preview/tydzien-RRRR-MM-DD.png`. Właściciel ma weto — brak odpowiedzi = publikacja.
+7. `node tools/kontrola.mjs` — uwagi do nowych postów popraw (albo opisz w podsumowaniu, jeśli są celowe). Commit, `git pull --rebase origin main`, push do `main`. W podsumowaniu sesji: lista postów tygodnia i link do podglądu `https://github.com/maciejtzawadzki-bit/biznesdok-social/blob/main/preview/tydzien-RRRR-MM-DD.png`. Właściciel ma weto — brak odpowiedzi = publikacja.
 
 ### Wideo w trybie 2 (Reels i relacje wideo)
 
@@ -52,6 +52,10 @@ Decyzja właściciela 10.10.2026: agent marketingu BiznesDOK prowadzi także str
 3. Grafika: `node tools/render.mjs linkedin/<plik>.json media/linkedin` i obejrzyj PNG (Read). Commit + push razem z trybem 2.
 4. Publikacja: **tylko automatyczna** — właściciel nie publikuje ręcznie (decyzja 11.10.2026). Do czasu API LinkedIn (L-LI1 / PN-37) albo narzędzia zastępczego post zostaje w `linkedin/` ze statusem `planned`; w podsumowaniu sesji podaj tylko datę, temat i link do pliku. Po uruchomieniu publikacji automatycznej publikator dostanie osobny tryb.
 5. Katalog `linkedin/` jest poza `queue/` celowo: `tools/run.mjs` i `tools/preview.mjs` czytają tylko `queue/` — posty LinkedIn nie mogą trafić na Instagram.
+
+## Plan w panelu KMZ (zakładka BiznesDOK)
+
+Od 16.10.2026 plan publikacji (Instagram i LinkedIn) widać w panelu KMZ właściciela. `plan.json` i miniatury w `media/plan/` tworzy automat GitHub (`.github/workflows/plan.yml` → `tools/plan.mjs`) po każdym pushu zmieniającym `queue/` albo `linkedin/` i raz dziennie. **Nie edytuj ich ręcznie i nie uruchamiaj `tools/plan.mjs` w trybach 1–3.** Automat dopisuje commity do `main` — przed każdym `git push` zrób `git pull --rebase origin main` (`run.mjs` robi to sam). Panel pokazuje przy postach uwagi z `tools/kontrola.mjs` (mierzalne zasady treści niżej i czy strona z linku istnieje). Przycisków „Wstrzymaj / Zmień” w panelu na razie nie ma — weto jak niżej.
 
 ## Weto właściciela
 
