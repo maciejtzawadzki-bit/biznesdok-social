@@ -1,0 +1,66 @@
+{
+  "id": "2026-10-20-sprawozdanie-finansowe",
+  "date": "2026-10-20",
+  "time": "08:30",
+  "type": "carousel",
+  "pillar": "poradnik + dokumenty",
+  "link": "https://biznesdok.pl/poradniki/zatwierdzenie-sprawozdania-finansowego-sp-z-o-o",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Poradnik",
+      "text": "Sprawozdanie finansowe sp. z o.o.: [[zatwierdzenie krok po kroku.]]",
+      "size": 88
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Terminy",
+      "size": 60,
+      "text": "Co i kiedy",
+      "items": [
+        [
+          "Zatwierdzenie sprawozdania",
+          "nie później niż 6 miesięcy od dnia bilansowego"
+        ],
+        [
+          "Zwyczajne zgromadzenie wspólników",
+          "w ciągu sześciu miesięcy po roku obrotowym"
+        ],
+        [
+          "Zawiadomienie wspólników",
+          "co najmniej dwa tygodnie przed terminem"
+        ]
+      ]
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Zgromadzenie",
+      "size": 60,
+      "text": "Uchwały wspólników",
+      "items": [
+        [
+          "Sprawozdanie zarządu i sprawozdanie finansowe",
+          "zatwierdzenie"
+        ],
+        [
+          "Zysk albo strata",
+          "podział zysku lub pokrycie straty"
+        ],
+        [
+          "Absolutorium",
+          "wspólnik nie głosuje nad własnym"
+        ]
+      ]
+    },
+    {
+      "layout": "headline",
+      "eyebrow": "Po zatwierdzeniu",
+      "size": 84,
+      "text": "Sprawozdanie do rejestru [[w ciągu 15 dni.]]",
+      "sub": "Sprawozdanie z działalności zarządu i protokół zgromadzenia przygotujesz w BiznesDOK.",
+      "note": "Pełny poradnik: link w bio"
+    }
+  ],
+  "caption": "Zatwierdzenie sprawozdania finansowego spółki z o.o. to zwyczajne zgromadzenie wspólników, kilka uchwał i złożenie dokumentów w rejestrze. W karuzeli: terminy i kolejność działań.\n\nSprawozdanie finansowe przygotowuje księgowość. W BiznesDOK przygotujesz sprawozdanie z działalności zarządu oraz protokół zgromadzenia z uchwałami — na wzorach przygotowanych przez prawnika.\n\nPełny poradnik: link w bio → Poradniki.\n\n#spółkazoo #sprawozdaniefinansowe #zgromadzeniewspólników #zarząd #przedsiębiorca #biznesdok",
+  "status": "planned"
+}

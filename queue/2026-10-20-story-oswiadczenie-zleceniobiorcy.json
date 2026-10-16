@@ -1,0 +1,19 @@
+{
+  "id": "2026-10-20-story-oswiadczenie-zleceniobiorcy",
+  "date": "2026-10-20",
+  "time": "12:30",
+  "type": "story",
+  "pillar": "relacja",
+  "link": "https://biznesdok.pl/dokument/oswiadczenie-zleceniobiorcy",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Oświadczenie zleceniobiorcy",
+      "text": "Oświadczenie zleceniobiorcy do ZUS i PIT przygotujesz w BiznesDOK — [[bezpłatnie.]]",
+      "sub": "Dane osobowe, adresy, urząd skarbowy, rachunek. Bez konta.",
+      "note": "biznesdok.pl/dokument/oswiadczenie-zleceniobiorcy"
+    }
+  ],
+  "caption": "",
+  "status": "planned"
+}

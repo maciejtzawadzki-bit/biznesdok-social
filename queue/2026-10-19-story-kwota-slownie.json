@@ -1,0 +1,19 @@
+{
+  "id": "2026-10-19-story-kwota-slownie",
+  "date": "2026-10-19",
+  "time": "12:30",
+  "type": "story",
+  "pillar": "relacja",
+  "link": "https://biznesdok.pl/kwota-slownie",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Kwota słownie",
+      "text": "Kwota słownie w formie używanej na [[fakturach i w umowach.]]",
+      "sub": "Złote i grosze w poprawnej formie. Bezpłatnie, bez konta.",
+      "note": "biznesdok.pl/kwota-slownie"
+    }
+  ],
+  "caption": "",
+  "status": "planned"
+}
