@@ -1,0 +1,19 @@
+{
+  "id": "2026-10-21-story-kalkulator-odsetek",
+  "date": "2026-10-21",
+  "time": "12:30",
+  "type": "story",
+  "pillar": "relacja",
+  "link": "https://biznesdok.pl/kalkulator-odsetek",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Kalkulator odsetek",
+      "text": "Faktura nieopłacona? [[Odsetki policzysz bezpłatnie,]] bez konta.",
+      "sub": "Stawki i sposób obliczenia na widoku.",
+      "note": "biznesdok.pl/kalkulator-odsetek"
+    }
+  ],
+  "caption": "",
+  "status": "planned"
+}
