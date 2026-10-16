@@ -3,7 +3,7 @@
   "date": "2026-10-16",
   "time": "12:30",
   "type": "story",
-  "status": "planned",
+  "status": "published",
   "pillar": "relacja",
   "link": "https://biznesdok.pl/dokument/zgoda-na-wykorzystanie-wizerunku",
   "slides": [
@@ -15,5 +15,8 @@
       "note": "biznesdok.pl/dokument/zgoda-na-wykorzystanie-wizerunku"
     }
   ],
-  "caption": ""
+  "caption": "",
+  "publishedAt": "2026-10-16T06:45:07.150Z",
+  "permalink": "https://www.instagram.com/stories/biznesdok.pl/4009025475163554142",
+  "mediaId": "18130294669801096"
 }

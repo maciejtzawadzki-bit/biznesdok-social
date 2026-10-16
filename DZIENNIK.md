@@ -38,3 +38,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-10-15 08:44 · story · 2026-10-15-story-wniosek-o-urlop · https://www.instagram.com/stories/biznesdok.pl/4008301063858863548
 - 2026-10-16 08:43 · feed · 2026-10-16-swiadectwo-pracy · https://www.instagram.com/p/Dei6vvfjt0D/
 - 2026-10-16 08:43 · story (wideo) · 2026-10-16-story-wideo-gotowy-dokument · https://www.instagram.com/stories/biznesdok.pl/4009025147990394024
+- 2026-10-16 08:43 · story · 2026-10-16-story-zgoda-wizerunek · https://www.instagram.com/stories/biznesdok.pl/4009025475163554142
