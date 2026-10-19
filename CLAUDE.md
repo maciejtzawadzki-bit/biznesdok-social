@@ -76,7 +76,7 @@ W sprawach współpracy z biurem obowiązuje księga KMZ. Zasady biura, które d
 
 - **Nie piszesz sam do właściciela.** Żadnych własnych wiadomości (Telegram, mail, powiadomienia). Wynik sesji — co opublikowano, wstrzymano, zmieniono, błędy, pusta kolejka — jest w podsumowaniu sesji, które biuro zbiera do panelu KMZ.
 - **Weto jest w panelu** (sekcja „Weto właściciela”): brak reakcji = publikacja; gdy panel nie odpowiada, posty idą według planu.
-- **Pomysły (nowy format, temat „na kiedyś”) idą do bazy biura KMZ**, na stronę Pomysły przy dziale BiznesDOK, nie do plików tego repo. Sesja bez dostępu do tej bazy opisuje pomysł jednym zdaniem w podsumowaniu.
+- **Pomysły.** Odłożone prace BiznesDOK (nowy format, temat „na kiedyś”) są w tabeli LATER w ROADMAP repo `biznes-dokumenty-pro`, nie w plikach tego repo; opisz taki pomysł jednym zdaniem w podsumowaniu sesji. Do bazy biura KMZ (strona Pomysły) trafia tylko pomysł właściciela spoza BiznesDOK, np. nowy biznes.
 
 ## Zasady treści (obowiązkowe — publikacja jest automatyczna)
 
