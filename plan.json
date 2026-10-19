@@ -1,5 +1,5 @@
 {
-  "zaktualizowano": "2026-10-17T08:31:22.770Z",
+  "zaktualizowano": "2026-10-19T06:46:04.675Z",
   "posty": [
     {
       "id": "2026-10-12-kalkulator-urlopu",
@@ -235,14 +235,12 @@
       "time": "08:30",
       "type": "feed",
       "rubric": "bezpłatne narzędzie",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Policz dni robocze między dwiema datami: kalkulator pomija weekendy i święta, a Wigilię traktuje jako dzień wolny od 2025 r.",
       "podpis": "Policz dni robocze między dwiema datami: kalkulator pomija weekendy i święta, a Wigilię traktuje jako dzień wolny od 2025 r.\n\nBezpłatnie, bez konta i bez e-maila. Link w bio → Narzędzia.\n\n#dniroboczne #kalkulator #terminy #kadry #małafirma #biznesdok",
       "link": "https://biznesdok.pl/kalkulator-dni-roboczych",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-19-kalkulator-dni-roboczych-01-a87c3286.jpg"
-      ],
-      "permalink": null,
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/p/DeqpIvljvnp/",
       "uwagi": []
     },
     {
@@ -252,14 +250,12 @@
       "time": "12:30",
       "type": "story",
       "rubric": "relacja",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Kwota słownie w formie używanej na fakturach i w umowach.",
       "podpis": "Relacja (bez opisu), na grafice:\nKwota słownie\nKwota słownie w formie używanej na fakturach i w umowach.\nZłote i grosze w poprawnej formie. Bezpłatnie, bez konta.\nbiznesdok.pl/kwota-slownie\nLink: https://biznesdok.pl/kwota-slownie",
       "link": "https://biznesdok.pl/kwota-slownie",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-19-story-kwota-slownie-01-5da0a455.jpg"
-      ],
-      "permalink": null,
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4011199457542468946",
       "uwagi": []
     },
     {
