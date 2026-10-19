@@ -5,6 +5,7 @@
 //   --now      — ignoruje godzinę z kolejki (publikuje posty z dzisiejszą datą od razu).
 // Kolejność dla każdego posta: render PNG → commit i push media/ → czekanie, aż obraz
 // będzie publiczny → publikacja przez Graph API → status "published" + dziennik → push.
+// Na początku reakcje właściciela z panelu KMZ (tools/reakcje.mjs): wstrzymaj, wznów, zmień.
 import { readFile, writeFile, readdir, appendFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { execFileSync } from "node:child_process";
@@ -12,6 +13,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { renderPost } from "./render.mjs";
 import { publishPost, mediaUrls } from "./publish.mjs";
+import { odbierzReakcje } from "./reakcje.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const QUEUE = path.join(ROOT, "queue");
@@ -77,13 +79,14 @@ async function loadQueue() {
   return Promise.all(files.map(async (f) => ({ file: path.join(QUEUE, f), post: JSON.parse(await readFile(path.join(QUEUE, f), "utf8")) })));
 }
 
-function select(queue, now) {
+function select(queue, now, waiting = new Set()) {
   const due = [];
   const skipped = [];
   for (const item of queue) {
     const { post } = item;
     if (only ? post.id !== only : post.status !== "planned") continue;
     if (only) { due.push(item); continue; }
+    if (waiting.has(post.id)) continue;
     const age = daysBetween(post.date, now.date);
     if (age < 0 || (age === 0 && !ignoreTime && post.time > now.time)) continue;
     if (age > 0 && (post.type === "story" || age > CATCH_UP_DAYS)) skipped.push(item);
@@ -98,8 +101,13 @@ async function save(item) {
   await writeFile(item.file, `${JSON.stringify(item.post, null, 2)}\n`);
 }
 
+// Najpierw reakcje właściciela z panelu KMZ (wstrzymaj, wznów); post z czekającym „zmień” nie wychodzi, dopóki agent
+// nie wykona zmiany i jej nie potwierdzi (tools/reakcje.mjs --potwierdz).
+const waiting = new Set((await odbierzReakcje({ dryRun })).map((r) => r.post_id));
+for (const id of waiting) console.log(`Czeka na zmianę z panelu KMZ, nie publikuję: ${id}`);
+
 const now = warsawNow();
-const { due, skipped } = select(await loadQueue(), now);
+const { due, skipped } = select(await loadQueue(), now, waiting);
 console.log(`Warszawa ${now.date} ${now.time} — do publikacji: ${due.map((i) => i.post.id).join(", ") || "brak"}`);
 
 for (const item of skipped) {

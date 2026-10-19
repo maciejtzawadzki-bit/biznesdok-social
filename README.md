@@ -6,6 +6,8 @@ Publikacja przez oficjalne Instagram Graph API. Zasady treści i tryby pracy: [C
 
 Plan publikacji dla panelu KMZ (`plan.json`, miniatury w `media/plan/`) tworzy automat GitHub `.github/workflows/plan.yml` (`tools/plan.mjs`, uwagi z `tools/kontrola.mjs`).
 
+Reakcje właściciela z panelu KMZ przy planie („Wstrzymaj”, „Wznów”, „Zmień…”) odbiera i potwierdza `tools/reakcje.mjs` (wywołuje go też `tools/run.mjs` przed publikacją); klucz w zmiennej `KMZ_BIZNESDOK_SEKRET` środowiska automatu, nigdy w repo.
+
 Repo jest publiczne, bo Instagram pobiera grafiki z publicznego adresu. Nie zawiera tokenów ani danych osobowych.
 
 Fonty Instrument Sans i Instrument Serif: SIL Open Font License (`tools/fonts/`).

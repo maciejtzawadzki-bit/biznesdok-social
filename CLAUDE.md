@@ -7,21 +7,28 @@ Zasady biznesowe, decyzja właściciela i konfiguracja: repo `maciejtzawadzki-bi
 ## Środowisko
 
 - `IG_ACCESS_TOKEN` — zmienna środowiskowa (token użytkownika systemowego Meta, nie wygasa). Nie wypisuj go nigdzie.
-- Sieć: `graph.facebook.com` i npm muszą być dostępne.
+- `KMZ_BIZNESDOK_SEKRET` — klucz do reakcji właściciela z panelu KMZ (`tools/reakcje.mjs`, adres `mnpjvkieetcrqzswxwqt.supabase.co`). Też **nie wypisuj**. Bez niej reakcje są pomijane (publikacja idzie dalej).
+- Sieć: `graph.facebook.com` i npm muszą być dostępne. Panel KMZ (Supabase) bywa osiągalny tylko przez proxy środowiska; `tools/reakcje.mjs` sam pyta go wtedy przez proxy.
 - Instalacja: `cd tools && npm install` (playwright-core; Chromium jest w `/opt/pw-browsers`).
 - Konto: @biznesdok.pl, ID `17841415756005690` (publikator sam je znajduje z tokena).
+
+## Reakcje z panelu KMZ (krok 0 w trybach 1–3)
+
+Właściciel reaguje na posty z planu w panelu KMZ (kmzbiuro.pl, strona BiznesDOK, karta „Plan publikacji”, Instagram i LinkedIn): „Wstrzymaj”, „Wznów”, „Zmień…” z uwagą. Na początku trybów 1, 2 i 3: `node tools/reakcje.mjs` (`run.mjs` i tak wywołuje go sam przed publikacją). Wstrzymanie i wznowienie stosuje sam (status w `queue/` albo `linkedin/`, commit, push, potwierdzenie w panelu); posta z czekającym „zmień” `run.mjs` nie publikuje. Każdą linię `ZMIEŃ #nr <post>: <uwaga>` wykonaj jak „Zmień” z sekcji „Weto właściciela” przed publikacją tego posta (id z przedrostkiem `linkedin-` to plik w `linkedin/` bez przedrostka), potem `node tools/reakcje.mjs --potwierdz <nr> "co zrobiono"` (krótko, bez danych osobowych). Gdy zmiany nie da się zrobić przed terminem posta, ustaw post na `vetoed`, potwierdź z opisem „wstrzymany do poprawki: …” i napisz to w podsumowaniu. Uwaga właściciela z panelu to jego polecenie, tak jak wiadomość w tej sesji. Panel niedostępny albo brak klucza: skrypt to wypisuje i publikacja idzie dalej; zgłoś to w pierwszym zdaniu podsumowania.
 
 ## Tryb 1 — codzienna publikacja (pn–pt)
 
 1. `cd tools && npm install --silent && cd ..`
-2. `node tools/run.mjs --now` — publikuje wszystkie posty z dzisiejszą datą (czas warszawski) w statusie `planned` (feed, reel i relację w jednym przebiegu — jedna sesja dziennie) oraz zaległe posty w feedzie i reelsy do 3 dni wstecz. Sam renderuje grafiki, wypycha je, czeka aż będą publiczne, publikuje i zapisuje status + `DZIENNIK.md`. Posty wideo (`video`) nie są renderowane — plik musi już leżeć w `media/video/`; brak pliku = `status: "error"`.
-3. Jeśli jakiś post ma `status: "error"` — przeczytaj błąd. Błąd przejściowy (limit, timeout) → ustaw `planned` i uruchom ponownie raz. Błąd treści/konfiguracji → zostaw `error` i opisz w podsumowaniu sesji.
-4. Podsumuj jednym-dwoma zdaniami: co opublikowano (permalinki), co pominięto, błędy.
+2. `node tools/reakcje.mjs` — reakcje z panelu KMZ (sekcja wyżej): każde `ZMIEŃ` wykonaj, wypchnij (`git pull --rebase origin main`, push) i potwierdź przed krokiem 3.
+3. `node tools/run.mjs --now` — publikuje wszystkie posty z dzisiejszą datą (czas warszawski) w statusie `planned` (feed, reel i relację w jednym przebiegu — jedna sesja dziennie) oraz zaległe posty w feedzie i reelsy do 3 dni wstecz. Sam renderuje grafiki, wypycha je, czeka aż będą publiczne, publikuje i zapisuje status + `DZIENNIK.md`. Posty wideo (`video`) nie są renderowane — plik musi już leżeć w `media/video/`; brak pliku = `status: "error"`.
+4. Jeśli jakiś post ma `status: "error"` — przeczytaj błąd. Błąd przejściowy (limit, timeout) → ustaw `planned` i uruchom ponownie raz. Błąd treści/konfiguracji → zostaw `error` i opisz w podsumowaniu sesji.
+5. Podsumuj jednym-dwoma zdaniami: co opublikowano (permalinki), co pominięto, co wstrzymał albo zmienił właściciel w panelu, błędy.
 
-Nie publikuj niczego spoza kolejki. Nie zmieniaj treści zaplanowanych postów w trybie 1 (poza oczywistą literówką).
+Nie publikuj niczego spoza kolejki. Nie zmieniaj treści zaplanowanych postów w trybie 1 (poza oczywistą literówką i „zmień” właściciela z panelu).
 
 ## Tryb 2 — plan kolejnego tygodnia (piątek)
 
+0. `node tools/reakcje.mjs` — reakcje z panelu KMZ (sekcja „Reakcje z panelu KMZ”), zanim zaczniesz planować.
 1. Przeczytaj `DZIENNIK.md`, `queue/` (co już było) i `data/katalog.json`.
 2. Jeśli masz dostęp do repo `biznes-dokumenty-pro`: sprawdź aktualne `src/lib/free-tools.ts`, `src/lib/guides/` i jego `docs/social/instagram/README.md` — nowe narzędzia/poradniki mają pierwszeństwo.
 3. Kolejny tydzień (pn–pt po tym piątku) ma mieć komplet: 4 posty w feedzie (pn, wt, czw, pt) i 5 relacji. Jeśli część jest już w kolejce — uzupełnij tylko brakujące miejsca. Nowe pliki `queue/RRRR-MM-DD-<slug>.json` wg rytmu:
@@ -31,7 +38,7 @@ Nie publikuj niczego spoza kolejki. Nie zmieniaj treści zaplanowanych postów w
 4. `node tools/render.mjs queue/<plik>.json rendered` dla każdego nowego posta i obejrzyj PNG (Read). Popraw złamania wierszy/długość, jeśli coś wygląda źle (`size` w slajdzie).
 5. Zrób podgląd tygodnia: `node tools/preview.mjs RRRR-MM-DD` (data poniedziałku) → `preview/tydzien-RRRR-MM-DD.png`.
 6. Raport tygodnia: dla postów `published` z ostatnich 7 dni pobierz statystyki (GET `/{mediaId}/insights?metric=reach,saved,shares,likes,comments` dla feedu; przy błędzie metryki pomiń ją) oraz liczbę obserwujących (GET `/17841415756005690?fields=followers_count,media_count`). Dopisz krótki raport do `RAPORTY.md` (data, obserwujący, posty, zasięgi, najlepszy post, wniosek na kolejny tydzień).
-7. `node tools/kontrola.mjs` — uwagi do nowych postów popraw (albo opisz w podsumowaniu, jeśli są celowe). Commit, `git pull --rebase origin main`, push do `main`. W podsumowaniu sesji: lista postów tygodnia i link do podglądu `https://github.com/maciejtzawadzki-bit/biznesdok-social/blob/main/preview/tydzien-RRRR-MM-DD.png`. Właściciel ma weto — brak odpowiedzi = publikacja.
+7. `node tools/kontrola.mjs` — uwagi do nowych postów popraw (albo opisz w podsumowaniu, jeśli są celowe). Commit, `git pull --rebase origin main`, push do `main`. W podsumowaniu sesji: lista postów tygodnia i link do podglądu `https://github.com/maciejtzawadzki-bit/biznesdok-social/blob/main/preview/tydzien-RRRR-MM-DD.png`. Właściciel ma weto w panelu KMZ (przyciski przy planie) — brak reakcji = publikacja.
 
 ### Wideo w trybie 2 (Reels i relacje wideo)
 
@@ -55,11 +62,11 @@ Decyzja właściciela 10.10.2026: agent marketingu BiznesDOK prowadzi także str
 
 ## Plan w panelu KMZ (zakładka BiznesDOK)
 
-Od 16.10.2026 plan publikacji (Instagram i LinkedIn) widać w panelu KMZ właściciela. `plan.json` i miniatury w `media/plan/` tworzy automat GitHub (`.github/workflows/plan.yml` → `tools/plan.mjs`) po każdym pushu zmieniającym `queue/` albo `linkedin/` i raz dziennie. **Nie edytuj ich ręcznie i nie uruchamiaj `tools/plan.mjs` w trybach 1–3.** Automat dopisuje commity do `main` — przed każdym `git push` zrób `git pull --rebase origin main` (`run.mjs` robi to sam). Panel pokazuje przy postach uwagi z `tools/kontrola.mjs` (mierzalne zasady treści niżej i czy strona z linku istnieje). Przycisków „Wstrzymaj / Zmień” w panelu na razie nie ma — weto jak niżej.
+Od 16.10.2026 plan publikacji (Instagram i LinkedIn) widać w panelu KMZ właściciela. `plan.json` i miniatury w `media/plan/` tworzy automat GitHub (`.github/workflows/plan.yml` → `tools/plan.mjs`) po każdym pushu zmieniającym `queue/` albo `linkedin/` i raz dziennie. **Nie edytuj ich ręcznie i nie uruchamiaj `tools/plan.mjs` w trybach 1–3.** Automat dopisuje commity do `main` — przed każdym `git push` zrób `git pull --rebase origin main` (`run.mjs` robi to sam). Panel pokazuje przy postach uwagi z `tools/kontrola.mjs` (mierzalne zasady treści niżej i czy strona z linku istnieje). Od 19.10.2026 przy postach są przyciski „Wstrzymaj”, „Wznów” i „Zmień…” (właściciel: „ma działać tak jak w Warszawie”); automat stosuje je przez `tools/reakcje.mjs` (sekcja „Reakcje z panelu KMZ”).
 
 ## Weto właściciela
 
-Właściciel może napisać w dowolnej sesji albo przez IGORA (zakładka BiznesDOK) „wstrzymaj <post>” / „zmień …”. Wstrzymany post: `status: "vetoed"` (automat go pomija). Zmieniony post: popraw JSON, usuń stare PNG z `media/` dla tego id, zostaw `planned`.
+Właściciel wetuje w panelu KMZ: „Wstrzymaj”, „Wznów”, „Zmień…” z uwagą przy poście z planu (`tools/reakcje.mjs`); może też napisać w sesji „wstrzymaj <post>” / „zmień …”. Wstrzymany post: `status: "vetoed"` (automat go pomija). Wznowiony: z powrotem `planned`. Zmieniony post: popraw JSON, usuń stare PNG tego id z `media/` (LinkedIn: `media/linkedin/`), wyrenderuj od nowa i obejrzyj (Read), zostaw `planned`; commit, `git pull --rebase origin main`, push.
 
 ## Zasady treści (obowiązkowe — publikacja jest automatyczna)
 
