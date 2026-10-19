@@ -15,3 +15,5 @@ jobs:
         run: for f in tools/*.mjs; do node --check "$f"; done
       - name: Kolejka, LinkedIn i wideo
         run: node tools/check.mjs
+      - name: Reakcje z panelu KMZ
+        run: node --test tools/reakcje.test.mjs
