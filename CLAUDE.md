@@ -24,7 +24,9 @@ Właściciel reaguje na posty z planu w panelu KMZ (kmzbiuro.pl, strona BiznesDO
 4. Jeśli jakiś post ma `status: "error"` — przeczytaj błąd. Błąd przejściowy (limit, timeout) → ustaw `planned` i uruchom ponownie raz. Błąd treści/konfiguracji → zostaw `error` i opisz w podsumowaniu sesji.
 5. Podsumuj jednym-dwoma zdaniami: co opublikowano (permalinki), co pominięto, co wstrzymał albo zmienił właściciel w panelu, błędy.
 
-Nie publikuj niczego spoza kolejki. Nie zmieniaj treści zaplanowanych postów w trybie 1 (poza oczywistą literówką i „zmień” właściciela z panelu).
+Nie publikuj niczego spoza kolejki. Nie zmieniaj treści zaplanowanych postów w trybie 1: dozwolone jest tylko „Zmień…” właściciela z panelu oraz odwołanie albo przeniesienie posta (`vetoed` albo nowa data, bez zmiany treści). Każda inna zmiana, także poprawka literówki, musi być widoczna w panelu co najmniej 12 godzin przed publikacją; inaczej post nie wychodzi (`vetoed`), a podsumowanie opisuje przyczynę. Kontrola i poprawki są w trybie 2, zanim właściciel zobaczy post.
+
+**Pusta kolejka:** gdy na dziś nie ma postów `planned`, nic nie publikuj i niczego nie dokładaj od siebie; napisz w podsumowaniu, że kolejka była pusta. Dzień bez posta to mniejsza szkoda niż post, którego właściciel nie mógł zawetować.
 
 ## Tryb 2 — plan kolejnego tygodnia (piątek)
 
@@ -67,6 +69,14 @@ Od 16.10.2026 plan publikacji (Instagram i LinkedIn) widać w panelu KMZ właśc
 ## Weto właściciela
 
 Właściciel wetuje w panelu KMZ: „Wstrzymaj”, „Wznów”, „Zmień…” z uwagą przy poście z planu (`tools/reakcje.mjs`); może też napisać w sesji „wstrzymaj <post>” / „zmień …”. Wstrzymany post: `status: "vetoed"` (automat go pomija). Wznowiony: z powrotem `planned`. Zmieniony post: popraw JSON, usuń stare PNG tego id z `media/` (LinkedIn: `media/linkedin/`), wyrenderuj od nowa i obejrzyj (Read), zostaw `planned`; commit, `git pull --rebase origin main`, push.
+
+## Zasady biura KMZ
+
+W sprawach współpracy z biurem obowiązuje księga KMZ. Zasady biura, które dotyczą tego automatu, są wpisane tu wprost (automat w chmurze nie widzi folderu KMZ); zasady produktu i treści zostają w tym repo i w `biznes-dokumenty-pro`.
+
+- **Nie piszesz sam do właściciela.** Żadnych własnych wiadomości (Telegram, mail, powiadomienia). Wynik sesji — co opublikowano, wstrzymano, zmieniono, błędy, pusta kolejka — jest w podsumowaniu sesji, które biuro zbiera do panelu KMZ.
+- **Weto jest w panelu** (sekcja „Weto właściciela”): brak reakcji = publikacja; gdy panel nie odpowiada, posty idą według planu.
+- **Pomysły (nowy format, temat „na kiedyś”) idą do bazy biura KMZ**, na stronę Pomysły przy dziale BiznesDOK, nie do plików tego repo. Sesja bez dostępu do tej bazy opisuje pomysł jednym zdaniem w podsumowaniu.
 
 ## Zasady treści (obowiązkowe — publikacja jest automatyczna)
 
