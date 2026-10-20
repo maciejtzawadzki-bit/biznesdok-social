@@ -1,5 +1,5 @@
 {
-  "zaktualizowano": "2026-10-20T10:31:39.623Z",
+  "zaktualizowano": "2026-10-20T11:04:26.873Z",
   "posty": [
     {
       "id": "2026-10-13-zatrudnienie-pracownika",
@@ -242,6 +242,23 @@
       "uwagi": []
     },
     {
+      "id": "linkedin-2026-10-20-ostateczne-wezwanie-do-zaplaty",
+      "kanal": "linkedin",
+      "date": "2026-10-20",
+      "time": "13:15",
+      "type": "linkedin",
+      "rubric": "seria produktowa",
+      "status": "planned",
+      "naglowek": "Ostateczne wezwanie do zapłaty przygotowane na wzorze prawnika — z zestawieniem faktur i wyliczonymi odsetkami.",
+      "podpis": "Ostateczne wezwanie do zapłaty przygotowane na wzorze prawnika — z zestawieniem faktur i wyliczonymi odsetkami.\n\nJak to działa w BiznesDOK:\n• podajesz NIP — dane Twojej firmy i kontrahenta uzupełniają się z rejestru,\n• dodajesz jedną fakturę albo kilka; kwoty sumują się automatycznie, a odsetki są wyliczane,\n• wybierasz termin i rachunek do zapłaty,\n• oglądasz podgląd i pobierasz dokument w PDF albo Word. Płacisz dopiero po wypełnieniu formularza.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nKrótki film pokazujący cały proces: https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty?utm_source=linkedin&utm_medium=social&utm_campaign=ostateczne-wezwanie-do-zaplaty\n\n#należności #faktura #windykacja #przedsiębiorca #biznesdok",
+      "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/linkedin-2026-10-20-ostateczne-wezwanie-do-zaplaty-01-998733b9.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
       "id": "2026-10-21-wypowiedzenie-umowy-o-prace-przez-pracodawce",
       "kanal": "instagram",
       "date": "2026-10-21",
@@ -288,23 +305,6 @@
       "link": "https://biznesdok.pl/dokument/umowa-o-prace-na-czas-okreslony",
       "obrazy": [
         "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-22-umowa-o-prace-czas-okreslony-01-c5b2ebb6.jpg"
-      ],
-      "permalink": null,
-      "uwagi": []
-    },
-    {
-      "id": "linkedin-2026-10-20-ostateczne-wezwanie-do-zaplaty",
-      "kanal": "linkedin",
-      "date": "2026-10-22",
-      "time": "09:00",
-      "type": "linkedin",
-      "rubric": "seria produktowa",
-      "status": "planned",
-      "naglowek": "Ostateczne wezwanie do zapłaty przygotowane na wzorze prawnika — bez przepisywania danych z faktur.",
-      "podpis": "Ostateczne wezwanie do zapłaty przygotowane na wzorze prawnika — bez przepisywania danych z faktur.\n\nJak to działa w BiznesDOK:\n• podajesz NIP — dane Twojej firmy i kontrahenta uzupełniają się z rejestru,\n• dodajesz jedną fakturę albo kilka; kwoty sumują się automatycznie, a odsetki są wyliczane,\n• wybierasz termin i rachunek do zapłaty,\n• oglądasz podgląd i pobierasz dokument w PDF albo Word. Płacisz dopiero po wypełnieniu formularza.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nKrótki film pokazujący cały proces: https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty?utm_source=linkedin&utm_medium=social&utm_campaign=ostateczne-wezwanie-do-zaplaty\n\n#należności #faktura #windykacja #przedsiębiorca #biznesdok",
-      "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/linkedin-2026-10-20-ostateczne-wezwanie-do-zaplaty-01-998733b9.jpg"
       ],
       "permalink": null,
       "uwagi": []
