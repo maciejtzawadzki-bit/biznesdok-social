@@ -41,3 +41,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-10-16 08:43 · story · 2026-10-16-story-zgoda-wizerunek · https://www.instagram.com/stories/biznesdok.pl/4009025475163554142
 - 2026-10-19 08:43 · feed · 2026-10-19-kalkulator-dni-roboczych · https://www.instagram.com/p/DeqpIvljvnp/
 - 2026-10-19 08:43 · story · 2026-10-19-story-kwota-slownie · https://www.instagram.com/stories/biznesdok.pl/4011199457542468946
+- 2026-10-20 08:44 · carousel · 2026-10-20-sprawozdanie-finansowe · https://www.instagram.com/p/DetOBOelIqd/
