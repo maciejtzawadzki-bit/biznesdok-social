@@ -3,9 +3,10 @@
 // klucz API, który leży wyłącznie w zmiennej środowiska automatu (BUFFER_API_KEY). Bez klucza nic się nie dzieje.
 // Post z linkedin/ ze statusem `planned` i dzisiejszą datą (albo zaległy do 3 dni): kontrola treści → grafika
 // (render.mjs, media/linkedin/) → push, żeby obraz był publiczny → Buffer z terminem posta (09:00) → status `handed`.
-// Użycie: node tools/linkedin.mjs [--now] [--dry-run] [--kanaly] [--schemat]
+// Użycie: node tools/linkedin.mjs [--now] [--dry-run] [--kanaly] [--schemat] [--test-buffer]
 //   --kanaly  — lista kanałów konta Buffer (do ustawienia BUFFER_CHANNEL_ID przy pierwszym uruchomieniu),
 //   --schemat — opis wejścia createPost z API Buffera (tylko odczyt; do sprawdzenia formatu posta),
+//   --test-buffer — próba formatu bez publikacji: post w Bufferze z terminem za 45 dni, od razu usuwany,
 //   --now     — publikuje posty z dzisiejszą datą od razu (bez czekania do ich godziny),
 //   --dry-run — niczego nie wypycha i nie wysyła; pokazuje, co by zrobił.
 import { appendFile, writeFile } from "node:fs/promises";
@@ -102,6 +103,51 @@ export async function schemat() {
     wynik[nazwa] = __type?.enumValues?.length ? __type.enumValues.map((e) => e.name) : (__type?.inputFields ?? []).map((f) => `${f.name}: ${opisTypu(f.type)}`);
     for (const f of __type?.inputFields ?? []) kolejka.push(nazwaTypu(f.type));
   }
+  return wynik;
+}
+
+/**
+ * Mutacja createPost według schematu API Buffera (odczyt 20.10.2026): needsApproval i assets są wymagane
+ * (assets: pusta lista, gdy posta nie ma grafiki). __typename mówi, jaką odpowiedź dał Buffer, gdy posta nie przyjął.
+ */
+export function mutacjaPosta({ tekst, kanal, kiedy, obraz = null }) {
+  const zasoby = obraz ? `[{ image: { url: ${JSON.stringify(obraz)} } }]` : "[]";
+  return `mutation { createPost(input: { text: ${JSON.stringify(tekst)}, channelId: ${JSON.stringify(kanal)}, schedulingType: automatic, mode: customScheduled, dueAt: ${JSON.stringify(kiedy)}, needsApproval: false, assets: ${zasoby} }) { __typename ... on PostActionSuccess { post { id dueAt } } ... on MutationError { message } } }`;
+}
+
+/**
+ * Próba przed pierwszym postem, bez publikacji: ta sama mutacja co przy publikacji (z grafiką), ale z terminem
+ * za 45 dni, a zaraz potem usunięcie posta z Buffera — nic nie trafia na LinkedIn. Najpierw sprawdza w schemacie
+ * API, że post da się usunąć po samym id; inaczej niczego nie tworzy.
+ */
+export async function testBuffera() {
+  const { __schema } = await graphql(`{ __schema { mutationType { fields { name args { name ${TYP} } } } } }`);
+  const usun = (__schema?.mutationType?.fields ?? []).find((f) => f.name === "deletePost");
+  const wejscie = nazwaTypu(usun?.args?.[0]?.type);
+  const pola = wejscie ? ((await graphql(`{ __type(name: ${JSON.stringify(wejscie)}) { inputFields { name ${TYP} } } }`)).__type?.inputFields ?? []) : [];
+  const wymagane = pola.filter((f) => f.type?.kind === "NON_NULL").map((f) => f.name);
+  if (wymagane.join(",") !== "id") {
+    return { utworzony: false, powod: `nie wiem, jak usunąć post przez API (${wejscie ?? "brak deletePost"}: ${wymagane.join(", ") || "brak pól"}) — nic nie utworzono` };
+  }
+  const kanal = await idKanalu();
+  const kiedy = new Date(Date.now() + 45 * 86_400_000).toISOString();
+  const obraz = `${RAW}/2026-10-13-poradnik-sprawozdanie-finansowe-01.png`;
+  const odp = (await graphql(mutacjaPosta({ tekst: "TEST automatu BiznesDOK — do usunięcia, nie publikować", kanal, kiedy, obraz }))).createPost ?? {};
+  if (!odp.post) return { utworzony: false, odpowiedz: odp.__typename ?? null, powod: odp.message ?? "Buffer nie przyjął posta" };
+  const wynik = { utworzony: true, odpowiedz: odp.__typename, id: odp.post.id, dueAt: odp.post.dueAt };
+  // Kształt odpowiedzi deletePost nie jest znany z góry: najpierw z komunikatem błędu, potem samo __typename, potem bez pól.
+  const proby = [" { __typename ... on MutationError { message } }", " { __typename }", ""];
+  const bledy = [];
+  for (const wybor of proby) {
+    try {
+      const d = (await graphql(`mutation { deletePost(input: { id: ${JSON.stringify(odp.post.id)} })${wybor} }`)).deletePost;
+      wynik.usuniety = d?.message ? `NIE: ${d.message}` : `tak (${typeof d === "object" ? d?.__typename : d})`;
+      break;
+    } catch (blad) {
+      bledy.push(blad.message);
+    }
+  }
+  if (!wynik.usuniety) wynik.usuniety = `NIE — usuń ręcznie w Bufferze (${bledy.join(" | ")})`;
   return wynik;
 }
 
@@ -203,10 +249,9 @@ export async function publikujLinkedIn({ dryRun = false, teraz = false, czekajac
       wypchnij(`media: linkedin ${post.id}`);
       const url = `${RAW}/${post.id}-01.png`;
       if (existsSync(obraz)) await czekajNaObraz(url);
-      const zasoby = existsSync(obraz) ? `, assets: [{ image: { url: ${JSON.stringify(url)} } }]` : "";
-      const dane = await graphql(`mutation { createPost(input: { text: ${JSON.stringify(post.caption)}, channelId: ${JSON.stringify(kanal)}, schedulingType: automatic, mode: customScheduled, dueAt: ${JSON.stringify(kiedy)}${zasoby} }) { ... on PostActionSuccess { post { id dueAt } } ... on MutationError { message } } }`);
+      const dane = await graphql(mutacjaPosta({ tekst: post.caption, kanal, kiedy, obraz: existsSync(obraz) ? url : null }));
       const odp = dane.createPost ?? {};
-      if (!odp.post) throw new Error(odp.message ?? "Buffer nie przyjął posta");
+      if (!odp.post) throw new Error(`Buffer nie przyjął posta${odp.__typename ? ` (${odp.__typename})` : ""}: ${odp.message ?? "bez komunikatu"}`);
       post.status = "handed";
       post.handedAt = new Date().toISOString();
       post.buffer = { postId: odp.post.id, dueAt: odp.post.dueAt ?? kiedy };
@@ -228,7 +273,10 @@ export async function publikujLinkedIn({ dryRun = false, teraz = false, czekajac
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const args = process.argv.slice(2);
-  if (args.includes("--schemat")) {
+  if (args.includes("--test-buffer")) {
+    if (!process.env.BUFFER_API_KEY) throw new Error("Brak BUFFER_API_KEY");
+    console.log(JSON.stringify(await testBuffera(), null, 2));
+  } else if (args.includes("--schemat")) {
     if (!process.env.BUFFER_API_KEY) throw new Error("Brak BUFFER_API_KEY");
     console.log(JSON.stringify(await schemat(), null, 2));
   } else if (args.includes("--kanaly")) {
