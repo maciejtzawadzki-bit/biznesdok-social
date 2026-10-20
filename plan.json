@@ -1,5 +1,5 @@
 {
-  "zaktualizowano": "2026-10-20T06:46:49.218Z",
+  "zaktualizowano": "2026-10-20T09:34:58.781Z",
   "posty": [
     {
       "id": "2026-10-13-zatrudnienie-pracownika",
@@ -276,18 +276,35 @@
       "uwagi": []
     },
     {
-      "id": "2026-10-21-story-kalkulator-odsetek",
+      "id": "2026-10-21-wypowiedzenie-umowy-o-prace-przez-pracodawce",
+      "kanal": "instagram",
+      "date": "2026-10-21",
+      "time": "08:30",
+      "type": "feed",
+      "rubric": "seria produktowa",
+      "status": "planned",
+      "naglowek": "Dokumenty przygotowane przez prawników. Dopasowane technologią.",
+      "podpis": "Dokumenty przygotowane przez prawników. Dopasowane technologią.\n\nWypowiedzenie umowy o pracę na czas nieokreślony składane przez pracodawcę — na treści przygotowanej przez prawnika. Wybierasz staż pracownika, a BiznesDOK dobiera okres wypowiedzenia i właściwy punkt art. 36 § 1 Kodeksu pracy. Urlop albo zwolnienie z obowiązku świadczenia pracy w okresie wypowiedzenia trafiają do dokumentu w wybranym wariancie, a dane pracodawcy uzupełniają się po NIP.\n\nGotowy dokument zapiszesz na swoim koncie w BiznesDOK.\n\nLink w bio → Dokumenty.\n\n#wypowiedzenie #umowaopracę #pracodawca #kadry #hr #biznesdok",
+      "link": "https://biznesdok.pl/dokument/wypowiedzenie-umowy-o-prace-przez-pracodawce",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-21-wypowiedzenie-umowy-o-prace-przez-pracodawce-01-23c89862.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-10-21-story-wypowiedzenie-umowy-zlecenia",
       "kanal": "instagram",
       "date": "2026-10-21",
       "time": "12:30",
       "type": "story",
-      "rubric": "relacja",
+      "rubric": "płatny dokument",
       "status": "planned",
-      "naglowek": "Faktura nieopłacona? Odsetki policzysz bezpłatnie, bez konta.",
-      "podpis": "Relacja (bez opisu), na grafice:\nKalkulator odsetek\nFaktura nieopłacona? Odsetki policzysz bezpłatnie, bez konta.\nStawki i sposób obliczenia na widoku.\nbiznesdok.pl/kalkulator-odsetek\nLink: https://biznesdok.pl/kalkulator-odsetek",
-      "link": "https://biznesdok.pl/kalkulator-odsetek",
+      "naglowek": "Wypowiedzenie zlecenia z okresem jak w umowie i danymi firmy po NIP.",
+      "podpis": "Relacja (bez opisu), na grafice:\nWypowiedzenie umowy zlecenia\nWypowiedzenie zlecenia z okresem jak w umowie i danymi firmy po NIP.\nTreść przygotowana przez prawnika. Zwrot materiałów i poufność już w dokumencie. PDF albo Word.\nbiznesdok.pl/dokument/wypowiedzenie-umowy-zlecenia\nLink: https://biznesdok.pl/dokument/wypowiedzenie-umowy-zlecenia",
+      "link": "https://biznesdok.pl/dokument/wypowiedzenie-umowy-zlecenia",
       "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-21-story-kalkulator-odsetek-01-a6e74bd4.jpg"
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-21-story-wypowiedzenie-umowy-zlecenia-01-509ba8bf.jpg"
       ],
       "permalink": null,
       "uwagi": []
@@ -310,18 +327,18 @@
       "uwagi": []
     },
     {
-      "id": "2026-10-22-story-okres-wypowiedzenia",
+      "id": "2026-10-22-story-wypowiedzenie-zmieniajace",
       "kanal": "instagram",
       "date": "2026-10-22",
       "time": "12:30",
       "type": "story",
-      "rubric": "relacja",
+      "rubric": "płatny dokument",
       "status": "planned",
-      "naglowek": "Okres wypowiedzenia i dzień rozwiązania umowy — policzone za Ciebie.",
-      "podpis": "Relacja (bez opisu), na grafice:\nKalkulator okresu wypowiedzenia\nOkres wypowiedzenia i dzień rozwiązania umowy — policzone za Ciebie.\nTakże gdy staż rośnie w trakcie wypowiedzenia. Bezpłatnie, bez konta.\nbiznesdok.pl/kalkulator-okresu-wypowiedzenia\nLink: https://biznesdok.pl/kalkulator-okresu-wypowiedzenia",
-      "link": "https://biznesdok.pl/kalkulator-okresu-wypowiedzenia",
+      "naglowek": "Nowe warunki pracy lub płacy w gotowym wypowiedzeniu zmieniającym.",
+      "podpis": "Relacja (bez opisu), na grafice:\nWypowiedzenie zmieniające\nNowe warunki pracy lub płacy w gotowym wypowiedzeniu zmieniającym.\nPodajesz dotychczasowe i proponowane warunki, daty i przyczynę. Treść przygotowana przez prawnika.\nbiznesdok.pl/dokument/wypowiedzenie-zmieniajace-warunki-pracy-lub-placy\nLink: https://biznesdok.pl/dokument/wypowiedzenie-zmieniajace-warunki-pracy-lub-placy",
+      "link": "https://biznesdok.pl/dokument/wypowiedzenie-zmieniajace-warunki-pracy-lub-placy",
       "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-22-story-okres-wypowiedzenia-01-ebac305f.jpg"
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-22-story-wypowiedzenie-zmieniajace-01-859d91d5.jpg"
       ],
       "permalink": null,
       "uwagi": []
@@ -361,18 +378,18 @@
       "uwagi": []
     },
     {
-      "id": "2026-10-23-story-ostateczne-wezwanie",
+      "id": "2026-10-23-story-subskrypcja",
       "kanal": "instagram",
       "date": "2026-10-23",
       "time": "12:30",
       "type": "story",
-      "rubric": "relacja",
+      "rubric": "Subskrypcja",
       "status": "planned",
-      "naglowek": "Podajesz NIP i faktury — wezwanie przygotowuje BiznesDOK.",
-      "podpis": "Relacja (bez opisu), na grafice:\nOstateczne wezwanie do zapłaty\nPodajesz NIP i faktury — wezwanie przygotowuje BiznesDOK.\nGotowy dokument w PDF albo Word.\nbiznesdok.pl/ostateczne-wezwanie-do-zaplaty\nLink: https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
-      "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
+      "naglowek": "Wszystkie płatne dokumenty BiznesDOK w jednej Subskrypcji.",
+      "podpis": "Relacja (bez opisu), na grafice:\nSubskrypcja BiznesDOK\nWszystkie płatne dokumenty BiznesDOK w jednej Subskrypcji.\nPDF i Word, bez limitu dokumentów. Nowe dokumenty dochodzą bez dopłat.\nbiznesdok.pl/subskrypcja\nLink: https://biznesdok.pl/subskrypcja",
+      "link": "https://biznesdok.pl/subskrypcja",
       "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-23-story-ostateczne-wezwanie-01-aacc2ca9.jpg"
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-23-story-subskrypcja-01-5b163079.jpg"
       ],
       "permalink": null,
       "uwagi": []
