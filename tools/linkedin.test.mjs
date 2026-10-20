@@ -2,7 +2,7 @@
 // Uruchamia CI: node --test tools/*.test.mjs
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { mutacjaPosta } from "./linkedin.mjs";
+import { mutacjaPosta, wynikZBuffera } from "./linkedin.mjs";
 
 const baza = { tekst: "Pierwsza linia\n\nDruga — z „cudzysłowem” i \"znakiem\" #biznesdok", kanal: "6ad74104778b240e2f67c91c", kiedy: "2026-10-22T07:00:00.000Z" };
 
@@ -32,4 +32,32 @@ test("odpowiedź mówi, czy Buffer przyjął post, a jeśli nie — dlaczego", (
   assert.ok(m.includes("__typename"));
   assert.ok(m.includes("... on PostActionSuccess { post { id dueAt } }"));
   assert.ok(m.includes("... on MutationError { message }"));
+});
+
+const przekazany = { id: "x", status: "handed", buffer: { postId: "p1", dueAt: "2026-10-20T11:08:38.093Z" } };
+const poTerminie = (godzin) => Date.parse("2026-10-20T11:08:38.093Z") + godzin * 3_600_000;
+
+test("Buffer wysłał post → published z linkiem do LinkedIna", () => {
+  const stan = { status: "sent", sentAt: "2026-10-20T11:09:06.727Z", externalLink: "https://www.linkedin.com/feed/update/urn:li:share:1", error: null };
+  assert.deepEqual(wynikZBuffera(przekazany, stan, poTerminie(1)), {
+    status: "published",
+    publishedAt: "2026-10-20T11:09:06.727Z",
+    permalink: "https://www.linkedin.com/feed/update/urn:li:share:1",
+  });
+});
+
+test("Buffer zgłosił błąd → error z powodem z Buffera", () => {
+  const wynik = wynikZBuffera(przekazany, { status: "error", error: { message: "LinkedIn token expired" } }, poTerminie(1));
+  assert.equal(wynik.status, "error");
+  assert.match(wynik.error, /LinkedIn token expired/);
+});
+
+test("przed upływem doby od terminu post czeka — bez zmiany statusu", () => {
+  assert.equal(wynikZBuffera(przekazany, { status: "scheduled", error: null }, poTerminie(2)), null);
+  assert.equal(wynikZBuffera(przekazany, null, poTerminie(2)), null);
+});
+
+test("doba po terminie bez wysłania albo bez posta w Bufferze → error", () => {
+  assert.match(wynikZBuffera(przekazany, { status: "scheduled", error: null }, poTerminie(25)).error, /w ciągu doby/);
+  assert.match(wynikZBuffera(przekazany, null, poTerminie(25)).error, /nie ma już tego posta/);
 });
