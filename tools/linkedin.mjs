@@ -9,28 +9,63 @@
 //   --dry-run — niczego nie wypycha i nie wysyła; pokazuje, co by zrobił.
 import { appendFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
-import { execFileSync } from "node:child_process";
+import { execFileSync, spawnSync } from "node:child_process";
 import path from "node:path";
 import { ocenPost } from "./kontrola.mjs";
 import { dniMiedzy, dzisWarszawa, ROOT, wczytajOferte, wczytajPosty, wczytajSerieAI } from "./tematy.mjs";
 
-const API = "https://api.buffer.com";
 const KATALOG = path.join(ROOT, "linkedin");
 const MEDIA = path.join(ROOT, "media", "linkedin");
 const LOG = path.join(ROOT, "DZIENNIK.md");
 const RAW = "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/linkedin";
 const ZALEGLE_DNI = 3;
 
+// W chmurze ruch wychodzący bywa możliwy tylko przez proxy środowiska, a wbudowany fetch Node'a proxy pomija
+// (Node włącza je tylko przy starcie: NODE_USE_ENV_PROXY=1). Jak w tools/reakcje.mjs: przy ustawionym proxy pytamy
+// Buffer z osobnego procesu Node z tą zmienną. Klucz przechodzi w zmiennych środowiska, nigdy w argumentach ani na wyjściu.
+const PROXY = process.env.HTTPS_PROXY || process.env.https_proxy || process.env.HTTP_PROXY || process.env.http_proxy;
+
+async function zapytanieBuffer(tresc) {
+  try {
+    const odp = await fetch("https://api.buffer.com", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${process.env.BUFFER_API_KEY}` },
+      body: JSON.stringify({ query: tresc }),
+      signal: AbortSignal.timeout(30_000),
+    });
+    return { status: odp.status, dane: await odp.json().catch(() => ({})) };
+  } catch (error) {
+    return { blad: [error.message, error.cause?.code].filter(Boolean).join(", ").slice(0, 200) };
+  }
+}
+const ZAPYTANIE = `
+${zapytanieBuffer.toString()}
+let tresc = "";
+for await (const c of process.stdin) tresc += c;
+process.stdout.write(JSON.stringify(await zapytanieBuffer(tresc)));
+`;
+
 async function graphql(zapytanie) {
-  const odp = await fetch(API, {
-    method: "POST",
-    headers: { "Content-Type": "application/json", Authorization: `Bearer ${process.env.BUFFER_API_KEY}` },
-    body: JSON.stringify({ query: zapytanie }),
-    signal: AbortSignal.timeout(30_000),
-  });
-  const dane = await odp.json().catch(() => ({}));
-  if (!odp.ok || dane.errors?.length) {
-    throw new Error(`Buffer ${odp.status}: ${(dane.errors ?? []).map((e) => e.message).join("; ") || odp.statusText}`);
+  let wynik;
+  if (PROXY && !process.env.NODE_USE_ENV_PROXY) {
+    const w = spawnSync(process.execPath, ["--disable-warning=UNDICI-EHPA", "--input-type=module", "-e", ZAPYTANIE], {
+      input: zapytanie,
+      encoding: "utf8",
+      timeout: 45_000,
+      env: { ...process.env, NODE_USE_ENV_PROXY: "1" },
+    });
+    try {
+      wynik = JSON.parse(w.stdout);
+    } catch {
+      wynik = { blad: w.error?.message ?? `zapytanie przez proxy nie powiodło się (kod ${w.status})` };
+    }
+  } else {
+    wynik = await zapytanieBuffer(zapytanie);
+  }
+  if (wynik.blad) throw new Error(`Buffer: ${wynik.blad}`);
+  const { status, dane = {} } = wynik;
+  if (status < 200 || status > 299 || dane.errors?.length) {
+    throw new Error(`Buffer ${status}: ${(dane.errors ?? []).map((e) => e.message).join("; ") || "błąd odpowiedzi"}`);
   }
   return dane.data;
 }
