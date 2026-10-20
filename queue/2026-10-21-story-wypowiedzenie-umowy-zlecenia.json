@@ -1,0 +1,19 @@
+{
+  "id": "2026-10-21-story-wypowiedzenie-umowy-zlecenia",
+  "date": "2026-10-21",
+  "time": "12:30",
+  "type": "story",
+  "status": "planned",
+  "pillar": "płatny dokument",
+  "link": "https://biznesdok.pl/dokument/wypowiedzenie-umowy-zlecenia",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Wypowiedzenie umowy zlecenia",
+      "text": "Wypowiedzenie zlecenia z [[okresem jak w umowie]] i danymi firmy po NIP.",
+      "sub": "Treść przygotowana przez prawnika. Zwrot materiałów i poufność już w dokumencie. PDF albo Word.",
+      "note": "biznesdok.pl/dokument/wypowiedzenie-umowy-zlecenia"
+    }
+  ],
+  "caption": ""
+}

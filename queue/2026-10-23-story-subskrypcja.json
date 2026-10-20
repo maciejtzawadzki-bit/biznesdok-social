@@ -1,0 +1,19 @@
+{
+  "id": "2026-10-23-story-subskrypcja",
+  "date": "2026-10-23",
+  "time": "12:30",
+  "type": "story",
+  "status": "planned",
+  "pillar": "Subskrypcja",
+  "link": "https://biznesdok.pl/subskrypcja",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Subskrypcja BiznesDOK",
+      "text": "Wszystkie płatne dokumenty BiznesDOK [[w jednej Subskrypcji.]]",
+      "sub": "PDF i Word, bez limitu dokumentów. Nowe dokumenty dochodzą bez dopłat.",
+      "note": "biznesdok.pl/subskrypcja"
+    }
+  ],
+  "caption": ""
+}
