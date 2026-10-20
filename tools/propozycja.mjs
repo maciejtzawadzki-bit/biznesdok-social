@@ -1,6 +1,7 @@
 // Propozycja tematów na tydzień (tryb 2): każde miejsce rytmu dostaje temat z data/oferta.json według zasad
 // z decyzji właściciela 20.10.2026 — najpierw płatne dokumenty i Subskrypcja, cała oferta po kolei, bez powtórki
-// tematu w 21 dni, z pierwszeństwem tematów w ich okresie przydatności; seria „AI zawiodło?” co 2 tygodnie.
+// tematu (Instagram 21 dni, LinkedIn 120 dni), z pierwszeństwem tematów w ich okresie przydatności; seria „AI zawiodło?”
+// co 2 tygodnie. LinkedIn — głównie dokumenty spółki: zarząd, zgromadzenia, wspólnicy i udziały (decyzja 20.10.2026).
 // Wynik to propozycja: agent pisze do niej teksty (tylko fakty z pola `fakty`) i może zamienić temat,
 // jeśli ma powód — ale post i tak musi przejść kontrolę (tools/kontrola.mjs).
 // Użycie: node tools/propozycja.mjs [RRRR-MM-DD poniedziałek, domyślnie najbliższy] [--json]
@@ -10,10 +11,12 @@ import {
   dodajDni,
   dzisWarszawa,
   numerTygodnia,
-  ODSTEP_TEMATU_DNI,
   ostatnioPokazany,
   poniedzialek,
+  powtorkiTematu,
+  kolejnoscGrupyLinkedIn,
   sezonTematu,
+  spolkowy,
   tematPosta,
   toWideo,
   wczytajJson,
@@ -34,12 +37,12 @@ export const RYTM = [
   { dzien: 0, kanal: "instagram", format: "story", godzina: "12:30", rodzaj: "platny", opis: "płatny dokument" },
   { dzien: 1, kanal: "instagram", format: "carousel", godzina: "08:30", rodzaj: "poradnik", opis: "karuzela z poradnika w sezonie" },
   { dzien: 1, kanal: "instagram", format: "story", godzina: "12:30", rodzaj: "platny", opis: "płatny dokument" },
-  { dzien: 1, kanal: "linkedin", format: "linkedin", godzina: "09:00", rodzaj: "platny", opis: "LinkedIn: płatny dokument (seria produktowa)" },
+  { dzien: 1, kanal: "linkedin", format: "linkedin", godzina: "09:00", rodzaj: "platny", opis: "LinkedIn: dokument spółki (zarząd, wspólnicy, udziały)" },
   { dzien: 2, kanal: "instagram", format: "feed", godzina: "08:30", rodzaj: "platny", opis: "płatny dokument" },
   { dzien: 2, kanal: "instagram", format: "story", godzina: "12:30", rodzaj: "platny", opis: "płatny dokument" },
   { dzien: 3, kanal: "instagram", format: "feed", godzina: "08:30", rodzaj: "platny", opis: "płatny dokument (seria „…przygotowujesz i trzymasz”)" },
   { dzien: 3, kanal: "instagram", format: "story", godzina: "12:30", rodzaj: "platny", opis: "płatny dokument" },
-  { dzien: 3, kanal: "linkedin", format: "linkedin", godzina: "09:00", rodzaj: "seria-li", opis: "LinkedIn: poradnik albo seria AI (na zmianę)" },
+  { dzien: 3, kanal: "linkedin", format: "linkedin", godzina: "09:00", rodzaj: "seria-li", opis: "LinkedIn: poradnik spółkowy albo seria AI (na zmianę)" },
   { dzien: 4, kanal: "instagram", format: "feed", godzina: "08:30", rodzaj: "piatek", opis: "tydzień parzysty: seria AI; nieparzysty: Subskrypcja albo bezpłatne w sezonie" },
   { dzien: 4, kanal: "instagram", format: "story", godzina: "12:30", rodzaj: "wolne", opis: "bezpłatne narzędzie albo dokument w sezonie (jedyna bezpłatna relacja)" },
 ];
@@ -59,27 +62,30 @@ function wynik(pozycja, kanal, dzien, wszystkie) {
   return { punkty, powod };
 }
 
-function wolny(pozycja, kanal, dzien, wszystkie, zajete) {
+function wolny(pozycja, kanal, dzien, wszystkie, zajete, oferta, seria) {
   if (zajete.has(`${kanal}:${pozycja.temat}`)) return false;
   if (blokadaTematu(pozycja, dzien)) return false;
-  // Bez powtórki w oknie ±21 dni — liczą się też posty już zaplanowane po tym dniu.
-  return !wszystkie.some(
-    ({ kanal: k, post }) =>
-      k === kanal && ZYWE.has(post.status) && !post.usunieto && !toWideo(post) && tematPosta(post) === pozycja.temat &&
-      Math.abs(dniMiedzy(post.date, dzien)) < ODSTEP_TEMATU_DNI,
-  );
+  // Ta sama reguła powtórek co w kontroli (Instagram 21 dni; LinkedIn 120 dni, poradnik i jego dokumenty 28 dni) —
+  // liczą się też posty już zaplanowane po tym dniu i tematy wybrane wcześniej w tej propozycji.
+  return !powtorkiTematu({ id: null, temat: pozycja.temat, date: dzien }, kanal, wszystkie, oferta, seria).length;
 }
 
-function najlepszy(kandydaci, kanal, dzien, wszystkie, zajete) {
+function najlepszy(kandydaci, kanal, dzien, wszystkie, zajete, oferta, seria) {
   return kandydaci
-    .filter((p) => wolny(p, kanal, dzien, wszystkie, zajete))
+    .filter((p) => wolny(p, kanal, dzien, wszystkie, zajete, oferta, seria))
     .map((p) => ({ pozycja: p, ...wynik(p, kanal, dzien, wszystkie) }))
-    .sort((a, b) => b.punkty - a.punkty || a.pozycja.temat.localeCompare(b.pozycja.temat))[0] ?? null;
+    .sort((a, b) =>
+      b.punkty - a.punkty ||
+      (kanal === "linkedin" ? kolejnoscGrupyLinkedIn(a.pozycja) - kolejnoscGrupyLinkedIn(b.pozycja) : 0) ||
+      a.pozycja.temat.localeCompare(b.pozycja.temat))[0] ?? null;
 }
 
-function nastepnyAI(seria, kanal, dzien) {
-  return (seria.tematy ?? []).find((t) => !t[kanal] && (!(t.sezon ?? []).length || t.sezon.some((o) => wOkresie(dzien, o)))) ?? null;
+function nastepnyAI(seria, kanal, dzien, wolnyTemat = () => true, pierwsze = () => false) {
+  const tematy = [...(seria.tematy ?? [])].sort((x, y) => Number(pierwsze(y)) - Number(pierwsze(x)));
+  return tematy.find((t) => !t[kanal] && (!(t.sezon ?? []).length || t.sezon.some((o) => wOkresie(dzien, o))) && wolnyTemat(t)) ?? null;
 }
+
+const postSeriiAI = (t, dzien, kanal) => ({ id: `propozycja-${kanal}-ai-${dzien}`, seria: "ai-zawiodlo", temat_serii: t.id, date: dzien, status: "planned" });
 
 export function propozycjaTygodnia(pon, kontekst = {}) {
   const wszystkie = kontekst.wszystkie ?? wczytajPosty();
@@ -93,6 +99,10 @@ export function propozycjaTygodnia(pon, kontekst = {}) {
   const parzysty = numerTygodnia(pon) % 2 === 0;
   const zajete = new Set();
   const miejsca = [];
+  // Tematy wybrane w tej propozycji liczą się do powtórek kolejnych miejsc (np. poradnik i jego dokument w jednym tygodniu).
+  const wybrane = [];
+  const dotad = () => [...wszystkie, ...wybrane];
+  const spolki = (lista) => lista.filter((p) => spolkowy(p, oferta));
 
   // Miejsca już zajęte w kolejce (np. zaplanowane wcześniej) zostają; ich tematy liczą się do „zajętych”.
   const istniejace = wszystkie.filter(({ post }) => ZYWE.has(post.status) && !post.usunieto && post.date >= pon && post.date <= dodajDni(pon, 6));
@@ -108,21 +118,33 @@ export function propozycjaTygodnia(pon, kontekst = {}) {
     }
     let wybor = null;
     let seriaAI = null;
-    if (m.rodzaj === "platny") wybor = najlepszy(platne, m.kanal, dzien, wszystkie, zajete);
-    else if (m.rodzaj === "poradnik") wybor = najlepszy(poradniki, m.kanal, dzien, wszystkie, zajete) ?? najlepszy(platne, m.kanal, dzien, wszystkie, zajete);
-    else if (m.rodzaj === "wolne") wybor = najlepszy(bezplatne, m.kanal, dzien, wszystkie, zajete) ?? najlepszy(platne, m.kanal, dzien, wszystkie, zajete);
+    const naj = (lista) => najlepszy(lista, m.kanal, dzien, dotad(), zajete, oferta, seria);
+    if (m.rodzaj === "platny") wybor = m.kanal === "linkedin" ? naj(spolki(platne)) ?? naj(platne) : naj(platne);
+    else if (m.rodzaj === "poradnik") wybor = naj(poradniki) ?? naj(platne);
+    else if (m.rodzaj === "wolne") wybor = naj(bezplatne) ?? naj(platne);
     else if (m.rodzaj === "piatek") {
       if (parzysty) seriaAI = nastepnyAI(seria, "instagram", dzien);
       if (!seriaAI) {
-        wybor = (subskrypcja && wolny(subskrypcja, m.kanal, dzien, wszystkie, zajete) && { pozycja: subskrypcja, ...wynik(subskrypcja, m.kanal, dzien, wszystkie) }) ||
-          najlepszy(bezplatne.filter((p) => sezonTematu(p, dzien).wSezonie), m.kanal, dzien, wszystkie, zajete) ||
-          najlepszy(platne, m.kanal, dzien, wszystkie, zajete);
+        wybor = (subskrypcja && wolny(subskrypcja, m.kanal, dzien, dotad(), zajete, oferta, seria) && { pozycja: subskrypcja, ...wynik(subskrypcja, m.kanal, dzien, wszystkie) }) ||
+          naj(bezplatne.filter((p) => sezonTematu(p, dzien).wSezonie)) ||
+          naj(platne);
       }
     } else if (m.rodzaj === "seria-li") {
-      if (parzysty) seriaAI = nastepnyAI(seria, "linkedin", dzien);
-      if (!seriaAI) wybor = najlepszy(poradniki, m.kanal, dzien, wszystkie, zajete) ?? najlepszy(platne, m.kanal, dzien, wszystkie, zajete);
+      // Odcinek AI na LinkedIn tylko wtedy, gdy jego dokument ani poradnik nie był tam w ostatnich 28 dniach.
+      if (parzysty) {
+        seriaAI = nastepnyAI(
+          seria,
+          "linkedin",
+          dzien,
+          (t) => !powtorkiTematu(postSeriiAI(t, dzien, "linkedin"), "linkedin", dotad(), oferta, seria).length,
+          (t) => spolkowy(oferta.mapa.get(t.rozwiazanie), oferta),
+        );
+      }
+      // LinkedIn: najpierw poradnik spółkowy, potem dokument spółki, dopiero potem reszta oferty.
+      if (!seriaAI) wybor = naj(spolki(poradniki)) ?? naj(spolki(platne)) ?? naj(poradniki) ?? naj(platne);
     }
     if (seriaAI) {
+      wybrane.push({ kanal: m.kanal, post: postSeriiAI(seriaAI, dzien, m.kanal) });
       miejsca.push({ ...m, data: dzien, temat: `seria-ai/${seriaAI.id}`, seria: seriaAI, powod: ["seria „AI zawiodło? Decyduje prawnik” — co 2 tygodnie"] });
       continue;
     }
@@ -131,6 +153,7 @@ export function propozycjaTygodnia(pon, kontekst = {}) {
       continue;
     }
     zajete.add(`${m.kanal}:${wybor.pozycja.temat}`);
+    wybrane.push({ kanal: m.kanal, post: { id: `propozycja-${m.kanal}-${m.format}-${dzien}`, temat: wybor.pozycja.temat, date: dzien, status: "planned" } });
     miejsca.push({ ...m, data: dzien, temat: wybor.pozycja.temat, tytul: wybor.pozycja.tytul, link: wybor.pozycja.link, fakty: wybor.pozycja.fakty, powod: wybor.powod });
   }
 

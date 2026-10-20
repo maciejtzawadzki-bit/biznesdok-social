@@ -43,7 +43,8 @@ for (const dir of ["queue", "linkedin"]) {
     if (!TYPES.has(post.type)) errors.push(`${where}: nieznany typ ${post.type}`);
     if (post.type === "reel" && !post.video) errors.push(`${where}: reel bez pola video`);
     if (post.video && !approved.has(post.video)) errors.push(`${where}: wideo ${post.video} spoza data/wideo.json`);
-    if (!post.video && !(post.slides ?? []).length) errors.push(`${where}: brak slajdów`);
+    if (!post.video && !post.historia && !(post.slides ?? []).length) errors.push(`${where}: brak slajdów`);
+    if (post.historia && post.status !== "published") errors.push(`${where}: wpis historii musi mieć status published`);
   }
 }
 
