@@ -12,6 +12,8 @@ import {
   dzisWarszawa,
   numerTygodnia,
   poniedzialek,
+  ODSTEP_POWIAZANYCH_DNI,
+  odstepTematu,
   powtorkiHasla,
   powtorkiTematu,
   tematPosta,
@@ -88,7 +90,7 @@ export function ocenPost(post, kanal = "instagram", dzis = dzisWarszawa(), konte
     if (pierwsze.some((z) => z.endsWith("?"))) twarde.push("zaczyna się pytaniem — pierwsze zdanie ma mówić, co robi BiznesDOK");
   }
 
-  // Temat: musi być w ofercie, aktywny i w sezonie; bez powtórki w 21 dni i bez tej samej grafiki.
+  // Temat: musi być w ofercie, aktywny i w sezonie; bez powtórki (Instagram 21 dni, LinkedIn 120) i bez tej samej grafiki.
   if (wSerii) {
     const t = (seria.tematy ?? []).find((x) => x.id === post.temat_serii);
     if (!t) twarde.push(`seria AI: brak tematu „${post.temat_serii ?? "—"}” w data/seria-ai.json`);
@@ -106,8 +108,12 @@ export function ocenPost(post, kanal = "instagram", dzis = dzisWarszawa(), konte
     if (pozycja.platny && pozycja.rodzaj === "dokument" && /bezpłatn/i.test(tekst)) miekkie.push("dokument płatny, a w treści „bezpłatnie” — sprawdź, czy to o innym, bezpłatnym dokumencie");
   }
   if (!toWideo(post)) {
-    const powtorki = powtorkiTematu(post, kanal, wszystkie);
-    if (powtorki.length) twarde.push(`powtórka tematu w 21 dni: ${powtorki.map((p) => p.date).join(", ")}`);
+    const powtorki = powtorkiTematu(post, kanal, wszystkie, oferta, seria);
+    if (powtorki.length) {
+      const zasada = linkedin ? `LinkedIn: ten sam temat ${odstepTematu(kanal)} dni, tematy powiązane ${ODSTEP_POWIAZANYCH_DNI} dni` : `${odstepTematu(kanal)} dni`;
+      const gdzie = powtorki.map((p) => (tematPosta(p) === temat ? p.date : `${tematPosta(p)} ${p.date}`)).join(", ");
+      twarde.push(`powtórka tematu (${zasada}): ${gdzie}`);
+    }
     const takieSame = powtorkiHasla(post, kanal, wszystkie);
     if (takieSame.length) twarde.push(`to samo hasło na grafice co ${takieSame.map((p) => p.id).join(", ")}`);
   }

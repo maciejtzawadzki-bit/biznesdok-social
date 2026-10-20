@@ -663,7 +663,7 @@
         { "od": "01-02", "do": "01-31", "dlaczego": "zatrudnienia od nowego roku" },
         { "od": "09-01", "do": "09-30", "dlaczego": "zatrudnienia po wakacjach" }
       ],
-      "prowadzi_do": ["umowa-o-prace-na-czas-nieokreslony", "umowa-o-prace-na-czas-okreslony", "kalkulator-wynagrodzen", "kalkulator-urlopu"],
+      "prowadzi_do": ["umowa-o-prace-na-czas-nieokreslony", "umowa-o-prace-na-czas-okreslony", "zgoda-na-wykorzystanie-wizerunku", "kalkulator-wynagrodzen", "kalkulator-urlopu"],
       "fakty": ["Fakty prawne wyłącznie z treści poradnika na biznesdok.pl (z artykułami przepisów)."]
     },
     {
@@ -675,7 +675,7 @@
       "grupa": "Poradniki",
       "priorytet": "B",
       "sezon": [{ "od": "05-01", "do": "06-30", "dlaczego": "zmiany w zarządzie przy zgromadzeniach rocznych" }],
-      "prowadzi_do": ["protokol-nadzwyczajnego-zgromadzenia-wspolnikow", "uchwala-o-powolaniu-czlonka-zarzadu", "uchwala-o-odwolaniu-czlonka-zarzadu", "zgoda-na-powolanie-do-zarzadu", "oswiadczenie-zarzadu-o-adresach-czlonkow-zarzadu"],
+      "prowadzi_do": ["protokol-nadzwyczajnego-zgromadzenia-wspolnikow", "uchwala-o-powolaniu-czlonka-zarzadu", "uchwala-o-odwolaniu-czlonka-zarzadu", "rezygnacja-czlonka-zarzadu", "zgoda-na-powolanie-do-zarzadu", "oswiadczenie-zarzadu-o-adresach-czlonkow-zarzadu", "lista-osob-uprawnionych-do-powolania-zarzadu"],
       "fakty": ["Fakty prawne wyłącznie z treści poradnika na biznesdok.pl (z artykułami przepisów)."]
     },
     {

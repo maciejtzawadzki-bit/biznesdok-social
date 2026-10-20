@@ -36,7 +36,7 @@ Nie publikuj niczego spoza kolejki. Nie zmieniaj treści zaplanowanych postów w
 0. `node tools/reakcje.mjs` — reakcje z panelu KMZ (sekcja „Reakcje z panelu KMZ”), zanim zaczniesz planować.
 1. Przeczytaj `DZIENNIK.md`, `RAPORTY.md`, `data/oferta.json` (tematy, priorytety, okresy, **fakty**), `data/seria-ai.json` i `data/wideo.json`.
 2. Jeśli masz dostęp do repo `biznes-dokumenty-pro`: sprawdź `src/lib/free-tools.ts`, `src/lib/guides/` i `docs/social/instagram/README.md`. Nowy poradnik albo dokument, którego nie ma w `data/oferta.json`, **nie trafia do planu** — opisz go w podsumowaniu (prowadzący dopisuje go do oferty z faktami i okresem).
-3. `node tools/propozycja.mjs` — propozycja tematów na każde miejsce rytmu kolejnego tygodnia (sekcja „Rytm tygodnia”): najpierw płatne dokumenty i Subskrypcja, cała oferta po kolei, bez powtórki tematu w 21 dni, z pierwszeństwem tematów w ich okresie przydatności, seria AI w tygodnie parzyste. Bierz te tematy. Zamiana tematu tylko z powodem (np. ważna nowość) — zapisz go w podsumowaniu. Miejsca już zajęte w kolejce zostają.
+3. `node tools/propozycja.mjs` — propozycja tematów na każde miejsce rytmu kolejnego tygodnia (sekcja „Rytm tygodnia”): najpierw płatne dokumenty i Subskrypcja, cała oferta po kolei, bez powtórki tematu (Instagram 21 dni, LinkedIn 120 dni), z pierwszeństwem tematów w ich okresie przydatności, seria AI w tygodnie parzyste; na LinkedIn najpierw dokumenty spółki. Bierz te tematy. Zamiana tematu tylko z powodem (np. ważna nowość) — zapisz go w podsumowaniu. Miejsca już zajęte w kolejce zostają.
 4. Dla każdego miejsca utwórz plik `queue/RRRR-MM-DD-<slug>.json` (feed 08:30, relacja 12:30) — pole `temat` z propozycji, `link` z oferty. Tekst grafiki i opis **tylko z faktów tematu** (`fakty` w `data/oferta.json`, w serii AI — `fakt` i `zrodlo`) i według „Zasad treści”. Nie powtarzaj hasła, które już było na grafice.
 5. `node tools/render.mjs queue/<plik>.json rendered` dla każdego nowego posta i obejrzyj PNG (Read). Popraw złamania wierszy i długość (`size` w slajdzie), jeśli coś wygląda źle.
 6. Wideo: sekcja „Wideo w trybie 2” niżej (wolne urywki wypisuje `propozycja.mjs`).
@@ -58,9 +58,9 @@ Publikujesz **wyłącznie** pliki z `data/wideo.json` (zatwierdzone przez właś
 
 ## Tryb 3 — LinkedIn: posty na kolejny tydzień (piątek, razem z trybem 2)
 
-Decyzje właściciela: 06.10 i 10.10.2026 — agent marketingu prowadzi stronę firmową na LinkedIn; 20.10.2026 — „linkedin trzeba wreszcie zautomatyzować”, więcej i częściej płatnych dokumentów. Zasady: `docs/BIZNESDOK_LINKEDIN_GUIDELINES.md` w repo biznes-dokumenty-pro (§3, §4, §6, §9, §10, §13) i „Zasady treści” niżej.
+Decyzje właściciela: 06.10 i 10.10.2026 — agent marketingu prowadzi stronę firmową na LinkedIn; 20.10.2026 — „linkedin trzeba wreszcie zautomatyzować”, więcej i częściej płatnych dokumentów; 20.10.2026 po powtórce wezwania — „na linkedinie … głównie o takich dok. zarządowych, spółkowych” i bez powtórek. Zasady: `docs/BIZNESDOK_LINKEDIN_GUIDELINES.md` w repo biznes-dokumenty-pro (§3, §4, §6, §9, §10, §13) i „Zasady treści” niżej.
 
-1. Dwa posty tygodniowo, godzina 09:00: **wtorek** — płatny dokument (seria produktowa), **czwartek** — na zmianę poradnik (nowy albo w sezonie) i seria AI. Tematy daje `node tools/propozycja.mjs` (miejsca „LinkedIn”); ten sam temat może być na Instagramie i LinkedInie, ale w LinkedInie nie wraca przez 21 dni.
+1. Dwa posty tygodniowo, godzina 09:00: **wtorek** — dokument spółki (zarząd, zgromadzenia wspólników, wspólnicy i udziały; sprawozdania w ich okresie), **czwartek** — na zmianę poradnik (najpierw spółkowy) i seria AI. Inne dokumenty na LinkedIn dopiero, gdy dokumenty spółki są wykorzystane. Tematy daje `node tools/propozycja.mjs` (miejsca „LinkedIn”). Na LinkedIn temat nie wraca przez 120 dni (pełne koło), a tematy powiązane nie wchodzą bliżej niż 28 dni od siebie: poradnik i dokumenty, do których prowadzi, oraz odcinek serii AI i jego dokument (`rozwiazanie`) albo poradnik (`zrodlo`). Ten sam temat może być na Instagramie i LinkedInie. Historia LinkedIna jest w `linkedin/` — także posty opublikowane ręcznie przed automatem.
 2. Plik `linkedin/RRRR-MM-DD-<slug>.json` — format jak post w feedzie (`type: "feed"`, `slides` 1 slajd, `link`, `temat`), plus `caption` = treść posta LinkedIn: 500–1200 znaków, pierwsze zdanie mówi, co robi BiznesDOK (bez pytania), na końcu jeden link z `?utm_source=linkedin&utm_medium=social&utm_campaign=<slug>`, 3–5 hashtagów, w tym `#biznesdok`. `status`: `planned | vetoed | handed | published | error`.
 3. Grafika: `node tools/render.mjs linkedin/<plik>.json media/linkedin` i obejrzyj PNG (Read). Commit + push razem z trybem 2.
 4. Publikacja: **automatyczna** — tryb 1 (`run.mjs` → `tools/linkedin.mjs`) przekazuje post do Buffera rano w dniu publikacji z terminem 09:00 (status `handed`). Przy kolejnym przebiegu sprawdza w Bufferze wynik: post wyszedł → `published` z linkiem (`permalink`, widać w panelu), Buffer zgłosił błąd albo po dobie od terminu nadal nic → `error` z powodem — wtedy opisz to w pierwszym zdaniu podsumowania. Bez `BUFFER_API_KEY` post czeka (`planned`) — napisz to w podsumowaniu; właściciel nie publikuje ręcznie (decyzja 11.10.2026).
@@ -71,9 +71,9 @@ Decyzje właściciela: 06.10 i 10.10.2026 — agent marketingu prowadzi stronę 
 | Dzień | Feed Instagram (08:30) | Relacja (12:30) | LinkedIn (09:00) |
 |---|---|---|---|
 | pn | płatny dokument (najpierw priorytet A) | płatny dokument | — |
-| wt | karuzela z poradnika w sezonie (prowadzi do płatnych dokumentów) | płatny dokument | płatny dokument |
+| wt | karuzela z poradnika w sezonie (prowadzi do płatnych dokumentów) | płatny dokument | dokument spółki |
 | śr | płatny dokument | płatny dokument | — |
-| czw | płatny dokument („…przygotowujesz i trzymasz w BiznesDOK”) | płatny dokument | poradnik albo seria AI (na zmianę) |
+| czw | płatny dokument („…przygotowujesz i trzymasz w BiznesDOK”) | płatny dokument | poradnik spółkowy albo seria AI (na zmianę) |
 | pt | tydzień parzysty: seria „AI zawiodło? Decyduje prawnik”; nieparzysty: Subskrypcja albo bezpłatne narzędzie/dokument w sezonie | bezpłatne narzędzie albo dokument w sezonie — jedyna bezpłatna relacja w tygodniu | — |
 
 Wideo (12:45): rotacja zatwierdzonych urywków (sekcja „Wideo w trybie 2”). Proporcje pilnowane przez kontrolę: płatne dokumenty i Subskrypcja co najmniej 60% publikacji graficznych w tygodniu, bezpłatne najwyżej 2, seria AI co 2 tygodnie, Subskrypcja co najmniej raz na 2 tygodnie, karuzela z poradnika co tydzień (gdy jest poradnik w sezonie).
@@ -89,7 +89,7 @@ Decyzja właściciela 29.09.2026 (LINKEDIN_GUIDELINES §9), wykonanie od 20.10.2
 ## Kontrola i pilnowanie (`tools/kontrola.mjs`)
 
 **Twarde uwagi — post nie wyjdzie** (publikator go zatrzyma, CI pokaże błąd, panel KMZ pokazuje „BLOKUJE”):
-- ten sam temat w tym samym kanale w ciągu 21 dni (dokument, narzędzie, poradnik; także relacja tego samego dnia co post w feedzie) i to samo hasło na grafice co wcześniej;
+- ten sam temat w tym samym kanale w ciągu 21 dni na Instagramie i 120 dni na LinkedIn (dokument, narzędzie, poradnik; także relacja tego samego dnia co post w feedzie), na LinkedIn także tematy powiązane bliżej niż 28 dni (poradnik i jego dokumenty, odcinek serii AI i jego dokument albo poradnik), i to samo hasło na grafice co wcześniej;
 - temat spoza `data/oferta.json`, wstrzymany, nieaktualny albo poza okresem (`tylko_w_sezonie`);
 - pierwsze zdanie grafiki albo opisu jest pytaniem (poza serią AI) — zaczynamy od tego, co robi BiznesDOK;
 - AI poza serią „AI zawiodło?” i nazwy konkretnych narzędzi AI (zawsze);
@@ -124,7 +124,7 @@ W sprawach współpracy z biurem obowiązuje księga KMZ. Zasady biura, które d
 4. **Bez cen, kodów rabatowych i niezweryfikowanych liczb/czasów** („w minutę”, „oszczędzasz godzinę”).
 5. **Ton:** konkretny, profesjonalny, prosty, pewny siebie bez zadęcia. **Pierwsze zdanie mówi, co robi BiznesDOK** — bez pytania na start (wyjątek: seria AI). Product-first: znane zadanie → prostszy sposób z BiznesDOK → praca zdjęta z klienta → treść od prawników → CTA. Zakazane: „Masz problem?”, „Mamy rozwiązanie”, „Czy wiesz, że…?”, „startujemy”, „rewolucjonizujemy”, tłumaczenie oczywistego celu dokumentu, obietnice wyniku prawnego, sugerowanie indywidualnej porady prawnej.
 6. **AI nie jest autorem dokumentów** — nie piszemy o AI poza serią „AI zawiodło? Decyduje prawnik”. Treść przygotowują prawnicy (Katarzyna Zawadzka Legal Consulting), technologia uzupełnia dane.
-7. **Bez powtórek:** ten sam temat nie wraca w kanale przez 21 dni, a to samo hasło na grafice — nigdy. Każdy temat ma swój okres przydatności (`sezon`) — w sezonie ma pierwszeństwo.
+7. **Bez powtórek:** ten sam temat nie wraca na Instagramie przez 21 dni, a na LinkedIn przez 120 dni; to samo hasło na grafice — nigdy. Każdy temat ma swój okres przydatności (`sezon`) — w sezonie ma pierwszeństwo.
 8. **Serie stałe:** płatny dokument — „[Dokument] przygotowujesz i trzymasz w BiznesDOK.”; bezpłatny — „[Dokument] przygotujesz w BiznesDOK — bezpłatnie, bez konta.” (nigdy „trzymasz” przy bezpłatnym).
 9. **Grafiki tylko z `tools/render.mjs`** (brandbook: paper, Instrument Serif, clause highlight `[[...]]`, lockup BD prawy dół). Bez zdjęć, stocków, ikon, grafik AI, nowych kolorów i sloganów.
 10. **Opis:** wnosi coś nowego względem grafiki, kończy się jednym CTA („Link w bio → Narzędzia / Poradniki / Dokumenty”) i 5–8 hashtagami, w tym `#biznesdok`.
