@@ -82,19 +82,24 @@ export async function kanaly() {
 }
 
 const PROSTE = new Set(["String", "Boolean", "Int", "Float", "ID", "DateTime"]);
-const nazwaTypu = (t) => t?.name ?? t?.ofType?.name ?? t?.ofType?.ofType?.name ?? t?.ofType?.ofType?.ofType?.name ?? null;
+const nazwaTypu = (t) => {
+  while (t && !t.name) t = t.ofType;
+  return t?.name ?? null;
+};
+const opisTypu = (t) => (!t ? "?" : t.kind === "NON_NULL" ? `${opisTypu(t.ofType)}!` : t.kind === "LIST" ? `[${opisTypu(t.ofType)}]` : t.name);
+const TYP = "type { name kind ofType { name kind ofType { name kind ofType { name kind ofType { name kind } } } } }";
 
 /** Opis wejścia mutacji createPost ze schematu API (introspekcja) — tylko odczyt, nic nie tworzy. */
 export async function schemat() {
-  const { __schema } = await graphql("{ __schema { mutationType { fields { name args { name type { name kind ofType { name kind ofType { name kind } } } } } } } }");
+  const { __schema } = await graphql(`{ __schema { mutationType { fields { name args { name ${TYP} } } } } }`);
   const mutacje = __schema?.mutationType?.fields ?? [];
-  const wynik = { mutacje: mutacje.filter((f) => /post/i.test(f.name)).map((f) => `${f.name}(${f.args.map((a) => `${a.name}: ${nazwaTypu(a.type)}`).join(", ")})`) };
-  const kolejka = [nazwaTypu(mutacje.find((f) => f.name === "createPost")?.args?.[0]?.type)].filter(Boolean);
-  while (kolejka.length && Object.keys(wynik).length < 12) {
+  const wynik = { mutacje: mutacje.filter((f) => /post/i.test(f.name)).map((f) => `${f.name}(${f.args.map((a) => `${a.name}: ${opisTypu(a.type)}`).join(", ")})`) };
+  const kolejka = [nazwaTypu(mutacje.find((f) => f.name === "createPost")?.args?.[0]?.type)];
+  while (kolejka.length && Object.keys(wynik).length < 16) {
     const nazwa = kolejka.shift();
-    if (wynik[nazwa] || PROSTE.has(nazwa)) continue;
-    const { __type } = await graphql(`{ __type(name: ${JSON.stringify(nazwa)}) { kind inputFields { name type { name kind ofType { name kind ofType { name kind } } } } enumValues { name } } }`);
-    wynik[nazwa] = __type?.enumValues?.length ? __type.enumValues.map((e) => e.name) : (__type?.inputFields ?? []).map((f) => `${f.name}: ${nazwaTypu(f.type)}`);
+    if (!nazwa || wynik[nazwa] || PROSTE.has(nazwa)) continue;
+    const { __type } = await graphql(`{ __type(name: ${JSON.stringify(nazwa)}) { kind inputFields { name ${TYP} } enumValues { name } } }`);
+    wynik[nazwa] = __type?.enumValues?.length ? __type.enumValues.map((e) => e.name) : (__type?.inputFields ?? []).map((f) => `${f.name}: ${opisTypu(f.type)}`);
     for (const f of __type?.inputFields ?? []) kolejka.push(nazwaTypu(f.type));
   }
   return wynik;
