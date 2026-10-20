@@ -43,3 +43,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-10-19 08:43 · story · 2026-10-19-story-kwota-slownie · https://www.instagram.com/stories/biznesdok.pl/4011199457542468946
 - 2026-10-20 08:44 · carousel · 2026-10-20-sprawozdanie-finansowe · https://www.instagram.com/p/DetOBOelIqd/
 - 2026-10-20 08:44 · story · 2026-10-20-story-oswiadczenie-zleceniobiorcy · https://www.instagram.com/stories/biznesdok.pl/4011924643677833897
+- 2026-10-20 08:44 · story (wideo) · 2026-10-20-story-wideo-zarzad-dane-po-nip · https://www.instagram.com/stories/biznesdok.pl/4011924752587217953
