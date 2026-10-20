@@ -1,16 +1,19 @@
-# biznesdok-social — automat Instagrama @biznesdok.pl
+# biznesdok-social — automat Instagrama @biznesdok.pl i LinkedIna BiznesDOK
 
-To repo służy wyłącznie do prowadzenia Instagrama BiznesDOK: kolejka postów, grafiki (publiczne — Instagram pobiera je z `raw.githubusercontent.com`), dziennik publikacji. **Nigdy nie zapisuj tu tokenów ani danych osobowych.** Repo jest publiczne.
+To repo służy wyłącznie do prowadzenia Instagrama i strony firmowej LinkedIn BiznesDOK: kolejka postów, grafiki (publiczne — Instagram i Buffer pobierają je z `raw.githubusercontent.com`), dziennik publikacji. **Nigdy nie zapisuj tu tokenów, kluczy ani danych osobowych.** Repo jest publiczne.
 
-Zasady biznesowe, decyzja właściciela i konfiguracja: repo `maciejtzawadzki-bit/biznes-dokumenty-pro`, plik `docs/social/instagram/README.md` (oraz `docs/BIZNESDOK_LINKEDIN_GUIDELINES.md`, `docs/BIZNESDOK_POSITIONING.md`). Poniżej streszczenie wystarczające do pracy.
+Zasady biznesowe, decyzje właściciela i konfiguracja: repo `maciejtzawadzki-bit/biznes-dokumenty-pro` — `docs/social/instagram/README.md`, `docs/BIZNESDOK_LINKEDIN_GUIDELINES.md`, `docs/BIZNESDOK_POSITIONING.md`. Poniżej streszczenie wystarczające do pracy.
+
+**Kierunek (decyzja właściciela 20.10.2026, po audycie treści):** treści mają sprzedawać i być spójne. Płatne dokumenty i Subskrypcja w większości publikacji, cała oferta po kolei, zero powtórek, każdy temat w swoim okresie przydatności, seria „AI zawiodło? Decyduje prawnik” co 2 tygodnie, LinkedIn automatycznie — a wszystko „inteligentnie zaproponowane, zaadresowane, zaplanowane i pilnowane na bieżąco i stale”. Tematy proponuje `tools/propozycja.mjs`, pilnuje `tools/kontrola.mjs` (post z twardą uwagą nie wyjdzie), stan pokazuje `tools/zgodnosc.mjs`.
 
 ## Środowisko
 
 - `IG_ACCESS_TOKEN` — zmienna środowiskowa (token użytkownika systemowego Meta, nie wygasa). Nie wypisuj go nigdzie.
 - `KMZ_BIZNESDOK_SEKRET` — klucz do reakcji właściciela z panelu KMZ (`tools/reakcje.mjs`, adres `mnpjvkieetcrqzswxwqt.supabase.co`). Też **nie wypisuj**. Bez niej reakcje są pomijane (publikacja idzie dalej).
-- Sieć: `graph.facebook.com` i npm muszą być dostępne. Panel KMZ (Supabase) bywa osiągalny tylko przez proxy środowiska; `tools/reakcje.mjs` sam pyta go wtedy przez proxy.
+- `BUFFER_API_KEY` — klucz API Buffera (strona firmowa BiznesDOK na LinkedIn połączona z Bufferem; zakłada właściciel). **Nie wypisuj.** Opcjonalnie `BUFFER_CHANNEL_ID`, gdy w Bufferze jest więcej niż jeden kanał LinkedIn (`node tools/linkedin.mjs --kanaly`). Bez klucza posty LinkedIn czekają w `linkedin/` (status `planned`), a podsumowanie trybu 1 to mówi.
+- Sieć: `graph.facebook.com`, `api.buffer.com` i npm muszą być dostępne. Panel KMZ (Supabase) bywa osiągalny tylko przez proxy środowiska; `tools/reakcje.mjs` sam pyta go wtedy przez proxy.
 - Instalacja: `cd tools && npm install` (playwright-core; Chromium jest w `/opt/pw-browsers`).
-- Konto: @biznesdok.pl, ID `17841415756005690` (publikator sam je znajduje z tokena).
+- Konto Instagram: @biznesdok.pl, ID `17841415756005690` (publikator sam je znajduje z tokena).
 
 ## Reakcje z panelu KMZ (krok 0 w trybach 1–3)
 
@@ -20,9 +23,9 @@ Właściciel reaguje na posty z planu w panelu KMZ (kmzbiuro.pl, strona BiznesDO
 
 1. `cd tools && npm install --silent && cd ..`
 2. `node tools/reakcje.mjs` — reakcje z panelu KMZ (sekcja wyżej): każde `ZMIEŃ` wykonaj, wypchnij (`git pull --rebase origin main`, push) i potwierdź przed krokiem 3.
-3. `node tools/run.mjs --now` — publikuje wszystkie posty z dzisiejszą datą (czas warszawski) w statusie `planned` (feed, reel i relację w jednym przebiegu — jedna sesja dziennie) oraz zaległe posty w feedzie i reelsy do 3 dni wstecz. Sam renderuje grafiki, wypycha je, czeka aż będą publiczne, publikuje i zapisuje status + `DZIENNIK.md`. Posty wideo (`video`) nie są renderowane — plik musi już leżeć w `media/video/`; brak pliku = `status: "error"`.
-4. Jeśli jakiś post ma `status: "error"` — przeczytaj błąd. Błąd przejściowy (limit, timeout) → ustaw `planned` i uruchom ponownie raz. Błąd treści/konfiguracji → zostaw `error` i opisz w podsumowaniu sesji.
-5. Podsumuj jednym-dwoma zdaniami: co opublikowano (permalinki), co pominięto, co wstrzymał albo zmienił właściciel w panelu, błędy.
+3. `node tools/run.mjs --now` — publikuje wszystkie posty Instagrama z dzisiejszą datą (czas warszawski) w statusie `planned` (feed, reel i relację w jednym przebiegu — jedna sesja dziennie) oraz zaległe posty w feedzie i reelsy do 3 dni wstecz. Przed każdym postem **kontrola treści**: post z twardą uwagą nie wychodzi (status `error`, „kontrola treści: …”). Potem przekazuje do Buffera posty LinkedIn z dzisiejszą datą (z terminem na ich godzinę) i zaległe do 3 dni. Na końcu wypisuje jedno zdanie kontroli treści. Sam renderuje grafiki, wypycha je, czeka aż będą publiczne, publikuje i zapisuje status + `DZIENNIK.md`. Posty wideo (`video`) nie są renderowane — plik musi już leżeć w `media/video/`; brak pliku = `status: "error"`.
+4. Jeśli jakiś post ma `status: "error"` — przeczytaj błąd. Błąd przejściowy (limit, timeout) → ustaw `planned` i uruchom ponownie raz. Błąd treści/konfiguracji albo „kontrola treści: …” → zostaw `error` i opisz w podsumowaniu (zatrzymanie przez kontrolę znaczy, że plan tygodnia przepuścił błąd — przyczynę poprawia tryb 2).
+5. Podsumuj jednym-dwoma zdaniami: co opublikowano (permalinki), co przekazano do Buffera, co pominięto lub zatrzymała kontrola, co wstrzymał albo zmienił właściciel w panelu, błędy; dołącz zdanie kontroli treści z `run.mjs`.
 
 Nie publikuj niczego spoza kolejki. Nie zmieniaj treści zaplanowanych postów w trybie 1: dozwolone jest tylko „Zmień…” właściciela z panelu oraz odwołanie albo przeniesienie posta (`vetoed` albo nowa data, bez zmiany treści). Każda inna zmiana, także poprawka literówki, musi być widoczna w panelu co najmniej 12 godzin przed publikacją; inaczej post nie wychodzi (`vetoed`), a podsumowanie opisuje przyczynę. Kontrola i poprawki są w trybie 2, zanim właściciel zobaczy post.
 
@@ -31,77 +34,115 @@ Nie publikuj niczego spoza kolejki. Nie zmieniaj treści zaplanowanych postów w
 ## Tryb 2 — plan kolejnego tygodnia (piątek)
 
 0. `node tools/reakcje.mjs` — reakcje z panelu KMZ (sekcja „Reakcje z panelu KMZ”), zanim zaczniesz planować.
-1. Przeczytaj `DZIENNIK.md`, `queue/` (co już było) i `data/katalog.json`.
-2. Jeśli masz dostęp do repo `biznes-dokumenty-pro`: sprawdź aktualne `src/lib/free-tools.ts`, `src/lib/guides/` i jego `docs/social/instagram/README.md` — nowe narzędzia/poradniki mają pierwszeństwo.
-3. Kolejny tydzień (pn–pt po tym piątku) ma mieć komplet: 4 posty w feedzie (pn, wt, czw, pt) i 5 relacji. Jeśli część jest już w kolejce — uzupełnij tylko brakujące miejsca. Nowe pliki `queue/RRRR-MM-DD-<slug>.json` wg rytmu:
-   - pn: feed — bezpłatne narzędzie; wt: karuzela (3–6 slajdów) z poradnika; czw: feed — płatny dokument (seria „…przygotowujesz i trzymasz w BiznesDOK.”); pt: feed — bezpłatny dokument („…przygotujesz w BiznesDOK — bezpłatnie, bez konta.”) albo Subskrypcja,
-   - relacja codziennie pn–pt o 12:30 (narzędzie lub bezpłatny dokument, adres na grafice w polu `note`),
-   - feed o 08:30. Nie powtarzaj tematu z ostatnich 3 tygodni, jeśli są inne dostępne.
-4. `node tools/render.mjs queue/<plik>.json rendered` dla każdego nowego posta i obejrzyj PNG (Read). Popraw złamania wierszy/długość, jeśli coś wygląda źle (`size` w slajdzie).
-5. Zrób podgląd tygodnia: `node tools/preview.mjs RRRR-MM-DD` (data poniedziałku) → `preview/tydzien-RRRR-MM-DD.png`.
-6. Raport tygodnia: dla postów `published` z ostatnich 7 dni pobierz statystyki (GET `/{mediaId}/insights?metric=reach,saved,shares,likes,comments` dla feedu; przy błędzie metryki pomiń ją) oraz liczbę obserwujących (GET `/17841415756005690?fields=followers_count,media_count`). Dopisz krótki raport do `RAPORTY.md` (data, obserwujący, posty, zasięgi, najlepszy post, wniosek na kolejny tydzień).
-7. `node tools/kontrola.mjs` — uwagi do nowych postów popraw (albo opisz w podsumowaniu, jeśli są celowe). Commit, `git pull --rebase origin main`, push do `main`. W podsumowaniu sesji: lista postów tygodnia i link do podglądu `https://github.com/maciejtzawadzki-bit/biznesdok-social/blob/main/preview/tydzien-RRRR-MM-DD.png`. Właściciel ma weto w panelu KMZ (przyciski przy planie) — brak reakcji = publikacja.
+1. Przeczytaj `DZIENNIK.md`, `RAPORTY.md`, `data/oferta.json` (tematy, priorytety, okresy, **fakty**), `data/seria-ai.json` i `data/wideo.json`.
+2. Jeśli masz dostęp do repo `biznes-dokumenty-pro`: sprawdź `src/lib/free-tools.ts`, `src/lib/guides/` i `docs/social/instagram/README.md`. Nowy poradnik albo dokument, którego nie ma w `data/oferta.json`, **nie trafia do planu** — opisz go w podsumowaniu (prowadzący dopisuje go do oferty z faktami i okresem).
+3. `node tools/propozycja.mjs` — propozycja tematów na każde miejsce rytmu kolejnego tygodnia (sekcja „Rytm tygodnia”): najpierw płatne dokumenty i Subskrypcja, cała oferta po kolei, bez powtórki tematu w 21 dni, z pierwszeństwem tematów w ich okresie przydatności, seria AI w tygodnie parzyste. Bierz te tematy. Zamiana tematu tylko z powodem (np. ważna nowość) — zapisz go w podsumowaniu. Miejsca już zajęte w kolejce zostają.
+4. Dla każdego miejsca utwórz plik `queue/RRRR-MM-DD-<slug>.json` (feed 08:30, relacja 12:30) — pole `temat` z propozycji, `link` z oferty. Tekst grafiki i opis **tylko z faktów tematu** (`fakty` w `data/oferta.json`, w serii AI — `fakt` i `zrodlo`) i według „Zasad treści”. Nie powtarzaj hasła, które już było na grafice.
+5. `node tools/render.mjs queue/<plik>.json rendered` dla każdego nowego posta i obejrzyj PNG (Read). Popraw złamania wierszy i długość (`size` w slajdzie), jeśli coś wygląda źle.
+6. Wideo: sekcja „Wideo w trybie 2” niżej (wolne urywki wypisuje `propozycja.mjs`).
+7. `node tools/kontrola.mjs` — **żadnej uwagi „BLOKUJE”** (takiego posta publikator nie wypuści) i żadnej uwagi do tygodnia; miękkie uwagi popraw albo świadomie zostaw (widać je w panelu).
+8. Podgląd tygodnia: `node tools/preview.mjs RRRR-MM-DD` (data poniedziałku) → `preview/tydzien-RRRR-MM-DD.png`.
+9. Raport tygodnia: dla postów `published` z ostatnich 7 dni pobierz statystyki (GET `/{mediaId}/insights?metric=reach,saved,shares,likes,comments` dla feedu; przy błędzie metryki pomiń ją) oraz liczbę obserwujących (GET `/17841415756005690?fields=followers_count,media_count`). Dopisz do `RAPORTY.md`: data, obserwujący, posty, zasięgi, najlepszy post, wniosek na kolejny tydzień, a pod spodem wynik `node tools/zgodnosc.mjs` (zgodność treści).
+10. Gdy wykorzystasz temat serii AI, wpisz datę w jego polu `instagram` albo `linkedin` w `data/seria-ai.json`.
+11. Commit, `git pull --rebase origin main`, push do `main`. W podsumowaniu sesji: lista postów tygodnia, zdanie z `zgodnosc.mjs --krotko` i link do podglądu `https://github.com/maciejtzawadzki-bit/biznesdok-social/blob/main/preview/tydzien-RRRR-MM-DD.png`. Właściciel ma weto w panelu KMZ (przyciski przy planie) — brak reakcji = publikacja.
 
 ### Wideo w trybie 2 (Reels i relacje wideo)
 
 Publikujesz **wyłącznie** pliki z `data/wideo.json` (zatwierdzone przez właściciela; leżą w `media/video/`). Sam nie tniesz ani nie montujesz wideo — nowe filmy i urywki dodaje wykonawca prowadzący BiznesDOK (PN-18).
 
-- **Reel** (`type: "reel"`) — cały film (`typ: "film"`), każdy film tylko raz; opis według zasad treści niżej (bez obietnic czasu typu „w 2 minuty”).
+- **Reel** (`type: "reel"`) — cały film (`typ: "film"`), każdy film tylko raz; opis według zasad treści niżej (bez obietnic czasu typu „w 2 minuty”, bez pytania na start).
 - **Relacja wideo** (`type: "story"` z polem `video`) — urywek (`typ: "urywek"`), bez opisu. Dodatkowa względem codziennej relacji graficznej z rytmu, godzina 12:45.
 - **Rytm:** w czasie kampanii Google Ads T1 (16.10–05.11.2026) jedna relacja wideo co 2–3 dni robocze (rotacja urywków), potem co 2 tygodnie. Ten sam urywek nie częściej niż raz na 2 tygodnie.
 - Format wpisu: jak niżej, z polami `video` (nazwa pliku), `poster` (miniatura do podglądu tygodnia), `slides: []`; reel ma `caption`, relacja — pusty.
 - Publikator podaje Instagramowi wideo z jsDelivr przypiętego do commita (`video/mp4`); plik do 20 MB.
 
-## Tryb 3 — LinkedIn: post na kolejny tydzień (piątek, razem z trybem 2)
+## Tryb 3 — LinkedIn: posty na kolejny tydzień (piątek, razem z trybem 2)
 
-Decyzja właściciela 10.10.2026: agent marketingu BiznesDOK prowadzi także stronę firmową na LinkedIn (zasady: `docs/BIZNESDOK_LINKEDIN_GUIDELINES.md` w repo biznes-dokumenty-pro — §3, §4, §6, §9, §10, §13; rytm z decyzji 06.10: **1 post tygodniowo, tylko z realną nowością**).
+Decyzje właściciela: 06.10 i 10.10.2026 — agent marketingu prowadzi stronę firmową na LinkedIn; 20.10.2026 — „linkedin trzeba wreszcie zautomatyzować”, więcej i częściej płatnych dokumentów. Zasady: `docs/BIZNESDOK_LINKEDIN_GUIDELINES.md` w repo biznes-dokumenty-pro (§3, §4, §6, §9, §10, §13) i „Zasady treści” niżej.
 
-1. Temat: najważniejsza realna nowość tygodnia — opublikowany poradnik, nowe narzędzie, nowy dokument w sprzedaży, film-demo, nowa funkcja LIVE. Jeśli nowości brak — post ze stałej serii produktowej (§6) o dokumencie w sprzedaży, którego na LinkedIn jeszcze nie było (sprawdź `linkedin/`). Nie powtarzaj tematu z ostatnich 6 tygodni.
-2. Plik `linkedin/RRRR-MM-DD-<slug>.json` (wtorek kolejnego tygodnia, `time` 09:00) — format jak post w feedzie (`type: "feed"`, `slides` 1 slajd, `link`), plus `caption` = treść posta LinkedIn: 500–1200 znaków, pierwszy wiersz konkretny (bez „Czy wiesz, że…?”), na końcu jeden link z `?utm_source=linkedin&utm_medium=social&utm_campaign=<slug>`, 3–5 hashtagów, w tym `#biznesdok`. `status`: `planned | vetoed | handed | published`.
+1. Dwa posty tygodniowo, godzina 09:00: **wtorek** — płatny dokument (seria produktowa), **czwartek** — na zmianę poradnik (nowy albo w sezonie) i seria AI. Tematy daje `node tools/propozycja.mjs` (miejsca „LinkedIn”); ten sam temat może być na Instagramie i LinkedInie, ale w LinkedInie nie wraca przez 21 dni.
+2. Plik `linkedin/RRRR-MM-DD-<slug>.json` — format jak post w feedzie (`type: "feed"`, `slides` 1 slajd, `link`, `temat`), plus `caption` = treść posta LinkedIn: 500–1200 znaków, pierwsze zdanie mówi, co robi BiznesDOK (bez pytania), na końcu jeden link z `?utm_source=linkedin&utm_medium=social&utm_campaign=<slug>`, 3–5 hashtagów, w tym `#biznesdok`. `status`: `planned | vetoed | handed | published | error`.
 3. Grafika: `node tools/render.mjs linkedin/<plik>.json media/linkedin` i obejrzyj PNG (Read). Commit + push razem z trybem 2.
-4. Publikacja: **tylko automatyczna** — właściciel nie publikuje ręcznie (decyzja 11.10.2026). Do czasu API LinkedIn (L-LI1 / PN-37) albo narzędzia zastępczego post zostaje w `linkedin/` ze statusem `planned`; w podsumowaniu sesji podaj tylko datę, temat i link do pliku. Po uruchomieniu publikacji automatycznej publikator dostanie osobny tryb.
-5. Katalog `linkedin/` jest poza `queue/` celowo: `tools/run.mjs` i `tools/preview.mjs` czytają tylko `queue/` — posty LinkedIn nie mogą trafić na Instagram.
+4. Publikacja: **automatyczna** — tryb 1 (`run.mjs` → `tools/linkedin.mjs`) przekazuje post do Buffera rano w dniu publikacji z terminem 09:00 (status `handed`). Bez `BUFFER_API_KEY` post czeka (`planned`) — napisz to w podsumowaniu; właściciel nie publikuje ręcznie (decyzja 11.10.2026).
+5. Katalog `linkedin/` jest poza `queue/` celowo: Instagram czyta tylko `queue/` — posty LinkedIn nie mogą trafić na Instagram.
+
+## Rytm tygodnia
+
+| Dzień | Feed Instagram (08:30) | Relacja (12:30) | LinkedIn (09:00) |
+|---|---|---|---|
+| pn | płatny dokument (najpierw priorytet A) | płatny dokument | — |
+| wt | karuzela z poradnika w sezonie (prowadzi do płatnych dokumentów) | płatny dokument | płatny dokument |
+| śr | płatny dokument | płatny dokument | — |
+| czw | płatny dokument („…przygotowujesz i trzymasz w BiznesDOK”) | płatny dokument | poradnik albo seria AI (na zmianę) |
+| pt | tydzień parzysty: seria „AI zawiodło? Decyduje prawnik”; nieparzysty: Subskrypcja albo bezpłatne narzędzie/dokument w sezonie | bezpłatne narzędzie albo dokument w sezonie — jedyna bezpłatna relacja w tygodniu | — |
+
+Wideo (12:45): rotacja zatwierdzonych urywków (sekcja „Wideo w trybie 2”). Proporcje pilnowane przez kontrolę: płatne dokumenty i Subskrypcja co najmniej 60% publikacji graficznych w tygodniu, bezpłatne najwyżej 2, seria AI co 2 tygodnie, Subskrypcja co najmniej raz na 2 tygodnie, karuzela z poradnika co tydzień (gdy jest poradnik w sezonie).
+
+## Oferta i okresy przydatności (`data/oferta.json`)
+
+Jedno źródło tematów: każdy dokument, narzędzie, poradnik i Subskrypcja z `temat`, `rodzaj`, `platny`, `priorytet` (A — najpierw: reklamy, ruch, wyższy koszyk; B — normalnie; C — rzadziej), `sezon` (okresy MM-DD, w których temat jest szczególnie przydatny; mogą przechodzić przez Nowy Rok), `tylko_w_sezonie` (poza okresem temat nie wychodzi), `wstrzymany` (powód — temat nie wychodzi), `wazne_do` (np. stawki na dany rok) i `fakty` — zdania spisane ze stron BiznesDOK, **jedyne fakty wolne do użycia w postach** (poza opublikowanymi poradnikami w karuzelach). Plik aktualizuje wykonawca prowadzący w dniu zmiany oferty (nowy dokument w sprzedaży, wycofanie, nowy poradnik, zmiana kampanii) — automat go nie zmienia, tylko zgłasza braki w podsumowaniu.
+
+## Seria „AI zawiodło? Decyduje prawnik” (`data/seria-ai.json`)
+
+Decyzja właściciela 29.09.2026 (LINKEDIN_GUIDELINES §9), wykonanie od 20.10.2026: Instagram — piątkowy post w tygodnie parzyste, LinkedIn — czwartek w tygodnie parzyste. Post ma pola `"seria": "ai-zawiodlo"` i `"temat_serii": "<id>"`. Wprost nazywamy typowy kłopot (`blad`) — bez wyśmiewania, bez nazw konkretnych narzędzi AI, bez straszenia i obietnic wyniku; poprawna informacja wyłącznie z `fakt` (źródło: `zrodlo`); na końcu jedno rozwiązanie w BiznesDOK (`rozwiazanie`) i puenta: technologia ułatwia, decyduje prawnik. Każdy temat raz na kanał (data w `instagram` / `linkedin`). Tylko w tej serii wolno pisać o AI.
+
+## Kontrola i pilnowanie (`tools/kontrola.mjs`)
+
+**Twarde uwagi — post nie wyjdzie** (publikator go zatrzyma, CI pokaże błąd, panel KMZ pokazuje „BLOKUJE”):
+- ten sam temat w tym samym kanale w ciągu 21 dni (dokument, narzędzie, poradnik; także relacja tego samego dnia co post w feedzie) i to samo hasło na grafice co wcześniej;
+- temat spoza `data/oferta.json`, wstrzymany, nieaktualny albo poza okresem (`tylko_w_sezonie`);
+- pierwsze zdanie grafiki albo opisu jest pytaniem (poza serią AI) — zaczynamy od tego, co robi BiznesDOK;
+- AI poza serią „AI zawiodło?” i nazwy konkretnych narzędzi AI (zawsze);
+- zakazane zwroty („Masz problem?”, „Mamy rozwiązanie”, „Czy wiesz, że…?”, „startujemy”, „rewolucjonizujemy”, obietnica gwarancji), obietnica czasu („w minutę”, „oszczędzasz…”);
+- „każdy dokument” (poza Subskrypcją) — nie wszystkie dokumenty mają te same funkcje; identyfikator i weryfikacja przy bezpłatnym dokumencie (bezpłatne nie mają ID); „…przygotowujesz i trzymasz” przy bezpłatnym.
+
+**Miękkie uwagi** (do poprawy w trybie 2): kwoty w złotych, hasztagi, „Link w bio → …”, brak adresu na relacji, długość i link z UTM na LinkedIn, minięty termin.
+
+**Stan na bieżąco:** `node tools/zgodnosc.mjs` (raport do `RAPORTY.md` w trybie 2; `--krotko` — jedno zdanie, wypisuje je też `run.mjs`). `node tools/check.mjs` (CI przy każdym pushu) odrzuca zaplanowane posty z twardą uwagą i błędy w `data/oferta.json` i `data/seria-ai.json`.
 
 ## Plan w panelu KMZ (zakładka BiznesDOK)
 
-Od 16.10.2026 plan publikacji (Instagram i LinkedIn) widać w panelu KMZ właściciela. `plan.json` i miniatury w `media/plan/` tworzy automat GitHub (`.github/workflows/plan.yml` → `tools/plan.mjs`) po każdym pushu zmieniającym `queue/` albo `linkedin/` i raz dziennie. **Nie edytuj ich ręcznie i nie uruchamiaj `tools/plan.mjs` w trybach 1–3.** Automat dopisuje commity do `main` — przed każdym `git push` zrób `git pull --rebase origin main` (`run.mjs` robi to sam). Panel pokazuje przy postach uwagi z `tools/kontrola.mjs` (mierzalne zasady treści niżej i czy strona z linku istnieje). Od 19.10.2026 przy postach są przyciski „Wstrzymaj”, „Wznów” i „Zmień…” (właściciel: „ma działać tak jak w Warszawie”); automat stosuje je przez `tools/reakcje.mjs` (sekcja „Reakcje z panelu KMZ”).
+Od 16.10.2026 plan publikacji (Instagram i LinkedIn) widać w panelu KMZ właściciela. `plan.json` i miniatury w `media/plan/` tworzy automat GitHub (`.github/workflows/plan.yml` → `tools/plan.mjs`) po każdym pushu zmieniającym `queue/`, `linkedin/` albo `data/` i raz dziennie. **Nie edytuj ich ręcznie i nie uruchamiaj `tools/plan.mjs` w trybach 1–3.** Automat dopisuje commity do `main` — przed każdym `git push` zrób `git pull --rebase origin main` (`run.mjs` robi to sam). Panel pokazuje przy postach uwagi z `tools/kontrola.mjs` (najpierw „BLOKUJE: …”) i czy strona z linku istnieje. Od 19.10.2026 przy postach są przyciski „Wstrzymaj”, „Wznów” i „Zmień…” (właściciel: „ma działać tak jak w Warszawie”); automat stosuje je przez `tools/reakcje.mjs` (sekcja „Reakcje z panelu KMZ”).
 
 ## Weto właściciela
 
-Właściciel wetuje w panelu KMZ: „Wstrzymaj”, „Wznów”, „Zmień…” z uwagą przy poście z planu (`tools/reakcje.mjs`); może też napisać w sesji „wstrzymaj <post>” / „zmień …”. Wstrzymany post: `status: "vetoed"` (automat go pomija). Wznowiony: z powrotem `planned`. Zmieniony post: popraw JSON, usuń stare PNG tego id z `media/` (LinkedIn: `media/linkedin/`), wyrenderuj od nowa i obejrzyj (Read), zostaw `planned`; commit, `git pull --rebase origin main`, push.
+Właściciel wetuje w panelu KMZ: „Wstrzymaj”, „Wznów”, „Zmień…” z uwagą przy poście z planu (`tools/reakcje.mjs`); może też napisać w sesji „wstrzymaj <post>” / „zmień …”. Wstrzymany post: `status: "vetoed"` (automat go pomija). Wznowiony: z powrotem `planned`. Zmieniony post: popraw JSON, usuń stare PNG tego id z `media/` (LinkedIn: `media/linkedin/`), wyrenderuj od nowa i obejrzyj (Read), zostaw `planned`; commit, `git pull --rebase origin main`, push. Post usunięty z planu: `status: "vetoed"` i pole `usunieto` z datą i powodem (znika z panelu).
 
 ## Zasady biura KMZ
 
 W sprawach współpracy z biurem obowiązuje księga KMZ. Zasady biura, które dotyczą tego automatu, są wpisane tu wprost (automat w chmurze nie widzi folderu KMZ); zasady produktu i treści zostają w tym repo i w `biznes-dokumenty-pro`.
 
-- **Nie piszesz sam do właściciela.** Żadnych własnych wiadomości (Telegram, mail, powiadomienia). Wynik sesji — co opublikowano, wstrzymano, zmieniono, błędy, pusta kolejka — jest w podsumowaniu sesji, które biuro zbiera do panelu KMZ.
+- **Nie piszesz sam do właściciela.** Żadnych własnych wiadomości (Telegram, mail, powiadomienia). Wynik sesji — co opublikowano, wstrzymano, zmieniono, błędy, pusta kolejka, zdanie kontroli treści — jest w podsumowaniu sesji, które biuro zbiera do panelu KMZ.
 - **Weto jest w panelu** (sekcja „Weto właściciela”): brak reakcji = publikacja; gdy panel nie odpowiada, posty idą według planu.
 - **Pomysły.** Odłożone prace BiznesDOK (nowy format, temat „na kiedyś”) są w tabeli LATER w ROADMAP repo `biznes-dokumenty-pro`, nie w plikach tego repo; opisz taki pomysł jednym zdaniem w podsumowaniu sesji. Do bazy biura KMZ (strona Pomysły) trafia tylko pomysł właściciela spoza BiznesDOK, np. nowy biznes.
 
 ## Zasady treści (obowiązkowe — publikacja jest automatyczna)
 
-1. **Główna obietnica (zablokowana):** „Dokumenty przygotowane przez prawników. Dopasowane technologią.” Wspierająca: „Ty podajesz dane. BiznesDOK przygotowuje resztę.”
-2. **Tylko to, co LIVE:** dokumenty z `data/katalog.json` o statusie `active`, narzędzia i poradniki opublikowane na biznesdok.pl. Zapowiedzi nie reklamujemy jako dostępnych.
-3. **Fakty prawne wyłącznie z opublikowanych treści BiznesDOK** (poradniki, strony narzędzi, opisy produktów). Nie formułuj nowych tez prawnych, terminów ani kwot.
+1. **Główna obietnica (zablokowana):** „Dokumenty przygotowane przez prawników. Dopasowane technologią.” Wspierająca: „Ty podajesz dane. BiznesDOK przygotowuje resztę.” Profil ma pokazywać przede wszystkim dokumenty przygotowane przez prawnika, które sprzedajemy — bezpłatne narzędzia są dodatkiem, nie główną treścią.
+2. **Tylko to, co LIVE i w ofercie:** tematy wyłącznie z `data/oferta.json` (bez `wstrzymany`, w sezonie, gdy `tylko_w_sezonie`). Zapowiedzi nie reklamujemy.
+3. **Fakty wyłącznie z pola `fakty` w ofercie** (spisane ze stron BiznesDOK) i z opublikowanych poradników (karuzele). Nie formułuj nowych tez prawnych, terminów, kwot ani funkcji. Nie uogólniaj funkcji na wszystkie dokumenty („każdy dokument…”).
 4. **Bez cen, kodów rabatowych i niezweryfikowanych liczb/czasów** („w minutę”, „oszczędzasz godzinę”).
-5. **Ton:** konkretny, profesjonalny, prosty, pewny siebie bez zadęcia. Product-first: znane zadanie → prostszy sposób z BiznesDOK → praca zdjęta z klienta → treść od prawników → CTA. Zakazane: „Masz problem?”, „Mamy rozwiązanie”, „Czy wiesz, że…?”, „startujemy”, „rewolucjonizujemy”, tłumaczenie oczywistego celu dokumentu, obietnice wyniku prawnego, sugerowanie indywidualnej porady prawnej.
-6. **AI nie jest autorem dokumentów** — nie pisz, że dokumenty tworzy AI. Treść przygotowują prawnicy (Katarzyna Zawadzka Legal Consulting), technologia uzupełnia dane.
-7. **Grafiki tylko z `tools/render.mjs`** (brandbook: paper, Instrument Serif, clause highlight `[[...]]`, lockup BD prawy dół). Bez zdjęć, stocków, ikon, grafik AI, nowych kolorów i sloganów.
-8. **Opis:** wnosi coś nowego względem grafiki, kończy się jednym CTA („Link w bio → Narzędzia / Poradniki / Dokumenty”) i 5–8 hashtagami, w tym `#biznesdok`.
+5. **Ton:** konkretny, profesjonalny, prosty, pewny siebie bez zadęcia. **Pierwsze zdanie mówi, co robi BiznesDOK** — bez pytania na start (wyjątek: seria AI). Product-first: znane zadanie → prostszy sposób z BiznesDOK → praca zdjęta z klienta → treść od prawników → CTA. Zakazane: „Masz problem?”, „Mamy rozwiązanie”, „Czy wiesz, że…?”, „startujemy”, „rewolucjonizujemy”, tłumaczenie oczywistego celu dokumentu, obietnice wyniku prawnego, sugerowanie indywidualnej porady prawnej.
+6. **AI nie jest autorem dokumentów** — nie piszemy o AI poza serią „AI zawiodło? Decyduje prawnik”. Treść przygotowują prawnicy (Katarzyna Zawadzka Legal Consulting), technologia uzupełnia dane.
+7. **Bez powtórek:** ten sam temat nie wraca w kanale przez 21 dni, a to samo hasło na grafice — nigdy. Każdy temat ma swój okres przydatności (`sezon`) — w sezonie ma pierwszeństwo.
+8. **Serie stałe:** płatny dokument — „[Dokument] przygotowujesz i trzymasz w BiznesDOK.”; bezpłatny — „[Dokument] przygotujesz w BiznesDOK — bezpłatnie, bez konta.” (nigdy „trzymasz” przy bezpłatnym).
+9. **Grafiki tylko z `tools/render.mjs`** (brandbook: paper, Instrument Serif, clause highlight `[[...]]`, lockup BD prawy dół). Bez zdjęć, stocków, ikon, grafik AI, nowych kolorów i sloganów.
+10. **Opis:** wnosi coś nowego względem grafiki, kończy się jednym CTA („Link w bio → Narzędzia / Poradniki / Dokumenty”) i 5–8 hashtagami, w tym `#biznesdok`.
 
 ## Format posta (queue/*.json)
 
 ```json
 {
-  "id": "2026-10-05-kalkulator-wynagrodzen",
-  "date": "2026-10-05", "time": "08:30",
+  "id": "2026-10-26-umowa-o-wspolpracy-biznesowej",
+  "date": "2026-10-26", "time": "08:30",
   "type": "feed | carousel | story | reel",
   "status": "planned | vetoed | published | skipped | error",
-  "pillar": "bezpłatne narzędzie",
+  "pillar": "płatny dokument",
+  "temat": "umowa-o-wspolpracy-biznesowej",
   "link": "https://biznesdok.pl/...",
   "slides": [{ "layout": "headline | list", "eyebrow": "...", "text": "... [[wyróżnienie]]", "sub": "...", "note": "...", "size": 96, "items": [["tytuł", "opis"]] }],
   "caption": "..."
 }
 ```
 
-`id` = nazwa pliku bez `.json`. Relacje: `caption` pusty, adres w `note`. Wideo: dodatkowo `"video": "<plik>.mp4"`, `"poster": "<plik>.jpg"` (oba z `data/wideo.json`), `"slides": []`; reel opcjonalnie `"thumbOffsetMs"` (klatka okładki).
+`id` = nazwa pliku bez `.json`. `temat` = `temat` z `data/oferta.json` (gdy brak — liczy się ścieżka linku). Seria AI: `"seria": "ai-zawiodlo"`, `"temat_serii": "<id z data/seria-ai.json>"`, `link` do rozwiązania. Relacje: `caption` pusty, adres w `note`. Wideo: dodatkowo `"video": "<plik>.mp4"`, `"poster": "<plik>.jpg"` (oba z `data/wideo.json`), `"slides": []`; reel opcjonalnie `"thumbOffsetMs"` (klatka okładki).

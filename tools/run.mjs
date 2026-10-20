@@ -6,6 +6,8 @@
 // Kolejność dla każdego posta: render PNG → commit i push media/ → czekanie, aż obraz
 // będzie publiczny → publikacja przez Graph API → status "published" + dziennik → push.
 // Na początku reakcje właściciela z panelu KMZ (tools/reakcje.mjs): wstrzymaj, wznów, zmień.
+// Przed publikacją każdego posta kontrola treści (tools/kontrola.mjs): twarda uwaga zatrzymuje post (decyzja 20.10.2026).
+// Na końcu LinkedIn przez Buffer (tools/linkedin.mjs) i jednozdaniowy wynik kontroli do podsumowania.
 import { readFile, writeFile, readdir, appendFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { execFileSync } from "node:child_process";
@@ -14,6 +16,10 @@ import { fileURLToPath } from "node:url";
 import { renderPost } from "./render.mjs";
 import { publishPost, mediaUrls } from "./publish.mjs";
 import { odbierzReakcje } from "./reakcje.mjs";
+import { ocenPost } from "./kontrola.mjs";
+import { publikujLinkedIn } from "./linkedin.mjs";
+import { wczytajOferte, wczytajPosty, wczytajSerieAI } from "./tematy.mjs";
+import { raportKrotki, raportZgodnosci } from "./zgodnosc.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const QUEUE = path.join(ROOT, "queue");
@@ -120,6 +126,21 @@ for (const item of skipped) {
 
 for (const item of due) {
   const { post } = item;
+  // Kontrola przy publikacji liczy powtórki tylko względem tego, co już wyszło — późniejsze są problemem późniejszych postów.
+  const wyszlo = wczytajPosty(ROOT).filter((x) => ["published", "handed"].includes(x.post.status));
+  const { twarde } = ocenPost(post, "instagram", now.date, { wszystkie: wyszlo, oferta: wczytajOferte(ROOT), seria: wczytajSerieAI(ROOT) });
+  if (twarde.length) {
+    console.error(`Zatrzymany przez kontrolę treści: ${post.id}: ${twarde.join("; ")}`);
+    if (dryRun) continue;
+    post.status = "error";
+    post.error = `kontrola treści: ${twarde.join("; ")}`.slice(0, 500);
+    await appendFile(LOG, `- ${now.date} ${now.time} · ZATRZYMANY (kontrola treści) · ${post.id} · ${twarde.join("; ")}\n`);
+    await save(item);
+    git("add", "queue", "DZIENNIK.md");
+    git("commit", "-q", "-m", `instagram: zatrzymany ${post.id}`);
+    pushWithRetry();
+    continue;
+  }
   // Wideo nie wymaga renderu — plik leży w media/video/ i musi być tam przed publikacją.
   const videoFile = post.video ? path.join(MEDIA, "video", post.video) : null;
   if (!videoFile) {
@@ -162,3 +183,13 @@ if (!dryRun && skipped.length && !due.length) {
   git("commit", "-q", "-m", "instagram: pominięte zaległe posty");
   pushWithRetry();
 }
+
+// LinkedIn (strona firmowa) przez Buffer — po Instagramie; błąd LinkedIna nie zatrzymuje Instagrama.
+if (!only) {
+  try {
+    await publikujLinkedIn({ dryRun, teraz: ignoreTime, czekajace: waiting });
+  } catch (error) {
+    console.error(`LinkedIn: ${error.message ?? error}`);
+  }
+}
+console.log(raportKrotki(raportZgodnosci(now.date)));

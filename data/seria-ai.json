@@ -1,0 +1,107 @@
+{
+  "seria": "AI zawiodło? Decyduje prawnik",
+  "decyzja": "Właściciel 29.09.2026 (LINKEDIN_GUIDELINES §9), wykonanie zlecone 20.10.2026: co 2 tygodnie na Instagramie (piątkowy post w feedzie) i w kolejnym tygodniu na LinkedIn.",
+  "zasady": [
+    "Wprost nazywamy częsty kłopot: odpowiedź AI z nieaktualną albo niepełną informacją. Bez wyśmiewania, bez nazw konkretnych narzędzi AI, bez straszenia i bez obietnic wyniku.",
+    "Błąd opisujemy jako typowy („AI często podaje…”), nigdy jako cytat z konkretnej rozmowy.",
+    "Poprawną informację bierzemy wyłącznie z pola `fakt` (opublikowana treść BiznesDOK ze `zrodlo`).",
+    "Kończymy jednym konkretnym rozwiązaniem w BiznesDOK (`rozwiazanie`): dokument na treści prawnika, bezpłatne narzędzie albo konsultacja. Ocena dokumentu — dopiero po jej starcie.",
+    "Przesłanie: technologia w BiznesDOK ułatwia, ale nie decyduje — treść i warianty przygotowuje prawnik.",
+    "Temat użyty na Instagramie dostaje datę w `instagram`, na LinkedIn — w `linkedin`; każdy temat raz na kanał."
+  ],
+  "tematy": [
+    {
+      "id": "krs-oplata-350",
+      "blad": "Opłata za wpis zmiany w zarządzie do KRS to 350 zł (250 zł i 100 zł za ogłoszenie w MSiG).",
+      "fakt": "Od 29 listopada 2025 r. nie ma osobnej opłaty 100 zł za ogłoszenie w Monitorze Sądowym i Gospodarczym; przy wniosku w Portalu Rejestrów Sądowych opłata wynosi 250 zł.",
+      "zrodlo": "https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
+      "rozwiazanie": "protokol-nadzwyczajnego-zgromadzenia-wspolnikow",
+      "instagram": null,
+      "linkedin": null
+    },
+    {
+      "id": "wigilia-dzien-roboczy",
+      "blad": "Wigilia jest dniem roboczym, więc termin liczony w grudniu ją obejmuje.",
+      "fakt": "Od 2025 r. Wigilia jest dniem wolnym od pracy; kalkulator dni roboczych to uwzględnia.",
+      "zrodlo": "https://biznesdok.pl/kalkulator-dni-roboczych",
+      "rozwiazanie": "kalkulator-dni-roboczych",
+      "sezon": [{ "od": "11-15", "do": "12-23" }],
+      "instagram": null,
+      "linkedin": null
+    },
+    {
+      "id": "informacja-o-warunkach-zatrudnienia",
+      "blad": "Do zatrudnienia pracownika wystarczy sama umowa o pracę.",
+      "fakt": "Pracodawca przekazuje też informację o warunkach zatrudnienia — w ciągu 7 dni od dopuszczenia do pracy.",
+      "zrodlo": "https://biznesdok.pl/poradniki/zatrudnienie-pracownika-na-umowe-o-prace",
+      "rozwiazanie": "umowa-o-prace-na-czas-nieokreslony",
+      "instagram": null,
+      "linkedin": null
+    },
+    {
+      "id": "przedawnienie-faktury",
+      "blad": "Faktura zawsze przedawnia się po 3 latach, a wysłanie wezwania do zapłaty przerywa przedawnienie.",
+      "fakt": "Cena sprzedaży towarów w ramach przedsiębiorstwa sprzedawcy przedawnia się po 2 latach (art. 554 KC); samo wezwanie nie przerywa biegu przedawnienia — przerywa go dopiero czynność przed sądem (art. 123 § 1 KC).",
+      "zrodlo": "https://biznesdok.pl/poradniki/jak-odzyskac-pieniadze-za-fakture-wezwanie-do-zaplaty",
+      "rozwiazanie": "ostateczne-wezwanie-do-zaplaty",
+      "instagram": null,
+      "linkedin": null
+    },
+    {
+      "id": "odsetki-jedna-stawka",
+      "blad": "Odsetki od starej faktury liczy się jedną, dzisiejszą stawką za cały okres.",
+      "fakt": "Stawki odsetek ustawowych za opóźnienie w transakcjach handlowych zmieniają się w czasie; kalkulator BiznesDOK stosuje właściwe stawki dla poszczególnych okresów i pokazuje sposób obliczenia.",
+      "zrodlo": "https://biznesdok.pl/kalkulator-odsetek",
+      "rozwiazanie": "kalkulator-odsetek",
+      "instagram": null,
+      "linkedin": null
+    },
+    {
+      "id": "wymiar-urlopu-26",
+      "blad": "Każdemu pracownikowi przysługuje 26 dni urlopu.",
+      "fakt": "Wymiar to 20 albo 26 dni — zależy od stażu pracy, do którego wlicza się m.in. ukończona szkoła; przy niepełnym etacie proporcjonalnie.",
+      "zrodlo": "https://biznesdok.pl/kalkulator-urlopu",
+      "rozwiazanie": "kalkulator-urlopu",
+      "instagram": null,
+      "linkedin": null
+    },
+    {
+      "id": "okres-wypowiedzenia-staz",
+      "blad": "Okres wypowiedzenia liczy się według stażu z dnia wręczenia wypowiedzenia.",
+      "fakt": "Staż może przekroczyć próg w trakcie wypowiedzenia — kalkulator okresu wypowiedzenia BiznesDOK to uwzględnia.",
+      "zrodlo": "https://biznesdok.pl/kalkulator-okresu-wypowiedzenia",
+      "rozwiazanie": "wypowiedzenie-umowy-o-prace-przez-pracodawce",
+      "instagram": null,
+      "linkedin": null
+    },
+    {
+      "id": "akta-zawsze-50-lat",
+      "blad": "Akta pracownika zawsze przechowuje się 50 lat.",
+      "fakt": "Okres to 10 albo 50 lat — zależy od tego, czy pracodawca przekazał raport informacyjny ZUS RIA.",
+      "zrodlo": "https://biznesdok.pl/okres-przechowywania-dokumentacji-pracowniczej",
+      "rozwiazanie": "okres-przechowywania-dokumentacji-pracowniczej",
+      "instagram": null,
+      "linkedin": null
+    },
+    {
+      "id": "absolutorium-wspolnik-czlonek-zarzadu",
+      "blad": "Wspólnik, który jest członkiem zarządu, głosuje nad swoim absolutorium jak każdy wspólnik.",
+      "fakt": "Wspólnik nie może uczestniczyć w uchwale o udzieleniu mu absolutorium (art. 244 § 1 KSH).",
+      "zrodlo": "https://biznesdok.pl/poradniki/zatwierdzenie-sprawozdania-finansowego-sp-z-o-o",
+      "rozwiazanie": "uchwala-o-zatwierdzeniu-sprawozdania-finansowego",
+      "sezon": [{ "od": "03-01", "do": "06-30" }],
+      "instagram": null,
+      "linkedin": null
+    },
+    {
+      "id": "zawiadomienie-o-zgromadzeniu",
+      "blad": "Zgromadzenie wspólników można zwołać kilka dni wcześniej.",
+      "fakt": "Zarząd wysyła zawiadomienie wspólnikom co najmniej dwa tygodnie przed terminem zgromadzenia.",
+      "zrodlo": "https://biznesdok.pl/poradniki/zatwierdzenie-sprawozdania-finansowego-sp-z-o-o",
+      "rozwiazanie": "uchwala-o-zatwierdzeniu-sprawozdania-finansowego",
+      "sezon": [{ "od": "03-01", "do": "06-15" }],
+      "instagram": null,
+      "linkedin": null
+    }
+  ]
+}
