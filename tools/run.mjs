@@ -185,9 +185,10 @@ if (!dryRun && skipped.length && !due.length) {
 }
 
 // LinkedIn (strona firmowa) przez Buffer — po Instagramie; błąd LinkedIna nie zatrzymuje Instagrama.
+// Bez `teraz`: --now dotyczy tylko Instagrama (jedna sesja dziennie), a Buffer sam publikuje o godzinie posta (09:00).
 if (!only) {
   try {
-    await publikujLinkedIn({ dryRun, teraz: ignoreTime, czekajace: waiting });
+    await publikujLinkedIn({ dryRun, czekajace: waiting });
   } catch (error) {
     console.error(`LinkedIn: ${error.message ?? error}`);
   }
