@@ -1,0 +1,707 @@
+{
+  "stan": "2026-10-20",
+  "zrodlo": "Baza BiznesDOK (document_catalog: status active, is_visible) i strony biznesdok.pl odczytane 20.10.2026; narzędzia — src/lib/free-tools.ts, poradniki — src/lib/guides w repo biznes-dokumenty-pro.",
+  "zasady": "Jedno źródło tematów dla Instagrama i LinkedIna. W postach wolno używać wyłącznie faktów z pola `fakty` (spisanych ze stron BiznesDOK) i z opublikowanych poradników. `priorytet`: A — najpierw (reklama, ruch, wyższy koszyk), B — normalnie, C — rzadziej. `sezon`: okresy, w których temat jest szczególnie przydatny (MM-DD; okres może przechodzić przez Nowy Rok) — w sezonie temat dostaje pierwszeństwo; `tylko_w_sezonie: true` — poza sezonem temat się nie ukazuje. `wstrzymany` — temat nie wychodzi, dopóki pole jest ustawione (powód w treści). `wazne_do` — po tej dacie temat traktujemy jak wstrzymany (np. stawki na dany rok). Nowy dokument w sprzedaży albo wycofanie — prowadzący poprawia ten plik w tym samym dniu.",
+  "pozycje": [
+    {
+      "temat": "ostateczne-wezwanie-do-zaplaty",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Ostateczne wezwanie do zapłaty",
+      "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
+      "grupa": "Płatności i należności",
+      "priorytet": "A",
+      "dlaczego": "reklama Google (T1 Wezwanie do 27.10); najczęściej odwiedzana strona dokumentu",
+      "sezon": [{ "od": "12-01", "do": "01-31", "dlaczego": "koniec i początek roku — porządkowanie należności" }],
+      "fakty": [
+        "Podajesz NIP — dane firm uzupełniają się z rejestru.",
+        "Kilka faktur w jednym wezwaniu — kwoty sumują się automatycznie.",
+        "Odsetki za opóźnienie w transakcjach handlowych wyliczają się z terminów zapłaty i stawek ustawowych; kwotę można ręcznie skorygować.",
+        "Termin zapłaty, numer rachunku i informacja o dalszych krokach w dokumencie.",
+        "PDF albo edytowalny Word; płacisz dopiero po wypełnieniu formularza.",
+        "Dokument ma indywidualny identyfikator BiznesDOK.",
+        "Dla firm z polskim numerem NIP (sprzedaż B2B w Polsce)."
+      ]
+    },
+    {
+      "temat": "umowa-zlecenia",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Umowa zlecenia",
+      "link": "https://biznesdok.pl/dokument/umowa-zlecenia",
+      "grupa": "Zlecenia",
+      "priorytet": "A",
+      "dlaczego": "reklama Google (T1 Zatrudnienie); często szukana fraza",
+      "sezon": [
+        { "od": "01-02", "do": "01-31", "dlaczego": "nowe umowy na nowy rok" },
+        { "od": "06-01", "do": "07-15", "dlaczego": "prace wakacyjne i sezonowe" }
+      ],
+      "fakty": [
+        "Dane Twojej firmy po NIP — z KRS albo CEIDG; komparycja dla spółki albo jednoosobowej działalności.",
+        "Czas określony lub nieokreślony, stawka godzinowa lub miesięczna, okres wypowiedzenia — do umowy trafia brzmienie przygotowane przez prawnika.",
+        "Kwota wynagrodzenia zapisana także słownie.",
+        "PDF gotowy do wydruku albo edytowalny Word.",
+        "Do umowy przyda się bezpłatne oświadczenie zleceniobiorcy do ZUS i PIT."
+      ]
+    },
+    {
+      "temat": "wypowiedzenie-umowy-zlecenia",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Wypowiedzenie umowy zlecenia przez zleceniodawcę",
+      "link": "https://biznesdok.pl/dokument/wypowiedzenie-umowy-zlecenia",
+      "grupa": "Zlecenia",
+      "priorytet": "A",
+      "dlaczego": "reklama Google (T1 Zatrudnienie); druga najczęściej odwiedzana strona dokumentu (29.09–20.10)",
+      "fakty": [
+        "Dane firmy po NIP trafiają do nagłówka i stopki pisma.",
+        "Okres wypowiedzenia jak w umowie: tygodniowy, dwutygodniowy, miesięczny albo trzymiesięczny.",
+        "Obowiązek wykonywania zadań w okresie wypowiedzenia, zwrot materiałów i poufność są w treści.",
+        "Wypowiedzenie składa zleceniodawca (firma).",
+        "PDF gotowy do wydruku albo edytowalny Word."
+      ]
+    },
+    {
+      "temat": "umowa-o-prace-na-czas-okreslony",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Umowa o pracę na czas określony",
+      "link": "https://biznesdok.pl/dokument/umowa-o-prace-na-czas-okreslony",
+      "grupa": "Zatrudnienie",
+      "priorytet": "A",
+      "dlaczego": "reklama Google (T1 Zatrudnienie)",
+      "sezon": [{ "od": "11-15", "do": "01-31", "dlaczego": "koniec roku — kończące się umowy na czas określony" }],
+      "fakty": [
+        "Data rozpoczęcia i zakończenia zatrudnienia w umowie.",
+        "Stanowisko, wymiar etatu i wynagrodzenie z Twoich odpowiedzi.",
+        "Pełny lub niepełny etat — BiznesDOK wybiera przygotowane przez prawnika postanowienia.",
+        "PDF albo edytowalny Word."
+      ]
+    },
+    {
+      "temat": "wypowiedzenie-umowy-o-prace-przez-pracodawce",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Wypowiedzenie umowy o pracę na czas nieokreślony przez pracodawcę",
+      "link": "https://biznesdok.pl/dokument/wypowiedzenie-umowy-o-prace-przez-pracodawce",
+      "grupa": "Zatrudnienie",
+      "priorytet": "A",
+      "dlaczego": "reklama Google (T1 Zatrudnienie); trzecia najczęściej odwiedzana strona dokumentu (29.09–20.10)",
+      "sezon": [{ "od": "11-15", "do": "01-31", "dlaczego": "koniec roku — decyzje kadrowe" }],
+      "fakty": [
+        "Dotyczy umowy o pracę na czas nieokreślony.",
+        "Na podstawie stażu BiznesDOK wstawia okres wypowiedzenia i właściwy punkt art. 36 § 1 Kodeksu pracy.",
+        "Urlop albo zwolnienie z obowiązku świadczenia pracy w okresie wypowiedzenia — tylko w wybranym wariancie.",
+        "Dane pracodawcy po NIP.",
+        "Daty okresu wypowiedzenia i przyczynę podajesz sam."
+      ]
+    },
+    {
+      "temat": "wypowiedzenie-zmieniajace-warunki-pracy-lub-placy",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Wypowiedzenie zmieniające warunki pracy lub płacy",
+      "link": "https://biznesdok.pl/dokument/wypowiedzenie-zmieniajace-warunki-pracy-lub-placy",
+      "grupa": "Zatrudnienie",
+      "priorytet": "A",
+      "dlaczego": "reklama Google (T1 Zatrudnienie)",
+      "sezon": [{ "od": "12-01", "do": "01-31", "dlaczego": "zmiany wynagrodzeń od nowego roku" }],
+      "fakty": [
+        "Dotychczasowe i proponowane warunki pracy lub płacy w czytelnym zestawieniu.",
+        "Daty, okres wypowiedzenia i przyczynę podajesz sam — BiznesDOK umieszcza je w dokumencie, ale ich nie wylicza.",
+        "Termin odmowy przyjęcia nowych warunków i data rozwiązania umowy w razie odmowy są w dokumencie.",
+        "Dane pracodawcy po NIP."
+      ]
+    },
+    {
+      "temat": "umowa-o-wspolpracy-biznesowej",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Umowa o współpracy B2B",
+      "link": "https://biznesdok.pl/dokument/umowa-o-wspolpracy-biznesowej",
+      "grupa": "Współpraca",
+      "priorytet": "A",
+      "dlaczego": "w pierwszej dziesiątce stron według ruchu; wyższa cena",
+      "sezon": [{ "od": "01-02", "do": "02-15", "dlaczego": "nowe kontrakty na nowy rok" }],
+      "fakty": [
+        "Dane obu firm po NIP — z komparycją dla spółki albo jednoosobowej działalności.",
+        "Wynagrodzenie jako ryczałt miesięczny albo stawka godzinowa netto, zapisane także słownie.",
+        "Samodzielność wykonawcy i cywilnoprawny charakter współpracy zapisane wprost.",
+        "Termin wypowiedzenia i opcjonalny zakaz konkurencji do wyboru.",
+        "PDF albo edytowalny Word."
+      ]
+    },
+    {
+      "temat": "subskrypcja",
+      "rodzaj": "subskrypcja",
+      "platny": true,
+      "tytul": "Subskrypcja BiznesDOK",
+      "link": "https://biznesdok.pl/subskrypcja",
+      "grupa": "Subskrypcja",
+      "priorytet": "A",
+      "dlaczego": "wyższy koszyk — decyzja 16.10: po T1 płatna reklama tylko wyższego koszyka",
+      "fakty": [
+        "Wszystkie płatne dokumenty BiznesDOK w PDF i Word.",
+        "Bez limitu dokumentów, na potrzeby Twojej firmy.",
+        "Nowe dokumenty dochodzą do Subskrypcji bez dopłat.",
+        "Rezygnujesz w każdej chwili — dostęp do końca opłaconego miesiąca.",
+        "Przygotowane dokumenty zostają w „Moje dokumenty” także po rezygnacji.",
+        "Ten sam kreator i ta sama treść przygotowana przez prawników co przy zakupie pojedynczego dokumentu."
+      ]
+    },
+    {
+      "temat": "umowa-o-prace-na-czas-nieokreslony",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Umowa o pracę na czas nieokreślony",
+      "link": "https://biznesdok.pl/dokument/umowa-o-prace-na-czas-nieokreslony",
+      "grupa": "Zatrudnienie",
+      "priorytet": "B",
+      "sezon": [
+        { "od": "01-02", "do": "01-31", "dlaczego": "zatrudnienia od nowego roku" },
+        { "od": "09-01", "do": "09-30", "dlaczego": "zatrudnienia po wakacjach" }
+      ],
+      "fakty": [
+        "Załącznik z zakresem obowiązków pracownika.",
+        "Informacja o warunkach zatrudnienia w jednym pliku z umową.",
+        "Miejsce pracy, świadczenie urlopowe, PPK, praca zmianowa — do umowy trafia właściwy zapis przygotowany przez prawnika.",
+        "Wynagrodzenie zapisane słownie z groszami.",
+        "Dane firmy po NIP."
+      ]
+    },
+    {
+      "temat": "porozumienie-w-sprawie-rozwiazania-umowy-zlecenia",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Porozumienie w sprawie rozwiązania umowy zlecenia",
+      "link": "https://biznesdok.pl/dokument/porozumienie-w-sprawie-rozwiazania-umowy-zlecenia",
+      "grupa": "Zlecenia",
+      "priorytet": "B",
+      "fakty": [
+        "Zakończenie umowy zlecenia za porozumieniem stron, z datą rozwiązania.",
+        "Opcjonalny zapis o zwrocie materiałów i przekazaniu dostępów.",
+        "Aktualna wersja: zleceniodawca — spółka z o.o., zleceniobiorca — osoba fizyczna.",
+        "Dane spółki po NIP."
+      ]
+    },
+    {
+      "temat": "aneks-do-umowy",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Porozumienie zmieniające wymiar etatu i wynagrodzenie",
+      "link": "https://biznesdok.pl/dokument/aneks-do-umowy",
+      "grupa": "Zatrudnienie",
+      "priorytet": "B",
+      "sezon": [{ "od": "12-01", "do": "01-31", "dlaczego": "zmiany etatów i wynagrodzeń od nowego roku" }],
+      "fakty": [
+        "Nowy wymiar etatu i wynagrodzenie od wskazanego dnia.",
+        "Właściwy rodzaj zmienianej umowy: na czas nieokreślony, określony albo na okres próbny.",
+        "Nowe wynagrodzenie zapisane cyframi i słownie.",
+        "Dane pracodawcy po NIP."
+      ]
+    },
+    {
+      "temat": "protokol-nadzwyczajnego-zgromadzenia-wspolnikow",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Protokół NZW — zmiana w Zarządzie",
+      "link": "https://biznesdok.pl/dokument/protokol-nadzwyczajnego-zgromadzenia-wspolnikow",
+      "grupa": "Spółka — zarząd",
+      "priorytet": "B",
+      "sezon": [{ "od": "05-01", "do": "06-30", "dlaczego": "zmiany w zarządzie przy zgromadzeniach rocznych" }],
+      "fakty": [
+        "Wariant: samo odwołanie albo odwołanie i powołanie nowego członka zarządu.",
+        "Porządek obrad i treść uchwały dopasowują się do wybranego wariantu.",
+        "Dane spółki po NIP.",
+        "Liczbę ważnych głosów BiznesDOK liczy sam."
+      ]
+    },
+    {
+      "temat": "uchwala-o-powolaniu-czlonka-zarzadu",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Uchwała o powołaniu członka Zarządu",
+      "link": "https://biznesdok.pl/dokument/uchwala-o-powolaniu-czlonka-zarzadu",
+      "grupa": "Spółka — zarząd",
+      "priorytet": "B",
+      "sezon": [{ "od": "05-01", "do": "06-30", "dlaczego": "zmiany w zarządzie przy zgromadzeniach rocznych" }],
+      "fakty": [
+        "Funkcja, termin i okres powołania oraz wynik głosowania w uchwale.",
+        "Liczbę ważnych głosów BiznesDOK liczy sam.",
+        "Dane spółki po NIP.",
+        "Dokument do zgłoszenia zmiany w KRS."
+      ]
+    },
+    {
+      "temat": "uchwala-o-odwolaniu-czlonka-zarzadu",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Uchwała o odwołaniu członka Zarządu",
+      "link": "https://biznesdok.pl/dokument/uchwala-o-odwolaniu-czlonka-zarzadu",
+      "grupa": "Spółka — zarząd",
+      "priorytet": "B",
+      "sezon": [{ "od": "05-01", "do": "06-30", "dlaczego": "zmiany w zarządzie przy zgromadzeniach rocznych" }],
+      "fakty": [
+        "Opcjonalnie przyczyna odwołania i zastrzeżenie o umowie ze spółką — z poprawną numeracją punktów.",
+        "Dzień odwołania i wynik głosowania w uchwale; liczbę ważnych głosów BiznesDOK liczy sam.",
+        "Dane spółki po NIP."
+      ]
+    },
+    {
+      "temat": "rezygnacja-czlonka-zarzadu",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Rezygnacja członka Zarządu",
+      "link": "https://biznesdok.pl/dokument/rezygnacja-czlonka-zarzadu",
+      "grupa": "Spółka — zarząd",
+      "priorytet": "B",
+      "fakty": [
+        "Pismo o rezygnacji z funkcji z określoną datą, do doręczenia spółce.",
+        "Dane spółki po NIP."
+      ]
+    },
+    {
+      "temat": "zgoda-na-powolanie-do-zarzadu",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Zgoda na powołanie do Zarządu",
+      "link": "https://biznesdok.pl/dokument/zgoda-na-powolanie-do-zarzadu",
+      "grupa": "Spółka — zarząd",
+      "priorytet": "B",
+      "fakty": [
+        "Pisemna zgoda osoby powoływanej, z funkcją i adresem do doręczeń.",
+        "Dokument potrzebny m.in. do zgłoszenia zmiany w KRS."
+      ]
+    },
+    {
+      "temat": "sprawozdanie-z-dzialalnosci-zarzadu",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Sprawozdanie z działalności Zarządu",
+      "link": "https://biznesdok.pl/dokument/sprawozdanie-z-dzialalnosci-zarzadu",
+      "grupa": "Spółka — sprawozdania",
+      "priorytet": "B",
+      "sezon": [{ "od": "01-15", "do": "06-30", "dlaczego": "roczne sprawozdanie przed zgromadzeniem zwyczajnym" }],
+      "tylko_w_sezonie": true,
+      "fakty": [
+        "Rok obrotowy i kolejny rok BiznesDOK ustala z daty końca okresu sprawozdawczego.",
+        "Zmiana umowy spółki, podwyższenie kapitału, prokura, zysk albo strata — właściwe brzmienie przygotowane przez prawnika.",
+        "Dane spółki po NIP."
+      ]
+    },
+    {
+      "temat": "uchwala-o-zatwierdzeniu-sprawozdania-finansowego",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Protokół ZZW — sprawozdanie finansowe, wynik i absolutorium",
+      "link": "https://biznesdok.pl/dokument/uchwala-o-zatwierdzeniu-sprawozdania-finansowego",
+      "grupa": "Spółka — sprawozdania",
+      "priorytet": "B",
+      "sezon": [{ "od": "02-01", "do": "06-30", "dlaczego": "zatwierdzenie sprawozdania do 30.06" }],
+      "tylko_w_sezonie": true,
+      "fakty": [
+        "Komplet uchwał rocznych w jednym protokole.",
+        "Wariant dla zysku albo straty netto, także dla pierwszego roku obrotowego.",
+        "Dane spółki po NIP."
+      ]
+    },
+    {
+      "temat": "oswiadczenie-zarzadu-o-adresach-czlonkow-zarzadu",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Oświadczenie Zarządu o adresach członków Zarządu",
+      "link": "https://biznesdok.pl/dokument/oswiadczenie-zarzadu-o-adresach-czlonkow-zarzadu",
+      "grupa": "Spółka — zarząd",
+      "priorytet": "C",
+      "fakty": [
+        "Adresy do doręczeń członków zarządu w jednym oświadczeniu.",
+        "Dokument do postępowania rejestrowego."
+      ]
+    },
+    {
+      "temat": "lista-osob-uprawnionych-do-powolania-zarzadu",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Lista osób uprawnionych do powołania Zarządu",
+      "link": "https://biznesdok.pl/dokument/lista-osob-uprawnionych-do-powolania-zarzadu",
+      "grupa": "Spółka — zarząd",
+      "priorytet": "C",
+      "fakty": [
+        "Gdy wspólnikiem spółki z o.o. jest osoba prawna — z organem reprezentacji i adresem do doręczeń.",
+        "Dokument do postępowania rejestrowego."
+      ]
+    },
+    {
+      "temat": "protokol-nzw-wynagrodzenie-czlonka-zarzadu",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Protokół NZW — wynagrodzenie członka Zarządu",
+      "link": "https://biznesdok.pl/dokument/protokol-nzw-wynagrodzenie-czlonka-zarzadu",
+      "grupa": "Spółka — zarząd",
+      "priorytet": "C",
+      "sezon": [{ "od": "12-01", "do": "01-31", "dlaczego": "wynagrodzenia od nowego roku" }],
+      "fakty": [
+        "Uchwała wspólników o wynagrodzeniu członka zarządu w protokole zgromadzenia.",
+        "Liczbę ważnych głosów BiznesDOK liczy sam."
+      ]
+    },
+    {
+      "temat": "protokol-z-posiedzenia-zarzadu",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Protokół z posiedzenia Zarządu — przyjęcie regulaminu",
+      "link": "https://biznesdok.pl/dokument/protokol-z-posiedzenia-zarzadu",
+      "grupa": "Spółka — zarząd",
+      "priorytet": "C",
+      "sezon": [{ "od": "12-01", "do": "01-31", "dlaczego": "regulaminy od nowego roku" }],
+      "fakty": [
+        "Uchwała zarządu o przyjęciu dokumentu wewnętrznego, np. regulaminu, i dniu, od którego obowiązuje.",
+        "Od 1 do 5 członków zarządu.",
+        "Dane spółki po NIP."
+      ]
+    },
+    {
+      "temat": "protokol-nzw-zgoda-na-zbycie-udzialow",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Protokół NZW — zgoda na zbycie udziałów",
+      "link": "https://biznesdok.pl/dokument/protokol-nzw-zgoda-na-zbycie-udzialow",
+      "grupa": "Spółka — wspólnicy i udziały",
+      "priorytet": "C",
+      "fakty": [
+        "Uchwała o zgodzie na zbycie udziałów, a gdy trzeba — ze zrzeczeniem się prawa pierwszeństwa.",
+        "Łączną wartość udziałów i liczbę ważnych głosów BiznesDOK liczy sam."
+      ]
+    },
+    {
+      "temat": "ksiega-udzialow",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Księga udziałów",
+      "link": "https://biznesdok.pl/dokument/ksiega-udzialow",
+      "grupa": "Spółka — wspólnicy i udziały",
+      "priorytet": "C",
+      "fakty": [
+        "Wspólnicy, liczba i wartość udziałów oraz zmiany ich własności.",
+        "Łączną wartość udziałów każdego wspólnika BiznesDOK liczy sam."
+      ]
+    },
+    {
+      "temat": "lista-wspolnikow",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Lista wspólników",
+      "link": "https://biznesdok.pl/dokument/lista-wspolnikow",
+      "grupa": "Spółka — wspólnicy i udziały",
+      "priorytet": "C",
+      "fakty": [
+        "Stan na wskazany dzień, do złożenia w KRS.",
+        "Łączną wartość udziałów każdego wspólnika BiznesDOK liczy sam.",
+        "Dane spółki po NIP."
+      ]
+    },
+    {
+      "temat": "oswiadczenie-zarzadu-o-wniesieniu-kapitalu-zakladowego",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Oświadczenie Zarządu o wniesieniu wkładów na podwyższony kapitał",
+      "link": "https://biznesdok.pl/dokument/oswiadczenie-zarzadu-o-wniesieniu-kapitalu-zakladowego",
+      "grupa": "Spółka — wspólnicy i udziały",
+      "priorytet": "C",
+      "fakty": [
+        "Oświadczenie członków zarządu, że wkłady pieniężne na podwyższony kapitał zostały w całości wniesione.",
+        "Dokument do zgłoszenia podwyższenia kapitału w KRS."
+      ]
+    },
+    {
+      "temat": "informacja-o-adresie-siedziby-udzialowca",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Informacja o adresie siedziby udziałowca",
+      "link": "https://biznesdok.pl/dokument/informacja-o-adresie-siedziby-udzialowca",
+      "grupa": "Spółka — wspólnicy i udziały",
+      "priorytet": "C",
+      "fakty": [
+        "Gdy jedynym udziałowcem spółki z o.o. jest osoba prawna.",
+        "Udziałowca BiznesDOK wyszukuje po NIP."
+      ]
+    },
+    {
+      "temat": "umowa-sprzedazy-udzialow-w-spolce-z-o-o",
+      "rodzaj": "dokument",
+      "platny": true,
+      "tytul": "Umowa sprzedaży udziałów w spółce z o.o.",
+      "link": "https://biznesdok.pl/dokument/umowa-sprzedazy-udzialow-w-spolce-z-o-o",
+      "grupa": "Spółka — wspólnicy i udziały",
+      "priorytet": "C",
+      "wstrzymany": "uwagi prawnika wysokiego priorytetu w toku (ROADMAP PN-05, Z-20) — nie promujemy do ich rozstrzygnięcia",
+      "fakty": []
+    },
+    {
+      "temat": "oswiadczenie-zleceniobiorcy",
+      "rodzaj": "dokument",
+      "platny": false,
+      "tytul": "Oświadczenie zleceniobiorcy do ZUS i PIT",
+      "link": "https://biznesdok.pl/dokument/oswiadczenie-zleceniobiorcy",
+      "grupa": "Bezpłatne dokumenty",
+      "priorytet": "C",
+      "sezon": [
+        { "od": "01-02", "do": "01-31", "dlaczego": "nowe umowy zlecenia na nowy rok" },
+        { "od": "06-01", "do": "07-15", "dlaczego": "prace wakacyjne i sezonowe" }
+      ],
+      "fakty": [
+        "Dane do zgłoszenia w ZUS i do PIT-11 w jednym dokumencie.",
+        "Wybór TAK albo NIE zamiast skreśleń.",
+        "Bezpłatny PDF, bez konta i bez e-maila."
+      ]
+    },
+    {
+      "temat": "swiadectwo-pracy",
+      "rodzaj": "dokument",
+      "platny": false,
+      "tytul": "Świadectwo pracy",
+      "link": "https://biznesdok.pl/dokument/swiadectwo-pracy",
+      "grupa": "Bezpłatne dokumenty",
+      "priorytet": "C",
+      "sezon": [{ "od": "12-15", "do": "01-31", "dlaczego": "koniec roku — rozwiązania umów" }],
+      "fakty": [
+        "Wszystkie punkty w wymaganej kolejności — wypełnione albo oznaczone „nie dotyczy”.",
+        "Dane pracodawcy po NIP.",
+        "Bezpłatny PDF, bez konta i bez e-maila."
+      ]
+    },
+    {
+      "temat": "wniosek-o-urlop-wypoczynkowy",
+      "rodzaj": "dokument",
+      "platny": false,
+      "tytul": "Wniosek o urlop lub odbiór dnia wolnego",
+      "link": "https://biznesdok.pl/dokument/wniosek-o-urlop-wypoczynkowy",
+      "grupa": "Bezpłatne dokumenty",
+      "priorytet": "C",
+      "sezon": [
+        { "od": "05-15", "do": "08-31", "dlaczego": "urlopy letnie" },
+        { "od": "12-01", "do": "12-23", "dlaczego": "urlopy świąteczne" }
+      ],
+      "fakty": [
+        "Urlop wypoczynkowy, na żądanie, okolicznościowy, bezpłatny albo odbiór dnia wolnego.",
+        "Miejsca na podpisy pracownika i przełożonego.",
+        "Bezpłatnie, bez konta."
+      ]
+    },
+    {
+      "temat": "zgoda-na-wykorzystanie-wizerunku",
+      "rodzaj": "dokument",
+      "platny": false,
+      "tytul": "Zgoda na wykorzystanie wizerunku",
+      "link": "https://biznesdok.pl/dokument/zgoda-na-wykorzystanie-wizerunku",
+      "grupa": "Bezpłatne dokumenty",
+      "priorytet": "C",
+      "sezon": [
+        { "od": "11-15", "do": "12-20", "dlaczego": "firmowe spotkania świąteczne — zdjęcia" },
+        { "od": "06-01", "do": "06-30", "dlaczego": "firmowe wydarzenia letnie" }
+      ],
+      "fakty": [
+        "Osobna zgoda z podpisem dla każdego wybranego celu.",
+        "Klauzula informacyjna RODO z danymi administratora.",
+        "Bezpłatny PDF, bez konta i bez e-maila."
+      ]
+    },
+    {
+      "temat": "informacja-o-przechowywaniu-dokumentacji-pracowniczej",
+      "rodzaj": "dokument",
+      "platny": false,
+      "tytul": "Informacja o przechowywaniu dokumentacji pracowniczej",
+      "link": "https://biznesdok.pl/dokument/informacja-o-przechowywaniu-dokumentacji-pracowniczej",
+      "grupa": "Bezpłatne dokumenty",
+      "priorytet": "C",
+      "wstrzymany": "uwagi prawnika wysokiego priorytetu w toku (ROADMAP PN-05, Z-20); karta dokumentu obiecuje ID dokumentu, którego bezpłatne dokumenty nie mają — do poprawki",
+      "fakty": []
+    },
+    {
+      "temat": "kalkulator-odsetek",
+      "rodzaj": "narzedzie",
+      "platny": false,
+      "tytul": "Kalkulator odsetek od niezapłaconych faktur",
+      "link": "https://biznesdok.pl/kalkulator-odsetek",
+      "grupa": "Bezpłatne narzędzia",
+      "priorytet": "B",
+      "dlaczego": "prowadzi do wezwania do zapłaty",
+      "fakty": [
+        "Odsetki ustawowe za opóźnienie w transakcjach handlowych — dla jednej faktury albo kilku.",
+        "Stawki i sposób obliczenia na widoku.",
+        "Bezpłatnie, bez konta i bez e-maila."
+      ]
+    },
+    {
+      "temat": "kalkulator-okresu-wypowiedzenia",
+      "rodzaj": "narzedzie",
+      "platny": false,
+      "tytul": "Kalkulator okresu wypowiedzenia",
+      "link": "https://biznesdok.pl/kalkulator-okresu-wypowiedzenia",
+      "grupa": "Bezpłatne narzędzia",
+      "priorytet": "C",
+      "sezon": [{ "od": "11-15", "do": "01-31", "dlaczego": "koniec roku — decyzje kadrowe" }],
+      "fakty": [
+        "Okres wypowiedzenia umowy o pracę i dzień jej rozwiązania.",
+        "Także gdy staż rośnie w trakcie wypowiedzenia.",
+        "Bezpłatnie, bez konta i bez e-maila."
+      ]
+    },
+    {
+      "temat": "kalkulator-urlopu",
+      "rodzaj": "narzedzie",
+      "platny": false,
+      "tytul": "Kalkulator urlopu wypoczynkowego",
+      "link": "https://biznesdok.pl/kalkulator-urlopu",
+      "grupa": "Bezpłatne narzędzia",
+      "priorytet": "C",
+      "sezon": [
+        { "od": "01-02", "do": "01-31", "dlaczego": "nowy wymiar urlopu" },
+        { "od": "05-15", "do": "08-31", "dlaczego": "urlopy letnie" }
+      ],
+      "fakty": [
+        "20 czy 26 dni urlopu: staż pracy, szkoła wliczana do stażu i niepełny etat.",
+        "Bezpłatnie, bez konta i bez e-maila."
+      ]
+    },
+    {
+      "temat": "kalkulator-wynagrodzen",
+      "rodzaj": "narzedzie",
+      "platny": false,
+      "tytul": "Kalkulator wynagrodzeń brutto–netto",
+      "link": "https://biznesdok.pl/kalkulator-wynagrodzen",
+      "grupa": "Bezpłatne narzędzia",
+      "priorytet": "C",
+      "wazne_do": "2026-12-31",
+      "sezon": [{ "od": "01-02", "do": "01-31", "dlaczego": "nowe stawki na nowy rok — tylko po aktualizacji kalkulatora" }],
+      "fakty": [
+        "Kwota na rękę i pełny koszt pracodawcy, miesiąc po miesiącu.",
+        "Stawki na 2026 r.",
+        "Bezpłatnie, bez konta i bez e-maila."
+      ]
+    },
+    {
+      "temat": "kalkulator-dni-roboczych",
+      "rodzaj": "narzedzie",
+      "platny": false,
+      "tytul": "Kalkulator dni roboczych",
+      "link": "https://biznesdok.pl/kalkulator-dni-roboczych",
+      "grupa": "Bezpłatne narzędzia",
+      "priorytet": "C",
+      "sezon": [
+        { "od": "12-01", "do": "12-31", "dlaczego": "święta i Wigilia wolna od 2025 r." },
+        { "od": "04-15", "do": "05-05", "dlaczego": "majówka" },
+        { "od": "10-25", "do": "11-11", "dlaczego": "1 i 11 listopada" }
+      ],
+      "fakty": [
+        "Dni robocze między dwiema datami — bez weekendów i świąt.",
+        "Wigilia wolna od 2025 r.",
+        "Bezpłatnie, bez konta i bez e-maila."
+      ]
+    },
+    {
+      "temat": "kwota-slownie",
+      "rodzaj": "narzedzie",
+      "platny": false,
+      "tytul": "Kwota słownie",
+      "link": "https://biznesdok.pl/kwota-slownie",
+      "grupa": "Bezpłatne narzędzia",
+      "priorytet": "C",
+      "fakty": [
+        "Złote i grosze słownie — w formie używanej na fakturach, w umowach i wezwaniach do zapłaty.",
+        "Bezpłatnie, bez konta i bez e-maila."
+      ]
+    },
+    {
+      "temat": "okres-przechowywania-dokumentacji-pracowniczej",
+      "rodzaj": "narzedzie",
+      "platny": false,
+      "tytul": "Jak długo przechowywać akta pracownika",
+      "link": "https://biznesdok.pl/okres-przechowywania-dokumentacji-pracowniczej",
+      "grupa": "Bezpłatne narzędzia",
+      "priorytet": "C",
+      "sezon": [{ "od": "01-02", "do": "01-31", "dlaczego": "porządkowanie archiwum po roku" }],
+      "fakty": [
+        "10 czy 50 lat — z raportem ZUS RIA lub bez.",
+        "Bezpłatnie, bez konta i bez e-maila."
+      ]
+    },
+    {
+      "temat": "weryfikacja",
+      "rodzaj": "narzedzie",
+      "platny": false,
+      "tytul": "Weryfikacja dokumentu BiznesDOK",
+      "link": "https://biznesdok.pl/weryfikacja",
+      "grupa": "Bezpłatne narzędzia",
+      "priorytet": "C",
+      "fakty": [
+        "Sprawdzenie, czy dokument o podanym identyfikatorze BD-RRRR-NNNNNN został przygotowany w BiznesDOK.",
+        "Identyfikator mają dokumenty płatne; bezpłatne dokumenty go nie mają."
+      ]
+    },
+    {
+      "temat": "poradniki/jak-odzyskac-pieniadze-za-fakture-wezwanie-do-zaplaty",
+      "rodzaj": "poradnik",
+      "platny": false,
+      "tytul": "Jak odzyskać pieniądze za fakturę — wezwanie do zapłaty przed pozwem",
+      "link": "https://biznesdok.pl/poradniki/jak-odzyskac-pieniadze-za-fakture-wezwanie-do-zaplaty",
+      "grupa": "Poradniki",
+      "priorytet": "A",
+      "dlaczego": "najnowszy poradnik; prowadzi do wezwania do zapłaty (kampania)",
+      "prowadzi_do": ["ostateczne-wezwanie-do-zaplaty", "kalkulator-odsetek"],
+      "fakty": ["Fakty prawne wyłącznie z treści poradnika na biznesdok.pl (z artykułami przepisów)."]
+    },
+    {
+      "temat": "poradniki/zatrudnienie-pracownika-na-umowe-o-prace",
+      "rodzaj": "poradnik",
+      "platny": false,
+      "tytul": "Zatrudnienie pracownika na umowę o pracę",
+      "link": "https://biznesdok.pl/poradniki/zatrudnienie-pracownika-na-umowe-o-prace",
+      "grupa": "Poradniki",
+      "priorytet": "B",
+      "sezon": [
+        { "od": "01-02", "do": "01-31", "dlaczego": "zatrudnienia od nowego roku" },
+        { "od": "09-01", "do": "09-30", "dlaczego": "zatrudnienia po wakacjach" }
+      ],
+      "prowadzi_do": ["umowa-o-prace-na-czas-nieokreslony", "umowa-o-prace-na-czas-okreslony", "kalkulator-wynagrodzen", "kalkulator-urlopu"],
+      "fakty": ["Fakty prawne wyłącznie z treści poradnika na biznesdok.pl (z artykułami przepisów)."]
+    },
+    {
+      "temat": "poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
+      "rodzaj": "poradnik",
+      "platny": false,
+      "tytul": "Zmiana członka zarządu w spółce z o.o.",
+      "link": "https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
+      "grupa": "Poradniki",
+      "priorytet": "B",
+      "sezon": [{ "od": "05-01", "do": "06-30", "dlaczego": "zmiany w zarządzie przy zgromadzeniach rocznych" }],
+      "prowadzi_do": ["protokol-nadzwyczajnego-zgromadzenia-wspolnikow", "uchwala-o-powolaniu-czlonka-zarzadu", "uchwala-o-odwolaniu-czlonka-zarzadu", "zgoda-na-powolanie-do-zarzadu", "oswiadczenie-zarzadu-o-adresach-czlonkow-zarzadu"],
+      "fakty": ["Fakty prawne wyłącznie z treści poradnika na biznesdok.pl (z artykułami przepisów)."]
+    },
+    {
+      "temat": "poradniki/zatwierdzenie-sprawozdania-finansowego-sp-z-o-o",
+      "rodzaj": "poradnik",
+      "platny": false,
+      "tytul": "Zatwierdzenie sprawozdania finansowego sp. z o.o.",
+      "link": "https://biznesdok.pl/poradniki/zatwierdzenie-sprawozdania-finansowego-sp-z-o-o",
+      "grupa": "Poradniki",
+      "priorytet": "B",
+      "sezon": [{ "od": "02-01", "do": "06-30", "dlaczego": "zatwierdzenie sprawozdania do 30.06" }],
+      "tylko_w_sezonie": true,
+      "prowadzi_do": ["uchwala-o-zatwierdzeniu-sprawozdania-finansowego", "sprawozdanie-z-dzialalnosci-zarzadu"],
+      "fakty": ["Fakty prawne wyłącznie z treści poradnika na biznesdok.pl (z artykułami przepisów)."]
+    },
+    {
+      "temat": "poradniki/sprzedaz-udzialow-w-spolce-z-o-o",
+      "rodzaj": "poradnik",
+      "platny": false,
+      "tytul": "Sprzedaż udziałów w spółce z o.o.",
+      "link": "https://biznesdok.pl/poradniki/sprzedaz-udzialow-w-spolce-z-o-o",
+      "grupa": "Poradniki",
+      "priorytet": "C",
+      "wstrzymany": "prowadzi do umowy sprzedaży udziałów, która czeka na uwagi prawnika (PN-05)",
+      "prowadzi_do": ["umowa-sprzedazy-udzialow-w-spolce-z-o-o", "protokol-nzw-zgoda-na-zbycie-udzialow", "ksiega-udzialow", "lista-wspolnikow"],
+      "fakty": []
+    }
+  ]
+}

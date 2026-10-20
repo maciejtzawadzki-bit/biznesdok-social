@@ -7,9 +7,9 @@ name: plan
 on:
   push:
     branches: [main]
-    paths: ["queue/**", "linkedin/**", "data/**", "tools/plan.mjs", "tools/kontrola.mjs", "tools/render.mjs", ".github/workflows/plan.yml"]
+    paths: ["queue/**", "linkedin/**", "data/**", "tools/plan.mjs", "tools/kontrola.mjs", "tools/tematy.mjs", "tools/render.mjs", ".github/workflows/plan.yml"]
   pull_request:
-    paths: ["tools/plan.mjs", "tools/kontrola.mjs", "tools/render.mjs", ".github/workflows/plan.yml"]
+    paths: ["tools/plan.mjs", "tools/kontrola.mjs", "tools/tematy.mjs", "tools/render.mjs", ".github/workflows/plan.yml"]
   schedule:
     - cron: "10 4 * * *"
   workflow_dispatch:

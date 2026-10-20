@@ -24,11 +24,21 @@ const FONTS = [
 
 const SIZES = { feed: [1080, 1350], story: [1080, 1920] };
 
-// Polska typografia: krótkie przyimki i spójniki nie zostają na końcu wiersza.
-const GLUE = /(^|[\s(])(w|z|i|o|u|a|we|ze|na|do|po|od|bez|dla|że|to|—)\s+/giu;
-function typo(text) {
-  return String(text ?? "").replace(GLUE, (_, pre, word) => `${pre}${word} `);
+// Polska typografia: krótkie przyimki i spójniki nie zostają na końcu wiersza — także na początku wyróżnienia [[…]].
+const GLUE = /(^|[\s(\[])(w|z|i|o|u|a|we|ze|na|do|po|od|bez|dla|że|to|—)\s+/giu;
+// Nierozdzielne: „sp. z o.o.”, skrót przed liczbą (art., ust., §, nr, pkt) i liczba z następnym słowem („15 dni”, „250 zł”).
+const NIEROZDZIELNE = [
+  [/sp\.\s+z\s+o\.o\./giu, "sp.\u00a0z\u00a0o.o."],
+  [/(^|[\s(\[])z\s+o\.o\./giu, "$1z\u00a0o.o."],
+  [/(^|[\s(\[])(art\.|ust\.|§|nr|pkt|poz\.)\s+(?=\d)/giu, "$1$2\u00a0"],
+  [/(\d)\s+(?=\p{L})/gu, "$1\u00a0"],
+];
+export function typo(text) {
+  let t = String(text ?? "");
+  for (const [wzor, zamiana] of NIEROZDZIELNE) t = t.replace(wzor, zamiana);
+  return t.replace(GLUE, (_, pre, word) => `${pre}${word}\u00a0`);
 }
+
 function esc(text) {
   return text.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 }
