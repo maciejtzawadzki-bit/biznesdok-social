@@ -1,51 +1,6 @@
 {
-  "zaktualizowano": "2026-10-19T12:29:49.928Z",
+  "zaktualizowano": "2026-10-20T06:46:49.218Z",
   "posty": [
-    {
-      "id": "2026-10-12-kalkulator-urlopu",
-      "kanal": "instagram",
-      "date": "2026-10-12",
-      "time": "08:30",
-      "type": "feed",
-      "rubric": "bezpłatne narzędzie",
-      "status": "published",
-      "naglowek": "Staż pracy, szkoła wliczana do stażu i niepełny etat — kalkulator uwzględnia je przy ustalaniu, czy pracownikowi przysługuje 20 czy 26 dni urlopu.",
-      "podpis": "Staż pracy, szkoła wliczana do stażu i niepełny etat — kalkulator uwzględnia je przy ustalaniu, czy pracownikowi przysługuje 20 czy 26 dni urlopu.\n\nBezpłatnie, bez konta i bez e-maila. Link w bio → Narzędzia.\n\n#urlop #kadry #urlopwypoczynkowy #małafirma #jdg #biznesdok",
-      "link": "https://biznesdok.pl/kalkulator-urlopu",
-      "obrazy": [],
-      "permalink": "https://www.instagram.com/p/DeYnuXYlNlT/",
-      "uwagi": []
-    },
-    {
-      "id": "2026-10-12-reel-film1-wezwanie",
-      "kanal": "instagram",
-      "date": "2026-10-12",
-      "time": "09:00",
-      "type": "reel",
-      "rubric": "film-demo",
-      "status": "published",
-      "naglowek": "Kontrahent nie zapłacił faktury? Ostateczne wezwanie do zapłaty przygotujesz w BiznesDOK: podajesz NIP, dodajesz faktury, odsetki wyliczają się same, a gotowy d",
-      "podpis": "Kontrahent nie zapłacił faktury? Ostateczne wezwanie do zapłaty przygotujesz w BiznesDOK: podajesz NIP, dodajesz faktury, odsetki wyliczają się same, a gotowy dokument dostajesz w PDF albo Word. Płacisz dopiero po wypełnieniu formularza.\n\nDokumenty przygotowane przez prawników. Dopasowane technologią.\n\nLink w bio → Dokumenty.\n\n#wezwaniedozapłaty #faktura #należności #przedsiębiorca #firma #biznesdok",
-      "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
-      "obrazy": [],
-      "permalink": "https://www.instagram.com/reel/DeYnwiTjnun/",
-      "uwagi": []
-    },
-    {
-      "id": "2026-10-12-story-kalkulator-wynagrodzen",
-      "kanal": "instagram",
-      "date": "2026-10-12",
-      "time": "12:30",
-      "type": "story",
-      "rubric": "relacja",
-      "status": "published",
-      "naglowek": "Brutto–netto i pełny koszt pracodawcy — miesiąc po miesiącu.",
-      "podpis": "Relacja (bez opisu), na grafice:\nKalkulator wynagrodzeń\nBrutto–netto i pełny koszt pracodawcy — miesiąc po miesiącu.\nStawki na 2026 r. Bezpłatnie, bez konta.\nbiznesdok.pl/kalkulator-wynagrodzen\nLink: https://biznesdok.pl/kalkulator-wynagrodzen",
-      "link": "https://biznesdok.pl/kalkulator-wynagrodzen",
-      "obrazy": [],
-      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4006127216199206646",
-      "uwagi": []
-    },
     {
       "id": "2026-10-13-zatrudnienie-pracownika",
       "kanal": "instagram",
@@ -265,17 +220,12 @@
       "time": "08:30",
       "type": "carousel",
       "rubric": "poradnik + dokumenty",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Zatwierdzenie sprawozdania finansowego spółki z o.o. to zwyczajne zgromadzenie wspólników, kilka uchwał i złożenie dokumentów w rejestrze. W karuzeli: terminy i",
       "podpis": "Zatwierdzenie sprawozdania finansowego spółki z o.o. to zwyczajne zgromadzenie wspólników, kilka uchwał i złożenie dokumentów w rejestrze. W karuzeli: terminy i kolejność działań.\n\nSprawozdanie finansowe przygotowuje księgowość. W BiznesDOK przygotujesz sprawozdanie z działalności zarządu oraz protokół zgromadzenia z uchwałami — na wzorach przygotowanych przez prawnika.\n\nPełny poradnik: link w bio → Poradniki.\n\n#spółkazoo #sprawozdaniefinansowe #zgromadzeniewspólników #zarząd #przedsiębiorca #biznesdok",
       "link": "https://biznesdok.pl/poradniki/zatwierdzenie-sprawozdania-finansowego-sp-z-o-o",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-20-sprawozdanie-finansowe-01-8ebd705f.jpg",
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-20-sprawozdanie-finansowe-02-8ebd705f.jpg",
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-20-sprawozdanie-finansowe-03-8ebd705f.jpg",
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-20-sprawozdanie-finansowe-04-8ebd705f.jpg"
-      ],
-      "permalink": null,
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/p/DetOBOelIqd/",
       "uwagi": []
     },
     {
@@ -302,14 +252,12 @@
       "time": "12:30",
       "type": "story",
       "rubric": "relacja",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Oświadczenie zleceniobiorcy do ZUS i PIT przygotujesz w BiznesDOK — bezpłatnie.",
       "podpis": "Relacja (bez opisu), na grafice:\nOświadczenie zleceniobiorcy\nOświadczenie zleceniobiorcy do ZUS i PIT przygotujesz w BiznesDOK — bezpłatnie.\nDane osobowe, adresy, urząd skarbowy, rachunek. Bez konta.\nbiznesdok.pl/dokument/oswiadczenie-zleceniobiorcy\nLink: https://biznesdok.pl/dokument/oswiadczenie-zleceniobiorcy",
       "link": "https://biznesdok.pl/dokument/oswiadczenie-zleceniobiorcy",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-20-story-oswiadczenie-zleceniobiorcy-01-759896bb.jpg"
-      ],
-      "permalink": null,
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4011924643677833897",
       "uwagi": []
     },
     {
@@ -319,14 +267,12 @@
       "time": "12:45",
       "type": "story",
       "rubric": "film-demo",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Wideo: Dane spółki z KRS po NIP",
       "podpis": "Relacja wideo (bez opisu): Dane spółki z KRS po NIP\nLink: https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
       "link": "https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/video/film2-zarzad-urywek-1-dane-po-nip.jpg"
-      ],
-      "permalink": null,
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4011924752587217953",
       "uwagi": []
     },
     {
