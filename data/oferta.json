@@ -341,8 +341,12 @@
       "priorytet": "C",
       "sezon": [{ "od": "12-01", "do": "01-31", "dlaczego": "wynagrodzenia od nowego roku" }],
       "fakty": [
-        "Uchwała wspólników o wynagrodzeniu członka zarządu w protokole zgromadzenia.",
-        "Liczbę ważnych głosów BiznesDOK liczy sam."
+        "Protokół nadzwyczajnego zgromadzenia wspólników z uchwałą o wynagrodzeniu prezesa albo członka zarządu i wynikiem głosowania.",
+        "Podajesz dane spółki, listę obecnych wspólników, dane członka zarządu oraz wysokość, formę i datę obowiązywania wynagrodzenia.",
+        "Liczbę ważnych głosów BiznesDOK liczy sam: za + przeciw + wstrzymujące się.",
+        "Jeżeli wzór przewiduje różne sytuacje, BiznesDOK dobiera wariant przygotowany przez prawnika zgodny z odpowiedziami.",
+        "W dokumencie: dane spółki, otwarcie zgromadzenia i porządek obrad, uchwała o wynagrodzeniu, wynik głosowania, podpisy.",
+        "PDF albo edytowalny Word."
       ]
     },
     {
