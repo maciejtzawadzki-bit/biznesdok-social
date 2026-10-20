@@ -1,5 +1,5 @@
 {
-  "zaktualizowano": "2026-10-20T12:39:33.393Z",
+  "zaktualizowano": "2026-10-20T12:52:59.479Z",
   "posty": [
     {
       "id": "2026-10-13-zatrudnienie-pracownika",
@@ -242,18 +242,20 @@
       "uwagi": []
     },
     {
-      "id": "linkedin-2026-10-20-ostateczne-wezwanie-do-zaplaty",
+      "id": "linkedin-2026-10-22-poradnik-zmiana-czlonka-zarzadu",
       "kanal": "linkedin",
       "date": "2026-10-20",
-      "time": "13:15",
+      "time": "15:00",
       "type": "linkedin",
-      "rubric": "seria produktowa",
-      "status": "published",
-      "naglowek": "Ostateczne wezwanie do zapłaty przygotowane na wzorze prawnika — z zestawieniem faktur i wyliczonymi odsetkami.",
-      "podpis": "Ostateczne wezwanie do zapłaty przygotowane na wzorze prawnika — z zestawieniem faktur i wyliczonymi odsetkami.\n\nJak to działa w BiznesDOK:\n• podajesz NIP — dane Twojej firmy i kontrahenta uzupełniają się z rejestru,\n• dodajesz jedną fakturę albo kilka; kwoty sumują się automatycznie, a odsetki są wyliczane,\n• wybierasz termin i rachunek do zapłaty,\n• oglądasz podgląd i pobierasz dokument w PDF albo Word. Płacisz dopiero po wypełnieniu formularza.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nKrótki film pokazujący cały proces: https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty?utm_source=linkedin&utm_medium=social&utm_campaign=ostateczne-wezwanie-do-zaplaty\n\n#należności #faktura #windykacja #przedsiębiorca #biznesdok",
-      "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
-      "obrazy": [],
-      "permalink": "https://www.linkedin.com/feed/update/urn:li:share:7518267045315239936",
+      "rubric": "poradnik spółkowy",
+      "status": "planned",
+      "naglowek": "Dokumenty do zmiany członka zarządu w spółce z o.o. przygotujesz w BiznesDOK na wzorach prawnika — od uchwały wspólników po oświadczenie o adresach do wniosku d",
+      "podpis": "Dokumenty do zmiany członka zarządu w spółce z o.o. przygotujesz w BiznesDOK na wzorach prawnika — od uchwały wspólników po oświadczenie o adresach do wniosku do KRS.\n\nW poradniku cała procedura krok po kroku:\n• uchwała o odwołaniu albo rezygnacja członka zarządu,\n• uchwała o powołaniu nowej osoby — na zgromadzeniu wspólników trafia do protokołu,\n• zgoda na powołanie z adresem do doręczeń, gdy nowy członek nie podpisuje wniosku,\n• oświadczenie o adresach członków zarządu i lista osób uprawnionych do powołania zarządu,\n• wniosek do KRS — wyłącznie elektronicznie, w ciągu 7 dni od dnia zmiany.\n\nZmiana działa od dnia uchwały albo skutecznej rezygnacji, nie od wpisu do KRS — od tej daty liczy się też termin na wniosek.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nPoradnik z listą dokumentów: https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o?utm_source=linkedin&utm_medium=social&utm_campaign=zmiana-czlonka-zarzadu\n\n#spółkazoo #zarząd #KRS #przedsiębiorca #biznesdok",
+      "link": "https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/linkedin-2026-10-22-poradnik-zmiana-czlonka-zarzadu-01-7a24642c.jpg"
+      ],
+      "permalink": null,
       "uwagi": []
     },
     {
@@ -303,23 +305,6 @@
       "link": "https://biznesdok.pl/dokument/umowa-o-prace-na-czas-okreslony",
       "obrazy": [
         "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-22-umowa-o-prace-czas-okreslony-01-c5b2ebb6.jpg"
-      ],
-      "permalink": null,
-      "uwagi": []
-    },
-    {
-      "id": "linkedin-2026-10-22-poradnik-zmiana-czlonka-zarzadu",
-      "kanal": "linkedin",
-      "date": "2026-10-22",
-      "time": "09:00",
-      "type": "linkedin",
-      "rubric": "poradnik spółkowy",
-      "status": "planned",
-      "naglowek": "Dokumenty do zmiany członka zarządu w spółce z o.o. przygotujesz w BiznesDOK na wzorach prawnika — od uchwały wspólników po oświadczenie o adresach do wniosku d",
-      "podpis": "Dokumenty do zmiany członka zarządu w spółce z o.o. przygotujesz w BiznesDOK na wzorach prawnika — od uchwały wspólników po oświadczenie o adresach do wniosku do KRS.\n\nW poradniku cała procedura krok po kroku:\n• uchwała o odwołaniu albo rezygnacja członka zarządu,\n• uchwała o powołaniu nowej osoby — na zgromadzeniu wspólników trafia do protokołu,\n• zgoda na powołanie z adresem do doręczeń, gdy nowy członek nie podpisuje wniosku,\n• oświadczenie o adresach członków zarządu i lista osób uprawnionych do powołania zarządu,\n• wniosek do KRS — wyłącznie elektronicznie, w ciągu 7 dni od dnia zmiany.\n\nZmiana działa od dnia uchwały albo skutecznej rezygnacji, nie od wpisu do KRS — od tej daty liczy się też termin na wniosek.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nPoradnik z listą dokumentów: https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o?utm_source=linkedin&utm_medium=social&utm_campaign=zmiana-czlonka-zarzadu\n\n#spółkazoo #zarząd #KRS #przedsiębiorca #biznesdok",
-      "link": "https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/linkedin-2026-10-22-poradnik-zmiana-czlonka-zarzadu-01-7a24642c.jpg"
       ],
       "permalink": null,
       "uwagi": []
