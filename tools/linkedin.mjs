@@ -3,7 +3,10 @@
 // klucz API, który leży wyłącznie w zmiennej środowiska automatu (BUFFER_API_KEY). Bez klucza nic się nie dzieje.
 // Post z linkedin/ ze statusem `planned` i dzisiejszą datą (albo zaległy do 3 dni): kontrola treści → grafika
 // (render.mjs, media/linkedin/) → push, żeby obraz był publiczny → Buffer z terminem posta (09:00) → status `handed`.
-// Użycie: node tools/linkedin.mjs [--now] [--dry-run] [--kanaly] [--schemat] [--test-buffer]
+// Przy każdym przebiegu najpierw wynik wcześniejszych przekazań: Buffer opublikował → `published` z linkiem (`permalink`),
+// Buffer zgłosił błąd albo po dobie od terminu nadal nic → `error` z powodem (widać w panelu KMZ).
+// Użycie: node tools/linkedin.mjs [--now] [--dry-run] [--kanaly] [--schemat] [--test-buffer] [--stan]
+//   --stan    — tylko sprawdzenie w Bufferze postów przekazanych (`handed`) i zapis wyniku,
 //   --kanaly  — lista kanałów konta Buffer (do ustawienia BUFFER_CHANNEL_ID przy pierwszym uruchomieniu),
 //   --schemat — opis wejścia createPost z API Buffera (tylko odczyt; do sprawdzenia formatu posta),
 //   --test-buffer — próba formatu bez publikacji: post w Bufferze z terminem za 45 dni, od razu usuwany,
@@ -21,6 +24,7 @@ const MEDIA = path.join(ROOT, "media", "linkedin");
 const LOG = path.join(ROOT, "DZIENNIK.md");
 const RAW = "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/linkedin";
 const ZALEGLE_DNI = 3;
+const DOBA = 86_400_000;
 
 // W chmurze ruch wychodzący bywa możliwy tylko przez proxy środowiska, a wbudowany fetch Node'a proxy pomija
 // (Node włącza je tylko przy starcie: NODE_USE_ENV_PROXY=1). Jak w tools/reakcje.mjs: przy ustawionym proxy pytamy
@@ -195,11 +199,69 @@ async function czekajNaObraz(url) {
   throw new Error(`Grafika nie jest publiczna po 150 s: ${url}`);
 }
 
+/**
+ * Wynik publikacji w Bufferze dla posta `handed` (decyzja 20.10.2026: „pilnowane na bieżąco i stale”). Buffer wysłał →
+ * `published` z linkiem do posta na LinkedIn; Buffer zgłosił błąd albo po dobie od terminu nadal nic → `error` z powodem.
+ * Zwraca pola do zapisania w poście albo null, gdy na wynik jeszcze za wcześnie.
+ */
+export function wynikZBuffera(post, stan, teraz = Date.now()) {
+  if (stan?.status === "sent") {
+    return { status: "published", publishedAt: stan.sentAt ?? new Date(teraz).toISOString(), permalink: stan.externalLink ?? null };
+  }
+  const blad = stan?.error?.message ?? (["error", "failed"].includes(stan?.status) ? `stan ${stan.status}` : null);
+  if (blad) return { status: "error", error: `Buffer: ${blad}`.slice(0, 500) };
+  const termin = Date.parse(stan?.dueAt ?? post.buffer?.dueAt ?? "");
+  if (Number.isFinite(termin) && teraz - termin > DOBA) {
+    return { status: "error", error: stan ? `Buffer nie opublikował posta w ciągu doby od terminu (stan: ${stan.status ?? "nieznany"})` : "Buffer nie ma już tego posta (usunięty?)" };
+  }
+  return null;
+}
+
+/** Stan posta w Bufferze — tylko odczyt (kształt zapytania z API Buffera, 20.10.2026). */
+async function stanWBufferze(id) {
+  const { post } = await graphql(`{ post(input: { id: ${JSON.stringify(id)} }) { id status dueAt sentAt externalLink error { message } } }`);
+  return post ?? null;
+}
+
+/** Posty `handed` po terminie: pyta Buffer o wynik i zapisuje go (published z linkiem albo error). */
+export async function sprawdzPrzekazane({ dryRun = false } = {}) {
+  const dzis = dzisWarszawa();
+  const godzina = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Warsaw", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).format(new Date());
+  const doSprawdzenia = wczytajPosty().filter(
+    ({ kanal, post }) => kanal === "linkedin" && post.status === "handed" && post.buffer?.postId && Date.parse(post.buffer.dueAt ?? "") < Date.now() - 300_000,
+  );
+  const wyniki = [];
+  for (const { post } of doSprawdzenia) {
+    let zmiana;
+    try {
+      zmiana = wynikZBuffera(post, await stanWBufferze(post.buffer.postId));
+    } catch (blad) {
+      console.error(`LinkedIn: nie sprawdzono w Bufferze ${post.id}: ${blad.message}`);
+      continue;
+    }
+    if (!zmiana) continue;
+    wyniki.push({ id: post.id, ...zmiana });
+    const opis = zmiana.status === "published" ? `opublikowany ${zmiana.permalink ?? ""}`.trim() : `BŁĄD ${zmiana.error}`;
+    console.log(`LinkedIn: ${post.id} — ${opis}`);
+    if (dryRun) continue;
+    Object.assign(post, zmiana);
+    await writeFile(path.join(KATALOG, `${post.id}.json`), `${JSON.stringify(post, null, 2)}\n`);
+    await appendFile(LOG, `- ${dzis} ${godzina} · LinkedIn ${zmiana.status === "published" ? "opublikowany" : "BŁĄD Buffera"} · ${post.id} · ${zmiana.permalink ?? zmiana.error}\n`);
+  }
+  if (wyniki.length && !dryRun) wypchnij(`linkedin: wynik z Buffera — ${wyniki.map((w) => `${w.status} ${w.id}`).join(", ")}`);
+  return wyniki;
+}
+
 /** Publikacja zaległych i dzisiejszych postów LinkedIn. Zwraca listę wyników (do podsumowania trybu 1). */
 export async function publikujLinkedIn({ dryRun = false, teraz = false, czekajace = new Set() } = {}) {
   if (!process.env.BUFFER_API_KEY) {
     console.log("LinkedIn: brak BUFFER_API_KEY — posty LinkedIn czekają w kolejce (właściciel łączy Buffer raz, instrukcja w CLAUDE.md).");
     return [];
+  }
+  try {
+    await sprawdzPrzekazane({ dryRun });
+  } catch (blad) {
+    console.error(`LinkedIn: sprawdzenie wyniku w Bufferze nie powiodło się: ${blad.message}`);
   }
   const dzis = dzisWarszawa();
   const godzina = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Warsaw", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).format(new Date());
@@ -273,7 +335,11 @@ export async function publikujLinkedIn({ dryRun = false, teraz = false, czekajac
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const args = process.argv.slice(2);
-  if (args.includes("--test-buffer")) {
+  if (args.includes("--stan")) {
+    if (!process.env.BUFFER_API_KEY) throw new Error("Brak BUFFER_API_KEY");
+    const wyniki = await sprawdzPrzekazane({ dryRun: args.includes("--dry-run") });
+    if (!wyniki.length) console.log("LinkedIn: brak postów przekazanych do Buffera, na których wynik można już sprawdzić.");
+  } else if (args.includes("--test-buffer")) {
     if (!process.env.BUFFER_API_KEY) throw new Error("Brak BUFFER_API_KEY");
     console.log(JSON.stringify(await testBuffera(), null, 2));
   } else if (args.includes("--schemat")) {
