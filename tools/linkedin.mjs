@@ -3,8 +3,9 @@
 // klucz API, który leży wyłącznie w zmiennej środowiska automatu (BUFFER_API_KEY). Bez klucza nic się nie dzieje.
 // Post z linkedin/ ze statusem `planned` i dzisiejszą datą (albo zaległy do 3 dni): kontrola treści → grafika
 // (render.mjs, media/linkedin/) → push, żeby obraz był publiczny → Buffer z terminem posta (09:00) → status `handed`.
-// Użycie: node tools/linkedin.mjs [--now] [--dry-run] [--kanaly]
+// Użycie: node tools/linkedin.mjs [--now] [--dry-run] [--kanaly] [--schemat]
 //   --kanaly  — lista kanałów konta Buffer (do ustawienia BUFFER_CHANNEL_ID przy pierwszym uruchomieniu),
+//   --schemat — opis wejścia createPost z API Buffera (tylko odczyt; do sprawdzenia formatu posta),
 //   --now     — publikuje posty z dzisiejszą datą od razu (bez czekania do ich godziny),
 //   --dry-run — niczego nie wypycha i nie wysyła; pokazuje, co by zrobił.
 import { appendFile, writeFile } from "node:fs/promises";
@@ -80,10 +81,29 @@ export async function kanaly() {
   return wynik;
 }
 
+const PROSTE = new Set(["String", "Boolean", "Int", "Float", "ID", "DateTime"]);
+const nazwaTypu = (t) => t?.name ?? t?.ofType?.name ?? t?.ofType?.ofType?.name ?? t?.ofType?.ofType?.ofType?.name ?? null;
+
+/** Opis wejścia mutacji createPost ze schematu API (introspekcja) — tylko odczyt, nic nie tworzy. */
+export async function schemat() {
+  const { __schema } = await graphql("{ __schema { mutationType { fields { name args { name type { name kind ofType { name kind ofType { name kind } } } } } } } }");
+  const mutacje = __schema?.mutationType?.fields ?? [];
+  const wynik = { mutacje: mutacje.filter((f) => /post/i.test(f.name)).map((f) => `${f.name}(${f.args.map((a) => `${a.name}: ${nazwaTypu(a.type)}`).join(", ")})`) };
+  const kolejka = [nazwaTypu(mutacje.find((f) => f.name === "createPost")?.args?.[0]?.type)].filter(Boolean);
+  while (kolejka.length && Object.keys(wynik).length < 12) {
+    const nazwa = kolejka.shift();
+    if (wynik[nazwa] || PROSTE.has(nazwa)) continue;
+    const { __type } = await graphql(`{ __type(name: ${JSON.stringify(nazwa)}) { kind inputFields { name type { name kind ofType { name kind ofType { name kind } } } } enumValues { name } } }`);
+    wynik[nazwa] = __type?.enumValues?.length ? __type.enumValues.map((e) => e.name) : (__type?.inputFields ?? []).map((f) => `${f.name}: ${nazwaTypu(f.type)}`);
+    for (const f of __type?.inputFields ?? []) kolejka.push(nazwaTypu(f.type));
+  }
+  return wynik;
+}
+
 async function idKanalu() {
   if (process.env.BUFFER_CHANNEL_ID) return process.env.BUFFER_CHANNEL_ID;
   const linkedin = (await kanaly()).filter((c) => /linkedin/i.test(c.service ?? ""));
-  const strona = linkedin.find((c) => /biznes\s?dok/i.test(c.name ?? "")) ?? (linkedin.length === 1 ? linkedin[0] : null);
+  const strona = linkedin.find((c) => /biznes[\s-]?dok/i.test(c.name ?? "")) ?? (linkedin.length === 1 ? linkedin[0] : null);
   if (!strona) throw new Error(`Nie wiem, który kanał LinkedIn wybrać (${linkedin.map((c) => c.name).join(", ") || "brak kanałów LinkedIn"}). Ustaw BUFFER_CHANNEL_ID.`);
   return strona.id;
 }
@@ -203,7 +223,10 @@ export async function publikujLinkedIn({ dryRun = false, teraz = false, czekajac
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const args = process.argv.slice(2);
-  if (args.includes("--kanaly")) {
+  if (args.includes("--schemat")) {
+    if (!process.env.BUFFER_API_KEY) throw new Error("Brak BUFFER_API_KEY");
+    console.log(JSON.stringify(await schemat(), null, 2));
+  } else if (args.includes("--kanaly")) {
     if (!process.env.BUFFER_API_KEY) throw new Error("Brak BUFFER_API_KEY");
     console.log(JSON.stringify(await kanaly(), null, 2));
   } else {
