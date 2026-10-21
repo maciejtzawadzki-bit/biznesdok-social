@@ -3,7 +3,7 @@
   "date": "2026-10-21",
   "time": "12:30",
   "type": "story",
-  "status": "planned",
+  "status": "published",
   "pillar": "płatny dokument",
   "link": "https://biznesdok.pl/dokument/wypowiedzenie-umowy-zlecenia",
   "slides": [
@@ -15,5 +15,8 @@
       "note": "biznesdok.pl/dokument/wypowiedzenie-umowy-zlecenia"
     }
   ],
-  "caption": ""
+  "caption": "",
+  "publishedAt": "2026-10-21T06:44:30.022Z",
+  "permalink": "https://www.instagram.com/stories/biznesdok.pl/4012649044412856680",
+  "mediaId": "17986506021093678"
 }
