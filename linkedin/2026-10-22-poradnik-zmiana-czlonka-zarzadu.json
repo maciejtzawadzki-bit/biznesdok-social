@@ -3,7 +3,7 @@
   "date": "2026-10-20",
   "time": "15:00",
   "type": "feed",
-  "status": "handed",
+  "status": "published",
   "pillar": "poradnik spółkowy",
   "temat": "poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
   "link": "https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
@@ -22,5 +22,7 @@
   "buffer": {
     "postId": "6ad7644b25cf50b93e67ed70",
     "dueAt": "2026-10-20T12:56:30.301Z"
-  }
+  },
+  "publishedAt": "2026-10-20T12:57:07.065Z",
+  "permalink": "https://www.linkedin.com/feed/update/urn:li:share:7518294224740548608"
 }
