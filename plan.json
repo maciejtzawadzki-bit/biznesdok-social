@@ -1,51 +1,6 @@
 {
-  "zaktualizowano": "2026-10-20T13:47:42.972Z",
+  "zaktualizowano": "2026-10-21T06:46:01.817Z",
   "posty": [
-    {
-      "id": "2026-10-13-zatrudnienie-pracownika",
-      "kanal": "instagram",
-      "date": "2026-10-13",
-      "time": "08:30",
-      "type": "carousel",
-      "rubric": "poradnik + dokumenty",
-      "status": "published",
-      "naglowek": "Zatrudnienie pracownika to kilka obowiązków przed pierwszym dniem pracy i kilka w ciągu tygodnia po nim. W karuzeli: kolejność działań i terminy.",
-      "podpis": "Zatrudnienie pracownika to kilka obowiązków przed pierwszym dniem pracy i kilka w ciągu tygodnia po nim. W karuzeli: kolejność działań i terminy.\n\nW BiznesDOK przygotujesz umowę o pracę z informacją o warunkach zatrudnienia jako załącznikiem — na wzorze przygotowanym przez prawnika. Bezpłatnie dostępne są też kalkulatory wynagrodzeń i urlopu.\n\nPełny poradnik: link w bio → Poradniki.\n\n#zatrudnienie #umowaopracę #kadry #pracodawca #małafirma #biznesdok",
-      "link": "https://biznesdok.pl/poradniki/zatrudnienie-pracownika-na-umowe-o-prace",
-      "obrazy": [],
-      "permalink": "https://www.instagram.com/p/DebMgKtjwjt/",
-      "uwagi": []
-    },
-    {
-      "id": "2026-10-13-story-okres-wypowiedzenia",
-      "kanal": "instagram",
-      "date": "2026-10-13",
-      "time": "12:30",
-      "type": "story",
-      "rubric": "relacja",
-      "status": "published",
-      "naglowek": "Okres wypowiedzenia i dzień rozwiązania umowy — policzone za Ciebie.",
-      "podpis": "Relacja (bez opisu), na grafice:\nKalkulator okresu wypowiedzenia\nOkres wypowiedzenia i dzień rozwiązania umowy — policzone za Ciebie.\nTakże gdy staż rośnie w trakcie wypowiedzenia. Bezpłatnie, bez konta.\nbiznesdok.pl/kalkulator-okresu-wypowiedzenia\nLink: https://biznesdok.pl/kalkulator-okresu-wypowiedzenia",
-      "link": "https://biznesdok.pl/kalkulator-okresu-wypowiedzenia",
-      "obrazy": [],
-      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4006851414777442609",
-      "uwagi": []
-    },
-    {
-      "id": "2026-10-13-story-wideo-dane-po-nip",
-      "kanal": "instagram",
-      "date": "2026-10-13",
-      "time": "12:45",
-      "type": "story",
-      "rubric": "film-demo",
-      "status": "published",
-      "naglowek": "Wideo: Dane firmy i kontrahenta po NIP",
-      "podpis": "Relacja wideo (bez opisu): Dane firmy i kontrahenta po NIP\nLink: https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
-      "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
-      "obrazy": [],
-      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4006851852368785128",
-      "uwagi": []
-    },
     {
       "id": "2026-10-14-reel-film2-zarzad",
       "kanal": "instagram",
@@ -248,12 +203,12 @@
       "time": "15:00",
       "type": "linkedin",
       "rubric": "poradnik spółkowy",
-      "status": "handed",
+      "status": "published",
       "naglowek": "Dokumenty do zmiany członka zarządu w spółce z o.o. przygotujesz w BiznesDOK na wzorach prawnika — od uchwały wspólników po oświadczenie o adresach do wniosku d",
       "podpis": "Dokumenty do zmiany członka zarządu w spółce z o.o. przygotujesz w BiznesDOK na wzorach prawnika — od uchwały wspólników po oświadczenie o adresach do wniosku do KRS.\n\nW poradniku cała procedura krok po kroku:\n• uchwała o odwołaniu albo rezygnacja członka zarządu,\n• uchwała o powołaniu nowej osoby — na zgromadzeniu wspólników trafia do protokołu,\n• zgoda na powołanie z adresem do doręczeń, gdy nowy członek nie podpisuje wniosku,\n• oświadczenie o adresach członków zarządu i lista osób uprawnionych do powołania zarządu,\n• wniosek do KRS — wyłącznie elektronicznie, w ciągu 7 dni od dnia zmiany.\n\nZmiana działa od dnia uchwały albo skutecznej rezygnacji, nie od wpisu do KRS — od tej daty liczy się też termin na wniosek.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nPoradnik z listą dokumentów: https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o?utm_source=linkedin&utm_medium=social&utm_campaign=zmiana-czlonka-zarzadu\n\n#spółkazoo #zarząd #KRS #przedsiębiorca #biznesdok",
       "link": "https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
       "obrazy": [],
-      "permalink": null,
+      "permalink": "https://www.linkedin.com/feed/update/urn:li:share:7518294224740548608",
       "uwagi": []
     },
     {
@@ -263,14 +218,12 @@
       "time": "08:30",
       "type": "feed",
       "rubric": "seria produktowa",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Dokumenty przygotowane przez prawników. Dopasowane technologią.",
       "podpis": "Dokumenty przygotowane przez prawników. Dopasowane technologią.\n\nWypowiedzenie umowy o pracę na czas nieokreślony składane przez pracodawcę — na treści przygotowanej przez prawnika. Wybierasz staż pracownika, a BiznesDOK dobiera okres wypowiedzenia i właściwy punkt art. 36 § 1 Kodeksu pracy. Urlop albo zwolnienie z obowiązku świadczenia pracy w okresie wypowiedzenia trafiają do dokumentu w wybranym wariancie, a dane pracodawcy uzupełniają się po NIP.\n\nGotowy dokument zapiszesz na swoim koncie w BiznesDOK.\n\nLink w bio → Dokumenty.\n\n#wypowiedzenie #umowaopracę #pracodawca #kadry #hr #biznesdok",
       "link": "https://biznesdok.pl/dokument/wypowiedzenie-umowy-o-prace-przez-pracodawce",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-21-wypowiedzenie-umowy-o-prace-przez-pracodawce-01-6df22721.jpg"
-      ],
-      "permalink": null,
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/p/Devyue2jk38/",
       "uwagi": []
     },
     {
@@ -280,14 +233,12 @@
       "time": "12:30",
       "type": "story",
       "rubric": "płatny dokument",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Wypowiedzenie zlecenia z okresem jak w umowie i danymi firmy po NIP.",
       "podpis": "Relacja (bez opisu), na grafice:\nWypowiedzenie umowy zlecenia\nWypowiedzenie zlecenia z okresem jak w umowie i danymi firmy po NIP.\nTreść przygotowana przez prawnika. Zwrot materiałów i poufność już w dokumencie. PDF albo Word.\nbiznesdok.pl/dokument/wypowiedzenie-umowy-zlecenia\nLink: https://biznesdok.pl/dokument/wypowiedzenie-umowy-zlecenia",
       "link": "https://biznesdok.pl/dokument/wypowiedzenie-umowy-zlecenia",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-21-story-wypowiedzenie-umowy-zlecenia-01-6f819372.jpg"
-      ],
-      "permalink": null,
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4012649044412856680",
       "uwagi": []
     },
     {
