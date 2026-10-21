@@ -47,3 +47,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-10-20 13:05 · LinkedIn · 2026-10-20-ostateczne-wezwanie-do-zaplaty · przekazany do Buffer na 2026-10-20T11:08:38.093Z
 - 2026-10-20 13:26 · LinkedIn opublikowany · 2026-10-20-ostateczne-wezwanie-do-zaplaty · https://www.linkedin.com/feed/update/urn:li:share:7518267045315239936
 - 2026-10-20 14:53 · LinkedIn · 2026-10-22-poradnik-zmiana-czlonka-zarzadu · przekazany do Buffer na 2026-10-20T12:56:30.301Z
+- 2026-10-21 08:43 · feed · 2026-10-21-wypowiedzenie-umowy-o-prace-przez-pracodawce · https://www.instagram.com/p/Devyue2jk38/
