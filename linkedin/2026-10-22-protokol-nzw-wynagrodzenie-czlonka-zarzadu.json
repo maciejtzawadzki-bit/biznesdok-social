@@ -3,7 +3,7 @@
   "date": "2026-10-22",
   "time": "09:00",
   "type": "feed",
-  "status": "handed",
+  "status": "published",
   "pillar": "seria produktowa — dokument spółki",
   "temat": "protokol-nzw-wynagrodzenie-czlonka-zarzadu",
   "link": "https://biznesdok.pl/dokument/protokol-nzw-wynagrodzenie-czlonka-zarzadu",
@@ -21,5 +21,7 @@
   "buffer": {
     "postId": "6adb479e1304dd674c8bb70e",
     "dueAt": "2026-10-23T11:43:12.852Z"
-  }
+  },
+  "publishedAt": "2026-10-23T11:43:36.962Z",
+  "permalink": "https://www.linkedin.com/feed/update/urn:li:share:7519362891855290370"
 }
