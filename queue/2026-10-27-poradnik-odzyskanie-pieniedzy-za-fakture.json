@@ -1,0 +1,67 @@
+{
+  "id": "2026-10-27-poradnik-odzyskanie-pieniedzy-za-fakture",
+  "date": "2026-10-27",
+  "time": "08:30",
+  "type": "carousel",
+  "pillar": "poradnik + dokumenty",
+  "temat": "poradniki/jak-odzyskac-pieniadze-za-fakture-wezwanie-do-zaplaty",
+  "link": "https://biznesdok.pl/poradniki/jak-odzyskac-pieniadze-za-fakture-wezwanie-do-zaplaty",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Poradnik",
+      "text": "Kontrahent nie płaci faktury. Przed pozwem [[wezwij go do zapłaty.]]",
+      "size": 84
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Do faktury",
+      "size": 60,
+      "text": "Co możesz doliczyć",
+      "items": [
+        [
+          "Odsetki za opóźnienie",
+          "od dnia następnego po terminie zapłaty"
+        ],
+        [
+          "Rekompensata za koszty odzyskiwania",
+          "w transakcjach handlowych przysługuje bez wezwania"
+        ],
+        [
+          "Dłużnik-konsument",
+          "ustawa o transakcjach handlowych nie ma zastosowania"
+        ]
+      ]
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Kolejność",
+      "size": 60,
+      "text": "Krok po kroku",
+      "items": [
+        [
+          "Zbierz dowody",
+          "umowa, faktura, korespondencja"
+        ],
+        [
+          "Policz należność z odsetkami",
+          "stawki zmieniają się w czasie"
+        ],
+        [
+          "Wyślij wezwanie do zapłaty",
+          "list polecony i e-mail, z dowodem doręczenia"
+        ]
+      ]
+    },
+    {
+      "layout": "headline",
+      "eyebrow": "Pamiętaj",
+      "size": 84,
+      "text": "Wezwanie [[nie przerywa przedawnienia.]]",
+      "sub": "Ostateczne wezwanie do zapłaty przygotujesz w BiznesDOK, a odsetki policzysz w bezpłatnym kalkulatorze.",
+      "note": "Pełny poradnik: link w bio"
+    }
+  ],
+  "caption": "Faktura jest po terminie, a kontrahent milczy. W karuzeli: co możesz doliczyć do należności między przedsiębiorcami i jak wygląda kolejność działań przed pozwem.\n\nOstateczne wezwanie do zapłaty przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika, a odsetki policzysz w bezpłatnym kalkulatorze. To poradnik ogólny, nie ocena konkretnej sprawy.\n\nPełny poradnik: link w bio → Poradniki.\n\n#wezwaniedozapłaty #faktura #należności #przedsiębiorca #firma #biznesdok",
+  "status": "planned"
+}

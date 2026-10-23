@@ -1,0 +1,20 @@
+{
+  "id": "2026-10-30-story-okres-przechowywania-dokumentacji",
+  "date": "2026-10-30",
+  "time": "12:30",
+  "type": "story",
+  "status": "planned",
+  "pillar": "bezpłatne narzędzie",
+  "temat": "okres-przechowywania-dokumentacji-pracowniczej",
+  "link": "https://biznesdok.pl/okres-przechowywania-dokumentacji-pracowniczej",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Narzędzie BiznesDOK",
+      "text": "Jak długo przechowywać akta pracownika: [[10 czy 50 lat.]]",
+      "sub": "Z raportem ZUS RIA lub bez. Bezpłatnie, bez konta i bez e-maila.",
+      "note": "biznesdok.pl/okres-przechowywania-dokumentacji-pracowniczej"
+    }
+  ],
+  "caption": ""
+}
