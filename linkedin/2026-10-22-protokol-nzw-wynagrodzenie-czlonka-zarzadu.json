@@ -3,7 +3,7 @@
   "date": "2026-10-22",
   "time": "09:00",
   "type": "feed",
-  "status": "planned",
+  "status": "handed",
   "pillar": "seria produktowa — dokument spółki",
   "temat": "protokol-nzw-wynagrodzenie-czlonka-zarzadu",
   "link": "https://biznesdok.pl/dokument/protokol-nzw-wynagrodzenie-czlonka-zarzadu",
@@ -16,5 +16,10 @@
     }
   ],
   "caption": "Uchwałę wspólników o wynagrodzeniu członka zarządu przygotujesz w BiznesDOK jako protokół nadzwyczajnego zgromadzenia wspólników — na wzorze przygotowanym przez prawnika.\n\nJak to działa:\n• podajesz dane spółki, listę obecnych wspólników i dane członka zarządu,\n• wpisujesz wysokość, formę i datę obowiązywania wynagrodzenia,\n• podajesz wynik głosowania — liczbę ważnych głosów BiznesDOK liczy sam (za + przeciw + wstrzymujące się),\n• jeżeli wzór przewiduje różne sytuacje, BiznesDOK dobiera wariant przygotowany przez prawnika zgodny z Twoimi odpowiedziami.\n\nW protokole: dane spółki, otwarcie zgromadzenia i porządek obrad, uchwała o wynagrodzeniu, wynik głosowania i podpisy. Plik w PDF albo Word.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nhttps://biznesdok.pl/dokument/protokol-nzw-wynagrodzenie-czlonka-zarzadu?utm_source=linkedin&utm_medium=social&utm_campaign=protokol-nzw-wynagrodzenie-czlonka-zarzadu\n\n#spółkazoo #zarząd #zgromadzeniewspólników #przedsiębiorca #biznesdok",
-  "zaplanowano": "20.10.2026: czwartek po wtorkowym poradniku o zmianie członka zarządu — propozycja automatu (dokument spółki), Maciej: „tak”; fakty ze strony produktu (data/oferta.json)"
+  "zaplanowano": "20.10.2026: czwartek po wtorkowym poradniku o zmianie członka zarządu — propozycja automatu (dokument spółki), Maciej: „tak”; fakty ze strony produktu (data/oferta.json)",
+  "handedAt": "2026-10-23T11:40:14.255Z",
+  "buffer": {
+    "postId": "6adb479e1304dd674c8bb70e",
+    "dueAt": "2026-10-23T11:43:12.852Z"
+  }
 }
