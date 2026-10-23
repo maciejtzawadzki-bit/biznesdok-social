@@ -1,51 +1,6 @@
 {
-  "zaktualizowano": "2026-10-22T09:22:38.970Z",
+  "zaktualizowano": "2026-10-23T09:18:50.907Z",
   "posty": [
-    {
-      "id": "2026-10-15-umowa-o-prace-czas-nieokreslony",
-      "kanal": "instagram",
-      "date": "2026-10-15",
-      "time": "08:30",
-      "type": "feed",
-      "rubric": "seria produktowa",
-      "status": "published",
-      "naglowek": "Dokumenty przygotowane przez prawników. Dopasowane technologią.",
-      "podpis": "Dokumenty przygotowane przez prawników. Dopasowane technologią.\n\nUmowa o pracę na czas nieokreślony z załącznikami — zakresem obowiązków i informacją o warunkach zatrudnienia — przygotowana przez prawnika. Ty podajesz dane stron i warunki zatrudnienia, a BiznesDOK uzupełnia dokument i przygotowuje gotowy plik.\n\nPo zakupie umowę masz na swoim koncie w BiznesDOK.\n\nLink w bio → Dokumenty.\n\n#umowaopracę #kadry #pracodawca #małafirma #jdg #biznesdok",
-      "link": "https://biznesdok.pl/dokument/umowa-o-prace-na-czas-nieokreslony",
-      "obrazy": [],
-      "permalink": "https://www.instagram.com/p/DegWAn3FR_p/",
-      "uwagi": []
-    },
-    {
-      "id": "2026-10-15-story-wniosek-o-urlop",
-      "kanal": "instagram",
-      "date": "2026-10-15",
-      "time": "12:30",
-      "type": "story",
-      "rubric": "relacja",
-      "status": "published",
-      "naglowek": "Wniosek o urlop lub odbiór dnia wolnego przygotujesz w BiznesDOK — bezpłatnie.",
-      "podpis": "Relacja (bez opisu), na grafice:\nWniosek o urlop\nWniosek o urlop lub odbiór dnia wolnego przygotujesz w BiznesDOK — bezpłatnie.\nMiejsca na podpisy pracownika i przełożonego. Bez konta.\nbiznesdok.pl/dokument/wniosek-o-urlop-wypoczynkowy\nLink: https://biznesdok.pl/dokument/wniosek-o-urlop-wypoczynkowy",
-      "link": "https://biznesdok.pl/dokument/wniosek-o-urlop-wypoczynkowy",
-      "obrazy": [],
-      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4008301063858863548",
-      "uwagi": []
-    },
-    {
-      "id": "2026-10-15-story-wideo-kilka-faktur",
-      "kanal": "instagram",
-      "date": "2026-10-15",
-      "time": "12:45",
-      "type": "story",
-      "rubric": "film-demo",
-      "status": "published",
-      "naglowek": "Wideo: Kilka faktur w jednym wezwaniu — kwoty sumują się automatycznie",
-      "podpis": "Relacja wideo (bez opisu): Kilka faktur w jednym wezwaniu — kwoty sumują się automatycznie\nLink: https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
-      "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
-      "obrazy": [],
-      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4008300736517637849",
-      "uwagi": []
-    },
     {
       "id": "2026-10-16-swiadectwo-pracy",
       "kanal": "instagram",
@@ -226,7 +181,9 @@
         "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-22-umowa-o-prace-czas-okreslony-01-c5b2ebb6.jpg"
       ],
       "permalink": null,
-      "uwagi": []
+      "uwagi": [
+        "termin minął, a post nie jest opublikowany"
+      ]
     },
     {
       "id": "linkedin-2026-10-22-protokol-nzw-wynagrodzenie-czlonka-zarzadu",
@@ -243,7 +200,9 @@
         "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/linkedin-2026-10-22-protokol-nzw-wynagrodzenie-czlonka-zarzadu-01-034001ef.jpg"
       ],
       "permalink": null,
-      "uwagi": []
+      "uwagi": [
+        "termin minął, a post nie jest opublikowany"
+      ]
     },
     {
       "id": "2026-10-22-story-wypowiedzenie-zmieniajace",
@@ -260,7 +219,9 @@
         "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-22-story-wypowiedzenie-zmieniajace-01-b856f931.jpg"
       ],
       "permalink": null,
-      "uwagi": []
+      "uwagi": [
+        "termin minął, a post nie jest opublikowany"
+      ]
     },
     {
       "id": "2026-10-22-story-wideo-zarzad-wariant",
@@ -277,7 +238,9 @@
         "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/video/film2-zarzad-urywek-2-wariant.jpg"
       ],
       "permalink": null,
-      "uwagi": []
+      "uwagi": [
+        "termin minął, a post nie jest opublikowany"
+      ]
     },
     {
       "id": "2026-10-23-ostateczne-wezwanie-do-zaplaty",
