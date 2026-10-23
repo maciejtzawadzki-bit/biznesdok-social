@@ -50,3 +50,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-10-21 08:43 · feed · 2026-10-21-wypowiedzenie-umowy-o-prace-przez-pracodawce · https://www.instagram.com/p/Devyue2jk38/
 - 2026-10-21 08:43 · story · 2026-10-21-story-wypowiedzenie-umowy-zlecenia · https://www.instagram.com/stories/biznesdok.pl/4012649044412856680
 - 2026-10-21 08:44 · LinkedIn opublikowany · 2026-10-22-poradnik-zmiana-czlonka-zarzadu · https://www.linkedin.com/feed/update/urn:li:share:7518294224740548608
+- 2026-10-23 13:39 · feed · 2026-10-22-umowa-o-prace-czas-okreslony · https://www.instagram.com/p/De1eLqSICXx/
