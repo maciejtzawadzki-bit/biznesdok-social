@@ -1,5 +1,5 @@
 {
-  "zaktualizowano": "2026-10-23T09:18:50.907Z",
+  "zaktualizowano": "2026-10-23T11:41:38.906Z",
   "posty": [
     {
       "id": "2026-10-16-swiadectwo-pracy",
@@ -173,17 +173,13 @@
       "time": "08:30",
       "type": "feed",
       "rubric": "seria produktowa",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Dokumenty przygotowane przez prawników. Dopasowane technologią.",
       "podpis": "Dokumenty przygotowane przez prawników. Dopasowane technologią.\n\nUmowa o pracę na czas określony — stanowisko, wynagrodzenie, wymiar pracy i pozostałe warunki zatrudnienia — przygotowana przez prawnika. Ty podajesz dane stron i warunki, a BiznesDOK uzupełnia dokument i przygotowuje gotowy plik.\n\nPo zakupie umowę masz na swoim koncie w BiznesDOK.\n\nLink w bio → Dokumenty.\n\n#umowaopracę #kadry #pracodawca #małafirma #jdg #biznesdok",
       "link": "https://biznesdok.pl/dokument/umowa-o-prace-na-czas-okreslony",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-22-umowa-o-prace-czas-okreslony-01-c5b2ebb6.jpg"
-      ],
-      "permalink": null,
-      "uwagi": [
-        "termin minął, a post nie jest opublikowany"
-      ]
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/p/De1eLqSICXx/",
+      "uwagi": []
     },
     {
       "id": "linkedin-2026-10-22-protokol-nzw-wynagrodzenie-czlonka-zarzadu",
@@ -192,22 +188,35 @@
       "time": "09:00",
       "type": "linkedin",
       "rubric": "seria produktowa — dokument spółki",
-      "status": "planned",
+      "status": "handed",
       "naglowek": "Uchwałę wspólników o wynagrodzeniu członka zarządu przygotujesz w BiznesDOK jako protokół nadzwyczajnego zgromadzenia wspólników — na wzorze przygotowanym przez",
       "podpis": "Uchwałę wspólników o wynagrodzeniu członka zarządu przygotujesz w BiznesDOK jako protokół nadzwyczajnego zgromadzenia wspólników — na wzorze przygotowanym przez prawnika.\n\nJak to działa:\n• podajesz dane spółki, listę obecnych wspólników i dane członka zarządu,\n• wpisujesz wysokość, formę i datę obowiązywania wynagrodzenia,\n• podajesz wynik głosowania — liczbę ważnych głosów BiznesDOK liczy sam (za + przeciw + wstrzymujące się),\n• jeżeli wzór przewiduje różne sytuacje, BiznesDOK dobiera wariant przygotowany przez prawnika zgodny z Twoimi odpowiedziami.\n\nW protokole: dane spółki, otwarcie zgromadzenia i porządek obrad, uchwała o wynagrodzeniu, wynik głosowania i podpisy. Plik w PDF albo Word.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nhttps://biznesdok.pl/dokument/protokol-nzw-wynagrodzenie-czlonka-zarzadu?utm_source=linkedin&utm_medium=social&utm_campaign=protokol-nzw-wynagrodzenie-czlonka-zarzadu\n\n#spółkazoo #zarząd #zgromadzeniewspólników #przedsiębiorca #biznesdok",
       "link": "https://biznesdok.pl/dokument/protokol-nzw-wynagrodzenie-czlonka-zarzadu",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/linkedin-2026-10-22-protokol-nzw-wynagrodzenie-czlonka-zarzadu-01-034001ef.jpg"
-      ],
+      "obrazy": [],
       "permalink": null,
-      "uwagi": [
-        "termin minął, a post nie jest opublikowany"
-      ]
+      "uwagi": []
     },
     {
-      "id": "2026-10-22-story-wypowiedzenie-zmieniajace",
+      "id": "2026-10-26-ostateczne-wezwanie-do-zaplaty",
       "kanal": "instagram",
-      "date": "2026-10-22",
+      "date": "2026-10-26",
+      "time": "08:30",
+      "type": "feed",
+      "rubric": "seria produktowa",
+      "status": "planned",
+      "naglowek": "Dokumenty przygotowane przez prawników. Dopasowane technologią.",
+      "podpis": "Dokumenty przygotowane przez prawników. Dopasowane technologią.\n\nOstateczne wezwanie do zapłaty: podajesz NIP, dodajesz faktury, odsetki wyliczają się same, a gotowy dokument dostajesz w PDF albo Word. Płacisz dopiero po wypełnieniu formularza.\n\nPo zakupie dokument masz na swoim koncie w BiznesDOK.\n\nLink w bio → Dokumenty.\n\n#wezwaniedozapłaty #faktura #należności #przedsiębiorca #firma #biznesdok",
+      "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-26-ostateczne-wezwanie-do-zaplaty-01-eef07381.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-10-26-story-wypowiedzenie-zmieniajace",
+      "kanal": "instagram",
+      "date": "2026-10-26",
       "time": "12:30",
       "type": "story",
       "rubric": "płatny dokument",
@@ -216,17 +225,32 @@
       "podpis": "Relacja (bez opisu), na grafice:\nWypowiedzenie zmieniające\nNowe warunki pracy lub płacy w gotowym wypowiedzeniu zmieniającym.\nPodajesz dotychczasowe i proponowane warunki, daty i przyczynę. Treść przygotowana przez prawnika.\nbiznesdok.pl/dokument/wypowiedzenie-zmieniajace-warunki-pracy-lub-placy\nLink: https://biznesdok.pl/dokument/wypowiedzenie-zmieniajace-warunki-pracy-lub-placy",
       "link": "https://biznesdok.pl/dokument/wypowiedzenie-zmieniajace-warunki-pracy-lub-placy",
       "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-22-story-wypowiedzenie-zmieniajace-01-b856f931.jpg"
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-26-story-wypowiedzenie-zmieniajace-01-b856f931.jpg"
       ],
       "permalink": null,
-      "uwagi": [
-        "termin minął, a post nie jest opublikowany"
-      ]
+      "uwagi": []
     },
     {
-      "id": "2026-10-22-story-wideo-zarzad-wariant",
+      "id": "2026-10-27-story-subskrypcja",
       "kanal": "instagram",
-      "date": "2026-10-22",
+      "date": "2026-10-27",
+      "time": "12:30",
+      "type": "story",
+      "rubric": "Subskrypcja",
+      "status": "planned",
+      "naglowek": "Wszystkie płatne dokumenty BiznesDOK w jednej Subskrypcji.",
+      "podpis": "Relacja (bez opisu), na grafice:\nSubskrypcja BiznesDOK\nWszystkie płatne dokumenty BiznesDOK w jednej Subskrypcji.\nPDF i Word, bez limitu dokumentów. Nowe dokumenty dochodzą bez dopłat.\nbiznesdok.pl/subskrypcja\nLink: https://biznesdok.pl/subskrypcja",
+      "link": "https://biznesdok.pl/subskrypcja",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-27-story-subskrypcja-01-5c7cada7.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-10-27-story-wideo-zarzad-wariant",
+      "kanal": "instagram",
+      "date": "2026-10-27",
       "time": "12:45",
       "type": "story",
       "rubric": "film-demo",
@@ -236,42 +260,6 @@
       "link": "https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
       "obrazy": [
         "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/video/film2-zarzad-urywek-2-wariant.jpg"
-      ],
-      "permalink": null,
-      "uwagi": [
-        "termin minął, a post nie jest opublikowany"
-      ]
-    },
-    {
-      "id": "2026-10-23-ostateczne-wezwanie-do-zaplaty",
-      "kanal": "instagram",
-      "date": "2026-10-23",
-      "time": "08:30",
-      "type": "feed",
-      "rubric": "seria produktowa",
-      "status": "planned",
-      "naglowek": "Dokumenty przygotowane przez prawników. Dopasowane technologią.",
-      "podpis": "Dokumenty przygotowane przez prawników. Dopasowane technologią.\n\nOstateczne wezwanie do zapłaty: podajesz NIP, dodajesz faktury, odsetki wyliczają się same, a gotowy dokument dostajesz w PDF albo Word. Płacisz dopiero po wypełnieniu formularza.\n\nPo zakupie dokument masz na swoim koncie w BiznesDOK.\n\nLink w bio → Dokumenty.\n\n#wezwaniedozapłaty #faktura #należności #przedsiębiorca #firma #biznesdok",
-      "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-23-ostateczne-wezwanie-do-zaplaty-01-eef07381.jpg"
-      ],
-      "permalink": null,
-      "uwagi": []
-    },
-    {
-      "id": "2026-10-23-story-subskrypcja",
-      "kanal": "instagram",
-      "date": "2026-10-23",
-      "time": "12:30",
-      "type": "story",
-      "rubric": "Subskrypcja",
-      "status": "planned",
-      "naglowek": "Wszystkie płatne dokumenty BiznesDOK w jednej Subskrypcji.",
-      "podpis": "Relacja (bez opisu), na grafice:\nSubskrypcja BiznesDOK\nWszystkie płatne dokumenty BiznesDOK w jednej Subskrypcji.\nPDF i Word, bez limitu dokumentów. Nowe dokumenty dochodzą bez dopłat.\nbiznesdok.pl/subskrypcja\nLink: https://biznesdok.pl/subskrypcja",
-      "link": "https://biznesdok.pl/subskrypcja",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-23-story-subskrypcja-01-5c7cada7.jpg"
       ],
       "permalink": null,
       "uwagi": []
