@@ -53,3 +53,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-10-23 13:39 · feed · 2026-10-22-umowa-o-prace-czas-okreslony · https://www.instagram.com/p/De1eLqSICXx/
 - 2026-10-23 13:40 · LinkedIn · 2026-10-22-protokol-nzw-wynagrodzenie-czlonka-zarzadu · przekazany do Buffer na 2026-10-23T11:43:12.852Z
 - 2026-10-23 14:26 · LinkedIn opublikowany · 2026-10-22-protokol-nzw-wynagrodzenie-czlonka-zarzadu · https://www.linkedin.com/feed/update/urn:li:share:7519362891855290370
+- 2026-10-26 08:44 · feed · 2026-10-26-ostateczne-wezwanie-do-zaplaty · https://www.instagram.com/p/De8xro9IIbI/
