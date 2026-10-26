@@ -40,7 +40,7 @@ export const RYTM = [
   { dzien: 1, kanal: "linkedin", format: "linkedin", godzina: "09:00", rodzaj: "platny", opis: "LinkedIn: dokument spółki (zarząd, wspólnicy, udziały)" },
   { dzien: 2, kanal: "instagram", format: "feed", godzina: "08:30", rodzaj: "platny", opis: "płatny dokument" },
   { dzien: 2, kanal: "instagram", format: "story", godzina: "12:30", rodzaj: "platny", opis: "płatny dokument" },
-  { dzien: 3, kanal: "instagram", format: "feed", godzina: "08:30", rodzaj: "platny", opis: "płatny dokument (seria „…przygotowujesz i trzymasz”)" },
+  { dzien: 3, kanal: "instagram", format: "feed", godzina: "08:30", rodzaj: "platny", opis: "płatny dokument („…przygotujesz w BiznesDOK” i kiedy się przyda)" },
   { dzien: 3, kanal: "instagram", format: "story", godzina: "12:30", rodzaj: "platny", opis: "płatny dokument" },
   { dzien: 3, kanal: "linkedin", format: "linkedin", godzina: "09:00", rodzaj: "seria-li", opis: "LinkedIn: poradnik spółkowy albo seria AI (na zmianę)" },
   { dzien: 4, kanal: "instagram", format: "feed", godzina: "08:30", rodzaj: "piatek", opis: "tydzień parzysty: seria AI; nieparzysty: Subskrypcja albo bezpłatne w sezonie" },

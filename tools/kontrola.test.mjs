@@ -77,6 +77,16 @@ test("bezpłatny dokument bez ID i bez „trzymasz”; „każdy dokument” tyl
   assert.deepEqual(twarde(post({ link: "https://biznesdok.pl/subskrypcja", slides: [{ text: "Każdy dokument w PDF i Word." }] })), []);
 });
 
+test("zrozumiałość: skrót bez rozwinięcia i stary wzór „trzymasz” to miękkie uwagi; „na swoim koncie” blokuje przy bezpłatnym", () => {
+  const miekkie = (p) => ocenPost(p, "instagram", "2026-11-01", kontekst()).miekkie;
+  assert.ok(miekkie(post({ slides: [{ text: "Protokół NZW [[przygotujesz w BiznesDOK.]]" }] })).some((u) => u.includes("NZW")));
+  assert.ok(!miekkie(post({ slides: [{ text: "Protokół z nadzwyczajnego zgromadzenia wspólników (NZW) [[przygotujesz w BiznesDOK.]]" }] })).some((u) => u.includes("skrót")));
+  assert.ok(!miekkie(post({ caption: "#krs #biznesdok", slides: [{ text: "Uchwałę [[przygotujesz w BiznesDOK.]]" }] })).some((u) => u.includes("skrót")));
+  assert.ok(miekkie(post()).some((u) => u.includes("stary wzór")));
+  assert.ok(twarde(post({ link: "https://biznesdok.pl/dokument/swiadectwo-pracy", slides: [{ text: "Świadectwo pracy zapiszesz na swoim koncie." }] })).some((u) => u.includes("na swoim koncie")));
+  assert.deepEqual(twarde(post({ slides: [{ text: "Umowę zlecenia [[przygotujesz w BiznesDOK.]]", sub: "Po zakupie zostaje na Twoim koncie." }] })), []);
+});
+
 test("temat spoza oferty, wstrzymany i poza sezonem blokuje", () => {
   assert.ok(twarde(post({ link: "https://biznesdok.pl/dokument/nie-ma" })).some((u) => u.includes("spoza data/oferta.json")));
   assert.ok(twarde(post({ link: "https://biznesdok.pl/dokument/wstrzymany" })).some((u) => u.includes("wstrzymany")));
