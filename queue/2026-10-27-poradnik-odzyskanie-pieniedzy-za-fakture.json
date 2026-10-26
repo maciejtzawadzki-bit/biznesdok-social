@@ -25,11 +25,11 @@
         ],
         [
           "Rekompensata za koszty odzyskiwania",
-          "w transakcjach handlowych przysługuje bez wezwania"
+          "gdy dłużnik jest firmą — należy się bez wezwania"
         ],
         [
-          "Dłużnik-konsument",
-          "ustawa o transakcjach handlowych nie ma zastosowania"
+          "Gdy dłużnik jest konsumentem",
+          "rekompensaty nie ma, a odsetki liczysz z Kodeksu cywilnego"
         ]
       ]
     },
@@ -58,7 +58,7 @@
       "eyebrow": "Pamiętaj",
       "size": 84,
       "text": "Wezwanie [[nie przerywa przedawnienia.]]",
-      "sub": "Ostateczne wezwanie do zapłaty przygotujesz w BiznesDOK, a odsetki policzysz w bezpłatnym kalkulatorze.",
+      "sub": "Roszczenia z działalności gospodarczej przedawniają się co do zasady po 3 latach, a cena sprzedanych towarów — po 2. Bieg przedawnienia przerywa dopiero czynność przed sądem. Ostateczne wezwanie do zapłaty przygotujesz w BiznesDOK.",
       "note": "Pełny poradnik: link w bio"
     }
   ],

@@ -43,6 +43,15 @@ const AI = /(^|[^\p{L}])(AI|sztuczn\p{L}* inteligencj\p{L}*)(?!\p{L})/u;
 const NARZEDZIA_AI = /(chat\s?gpt|\bgpt-?\d|gemini|copilot|\bclaude\b|perplexity|\bgrok\b|\bllama\b|deepseek|mistral)/i;
 const ID_DOKUMENTU = /identyfikator|zweryfikujesz|weryfikacj|\bID\b/iu;
 const HASZTAGI = /#[\p{L}\p{N}_]+/gu;
+// Zrozumiałość (audyt 26.10.2026, przyjęty przez właściciela): skrót rozwijamy przy pierwszym użyciu w poście.
+const SKROTY = [
+  [/\bNZW\b/u, /nadzwyczajn\p{L}* zgromadzen/iu, "nadzwyczajne zgromadzenie wspólników (NZW)"],
+  [/\bZZW\b/u, /(?<!nad)zwyczajn\p{L}* zgromadzen/iu, "zwyczajne zgromadzenie wspólników (ZZW)"],
+  [/\bKRS\b/u, /krajow\p{L}* rejestr\p{L}* sądow/iu, "Krajowy Rejestr Sądowy (KRS)"],
+  [/\bMSiG\b/u, /monitor\p{L}* sądow/iu, "Monitor Sądowy i Gospodarczy (MSiG)"],
+  [/\bRDF\b/u, /repozytori\p{L}* dokumentów finansowych/iu, "Repozytorium Dokumentów Finansowych (RDF)"],
+  [/\bRIA\b/u, /raport\p{L}* informacyjn/iu, "raport informacyjny ZUS RIA"],
+];
 
 const bezWyroznien = (t) => String(t ?? "").replace(/\[\[|\]\]/g, "");
 
@@ -104,7 +113,7 @@ export function ocenPost(post, kanal = "instagram", dzis = dzisWarszawa(), konte
     const blokada = blokadaTematu(pozycja, post.date ?? dzis);
     if (blokada) twarde.push(blokada);
     if (!pozycja.platny && pozycja.rodzaj === "dokument" && ID_DOKUMENTU.test(tekst)) twarde.push("bezpłatny dokument nie ma identyfikatora ani weryfikacji");
-    if (!pozycja.platny && /trzymasz w BiznesDOK/i.test(tekst)) twarde.push("„…przygotowujesz i trzymasz” tylko przy płatnych (bezpłatny: „…przygotujesz w BiznesDOK — bezpłatnie, bez konta”)");
+    if (!pozycja.platny && /trzymasz w BiznesDOK|na (swoim|twoim) koncie/i.test(tekst)) twarde.push("„…trzymasz” i „na swoim koncie” tylko przy płatnych (bezpłatny: „…przygotujesz w BiznesDOK — bezpłatnie, bez konta”)");
     if (pozycja.platny && pozycja.rodzaj === "dokument" && /bezpłatn/i.test(tekst)) miekkie.push("dokument płatny, a w treści „bezpłatnie” — sprawdź, czy to o innym, bezpłatnym dokumencie");
   }
   if (!toWideo(post)) {
@@ -116,6 +125,12 @@ export function ocenPost(post, kanal = "instagram", dzis = dzisWarszawa(), konte
     }
     const takieSame = powtorkiHasla(post, kanal, wszystkie);
     if (takieSame.length) twarde.push(`to samo hasło na grafice co ${takieSame.map((p) => p.id).join(", ")}`);
+  }
+
+  // Zrozumiałość — do poprawy przy planie.
+  if (/przygotowujesz i trzymasz/i.test(tekst)) miekkie.push("stary wzór „przygotowujesz i trzymasz” — napisz „przygotujesz w BiznesDOK” i kiedy dokument się przyda");
+  for (const [skrot, rozwiniecie, wzor] of SKROTY) {
+    if (skrot.test(tekst) && !rozwiniecie.test(tekst)) miekkie.push(`skrót bez rozwinięcia — przy pierwszym użyciu napisz „${wzor}”`);
   }
 
   // Forma — do poprawy przy planie.

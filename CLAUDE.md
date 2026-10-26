@@ -73,7 +73,7 @@ Decyzje właściciela: 06.10 i 10.10.2026 — agent marketingu prowadzi stronę 
 | pn | płatny dokument (najpierw priorytet A) | płatny dokument | — |
 | wt | karuzela z poradnika w sezonie (prowadzi do płatnych dokumentów) | płatny dokument | dokument spółki |
 | śr | płatny dokument | płatny dokument | — |
-| czw | płatny dokument („…przygotowujesz i trzymasz w BiznesDOK”) | płatny dokument | poradnik spółkowy albo seria AI (na zmianę) |
+| czw | płatny dokument („…przygotujesz w BiznesDOK” i kiedy się przyda) | płatny dokument | poradnik spółkowy albo seria AI (na zmianę) |
 | pt | tydzień parzysty: seria „AI zawiodło? Decyduje prawnik”; nieparzysty: Subskrypcja albo bezpłatne narzędzie/dokument w sezonie | bezpłatne narzędzie albo dokument w sezonie — jedyna bezpłatna relacja w tygodniu | — |
 
 Wideo (12:45): rotacja zatwierdzonych urywków (sekcja „Wideo w trybie 2”). Proporcje pilnowane przez kontrolę: płatne dokumenty i Subskrypcja co najmniej 60% publikacji graficznych w tygodniu, bezpłatne najwyżej 2, seria AI co 2 tygodnie, Subskrypcja co najmniej raz na 2 tygodnie, karuzela z poradnika co tydzień (gdy jest poradnik w sezonie).
@@ -94,9 +94,9 @@ Decyzja właściciela 29.09.2026 (LINKEDIN_GUIDELINES §9), wykonanie od 20.10.2
 - pierwsze zdanie grafiki albo opisu jest pytaniem (poza serią AI) — zaczynamy od tego, co robi BiznesDOK;
 - AI poza serią „AI zawiodło?” i nazwy konkretnych narzędzi AI (zawsze);
 - zakazane zwroty („Masz problem?”, „Mamy rozwiązanie”, „Czy wiesz, że…?”, „startujemy”, „rewolucjonizujemy”, obietnica gwarancji), obietnica czasu („w minutę”, „oszczędzasz…”);
-- „każdy dokument” (poza Subskrypcją) — nie wszystkie dokumenty mają te same funkcje; identyfikator i weryfikacja przy bezpłatnym dokumencie (bezpłatne nie mają ID); „…przygotowujesz i trzymasz” przy bezpłatnym.
+- „każdy dokument” (poza Subskrypcją) — nie wszystkie dokumenty mają te same funkcje; identyfikator i weryfikacja przy bezpłatnym dokumencie (bezpłatne nie mają ID); „…trzymasz” albo „na swoim koncie” przy bezpłatnym.
 
-**Miękkie uwagi** (do poprawy w trybie 2): kwoty w złotych, hasztagi, „Link w bio → …”, brak adresu na relacji, długość i link z UTM na LinkedIn, minięty termin.
+**Miękkie uwagi** (do poprawy w trybie 2): skrót bez rozwinięcia (NZW, ZZW, KRS, MSiG, RDF, ZUS RIA), stary wzór „przygotowujesz i trzymasz”, kwoty w złotych, hasztagi, „Link w bio → …”, brak adresu na relacji, długość i link z UTM na LinkedIn, minięty termin.
 
 **Stan na bieżąco:** `node tools/zgodnosc.mjs` (raport do `RAPORTY.md` w trybie 2; `--krotko` — jedno zdanie, wypisuje je też `run.mjs`). `node tools/check.mjs` (CI przy każdym pushu) odrzuca zaplanowane posty z twardą uwagą i błędy w `data/oferta.json` i `data/seria-ai.json`.
 
@@ -125,9 +125,14 @@ W sprawach współpracy z biurem obowiązuje księga KMZ. Zasady biura, które d
 5. **Ton:** konkretny, profesjonalny, prosty, pewny siebie bez zadęcia. **Pierwsze zdanie mówi, co robi BiznesDOK** — bez pytania na start (wyjątek: seria AI). Product-first: znane zadanie → prostszy sposób z BiznesDOK → praca zdjęta z klienta → treść od prawników → CTA. Zakazane: „Masz problem?”, „Mamy rozwiązanie”, „Czy wiesz, że…?”, „startujemy”, „rewolucjonizujemy”, tłumaczenie oczywistego celu dokumentu, obietnice wyniku prawnego, sugerowanie indywidualnej porady prawnej.
 6. **AI nie jest autorem dokumentów** — nie piszemy o AI poza serią „AI zawiodło? Decyduje prawnik”. Treść przygotowują prawnicy (Katarzyna Zawadzka Legal Consulting), technologia uzupełnia dane.
 7. **Bez powtórek:** ten sam temat nie wraca na Instagramie przez 21 dni, a na LinkedIn przez 120 dni; to samo hasło na grafice — nigdy. Każdy temat ma swój okres przydatności (`sezon`) — w sezonie ma pierwszeństwo.
-8. **Serie stałe:** płatny dokument — „[Dokument] przygotowujesz i trzymasz w BiznesDOK.”; bezpłatny — „[Dokument] przygotujesz w BiznesDOK — bezpłatnie, bez konta.” (nigdy „trzymasz” przy bezpłatnym).
+8. **Serie stałe:** płatny dokument — „[Dokument] przygotujesz w BiznesDOK.” i w podtytule, kiedy się przyda, albo konkretna korzyść; gdy jest miejsce: „Po zakupie dokument zostaje na Twoim koncie.” Bezpłatny — „[Dokument] przygotujesz w BiznesDOK — bezpłatnie, bez konta.” (nigdy „na swoim koncie” przy bezpłatnym). Wzoru „przygotowujesz i trzymasz” już nie używamy (audyt zrozumiałości, przyjęty przez właściciela 26.10.2026: „trzymasz” jest niejasne, a powtarzany wzór zlewa posty).
 9. **Grafiki tylko z `tools/render.mjs`** (brandbook: paper, Instrument Serif, clause highlight `[[...]]`, lockup BD prawy dół). Bez zdjęć, stocków, ikon, grafik AI, nowych kolorów i sloganów.
 10. **Opis:** wnosi coś nowego względem grafiki, kończy się jednym CTA („Link w bio → Narzędzia / Poradniki / Dokumenty”) i 5–8 hashtagami, w tym `#biznesdok`.
+11. **Zrozumiałość dla laika** (audyt zrozumiałości, przyjęty przez właściciela 26.10.2026). Piszemy dla przedsiębiorcy, który nie zna prawa pracy ani spółek:
+    - termin fachowy w tytule, a w pierwszym zdaniu jego rozwinięcie po „czyli” albo myślniku, najlepiej jako „co się zmienia dla mnie” (np. „Wypowiedzenie zmieniające, czyli pismo, w którym proponujesz pracownikowi nowe warunki pracy lub płacy”);
+    - skrót rozwijamy przy pierwszym użyciu w poście: nadzwyczajne zgromadzenie wspólników (NZW), Krajowy Rejestr Sądowy (KRS), Monitor Sądowy i Gospodarczy (MSiG), Repozytorium Dokumentów Finansowych (RDF), raport informacyjny ZUS RIA; na relacji, gdzie miejsca brak, lepiej pełna nazwa bez skrótu;
+    - każdy post mówi, kiedy się przyda („Gdy pracownik zgadza się na…”, „Gdy wspólnicy odwołują…”), a nie tylko, co to za dokument; termin podaje, od czego się liczy („15 dni od zatwierdzenia”), a urząd albo rejestr nazywa wprost;
+    - rozwinięcie i „kiedy się przyda” bierzemy wyłącznie z faktów oferty i opublikowanych poradników (punkt 3) — nie dopisujemy własnych definicji prawnych; gdy w faktach brak prostego wyjaśnienia, zostaw sam termin z kontekstem z faktów i zgłoś brak w podsumowaniu.
 
 ## Format posta (queue/*.json)
 
