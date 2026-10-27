@@ -1,13 +1,14 @@
 // Renderer grafik Instagram BiznesDOK: plik posta (JSON) → PNG dla każdego slajdu.
 // Użycie: node render.mjs <post.json> [katalog-wyjściowy]
-// Wymaga playwright-core i Chromium (PLAYWRIGHT_BROWSERS_PATH albo CHROMIUM_PATH).
+// Wymaga playwright-core i Chromium (wybór przeglądarki: chromium.mjs).
 // Gramatyka wizualna wynika z brandbooka FINAL (BIZNESDOK_LINKEDIN_GUIDELINES §10):
 // tło paper, Instrument Serif w hasłach, clause highlight, lockup BD + BiznesDOK prawy dół.
 import { readFile, mkdir } from "node:fs/promises";
-import { existsSync, readdirSync, readFileSync } from "node:fs";
+import { readFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { chromium } from "playwright-core";
+import { findChromium } from "./chromium.mjs";
 
 // Fonty marki są w repo (licencja OFL), bo renderer nie może zależeć od sieci.
 const FONT_DIR = path.join(path.dirname(fileURLToPath(import.meta.url)), "fonts");
@@ -95,10 +96,7 @@ ${note}
 }
 
 export function chromiumPath() {
-  if (process.env.CHROMIUM_PATH) return process.env.CHROMIUM_PATH;
-  const base = process.env.PLAYWRIGHT_BROWSERS_PATH ?? "/opt/pw-browsers";
-  const dir = existsSync(base) ? readdirSync(base).find((d) => /^chromium-\d+$/.test(d)) : null;
-  return dir ? path.join(base, dir, "chrome-linux", "chrome") : undefined;
+  return findChromium({ bundled: () => chromium.executablePath() });
 }
 
 export async function renderPost(post, outDir) {
