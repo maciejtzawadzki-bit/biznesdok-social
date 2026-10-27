@@ -3,7 +3,7 @@
   "date": "2026-10-27",
   "time": "09:00",
   "type": "feed",
-  "status": "planned",
+  "status": "handed",
   "pillar": "seria produktowa — dokument spółki",
   "temat": "protokol-z-posiedzenia-zarzadu",
   "link": "https://biznesdok.pl/dokument/protokol-z-posiedzenia-zarzadu",
@@ -16,5 +16,10 @@
       "sub": "Gdy zarząd wprowadza w spółce regulamin albo inny dokument wewnętrzny — z dniem, od którego obowiązuje."
     }
   ],
-  "caption": "Protokół z posiedzenia zarządu z uchwałą o przyjęciu regulaminu przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.\n\nJak to działa:\n• dane spółki pobierasz po NIP,\n• wskazujesz, jaki dokument wewnętrzny przyjmuje zarząd, np. regulamin,\n• podajesz dzień, od którego dokument obowiązuje,\n• protokół obejmuje od 1 do 5 członków zarządu.\n\nW protokole: dane spółki, uchwała zarządu o przyjęciu dokumentu wewnętrznego i dacie, od której obowiązuje, oraz podpisy. Plik w PDF albo Word.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nhttps://biznesdok.pl/dokument/protokol-z-posiedzenia-zarzadu?utm_source=linkedin&utm_medium=social&utm_campaign=protokol-z-posiedzenia-zarzadu\n\n#spółkazoo #zarząd #regulamin #przedsiębiorca #biznesdok"
+  "caption": "Protokół z posiedzenia zarządu z uchwałą o przyjęciu regulaminu przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.\n\nJak to działa:\n• dane spółki pobierasz po NIP,\n• wskazujesz, jaki dokument wewnętrzny przyjmuje zarząd, np. regulamin,\n• podajesz dzień, od którego dokument obowiązuje,\n• protokół obejmuje od 1 do 5 członków zarządu.\n\nW protokole: dane spółki, uchwała zarządu o przyjęciu dokumentu wewnętrznego i dacie, od której obowiązuje, oraz podpisy. Plik w PDF albo Word.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nhttps://biznesdok.pl/dokument/protokol-z-posiedzenia-zarzadu?utm_source=linkedin&utm_medium=social&utm_campaign=protokol-z-posiedzenia-zarzadu\n\n#spółkazoo #zarząd #regulamin #przedsiębiorca #biznesdok",
+  "handedAt": "2026-10-27T07:46:27.270Z",
+  "buffer": {
+    "postId": "6ae056d3fcdfaa745913de60",
+    "dueAt": "2026-10-27T08:00:00.000Z"
+  }
 }
