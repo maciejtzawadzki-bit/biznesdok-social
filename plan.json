@@ -1,36 +1,6 @@
 {
-  "zaktualizowano": "2026-10-26T09:33:07.317Z",
+  "zaktualizowano": "2026-10-27T07:47:10.250Z",
   "posty": [
-    {
-      "id": "2026-10-19-kalkulator-dni-roboczych",
-      "kanal": "instagram",
-      "date": "2026-10-19",
-      "time": "08:30",
-      "type": "feed",
-      "rubric": "bezpłatne narzędzie",
-      "status": "published",
-      "naglowek": "Policz dni robocze między dwiema datami: kalkulator pomija weekendy i święta, a Wigilię traktuje jako dzień wolny od 2025 r.",
-      "podpis": "Policz dni robocze między dwiema datami: kalkulator pomija weekendy i święta, a Wigilię traktuje jako dzień wolny od 2025 r.\n\nBezpłatnie, bez konta i bez e-maila. Link w bio → Narzędzia.\n\n#dniroboczne #kalkulator #terminy #kadry #małafirma #biznesdok",
-      "link": "https://biznesdok.pl/kalkulator-dni-roboczych",
-      "obrazy": [],
-      "permalink": "https://www.instagram.com/p/DeqpIvljvnp/",
-      "uwagi": []
-    },
-    {
-      "id": "2026-10-19-story-kwota-slownie",
-      "kanal": "instagram",
-      "date": "2026-10-19",
-      "time": "12:30",
-      "type": "story",
-      "rubric": "relacja",
-      "status": "published",
-      "naglowek": "Kwota słownie w formie używanej na fakturach i w umowach.",
-      "podpis": "Relacja (bez opisu), na grafice:\nKwota słownie\nKwota słownie w formie używanej na fakturach i w umowach.\nZłote i grosze w poprawnej formie. Bezpłatnie, bez konta.\nbiznesdok.pl/kwota-slownie\nLink: https://biznesdok.pl/kwota-slownie",
-      "link": "https://biznesdok.pl/kwota-slownie",
-      "obrazy": [],
-      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4011199457542468946",
-      "uwagi": []
-    },
     {
       "id": "2026-10-20-sprawozdanie-finansowe",
       "kanal": "instagram",
@@ -188,17 +158,12 @@
       "time": "08:30",
       "type": "carousel",
       "rubric": "poradnik + dokumenty",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Faktura jest po terminie, a kontrahent milczy. W karuzeli: co możesz doliczyć do należności między przedsiębiorcami i jak wygląda kolejność działań przed pozwem",
       "podpis": "Faktura jest po terminie, a kontrahent milczy. W karuzeli: co możesz doliczyć do należności między przedsiębiorcami i jak wygląda kolejność działań przed pozwem.\n\nOstateczne wezwanie do zapłaty przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika, a odsetki policzysz w bezpłatnym kalkulatorze. To poradnik ogólny, nie ocena konkretnej sprawy.\n\nPełny poradnik: link w bio → Poradniki.\n\n#wezwaniedozapłaty #faktura #należności #przedsiębiorca #firma #biznesdok",
       "link": "https://biznesdok.pl/poradniki/jak-odzyskac-pieniadze-za-fakture-wezwanie-do-zaplaty",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-27-poradnik-odzyskanie-pieniedzy-za-fakture-01-87321ddc.jpg",
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-27-poradnik-odzyskanie-pieniedzy-za-fakture-02-87321ddc.jpg",
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-27-poradnik-odzyskanie-pieniedzy-za-fakture-03-87321ddc.jpg",
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-27-poradnik-odzyskanie-pieniedzy-za-fakture-04-87321ddc.jpg"
-      ],
-      "permalink": null,
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/p/De_Weu7INvY/",
       "uwagi": []
     },
     {
@@ -208,13 +173,11 @@
       "time": "09:00",
       "type": "linkedin",
       "rubric": "seria produktowa — dokument spółki",
-      "status": "planned",
+      "status": "handed",
       "naglowek": "Protokół z posiedzenia zarządu z uchwałą o przyjęciu regulaminu przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.",
       "podpis": "Protokół z posiedzenia zarządu z uchwałą o przyjęciu regulaminu przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.\n\nJak to działa:\n• dane spółki pobierasz po NIP,\n• wskazujesz, jaki dokument wewnętrzny przyjmuje zarząd, np. regulamin,\n• podajesz dzień, od którego dokument obowiązuje,\n• protokół obejmuje od 1 do 5 członków zarządu.\n\nW protokole: dane spółki, uchwała zarządu o przyjęciu dokumentu wewnętrznego i dacie, od której obowiązuje, oraz podpisy. Plik w PDF albo Word.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nhttps://biznesdok.pl/dokument/protokol-z-posiedzenia-zarzadu?utm_source=linkedin&utm_medium=social&utm_campaign=protokol-z-posiedzenia-zarzadu\n\n#spółkazoo #zarząd #regulamin #przedsiębiorca #biznesdok",
       "link": "https://biznesdok.pl/dokument/protokol-z-posiedzenia-zarzadu",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/linkedin-2026-10-27-protokol-z-posiedzenia-zarzadu-01-57d5c79e.jpg"
-      ],
+      "obrazy": [],
       "permalink": null,
       "uwagi": []
     },
@@ -225,14 +188,12 @@
       "time": "12:30",
       "type": "story",
       "rubric": "Subskrypcja",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Wszystkie płatne dokumenty BiznesDOK w jednej Subskrypcji.",
       "podpis": "Relacja (bez opisu), na grafice:\nSubskrypcja BiznesDOK\nWszystkie płatne dokumenty BiznesDOK w jednej Subskrypcji.\nPDF i Word, bez limitu dokumentów. Nowe dokumenty dochodzą bez dopłat.\nbiznesdok.pl/subskrypcja\nLink: https://biznesdok.pl/subskrypcja",
       "link": "https://biznesdok.pl/subskrypcja",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-27-story-subskrypcja-01-5c7cada7.jpg"
-      ],
-      "permalink": null,
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4017028411624950344",
       "uwagi": []
     },
     {
@@ -242,14 +203,12 @@
       "time": "12:45",
       "type": "story",
       "rubric": "film-demo",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Wideo: Samo odwołanie albo odwołanie i powołanie — protokół dopasowuje się do wyboru",
       "podpis": "Relacja wideo (bez opisu): Samo odwołanie albo odwołanie i powołanie — protokół dopasowuje się do wyboru\nLink: https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
       "link": "https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/video/film2-zarzad-urywek-2-wariant.jpg"
-      ],
-      "permalink": null,
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4017028593724065105",
       "uwagi": []
     },
     {
