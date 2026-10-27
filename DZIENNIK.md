@@ -57,3 +57,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-10-26 08:44 · story · 2026-10-26-story-wypowiedzenie-zmieniajace · https://www.instagram.com/stories/biznesdok.pl/4016303610393547265
 - 2026-10-27 08:44 · carousel · 2026-10-27-poradnik-odzyskanie-pieniedzy-za-fakture · https://www.instagram.com/p/De_Weu7INvY/
 - 2026-10-27 08:44 · story · 2026-10-27-story-subskrypcja · https://www.instagram.com/stories/biznesdok.pl/4017028411624950344
+- 2026-10-27 08:44 · story (wideo) · 2026-10-27-story-wideo-zarzad-wariant · https://www.instagram.com/stories/biznesdok.pl/4017028593724065105
