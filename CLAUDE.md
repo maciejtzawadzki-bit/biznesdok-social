@@ -12,7 +12,7 @@ Zasady biznesowe, decyzje właściciela i konfiguracja: repo `maciejtzawadzki-bi
 - `KMZ_BIZNESDOK_SEKRET` — klucz do reakcji właściciela z panelu KMZ (`tools/reakcje.mjs`, adres `mnpjvkieetcrqzswxwqt.supabase.co`). Też **nie wypisuj**. Bez niej reakcje są pomijane (publikacja idzie dalej).
 - `BUFFER_API_KEY` — klucz API Buffera (strona firmowa BiznesDOK na LinkedIn połączona z Bufferem; zakłada właściciel). **Nie wypisuj.** Opcjonalnie `BUFFER_CHANNEL_ID`, gdy w Bufferze jest więcej niż jeden kanał LinkedIn (`node tools/linkedin.mjs --kanaly`). Bez klucza posty LinkedIn czekają w `linkedin/` (status `planned`), a podsumowanie trybu 1 to mówi.
 - Sieć: `graph.facebook.com`, `api.buffer.com` i npm muszą być dostępne. Panel KMZ (Supabase) bywa osiągalny tylko przez proxy środowiska; `tools/reakcje.mjs` sam pyta go wtedy przez proxy.
-- Instalacja: `cd tools && npm install` (playwright-core; Chromium jest w `/opt/pw-browsers`).
+- Instalacja: `cd tools && npm install` (playwright-core). Chromium renderer znajduje sam (`tools/chromium.mjs`): `CHROMIUM_PATH`, potem `PLAYWRIGHT_BROWSERS_PATH`, `/opt/pw-browsers` i `~/.cache/ms-playwright` w układzie `chrome-linux64` i starszym `chrome-linux`, na końcu ścieżka z playwright-core. Gdy żadnej nie ma, `run.mjs` kończy się błędem „Nie znaleziono Chromium…”: wtedy raz `cd tools && npx playwright-core install chromium && cd ..` i ponów `run.mjs`. Nie rób dowiązań ani zmian poza repo (znikają z piaskownicą); gdy instalacja się nie uda, nic nie publikuj i opisz błąd w pierwszym zdaniu podsumowania.
 - Konto Instagram: @biznesdok.pl, ID `17841415756005690` (publikator sam je znajduje z tokena).
 
 ## Reakcje z panelu KMZ (krok 0 w trybach 1–3)
