@@ -3,7 +3,7 @@
   "date": "2026-10-27",
   "time": "12:30",
   "type": "story",
-  "status": "planned",
+  "status": "published",
   "pillar": "Subskrypcja",
   "link": "https://biznesdok.pl/subskrypcja",
   "slides": [
@@ -15,5 +15,8 @@
       "note": "biznesdok.pl/subskrypcja"
     }
   ],
-  "caption": ""
+  "caption": "",
+  "publishedAt": "2026-10-27T07:45:34.405Z",
+  "permalink": "https://www.instagram.com/stories/biznesdok.pl/4017028411624950344",
+  "mediaId": "18050549267623968"
 }
