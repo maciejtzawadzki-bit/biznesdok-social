@@ -55,3 +55,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-10-23 14:26 · LinkedIn opublikowany · 2026-10-22-protokol-nzw-wynagrodzenie-czlonka-zarzadu · https://www.linkedin.com/feed/update/urn:li:share:7519362891855290370
 - 2026-10-26 08:44 · feed · 2026-10-26-ostateczne-wezwanie-do-zaplaty · https://www.instagram.com/p/De8xro9IIbI/
 - 2026-10-26 08:44 · story · 2026-10-26-story-wypowiedzenie-zmieniajace · https://www.instagram.com/stories/biznesdok.pl/4016303610393547265
+- 2026-10-27 08:44 · carousel · 2026-10-27-poradnik-odzyskanie-pieniedzy-za-fakture · https://www.instagram.com/p/De_Weu7INvY/
