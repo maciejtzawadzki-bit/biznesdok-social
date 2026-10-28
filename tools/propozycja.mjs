@@ -1,10 +1,12 @@
-// Propozycja tematów na tydzień (tryb 2): każde miejsce rytmu dostaje temat z data/oferta.json według zasad
+// Propozycja tematów na dwa kolejne tygodnie (tryb 2): każde miejsce rytmu dostaje temat z data/oferta.json według zasad
 // z decyzji właściciela 20.10.2026 — najpierw płatne dokumenty i Subskrypcja, cała oferta po kolei, bez powtórki
 // tematu (Instagram 21 dni, LinkedIn 120 dni), z pierwszeństwem tematów w ich okresie przydatności; seria „AI zawiodło?”
 // co 2 tygodnie. LinkedIn — głównie dokumenty spółki: zarząd, zgromadzenia, wspólnicy i udziały (decyzja 20.10.2026).
 // Wynik to propozycja: agent pisze do niej teksty (tylko fakty z pola `fakty`) i może zamienić temat,
 // jeśli ma powód — ale post i tak musi przejść kontrolę (tools/kontrola.mjs).
-// Użycie: node tools/propozycja.mjs [RRRR-MM-DD poniedziałek, domyślnie najbliższy] [--json]
+// Plan sięga dwa tygodnie naprzód (decyzja właściciela 28.10.2026): w piątek propozycja obejmuje dwa kolejne tygodnie,
+// a tematy wybrane na pierwszy tydzień liczą się do powtórek drugiego.
+// Użycie: node tools/propozycja.mjs [RRRR-MM-DD poniedziałek, domyślnie najbliższy] [--tygodnie N, domyślnie 2] [--json]
 import {
   blokadaTematu,
   dniMiedzy,
@@ -166,20 +168,58 @@ export function propozycjaTygodnia(pon, kontekst = {}) {
   return { poniedzialek: pon, tydzienParzysty: parzysty, miejsca, urywki };
 }
 
+/**
+ * Propozycja na kilka kolejnych tygodni (domyślnie 2, decyzja właściciela 28.10.2026). Każdy następny tydzień
+ * liczy powtórki także względem tematów zaproponowanych na wcześniejsze tygodnie (jakby już były w kolejce),
+ * a odcinek serii AI wybrany wcześniej nie wraca w tym samym kanale.
+ */
+export function propozycjaTygodni(pon, liczba = 2, kontekst = {}) {
+  let wszystkie = kontekst.wszystkie ?? wczytajPosty();
+  const oferta = kontekst.oferta ?? wczytajOferte();
+  let seria = kontekst.seria ?? wczytajSerieAI();
+  const tygodnie = [];
+  for (let i = 0; i < liczba; i++) {
+    const p = propozycjaTygodnia(dodajDni(pon, 7 * i), { wszystkie, oferta, seria });
+    tygodnie.push(p);
+    const nowe = p.miejsca.filter((m) => m.temat && !m.zajete);
+    wszystkie = [
+      ...wszystkie,
+      ...nowe.map((m) => ({
+        kanal: m.kanal,
+        post: m.seria ? postSeriiAI(m.seria, m.data, m.kanal) : { id: `propozycja-${m.kanal}-${m.format}-${m.data}`, temat: m.temat, date: m.data, status: "planned" },
+      })),
+    ];
+    const ai = nowe.filter((m) => m.seria);
+    if (ai.length) {
+      seria = {
+        ...seria,
+        tematy: (seria.tematy ?? []).map((t) => ai.reduce((x, m) => (m.seria.id === t.id ? { ...x, [m.kanal]: m.data } : x), t)),
+      };
+    }
+  }
+  return { poniedzialek: pon, tygodnie };
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
-  const arg = process.argv.slice(2).find((a) => /^\d{4}-\d{2}-\d{2}$/.test(a));
+  const argv = process.argv.slice(2);
+  const arg = argv.find((a) => /^\d{4}-\d{2}-\d{2}$/.test(a));
+  const t = argv.indexOf("--tygodnie");
+  const liczba = t >= 0 ? Number(argv[t + 1]) || 2 : 2;
   const dzis = dzisWarszawa();
   const pon = arg ?? dodajDni(poniedzialek(dzis), 7);
-  const p = propozycjaTygodnia(pon);
-  if (process.argv.includes("--json")) {
-    console.log(JSON.stringify(p, null, 2));
+  const wynikTygodni = propozycjaTygodni(pon, liczba);
+  if (argv.includes("--json")) {
+    console.log(JSON.stringify(wynikTygodni, null, 2));
   } else {
-    console.log(`Propozycja na tydzień od ${pon} (tydzień ${p.tydzienParzysty ? "parzysty — seria AI w piątek" : "nieparzysty"})`);
-    for (const m of p.miejsca) {
-      const co = m.zajete ? `[w kolejce: ${m.zajete}]` : m.temat ?? "—";
-      console.log(`${m.data} ${m.godzina} ${m.kanal === "linkedin" ? "LinkedIn" : m.format.padEnd(8)} ${co}  ← ${m.powod.join("; ")}`);
+    for (const p of wynikTygodni.tygodnie) {
+      console.log(`Propozycja na tydzień od ${p.poniedzialek} (tydzień ${p.tydzienParzysty ? "parzysty — seria AI w piątek" : "nieparzysty"})`);
+      for (const m of p.miejsca) {
+        const co = m.zajete ? `[w kolejce: ${m.zajete}]` : m.temat ?? "—";
+        console.log(`${m.data} ${m.godzina} ${m.kanal === "linkedin" ? "LinkedIn" : m.format.padEnd(8)} ${co}  ← ${m.powod.join("; ")}`);
+      }
+      const wolne = p.urywki.filter((u) => u.wolny);
+      console.log(`Urywki wideo do relacji (12:45): ${wolne.length ? wolne.map((u) => u.plik).join(", ") : "brak wolnych (każdy był w ostatnich 14 dniach)"}`);
+      console.log("");
     }
-    const wolne = p.urywki.filter((u) => u.wolny);
-    console.log(`Urywki wideo do relacji (12:45): ${wolne.length ? wolne.map((u) => u.plik).join(", ") : "brak wolnych (każdy był w ostatnich 14 dniach)"}`);
   }
 }
