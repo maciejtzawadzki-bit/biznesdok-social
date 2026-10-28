@@ -4,7 +4,7 @@ Automat profilu Instagram **@biznesdok.pl** i strony firmowej LinkedIn BiznesDOK
 
 Publikacja: Instagram przez oficjalne Instagram Graph API, LinkedIn przez Buffer (oficjalny partner LinkedIn; klucz w zmiennej `BUFFER_API_KEY` środowiska automatu). Zasady treści i tryby pracy: [CLAUDE.md](CLAUDE.md). Decyzje właściciela i konfiguracja Meta: repo `biznes-dokumenty-pro`, `docs/social/instagram/README.md`.
 
-Tematy i fakty do postów: `data/oferta.json` (cała oferta z priorytetami i okresami przydatności), seria „AI zawiodło? Decyduje prawnik”: `data/seria-ai.json`, zatwierdzone filmy: `data/wideo.json`. Propozycja tematów na tydzień: `tools/propozycja.mjs`; kontrola treści (post z twardą uwagą nie wyjdzie): `tools/kontrola.mjs`; stan zgodności: `tools/zgodnosc.mjs` (decyzja właściciela 20.10.2026).
+Tematy i fakty do postów: `data/oferta.json` (cała oferta z priorytetami i okresami przydatności), seria „AI zawiodło? Decyduje prawnik”: `data/seria-ai.json`, zatwierdzone filmy: `data/wideo.json`. Propozycja tematów na dwa kolejne tygodnie (plan sięga 7–14 dni naprzód, decyzja właściciela 28.10.2026): `tools/propozycja.mjs`; kontrola treści (post z twardą uwagą nie wyjdzie): `tools/kontrola.mjs`; stan zgodności: `tools/zgodnosc.mjs` (decyzja właściciela 20.10.2026).
 
 Plan publikacji dla panelu KMZ (`plan.json`, miniatury w `media/plan/`) tworzy automat GitHub `.github/workflows/plan.yml` (`tools/plan.mjs`, uwagi z `tools/kontrola.mjs`).
 

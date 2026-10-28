@@ -31,20 +31,22 @@ Nie publikuj niczego spoza kolejki. Nie zmieniaj treści zaplanowanych postów w
 
 **Pusta kolejka:** gdy na dziś nie ma postów `planned`, nic nie publikuj i niczego nie dokładaj od siebie; napisz w podsumowaniu, że kolejka była pusta. Dzień bez posta to mniejsza szkoda niż post, którego właściciel nie mógł zawetować.
 
-## Tryb 2 — plan kolejnego tygodnia (piątek)
+## Tryb 2 — plan kolejnego tygodnia (piątek): dwa tygodnie naprzód
+
+**Plan sięga dwa tygodnie naprzód** (decyzja właściciela 28.10.2026: „agent BiznesDOK układa w piątek dwa tygodnie zamiast jednego, więc zawsze widzisz 7–14 dni” — „reszta ok”). W piątek planujesz **dwa kolejne tygodnie** (od najbliższego poniedziałku do niedzieli tydzień później), tylko brakujące miejsca: tydzień, który został zaplanowany w poprzedni piątek jako drugi, zwykle jest już pełny i zostaje bez zmian, a dochodzi nowy drugi tydzień. Gdy polecenie piątkowe mówi „plan kolejnego tygodnia” albo „posty na kolejny tydzień”, chodzi o ten tryb, czyli o dwa kolejne tygodnie. Weto działa jak dotąd: każdy post jest w panelu KMZ od piątku, więc na długo przed granicą 12 godzin przed publikacją.
 
 0. `node tools/reakcje.mjs` — reakcje z panelu KMZ (sekcja „Reakcje z panelu KMZ”), zanim zaczniesz planować.
 1. Przeczytaj `DZIENNIK.md`, `RAPORTY.md`, `data/oferta.json` (tematy, priorytety, okresy, **fakty**), `data/seria-ai.json` i `data/wideo.json`.
 2. Jeśli masz dostęp do repo `biznes-dokumenty-pro`: sprawdź `src/lib/free-tools.ts`, `src/lib/guides/` i `docs/social/instagram/README.md`. Nowy poradnik albo dokument, którego nie ma w `data/oferta.json`, **nie trafia do planu** — opisz go w podsumowaniu (prowadzący dopisuje go do oferty z faktami i okresem).
-3. `node tools/propozycja.mjs` — propozycja tematów na każde miejsce rytmu kolejnego tygodnia (sekcja „Rytm tygodnia”): najpierw płatne dokumenty i Subskrypcja, cała oferta po kolei, bez powtórki tematu (Instagram 21 dni, LinkedIn 120 dni), z pierwszeństwem tematów w ich okresie przydatności, seria AI w tygodnie parzyste; na LinkedIn najpierw dokumenty spółki. Bierz te tematy. Zamiana tematu tylko z powodem (np. ważna nowość) — zapisz go w podsumowaniu. Miejsca już zajęte w kolejce zostają.
+3. `node tools/propozycja.mjs` — propozycja tematów na każde miejsce rytmu dwóch kolejnych tygodni (sekcja „Rytm tygodnia”; tematy pierwszego tygodnia liczą się do powtórek drugiego): najpierw płatne dokumenty i Subskrypcja, cała oferta po kolei, bez powtórki tematu (Instagram 21 dni, LinkedIn 120 dni), z pierwszeństwem tematów w ich okresie przydatności, seria AI w tygodnie parzyste; na LinkedIn najpierw dokumenty spółki. Bierz te tematy. Zamiana tematu tylko z powodem (np. ważna nowość) — zapisz go w podsumowaniu. Miejsca już zajęte w kolejce zostają.
 4. Dla każdego miejsca utwórz plik `queue/RRRR-MM-DD-<slug>.json` (feed 08:30, relacja 12:30) — pole `temat` z propozycji, `link` z oferty. Tekst grafiki i opis **tylko z faktów tematu** (`fakty` w `data/oferta.json`, w serii AI — `fakt` i `zrodlo`) i według „Zasad treści”. Nie powtarzaj hasła, które już było na grafice.
 5. `node tools/render.mjs queue/<plik>.json rendered` dla każdego nowego posta i obejrzyj PNG (Read). Popraw złamania wierszy i długość (`size` w slajdzie), jeśli coś wygląda źle.
 6. Wideo: sekcja „Wideo w trybie 2” niżej (wolne urywki wypisuje `propozycja.mjs`).
-7. `node tools/kontrola.mjs` — **żadnej uwagi „BLOKUJE”** (takiego posta publikator nie wypuści) i żadnej uwagi do tygodnia; miękkie uwagi popraw albo świadomie zostaw (widać je w panelu).
-8. Podgląd tygodnia: `node tools/preview.mjs RRRR-MM-DD` (data poniedziałku) → `preview/tydzien-RRRR-MM-DD.png`.
+7. `node tools/kontrola.mjs` — **żadnej uwagi „BLOKUJE”** (takiego posta publikator nie wypuści) i żadnej uwagi do obu planowanych tygodni (od piątku skrypt pokazuje też tydzień po kolejnym); miękkie uwagi popraw albo świadomie zostaw (widać je w panelu).
+8. Podgląd: `node tools/preview.mjs RRRR-MM-DD` osobno dla poniedziałku każdego z dwóch tygodni → `preview/tydzien-RRRR-MM-DD.png` (dwa pliki).
 9. Raport tygodnia: dla postów `published` z ostatnich 7 dni pobierz statystyki (GET `/{mediaId}/insights?metric=reach,saved,shares,likes,comments` dla feedu; przy błędzie metryki pomiń ją) oraz liczbę obserwujących (GET `/17841415756005690?fields=followers_count,media_count`). Dopisz do `RAPORTY.md`: data, obserwujący, posty, zasięgi, najlepszy post, wniosek na kolejny tydzień, a pod spodem wynik `node tools/zgodnosc.mjs` (zgodność treści).
 10. Gdy wykorzystasz temat serii AI, wpisz datę w jego polu `instagram` albo `linkedin` w `data/seria-ai.json`.
-11. Commit, `git pull --rebase origin main`, push do `main`. W podsumowaniu sesji: lista postów tygodnia, zdanie z `zgodnosc.mjs --krotko` i link do podglądu `https://github.com/maciejtzawadzki-bit/biznesdok-social/blob/main/preview/tydzien-RRRR-MM-DD.png`. Właściciel ma weto w panelu KMZ (przyciski przy planie) — brak reakcji = publikacja.
+11. Commit, `git pull --rebase origin main`, push do `main`. W podsumowaniu sesji: lista postów obu tygodni (nowe oddzielone od tych, które już były w kolejce), zdanie z `zgodnosc.mjs --krotko` i linki do obu podglądów `https://github.com/maciejtzawadzki-bit/biznesdok-social/blob/main/preview/tydzien-RRRR-MM-DD.png`. Właściciel ma weto w panelu KMZ (przyciski przy planie) — brak reakcji = publikacja.
 
 ### Wideo w trybie 2 (Reels i relacje wideo)
 
@@ -56,7 +58,9 @@ Publikujesz **wyłącznie** pliki z `data/wideo.json` (zatwierdzone przez właś
 - Format wpisu: jak niżej, z polami `video` (nazwa pliku), `poster` (miniatura do podglądu tygodnia), `slides: []`; reel ma `caption`, relacja — pusty.
 - Publikator podaje Instagramowi wideo z jsDelivr przypiętego do commita (`video/mp4`); plik do 20 MB.
 
-## Tryb 3 — LinkedIn: posty na kolejny tydzień (piątek, razem z trybem 2)
+## Tryb 3 — LinkedIn: posty na dwa kolejne tygodnie (piątek, razem z trybem 2)
+
+Jak w trybie 2: plan sięga dwa tygodnie naprzód (decyzja właściciela 28.10.2026), więc w piątek uzupełniasz brakujące posty LinkedIn w obu kolejnych tygodniach (do 4 postów: wtorek i czwartek każdego tygodnia). Jeśli w `linkedin/` jest już plik na dany dzień, nie tworzysz drugiego.
 
 Decyzje właściciela: 06.10 i 10.10.2026 — agent marketingu prowadzi stronę firmową na LinkedIn; 20.10.2026 — „linkedin trzeba wreszcie zautomatyzować”, więcej i częściej płatnych dokumentów; 20.10.2026 po powtórce wezwania — „na linkedinie … głównie o takich dok. zarządowych, spółkowych” i bez powtórek. Zasady: `docs/BIZNESDOK_LINKEDIN_GUIDELINES.md` w repo biznes-dokumenty-pro (§3, §4, §6, §9, §10, §13) i „Zasady treści” niżej.
 

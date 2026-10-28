@@ -2,8 +2,8 @@
 // Uruchamia CI: node --test tools/*.test.mjs
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { ocenPost, uwagiTygodnia } from "./kontrola.mjs";
-import { propozycjaTygodnia } from "./propozycja.mjs";
+import { ocenPost, tygodnieKontroli, uwagiTygodnia } from "./kontrola.mjs";
+import { propozycjaTygodni, propozycjaTygodnia } from "./propozycja.mjs";
 import { blokadaTematu, wOkresie } from "./tematy.mjs";
 
 const pozycje = [
@@ -113,6 +113,24 @@ test("propozycja tygodnia: bez powtórek w tygodniu, seria AI w tygodniu parzyst
   assert.ok(p.miejsca.some((m) => m.kanal === "instagram" && m.temat === "seria-ai/krs"));
   const platne = ig.filter((m) => oferta.mapa.get(m.temat)?.platny).length;
   assert.ok(platne / ig.length >= 0.6, `płatne ${platne}/${ig.length}`);
+});
+
+test("propozycja na dwa tygodnie: drugi tydzień bez powtórek z pierwszego, seria AI raz, zajęte miejsca zostają", () => {
+  // 2026-11-02 — tydzień nieparzysty, 2026-11-09 — parzysty (seria AI w piątek). Decyzja właściciela 28.10.2026.
+  const juz = post({ id: "2026-11-10-aneks", date: "2026-11-10", type: "story", time: "12:30", temat: "aneks-do-umowy" });
+  const p = propozycjaTygodni("2026-11-02", 2, kontekst([juz]));
+  assert.deepEqual(p.tygodnie.map((t) => t.poniedzialek), ["2026-11-02", "2026-11-09"]);
+  const ig = p.tygodnie.flatMap((t) => t.miejsca).filter((m) => m.kanal === "instagram" && m.temat);
+  assert.equal(new Set(ig.map((m) => m.temat)).size, ig.length, ig.map((m) => m.temat).join(", "));
+  assert.equal(ig.filter((m) => m.temat === "seria-ai/krs").length, 1);
+  const wtorek = p.tygodnie[1].miejsca.find((m) => m.data === "2026-11-10" && m.format === "story");
+  assert.equal(wtorek.zajete, "2026-11-10-aneks");
+});
+
+test("kontrola proporcji: od piątku także tydzień po kolejnym (plan na dwa tygodnie)", () => {
+  assert.deepEqual(tygodnieKontroli("2026-10-28"), ["2026-10-26", "2026-11-02"]);
+  assert.deepEqual(tygodnieKontroli("2026-10-30"), ["2026-10-26", "2026-11-02", "2026-11-09"]);
+  assert.deepEqual(tygodnieKontroli("2026-11-01"), ["2026-10-26", "2026-11-02", "2026-11-09"]);
 });
 
 test("uwagi tygodnia: pusty tydzień po starcie nowych zasad to błąd planu", () => {

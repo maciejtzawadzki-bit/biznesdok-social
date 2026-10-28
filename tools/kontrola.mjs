@@ -5,9 +5,11 @@
 //    AI poza serią „AI zawiodło?”, nazwy narzędzi AI, obietnica czasu, zakazane zwroty, ID przy bezpłatnym dokumencie.
 //  - miękkie — do poprawy przy planie, widoczne w panelu KMZ (hasztagi, „link w bio”, kwoty, długość opisu LinkedIn).
 // Uwagi tygodnia (uwagiTygodnia) pilnują proporcji: płatne dokumenty, bezpłatne, seria AI, Subskrypcja, poradnik.
-// Użycie: node tools/kontrola.mjs   (uwagi dla wszystkich nieopublikowanych postów i bieżącego oraz kolejnego tygodnia)
+// Użycie: node tools/kontrola.mjs   (uwagi dla wszystkich nieopublikowanych postów i bieżącego oraz kolejnego tygodnia;
+// od piątku do niedzieli także tygodnia po nim — plan sięga dwa tygodnie naprzód)
 import {
   blokadaTematu,
+  dniMiedzy,
   dodajDni,
   dzisWarszawa,
   numerTygodnia,
@@ -195,6 +197,17 @@ export function uwagiTygodnia(pon, kontekst = kontekstDomyslny()) {
   return uwagi;
 }
 
+/**
+ * Tygodnie (poniedziałki) do kontroli proporcji: bieżący i kolejny, a od piątku do niedzieli także następny —
+ * piątkowy plan (tryb 2) sięga dwa tygodnie naprzód (decyzja właściciela 28.10.2026).
+ */
+export function tygodnieKontroli(dzis) {
+  const pon = poniedzialek(dzis);
+  const tygodnie = [pon, dodajDni(pon, 7)];
+  if (dniMiedzy(pon, dzis) >= 4) tygodnie.push(dodajDni(pon, 14));
+  return tygodnie;
+}
+
 const stronyPamiec = new Map();
 
 /** Zasada 2 (tylko to, co LIVE): link z posta prowadzi do istniejącej strony. Błąd sieci nie daje uwagi. */
@@ -221,7 +234,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log(`${kanal === "linkedin" ? "linkedin" : "queue"}/${post.id}: ${uwagi.length ? "" : "OK"}`);
     for (const u of uwagi) console.log(`  ${u.startsWith("BLOKUJE") ? "✖" : "⚠"} ${u}`);
   }
-  for (const pon of [poniedzialek(dzis), dodajDni(poniedzialek(dzis), 7)]) {
+  for (const pon of tygodnieKontroli(dzis)) {
     const uwagi = uwagiTygodnia(pon, kontekst);
     console.log(`Tydzień od ${pon}: ${uwagi.length ? uwagi.join("; ") : "OK"}`);
   }
