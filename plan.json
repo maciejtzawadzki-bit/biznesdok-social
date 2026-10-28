@@ -1,66 +1,6 @@
 {
-  "zaktualizowano": "2026-10-27T13:50:03.393Z",
+  "zaktualizowano": "2026-10-28T07:46:35.120Z",
   "posty": [
-    {
-      "id": "2026-10-20-sprawozdanie-finansowe",
-      "kanal": "instagram",
-      "date": "2026-10-20",
-      "time": "08:30",
-      "type": "carousel",
-      "rubric": "poradnik + dokumenty",
-      "status": "published",
-      "naglowek": "Zatwierdzenie sprawozdania finansowego spółki z o.o. to zwyczajne zgromadzenie wspólników, kilka uchwał i złożenie dokumentów w rejestrze. W karuzeli: terminy i",
-      "podpis": "Zatwierdzenie sprawozdania finansowego spółki z o.o. to zwyczajne zgromadzenie wspólników, kilka uchwał i złożenie dokumentów w rejestrze. W karuzeli: terminy i kolejność działań.\n\nSprawozdanie finansowe przygotowuje księgowość. W BiznesDOK przygotujesz sprawozdanie z działalności zarządu oraz protokół zgromadzenia z uchwałami — na wzorach przygotowanych przez prawnika.\n\nPełny poradnik: link w bio → Poradniki.\n\n#spółkazoo #sprawozdaniefinansowe #zgromadzeniewspólników #zarząd #przedsiębiorca #biznesdok",
-      "link": "https://biznesdok.pl/poradniki/zatwierdzenie-sprawozdania-finansowego-sp-z-o-o",
-      "obrazy": [],
-      "permalink": "https://www.instagram.com/p/DetOBOelIqd/",
-      "uwagi": []
-    },
-    {
-      "id": "2026-10-20-story-oswiadczenie-zleceniobiorcy",
-      "kanal": "instagram",
-      "date": "2026-10-20",
-      "time": "12:30",
-      "type": "story",
-      "rubric": "relacja",
-      "status": "published",
-      "naglowek": "Oświadczenie zleceniobiorcy do ZUS i PIT przygotujesz w BiznesDOK — bezpłatnie.",
-      "podpis": "Relacja (bez opisu), na grafice:\nOświadczenie zleceniobiorcy\nOświadczenie zleceniobiorcy do ZUS i PIT przygotujesz w BiznesDOK — bezpłatnie.\nDane osobowe, adresy, urząd skarbowy, rachunek. Bez konta.\nbiznesdok.pl/dokument/oswiadczenie-zleceniobiorcy\nLink: https://biznesdok.pl/dokument/oswiadczenie-zleceniobiorcy",
-      "link": "https://biznesdok.pl/dokument/oswiadczenie-zleceniobiorcy",
-      "obrazy": [],
-      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4011924643677833897",
-      "uwagi": []
-    },
-    {
-      "id": "2026-10-20-story-wideo-zarzad-dane-po-nip",
-      "kanal": "instagram",
-      "date": "2026-10-20",
-      "time": "12:45",
-      "type": "story",
-      "rubric": "film-demo",
-      "status": "published",
-      "naglowek": "Wideo: Dane spółki z KRS po NIP",
-      "podpis": "Relacja wideo (bez opisu): Dane spółki z KRS po NIP\nLink: https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
-      "link": "https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
-      "obrazy": [],
-      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4011924752587217953",
-      "uwagi": []
-    },
-    {
-      "id": "linkedin-2026-10-22-poradnik-zmiana-czlonka-zarzadu",
-      "kanal": "linkedin",
-      "date": "2026-10-20",
-      "time": "15:00",
-      "type": "linkedin",
-      "rubric": "poradnik spółkowy",
-      "status": "published",
-      "naglowek": "Dokumenty do zmiany członka zarządu w spółce z o.o. przygotujesz w BiznesDOK na wzorach prawnika — od uchwały wspólników po oświadczenie o adresach do wniosku d",
-      "podpis": "Dokumenty do zmiany członka zarządu w spółce z o.o. przygotujesz w BiznesDOK na wzorach prawnika — od uchwały wspólników po oświadczenie o adresach do wniosku do KRS.\n\nW poradniku cała procedura krok po kroku:\n• uchwała o odwołaniu albo rezygnacja członka zarządu,\n• uchwała o powołaniu nowej osoby — na zgromadzeniu wspólników trafia do protokołu,\n• zgoda na powołanie z adresem do doręczeń, gdy nowy członek nie podpisuje wniosku,\n• oświadczenie o adresach członków zarządu i lista osób uprawnionych do powołania zarządu,\n• wniosek do KRS — wyłącznie elektronicznie, w ciągu 7 dni od dnia zmiany.\n\nZmiana działa od dnia uchwały albo skutecznej rezygnacji, nie od wpisu do KRS — od tej daty liczy się też termin na wniosek.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nPoradnik z listą dokumentów: https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o?utm_source=linkedin&utm_medium=social&utm_campaign=zmiana-czlonka-zarzadu\n\n#spółkazoo #zarząd #KRS #przedsiębiorca #biznesdok",
-      "link": "https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
-      "obrazy": [],
-      "permalink": "https://www.linkedin.com/feed/update/urn:li:share:7518294224740548608",
-      "uwagi": []
-    },
     {
       "id": "2026-10-21-wypowiedzenie-umowy-o-prace-przez-pracodawce",
       "kanal": "instagram",
@@ -173,12 +113,12 @@
       "time": "09:00",
       "type": "linkedin",
       "rubric": "seria produktowa — dokument spółki",
-      "status": "handed",
+      "status": "published",
       "naglowek": "Protokół z posiedzenia zarządu z uchwałą o przyjęciu regulaminu przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.",
       "podpis": "Protokół z posiedzenia zarządu z uchwałą o przyjęciu regulaminu przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.\n\nJak to działa:\n• dane spółki pobierasz po NIP,\n• wskazujesz, jaki dokument wewnętrzny przyjmuje zarząd, np. regulamin,\n• podajesz dzień, od którego dokument obowiązuje,\n• protokół obejmuje od 1 do 5 członków zarządu.\n\nW protokole: dane spółki, uchwała zarządu o przyjęciu dokumentu wewnętrznego i dacie, od której obowiązuje, oraz podpisy. Plik w PDF albo Word.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nhttps://biznesdok.pl/dokument/protokol-z-posiedzenia-zarzadu?utm_source=linkedin&utm_medium=social&utm_campaign=protokol-z-posiedzenia-zarzadu\n\n#spółkazoo #zarząd #regulamin #przedsiębiorca #biznesdok",
       "link": "https://biznesdok.pl/dokument/protokol-z-posiedzenia-zarzadu",
       "obrazy": [],
-      "permalink": null,
+      "permalink": "https://www.linkedin.com/feed/update/urn:li:share:7520756291661848576",
       "uwagi": []
     },
     {
@@ -218,14 +158,12 @@
       "time": "08:30",
       "type": "feed",
       "rubric": "płatny dokument",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Dokumenty przygotowane przez prawników. Dopasowane technologią.",
       "podpis": "Dokumenty przygotowane przez prawników. Dopasowane technologią.\n\nUmowa o współpracy B2B: podajesz NIP obu firm, a komparycja dopasowuje się do spółki albo jednoosobowej działalności. Wynagrodzenie wybierasz jako ryczałt miesięczny albo stawkę godzinową netto — zapisane także słownie.\n\nSamodzielność wykonawcy i cywilnoprawny charakter współpracy są zapisane wprost. Termin wypowiedzenia i zakaz konkurencji wybierasz opcjonalnie. Plik w PDF albo edytowalnym Wordzie.\n\nPo zakupie dokument masz na swoim koncie w BiznesDOK.\n\nLink w bio → Dokumenty.\n\n#umowab2b #współpraca #kontrakt #przedsiębiorca #firma #biznesdok",
       "link": "https://biznesdok.pl/dokument/umowa-o-wspolpracy-biznesowej",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-28-umowa-o-wspolpracy-biznesowej-01-9710f2e4.jpg"
-      ],
-      "permalink": null,
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/p/DfB7OEBj64t/",
       "uwagi": []
     },
     {
@@ -235,14 +173,12 @@
       "time": "12:30",
       "type": "story",
       "rubric": "płatny dokument",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Porozumienie zmieniające etat i wynagrodzenie przygotujesz w BiznesDOK.",
       "podpis": "Relacja (bez opisu), na grafice:\nDokumenty BiznesDOK\nPorozumienie zmieniające etat i wynagrodzenie przygotujesz w BiznesDOK.\nGdy pracownik zgadza się na nowy wymiar etatu i nowe wynagrodzenie od wskazanego dnia. Bez jego zgody potrzebne jest wypowiedzenie zmieniające.\nbiznesdok.pl/dokument/aneks-do-umowy\nLink: https://biznesdok.pl/dokument/aneks-do-umowy",
       "link": "https://biznesdok.pl/dokument/aneks-do-umowy",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-10-28-story-aneks-do-umowy-01-0373de42.jpg"
-      ],
-      "permalink": null,
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4017752927082663103",
       "uwagi": []
     },
     {
