@@ -59,3 +59,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-10-27 08:44 · story · 2026-10-27-story-subskrypcja · https://www.instagram.com/stories/biznesdok.pl/4017028411624950344
 - 2026-10-27 08:44 · story (wideo) · 2026-10-27-story-wideo-zarzad-wariant · https://www.instagram.com/stories/biznesdok.pl/4017028593724065105
 - 2026-10-27 08:46 · LinkedIn · 2026-10-27-protokol-z-posiedzenia-zarzadu · przekazany do Buffer na 2026-10-27T08:00:00.000Z
+- 2026-10-28 08:44 · feed · 2026-10-28-umowa-o-wspolpracy-biznesowej · https://www.instagram.com/p/DfB7OEBj64t/
