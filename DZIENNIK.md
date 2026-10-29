@@ -63,3 +63,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-10-28 08:44 · story · 2026-10-28-story-aneks-do-umowy · https://www.instagram.com/stories/biznesdok.pl/4017752927082663103
 - 2026-10-28 08:45 · LinkedIn opublikowany · 2026-10-27-protokol-z-posiedzenia-zarzadu · https://www.linkedin.com/feed/update/urn:li:share:7520756291661848576
 - 2026-10-29 08:44 · feed · 2026-10-29-porozumienie-rozwiazanie-umowy-zlecenia · https://www.instagram.com/p/DfEgBYxFDrE/
+- 2026-10-29 08:44 · story · 2026-10-29-story-protokol-nzw-zmiana-w-zarzadzie · https://www.instagram.com/stories/biznesdok.pl/4018477724314076327
