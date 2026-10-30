@@ -3,7 +3,7 @@
   "date": "2026-10-29",
   "time": "09:00",
   "type": "feed",
-  "status": "handed",
+  "status": "published",
   "pillar": "seria AI",
   "temat": "informacja-o-warunkach-zatrudnienia",
   "seria": "ai-zawiodlo",
@@ -22,5 +22,7 @@
   "buffer": {
     "postId": "6ae2f983b8abb6631d151a8e",
     "dueAt": "2026-10-29T08:00:00.000Z"
-  }
+  },
+  "publishedAt": "2026-10-29T08:00:44.292Z",
+  "permalink": "https://www.linkedin.com/feed/update/urn:li:share:7521481129716035584"
 }

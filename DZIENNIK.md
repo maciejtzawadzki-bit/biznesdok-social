@@ -68,3 +68,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-10-30 08:44 · carousel · 2026-10-30-seria-ai-krs-oplata · https://www.instagram.com/p/DfHE3mRoI3c/
 - 2026-10-30 08:44 · story · 2026-10-30-story-okres-przechowywania-dokumentacji · https://www.instagram.com/stories/biznesdok.pl/4019202728416525127
 - 2026-10-30 08:44 · story (wideo) · 2026-10-30-story-wideo-zarzad-podglad-i-format · https://www.instagram.com/stories/biznesdok.pl/4019202856653737452
+- 2026-10-30 08:46 · LinkedIn opublikowany · 2026-10-29-seria-ai-informacja-o-warunkach-zatrudnienia · https://www.linkedin.com/feed/update/urn:li:share:7521481129716035584
