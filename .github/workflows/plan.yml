@@ -45,12 +45,20 @@ jobs:
             media/plan/
       - name: Zapis do main
         if: github.event_name != 'pull_request'
+        # Tożsamość dla całego kroku: rebase przepisuje commit, gdy main poszedł dalej, więc też jej potrzebuje
+        # (bez niej przebieg padał codziennie: „empty ident name”, potem „index contains uncommitted changes”).
+        env:
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
         run: |
           git add -A plan.json media/plan
           if git diff --cached --quiet; then echo "Plan bez zmian"; exit 0; fi
-          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -q -m "plan: panel KMZ"
+          git commit -q -m "plan: panel KMZ"
           for i in 1 2 3 4 5; do
             git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0
+            git rebase --abort 2>/dev/null || true
             sleep $((i * 4))
           done
           exit 1
