@@ -1,0 +1,58 @@
+{
+  "id": "2026-11-10-poradnik-zatrudnienie-7-dni",
+  "date": "2026-11-10",
+  "time": "08:30",
+  "type": "carousel",
+  "status": "planned",
+  "pillar": "poradnik + dokumenty",
+  "temat": "poradniki/zatrudnienie-pracownika-na-umowe-o-prace",
+  "link": "https://biznesdok.pl/poradniki/zatrudnienie-pracownika-na-umowe-o-prace",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Poradnik dla pracodawców",
+      "text": "Zatrudnienie pracownika: co przygotować [[przed pierwszym dniem pracy.]]",
+      "size": 76
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Przed startem",
+      "size": 56,
+      "text": "Cztery kroki",
+      "items": [
+        [
+          "Wybierz rodzaj umowy",
+          "czas nieokreślony, określony albo okres próbny"
+        ],
+        [
+          "Skieruj na badania wstępne",
+          "orzeczenie lekarskie przed rozpoczęciem pracy"
+        ],
+        [
+          "Przeprowadź szkolenie wstępne BHP",
+          "przed dopuszczeniem do pracy"
+        ],
+        [
+          "Podpiszcie umowę na piśmie",
+          "najpóźniej przed dopuszczeniem do pracy"
+        ]
+      ]
+    },
+    {
+      "layout": "headline",
+      "eyebrow": "W ciągu 7 dni",
+      "size": 76,
+      "text": "Informacja o warunkach zatrudnienia i [[zgłoszenie do ZUS.]]",
+      "sub": "W umowach o pracę BiznesDOK informacja jest załącznikiem do umowy."
+    },
+    {
+      "layout": "headline",
+      "eyebrow": "Dokumenty",
+      "size": 80,
+      "text": "Umowę o pracę z informacją o warunkach zatrudnienia [[przygotujesz w BiznesDOK.]]",
+      "sub": "Na czas określony albo nieokreślony — na wzorach przygotowanych przez prawnika.",
+      "note": "Pełny poradnik: link w bio"
+    }
+  ],
+  "caption": "Pierwszy dzień pracy nowej osoby wymaga kilku rzeczy wcześniej. W karuzeli: cztery kroki przed startem i dwa obowiązki w ciągu 7 dni.\n\nUmowę o pracę razem z informacją o warunkach zatrudnienia przygotujesz w BiznesDOK na wzorach przygotowanych przez prawnika. To poradnik ogólny, nie ocena konkretnej sprawy.\n\nPełny poradnik: link w bio → Poradniki.\n\n#umowaopracę #zatrudnienie #pracodawca #kadry #prawopracy #biznesdok"
+}

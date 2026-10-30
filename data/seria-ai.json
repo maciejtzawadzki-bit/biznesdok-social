@@ -25,7 +25,12 @@
       "fakt": "Od 2025 r. Wigilia jest dniem wolnym od pracy; kalkulator dni roboczych to uwzględnia.",
       "zrodlo": "https://biznesdok.pl/kalkulator-dni-roboczych",
       "rozwiazanie": "kalkulator-dni-roboczych",
-      "sezon": [{ "od": "11-15", "do": "12-23" }],
+      "sezon": [
+        {
+          "od": "11-15",
+          "do": "12-23"
+        }
+      ],
       "instagram": null,
       "linkedin": null
     },
@@ -35,7 +40,7 @@
       "fakt": "Pracodawca przekazuje też informację o warunkach zatrudnienia — w ciągu 7 dni od dopuszczenia do pracy.",
       "zrodlo": "https://biznesdok.pl/poradniki/zatrudnienie-pracownika-na-umowe-o-prace",
       "rozwiazanie": "umowa-o-prace-na-czas-nieokreslony",
-      "instagram": null,
+      "instagram": "2026-11-13",
       "linkedin": "2026-10-29"
     },
     {
@@ -45,7 +50,7 @@
       "zrodlo": "https://biznesdok.pl/poradniki/jak-odzyskac-pieniadze-za-fakture-wezwanie-do-zaplaty",
       "rozwiazanie": "ostateczne-wezwanie-do-zaplaty",
       "instagram": null,
-      "linkedin": null
+      "linkedin": "2026-11-12"
     },
     {
       "id": "odsetki-jedna-stawka",
@@ -89,7 +94,12 @@
       "fakt": "Wspólnik nie może uczestniczyć w uchwale o udzieleniu mu absolutorium (art. 244 § 1 KSH).",
       "zrodlo": "https://biznesdok.pl/poradniki/zatwierdzenie-sprawozdania-finansowego-sp-z-o-o",
       "rozwiazanie": "uchwala-o-zatwierdzeniu-sprawozdania-finansowego",
-      "sezon": [{ "od": "03-01", "do": "06-30" }],
+      "sezon": [
+        {
+          "od": "03-01",
+          "do": "06-30"
+        }
+      ],
       "instagram": null,
       "linkedin": null
     },
@@ -99,7 +109,12 @@
       "fakt": "Zarząd wysyła zawiadomienie wspólnikom co najmniej dwa tygodnie przed terminem zgromadzenia.",
       "zrodlo": "https://biznesdok.pl/poradniki/zatwierdzenie-sprawozdania-finansowego-sp-z-o-o",
       "rozwiazanie": "uchwala-o-zatwierdzeniu-sprawozdania-finansowego",
-      "sezon": [{ "od": "03-01", "do": "06-15" }],
+      "sezon": [
+        {
+          "od": "03-01",
+          "do": "06-15"
+        }
+      ],
       "instagram": null,
       "linkedin": null
     }

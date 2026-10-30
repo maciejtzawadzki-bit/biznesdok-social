@@ -1,0 +1,20 @@
+{
+  "id": "2026-11-05-story-ksiega-udzialow",
+  "date": "2026-11-05",
+  "time": "12:30",
+  "type": "story",
+  "status": "planned",
+  "pillar": "płatny dokument",
+  "temat": "ksiega-udzialow",
+  "link": "https://biznesdok.pl/dokument/ksiega-udzialow",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Dokumenty spółki",
+      "text": "Księgę udziałów [[przygotujesz w BiznesDOK.]]",
+      "sub": "Wspólnicy, liczba i wartość udziałów oraz zmiany ich własności. Łączną wartość udziałów każdego wspólnika liczy BiznesDOK.",
+      "note": "biznesdok.pl/dokument/ksiega-udzialow"
+    }
+  ],
+  "caption": ""
+}

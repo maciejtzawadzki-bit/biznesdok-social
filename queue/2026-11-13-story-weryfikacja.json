@@ -1,0 +1,20 @@
+{
+  "id": "2026-11-13-story-weryfikacja",
+  "date": "2026-11-13",
+  "time": "12:30",
+  "type": "story",
+  "status": "planned",
+  "pillar": "bezpłatne narzędzie",
+  "temat": "weryfikacja",
+  "link": "https://biznesdok.pl/weryfikacja",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Narzędzie BiznesDOK",
+      "text": "Dokument z identyfikatorem BD [[sprawdzisz w BiznesDOK.]]",
+      "sub": "Weryfikacja sprawdza, czy dokument o podanym identyfikatorze BD-RRRR-NNNNNN został przygotowany w BiznesDOK. Bezpłatnie.",
+      "note": "biznesdok.pl/weryfikacja"
+    }
+  ],
+  "caption": ""
+}

@@ -1,0 +1,20 @@
+{
+  "id": "2026-11-11-story-wypowiedzenie-umowy-zlecenia",
+  "date": "2026-11-11",
+  "time": "12:30",
+  "type": "story",
+  "status": "planned",
+  "pillar": "płatny dokument",
+  "temat": "wypowiedzenie-umowy-zlecenia",
+  "link": "https://biznesdok.pl/dokument/wypowiedzenie-umowy-zlecenia",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Umowy zlecenia",
+      "text": "Wypowiedzenie umowy zlecenia przez zleceniodawcę [[przygotujesz w BiznesDOK.]]",
+      "sub": "Okres wypowiedzenia jak w umowie: tygodniowy, dwutygodniowy, miesięczny albo trzymiesięczny.",
+      "note": "biznesdok.pl/dokument/wypowiedzenie-umowy-zlecenia"
+    }
+  ],
+  "caption": ""
+}

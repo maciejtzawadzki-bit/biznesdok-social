@@ -37,3 +37,21 @@
 - Tydzień od 2026-10-26: proporcje zgodne.
 - Płatne dokumenty bez publikacji w 28 dniach: 13 z 25 (uchwala-o-powolaniu-czlonka-zarzadu, uchwala-o-odwolaniu-czlonka-zarzadu, rezygnacja-czlonka-zarzadu, zgoda-na-powolanie-do-zarzadu, oswiadczenie-zarzadu-o-adresach-czlonkow-zarzadu, lista-osob-uprawnionych-do-powolania-zarzadu, protokol-nzw-wynagrodzenie-czlonka-zarzadu, protokol-z-posiedzenia-zarzadu, protokol-nzw-zgoda-na-zbycie-udzialow, ksiega-udzialow, lista-wspolnikow, oswiadczenie-zarzadu-o-wniesieniu-kapitalu-zakladowego, informacja-o-adresie-siedziby-udzialowca).
 - Tematy w sezonie: brak.
+
+## 2026-10-30 (tydzień 26.10–30.10)
+
+- Obserwujący: 6 (media: 21)
+- Opublikowano: 5 postów w feedzie (wezwanie do zapłaty, karuzela poradnik o odzyskaniu pieniędzy za fakturę, umowa o współpracy biznesowej, porozumienie o rozwiązaniu umowy zlecenia, seria AI o opłacie KRS), relacje graficzne i wideo. Zasięg: 3, 2, 3, 3, 3; polubienia 2–3, zapisy/udostępnienia/komentarze 0.
+- Najlepszy post: brak wyraźnego — różnice w granicach szumu.
+- Wniosek: zasięg statycznych postów stoi przy 6 obserwujących; na 02–13.11 pełny rytm z przewagą dokumentów spółki, karuzele z poradników (zmiana zarządu, zatrudnienie) i odcinek serii AI w piątek 13.11; relacje wideo w czasie T1 co 2–3 dni, potem co 2 tygodnie.
+
+### Zgodność treści (2026-10-30)
+- Wyszło (7 dni): płatny dokument 6, poradnik 1, Subskrypcja 1, wideo 1.
+- Plan (14 dni): Instagram — płatny dokument 15, poradnik 2, wideo 3, bezpłatne narzędzie 2, seria AI 1; LinkedIn — 4.
+- Powtórki tematu w 21 dni wśród opublikowanych: 0.
+- Posty zablokowane przez kontrolę: 0.
+- Tydzień od 2026-10-26: proporcje zgodne.
+- Tydzień od 2026-11-02: proporcje zgodne.
+- Tydzień od 2026-11-09: brak Subskrypcji w ostatnich 2 tygodniach.
+- Płatne dokumenty bez publikacji w 28 dniach: 2 z 25 (protokol-z-posiedzenia-zarzadu, protokol-nzw-zgoda-na-zbycie-udzialow).
+- Tematy w sezonie: kalkulator-dni-roboczych.

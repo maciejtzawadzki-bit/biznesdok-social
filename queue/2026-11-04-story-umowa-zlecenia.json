@@ -1,0 +1,20 @@
+{
+  "id": "2026-11-04-story-umowa-zlecenia",
+  "date": "2026-11-04",
+  "time": "12:30",
+  "type": "story",
+  "status": "planned",
+  "pillar": "płatny dokument",
+  "temat": "umowa-zlecenia",
+  "link": "https://biznesdok.pl/dokument/umowa-zlecenia",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Umowy zlecenia",
+      "text": "Umowę zlecenia [[przygotujesz w BiznesDOK.]]",
+      "sub": "Dane firmy po NIP, czas określony lub nieokreślony, stawka godzinowa lub miesięczna. Kwota zapisana także słownie.",
+      "note": "biznesdok.pl/dokument/umowa-zlecenia"
+    }
+  ],
+  "caption": ""
+}

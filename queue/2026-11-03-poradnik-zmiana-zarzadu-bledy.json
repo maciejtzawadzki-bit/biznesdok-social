@@ -1,0 +1,58 @@
+{
+  "id": "2026-11-03-poradnik-zmiana-zarzadu-bledy",
+  "date": "2026-11-03",
+  "time": "08:30",
+  "type": "carousel",
+  "status": "planned",
+  "pillar": "poradnik + dokumenty",
+  "temat": "poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
+  "link": "https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Poradnik dla spółek",
+      "text": "Przy zmianie zarządu [[najczęstsze błędy]] zdarzają się przy wniosku do Krajowego Rejestru Sądowego (KRS).",
+      "size": 76
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Na co uważać",
+      "size": 56,
+      "text": "Cztery błędy",
+      "items": [
+        [
+          "Brak adresu do doręczeń nowego członka",
+          "sąd wzywa do uzupełnienia, wpis się przeciąga"
+        ],
+        [
+          "Uchwała niezgodna z umową spółki",
+          "np. gdy umowa przyznaje prawo powołania zarządu wspólnikowi"
+        ],
+        [
+          "Spóźniony wniosek",
+          "liczy się data uchwały, nie data wpisu"
+        ],
+        [
+          "Rezygnacja ostatniego członka zarządu",
+          "złożona tylko spółce, bez zwołania zgromadzenia wspólników"
+        ]
+      ]
+    },
+    {
+      "layout": "headline",
+      "eyebrow": "Termin",
+      "size": 84,
+      "text": "Wniosek do KRS: [[7 dni]] od dnia zmiany.",
+      "sub": "Składasz go elektronicznie, w Portalu Rejestrów Sądowych."
+    },
+    {
+      "layout": "headline",
+      "eyebrow": "Dokumenty",
+      "size": 80,
+      "text": "Dokumenty do zmiany w zarządzie [[przygotujesz w BiznesDOK.]]",
+      "sub": "Uchwały, zgodę na powołanie, oświadczenie o adresach i listę osób uprawnionych — na wzorach przygotowanych przez prawnika.",
+      "note": "Pełny poradnik: link w bio"
+    }
+  ],
+  "caption": "Zmiana w zarządzie spółki z o.o. łatwo utknąć na drobiazgu. W karuzeli: cztery błędy z poradnika BiznesDOK i termin wniosku do Krajowego Rejestru Sądowego (KRS).\n\nDokumenty do zmiany w zarządzie — uchwały, zgodę na powołanie, oświadczenie o adresach i listę osób uprawnionych — przygotujesz w BiznesDOK na wzorach przygotowanych przez prawnika. To poradnik ogólny, nie ocena konkretnej sprawy.\n\nPełny poradnik: link w bio → Poradniki.\n\n#spółkazoo #zarząd #krs #członekzarządu #wnioseknakrs #biznesdok"
+}
