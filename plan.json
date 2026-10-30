@@ -1,5 +1,5 @@
 {
-  "zaktualizowano": "2026-10-30T07:46:50.921Z",
+  "zaktualizowano": "2026-10-30T12:55:05.477Z",
   "posty": [
     {
       "id": "2026-10-26-ostateczne-wezwanie-do-zaplaty",
@@ -209,6 +209,475 @@
       "link": "https://biznesdok.pl/dokument/protokol-nadzwyczajnego-zgromadzenia-wspolnikow",
       "obrazy": [],
       "permalink": "https://www.instagram.com/stories/biznesdok.pl/4019202856653737452",
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-02-rezygnacja-czlonka-zarzadu",
+      "kanal": "instagram",
+      "date": "2026-11-02",
+      "time": "08:30",
+      "type": "feed",
+      "rubric": "płatny dokument",
+      "status": "planned",
+      "naglowek": "Dokumenty przygotowane przez prawników. Dopasowane technologią.",
+      "podpis": "Dokumenty przygotowane przez prawników. Dopasowane technologią.\n\nRezygnacja członka zarządu: pismo o rezygnacji z funkcji z określoną datą, do doręczenia spółce. Dane spółki pobierasz po NIP.\n\nPo zakupie dokument masz na swoim koncie w BiznesDOK.\n\nLink w bio → Dokumenty.\n\n#spółkazoo #zarząd #rezygnacja #członekzarządu #przedsiębiorca #biznesdok",
+      "link": "https://biznesdok.pl/dokument/rezygnacja-czlonka-zarzadu",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-02-rezygnacja-czlonka-zarzadu-01-4598f0d9.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-02-story-uchwala-o-odwolaniu-czlonka-zarzadu",
+      "kanal": "instagram",
+      "date": "2026-11-02",
+      "time": "12:30",
+      "type": "story",
+      "rubric": "płatny dokument",
+      "status": "planned",
+      "naglowek": "Uchwałę o odwołaniu członka zarządu przygotujesz w BiznesDOK.",
+      "podpis": "Relacja (bez opisu), na grafice:\nDokumenty spółki\nUchwałę o odwołaniu członka zarządu przygotujesz w BiznesDOK.\nGdy wspólnicy odwołują członka zarządu — z dniem odwołania i wynikiem głosowania.\nbiznesdok.pl/dokument/uchwala-o-odwolaniu-czlonka-zarzadu\nLink: https://biznesdok.pl/dokument/uchwala-o-odwolaniu-czlonka-zarzadu",
+      "link": "https://biznesdok.pl/dokument/uchwala-o-odwolaniu-czlonka-zarzadu",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-02-story-uchwala-o-odwolaniu-czlonka-zarzadu-01-687bafba.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-03-poradnik-zmiana-zarzadu-bledy",
+      "kanal": "instagram",
+      "date": "2026-11-03",
+      "time": "08:30",
+      "type": "carousel",
+      "rubric": "poradnik + dokumenty",
+      "status": "planned",
+      "naglowek": "Zmiana w zarządzie spółki z o.o. łatwo utknąć na drobiazgu. W karuzeli: cztery błędy z poradnika BiznesDOK i termin wniosku do Krajowego Rejestru Sądowego (KRS)",
+      "podpis": "Zmiana w zarządzie spółki z o.o. łatwo utknąć na drobiazgu. W karuzeli: cztery błędy z poradnika BiznesDOK i termin wniosku do Krajowego Rejestru Sądowego (KRS).\n\nDokumenty do zmiany w zarządzie — uchwały, zgodę na powołanie, oświadczenie o adresach i listę osób uprawnionych — przygotujesz w BiznesDOK na wzorach przygotowanych przez prawnika. To poradnik ogólny, nie ocena konkretnej sprawy.\n\nPełny poradnik: link w bio → Poradniki.\n\n#spółkazoo #zarząd #krs #członekzarządu #wnioseknakrs #biznesdok",
+      "link": "https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-03-poradnik-zmiana-zarzadu-bledy-01-39ebb941.jpg",
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-03-poradnik-zmiana-zarzadu-bledy-02-39ebb941.jpg",
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-03-poradnik-zmiana-zarzadu-bledy-03-39ebb941.jpg",
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-03-poradnik-zmiana-zarzadu-bledy-04-39ebb941.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "linkedin-2026-11-03-informacja-o-adresie-siedziby-udzialowca",
+      "kanal": "linkedin",
+      "date": "2026-11-03",
+      "time": "09:00",
+      "type": "linkedin",
+      "rubric": "seria produktowa — dokument spółki",
+      "status": "planned",
+      "naglowek": "Informację o adresie siedziby udziałowca przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.",
+      "podpis": "Informację o adresie siedziby udziałowca przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.\n\nDokument dotyczy sytuacji, gdy jedynym udziałowcem spółki z o.o. jest osoba prawna. Jak to działa:\n• podajesz NIP udziałowca,\n• BiznesDOK wyszukuje udziałowca po NIP i uzupełnia jego dane,\n• dane spółki również pobierasz po NIP,\n• dokument gotowy jest w PDF albo Word.\n\nZamiast składać dokument z pustego wzoru, odpowiadasz na pytania kreatora — resztę uzupełnia BiznesDOK.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nhttps://biznesdok.pl/dokument/informacja-o-adresie-siedziby-udzialowca?utm_source=linkedin&utm_medium=social&utm_campaign=informacja-o-adresie-siedziby-udzialowca\n\n#spółkazoo #udziałowiec #wspólnik #przedsiębiorca #biznesdok",
+      "link": "https://biznesdok.pl/dokument/informacja-o-adresie-siedziby-udzialowca",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/linkedin-2026-11-03-informacja-o-adresie-siedziby-udzialowca-01-6327490b.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-03-story-uchwala-o-powolaniu-czlonka-zarzadu",
+      "kanal": "instagram",
+      "date": "2026-11-03",
+      "time": "12:30",
+      "type": "story",
+      "rubric": "płatny dokument",
+      "status": "planned",
+      "naglowek": "Uchwałę o powołaniu członka zarządu przygotujesz w BiznesDOK.",
+      "podpis": "Relacja (bez opisu), na grafice:\nDokumenty spółki\nUchwałę o powołaniu członka zarządu przygotujesz w BiznesDOK.\nGdy do zarządu wchodzi nowa osoba — z funkcją, terminem i okresem powołania. Liczbę ważnych głosów liczy BiznesDOK.\nbiznesdok.pl/dokument/uchwala-o-powolaniu-czlonka-zarzadu\nLink: https://biznesdok.pl/dokument/uchwala-o-powolaniu-czlonka-zarzadu",
+      "link": "https://biznesdok.pl/dokument/uchwala-o-powolaniu-czlonka-zarzadu",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-03-story-uchwala-o-powolaniu-czlonka-zarzadu-01-6f748fca.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-03-story-wideo-wezwanie-kilka-faktur",
+      "kanal": "instagram",
+      "date": "2026-11-03",
+      "time": "12:45",
+      "type": "story",
+      "rubric": "film-demo",
+      "status": "planned",
+      "naglowek": "Wideo: Kilka faktur w jednym wezwaniu — kwoty sumują się automatycznie",
+      "podpis": "Relacja wideo (bez opisu): Kilka faktur w jednym wezwaniu — kwoty sumują się automatycznie\nLink: https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
+      "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/video/film1-wezwanie-urywek-2-kilka-faktur.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-04-zgoda-na-powolanie-do-zarzadu",
+      "kanal": "instagram",
+      "date": "2026-11-04",
+      "time": "08:30",
+      "type": "feed",
+      "rubric": "płatny dokument",
+      "status": "planned",
+      "naglowek": "Dokumenty przygotowane przez prawników. Dopasowane technologią.",
+      "podpis": "Dokumenty przygotowane przez prawników. Dopasowane technologią.\n\nZgoda na powołanie do zarządu: pisemna zgoda osoby powoływanej, z funkcją i adresem do doręczeń. Dokument potrzebny m.in. do zgłoszenia zmiany w Krajowym Rejestrze Sądowym (KRS).\n\nPo zakupie dokument masz na swoim koncie w BiznesDOK.\n\nLink w bio → Dokumenty.\n\n#spółkazoo #zarząd #powołanie #krs #przedsiębiorca #biznesdok",
+      "link": "https://biznesdok.pl/dokument/zgoda-na-powolanie-do-zarzadu",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-04-zgoda-na-powolanie-do-zarzadu-01-5796c1c5.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-04-story-umowa-zlecenia",
+      "kanal": "instagram",
+      "date": "2026-11-04",
+      "time": "12:30",
+      "type": "story",
+      "rubric": "płatny dokument",
+      "status": "planned",
+      "naglowek": "Umowę zlecenia przygotujesz w BiznesDOK.",
+      "podpis": "Relacja (bez opisu), na grafice:\nUmowy zlecenia\nUmowę zlecenia przygotujesz w BiznesDOK.\nDane firmy po NIP, czas określony lub nieokreślony, stawka godzinowa lub miesięczna. Kwota zapisana także słownie.\nbiznesdok.pl/dokument/umowa-zlecenia\nLink: https://biznesdok.pl/dokument/umowa-zlecenia",
+      "link": "https://biznesdok.pl/dokument/umowa-zlecenia",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-04-story-umowa-zlecenia-01-f221d40e.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-05-informacja-o-adresie-siedziby-udzialowca",
+      "kanal": "instagram",
+      "date": "2026-11-05",
+      "time": "08:30",
+      "type": "feed",
+      "rubric": "płatny dokument",
+      "status": "planned",
+      "naglowek": "Dokumenty przygotowane przez prawników. Dopasowane technologią.",
+      "podpis": "Dokumenty przygotowane przez prawników. Dopasowane technologią.\n\nInformacja o adresie siedziby udziałowca: dokument dla spółki z o.o., w której jedynym udziałowcem jest osoba prawna. Udziałowca BiznesDOK wyszukuje po NIP.\n\nPo zakupie dokument masz na swoim koncie w BiznesDOK.\n\nLink w bio → Dokumenty.\n\n#spółkazoo #udziałowiec #wspólnik #krs #przedsiębiorca #biznesdok",
+      "link": "https://biznesdok.pl/dokument/informacja-o-adresie-siedziby-udzialowca",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-05-informacja-o-adresie-siedziby-udzialowca-01-de8f47ef.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "linkedin-2026-11-05-ksiega-udzialow",
+      "kanal": "linkedin",
+      "date": "2026-11-05",
+      "time": "09:00",
+      "type": "linkedin",
+      "rubric": "seria produktowa — dokument spółki",
+      "status": "planned",
+      "naglowek": "Księgę udziałów przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.",
+      "podpis": "Księgę udziałów przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.\n\nCo w niej znajdziesz:\n• wspólników spółki z o.o.,\n• liczbę i wartość udziałów,\n• zmiany własności udziałów,\n• łączną wartość udziałów każdego wspólnika — tę liczy BiznesDOK, więc nie musisz sumować ręcznie.\n\nDane spółki pobierasz po NIP, a cały dokument powstaje z Twoich odpowiedzi w kreatorze. Księga udziałów przyda się, gdy porządkujesz dokumenty wspólników i udziałów w spółce.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nhttps://biznesdok.pl/dokument/ksiega-udzialow?utm_source=linkedin&utm_medium=social&utm_campaign=ksiega-udzialow\n\n#spółkazoo #wspólnicy #udziały #przedsiębiorca #biznesdok",
+      "link": "https://biznesdok.pl/dokument/ksiega-udzialow",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/linkedin-2026-11-05-ksiega-udzialow-01-d0b0a9d0.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-05-story-ksiega-udzialow",
+      "kanal": "instagram",
+      "date": "2026-11-05",
+      "time": "12:30",
+      "type": "story",
+      "rubric": "płatny dokument",
+      "status": "planned",
+      "naglowek": "Księgę udziałów przygotujesz w BiznesDOK.",
+      "podpis": "Relacja (bez opisu), na grafice:\nDokumenty spółki\nKsięgę udziałów przygotujesz w BiznesDOK.\nWspólnicy, liczba i wartość udziałów oraz zmiany ich własności. Łączną wartość udziałów każdego wspólnika liczy BiznesDOK.\nbiznesdok.pl/dokument/ksiega-udzialow\nLink: https://biznesdok.pl/dokument/ksiega-udzialow",
+      "link": "https://biznesdok.pl/dokument/ksiega-udzialow",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-05-story-ksiega-udzialow-01-122983f4.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-05-story-wideo-wezwanie-gotowy-dokument",
+      "kanal": "instagram",
+      "date": "2026-11-05",
+      "time": "12:45",
+      "type": "story",
+      "rubric": "film-demo",
+      "status": "planned",
+      "naglowek": "Wideo: Termin, rachunek, podgląd i format — gotowy dokument",
+      "podpis": "Relacja wideo (bez opisu): Termin, rachunek, podgląd i format — gotowy dokument\nLink: https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
+      "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/video/film1-wezwanie-urywek-3-gotowy-dokument.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-06-lista-osob-uprawnionych-do-powolania-zarzadu",
+      "kanal": "instagram",
+      "date": "2026-11-06",
+      "time": "08:30",
+      "type": "feed",
+      "rubric": "płatny dokument",
+      "status": "planned",
+      "naglowek": "Dokumenty przygotowane przez prawników. Dopasowane technologią.",
+      "podpis": "Dokumenty przygotowane przez prawników. Dopasowane technologią.\n\nLista osób uprawnionych do powołania zarządu: dokument do postępowania rejestrowego dla spółki z o.o., w której wspólnikiem jest osoba prawna. Zawiera organ reprezentacji i adres do doręczeń.\n\nPo zakupie dokument masz na swoim koncie w BiznesDOK.\n\nLink w bio → Dokumenty.\n\n#spółkazoo #zarząd #wspólnik #krs #przedsiębiorca #biznesdok",
+      "link": "https://biznesdok.pl/dokument/lista-osob-uprawnionych-do-powolania-zarzadu",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-06-lista-osob-uprawnionych-do-powolania-zarzadu-01-1e9e32f9.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-06-story-kalkulator-odsetek",
+      "kanal": "instagram",
+      "date": "2026-11-06",
+      "time": "12:30",
+      "type": "story",
+      "rubric": "bezpłatne narzędzie",
+      "status": "planned",
+      "naglowek": "Odsetki od niezapłaconych faktur policzysz w BiznesDOK.",
+      "podpis": "Relacja (bez opisu), na grafice:\nNarzędzie BiznesDOK\nOdsetki od niezapłaconych faktur policzysz w BiznesDOK.\nDla jednej faktury albo kilku, z właściwymi stawkami i sposobem obliczenia. Bezpłatnie, bez konta i bez e-maila.\nbiznesdok.pl/kalkulator-odsetek\nLink: https://biznesdok.pl/kalkulator-odsetek",
+      "link": "https://biznesdok.pl/kalkulator-odsetek",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-06-story-kalkulator-odsetek-01-05b48d9f.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-09-lista-wspolnikow",
+      "kanal": "instagram",
+      "date": "2026-11-09",
+      "time": "08:30",
+      "type": "feed",
+      "rubric": "płatny dokument",
+      "status": "planned",
+      "naglowek": "Dokumenty przygotowane przez prawników. Dopasowane technologią.",
+      "podpis": "Dokumenty przygotowane przez prawników. Dopasowane technologią.\n\nLista wspólników: dokument ze stanem na wskazany dzień, do złożenia w Krajowym Rejestrze Sądowym (KRS). Dane spółki pobierasz po NIP, a łączną wartość udziałów każdego wspólnika liczy BiznesDOK.\n\nPo zakupie dokument masz na swoim koncie w BiznesDOK.\n\nLink w bio → Dokumenty.\n\n#spółkazoo #wspólnicy #udziały #krs #przedsiębiorca #biznesdok",
+      "link": "https://biznesdok.pl/dokument/lista-wspolnikow",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-09-lista-wspolnikow-01-ab6b8867.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-09-story-oswiadczenie-zarzadu-o-adresach-czlonkow-zarzadu",
+      "kanal": "instagram",
+      "date": "2026-11-09",
+      "time": "12:30",
+      "type": "story",
+      "rubric": "płatny dokument",
+      "status": "planned",
+      "naglowek": "Oświadczenie zarządu o adresach członków zarządu przygotujesz w BiznesDOK.",
+      "podpis": "Relacja (bez opisu), na grafice:\nDokumenty spółki\nOświadczenie zarządu o adresach członków zarządu przygotujesz w BiznesDOK.\nAdresy do doręczeń członków zarządu w jednym oświadczeniu — do postępowania rejestrowego.\nbiznesdok.pl/dokument/oswiadczenie-zarzadu-o-adresach-czlonkow-zarzadu\nLink: https://biznesdok.pl/dokument/oswiadczenie-zarzadu-o-adresach-czlonkow-zarzadu",
+      "link": "https://biznesdok.pl/dokument/oswiadczenie-zarzadu-o-adresach-czlonkow-zarzadu",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-09-story-oswiadczenie-zarzadu-o-adresach-czlonkow-zarzadu-01-c26c6257.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-10-poradnik-zatrudnienie-7-dni",
+      "kanal": "instagram",
+      "date": "2026-11-10",
+      "time": "08:30",
+      "type": "carousel",
+      "rubric": "poradnik + dokumenty",
+      "status": "planned",
+      "naglowek": "Pierwszy dzień pracy nowej osoby wymaga kilku rzeczy wcześniej. W karuzeli: cztery kroki przed startem i dwa obowiązki w ciągu 7 dni.",
+      "podpis": "Pierwszy dzień pracy nowej osoby wymaga kilku rzeczy wcześniej. W karuzeli: cztery kroki przed startem i dwa obowiązki w ciągu 7 dni.\n\nUmowę o pracę razem z informacją o warunkach zatrudnienia przygotujesz w BiznesDOK na wzorach przygotowanych przez prawnika. To poradnik ogólny, nie ocena konkretnej sprawy.\n\nPełny poradnik: link w bio → Poradniki.\n\n#umowaopracę #zatrudnienie #pracodawca #kadry #prawopracy #biznesdok",
+      "link": "https://biznesdok.pl/poradniki/zatrudnienie-pracownika-na-umowe-o-prace",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-10-poradnik-zatrudnienie-7-dni-01-e4307b0a.jpg",
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-10-poradnik-zatrudnienie-7-dni-02-e4307b0a.jpg",
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-10-poradnik-zatrudnienie-7-dni-03-e4307b0a.jpg",
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-10-poradnik-zatrudnienie-7-dni-04-e4307b0a.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "linkedin-2026-11-10-lista-wspolnikow",
+      "kanal": "linkedin",
+      "date": "2026-11-10",
+      "time": "09:00",
+      "type": "linkedin",
+      "rubric": "seria produktowa — dokument spółki",
+      "status": "planned",
+      "naglowek": "Listę wspólników przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.",
+      "podpis": "Listę wspólników przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.\n\nJak to działa:\n• podajesz dzień, na który ma być stan wspólników,\n• dane spółki pobierasz po NIP,\n• łączną wartość udziałów każdego wspólnika liczy BiznesDOK,\n• dokument jest gotowy do złożenia w Krajowym Rejestrze Sądowym (KRS).\n\nZamiast przepisywać dane z różnych dokumentów, wpisujesz je raz w kreatorze — resztę przygotowuje BiznesDOK.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nhttps://biznesdok.pl/dokument/lista-wspolnikow?utm_source=linkedin&utm_medium=social&utm_campaign=lista-wspolnikow\n\n#spółkazoo #wspólnicy #udziały #przedsiębiorca #biznesdok",
+      "link": "https://biznesdok.pl/dokument/lista-wspolnikow",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/linkedin-2026-11-10-lista-wspolnikow-01-909d5fb9.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-10-story-oswiadczenie-zarzadu-o-wniesieniu-kapitalu-zakladowego",
+      "kanal": "instagram",
+      "date": "2026-11-10",
+      "time": "12:30",
+      "type": "story",
+      "rubric": "płatny dokument",
+      "status": "planned",
+      "naglowek": "Oświadczenie zarządu o wniesieniu wkładów na podwyższony kapitał przygotujesz w BiznesDOK.",
+      "podpis": "Relacja (bez opisu), na grafice:\nDokumenty spółki\nOświadczenie zarządu o wniesieniu wkładów na podwyższony kapitał przygotujesz w BiznesDOK.\nCzłonkowie zarządu oświadczają, że wkłady pieniężne zostały w całości wniesione. Do zgłoszenia podwyższenia kapitału w Krajowym Rejestrze Sądowym.\nbiznesdok.pl/dokument/oswiadczenie-zarzadu-o-wniesieniu-kapitalu-zakladowego\nLink: https://biznesdok.pl/dokument/oswiadczenie-zarzadu-o-wniesieniu-kapitalu-zakladowego",
+      "link": "https://biznesdok.pl/dokument/oswiadczenie-zarzadu-o-wniesieniu-kapitalu-zakladowego",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-10-story-oswiadczenie-zarzadu-o-wniesieniu-kapitalu-zakladowego-01-53576856.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-11-wypowiedzenie-umowy-o-prace-przez-pracodawce",
+      "kanal": "instagram",
+      "date": "2026-11-11",
+      "time": "08:30",
+      "type": "feed",
+      "rubric": "płatny dokument",
+      "status": "planned",
+      "naglowek": "Dokumenty przygotowane przez prawników. Dopasowane technologią.",
+      "podpis": "Dokumenty przygotowane przez prawników. Dopasowane technologią.\n\nWypowiedzenie umowy o pracę na czas nieokreślony przez pracodawcę: na podstawie stażu BiznesDOK wstawia okres wypowiedzenia i właściwy punkt art. 36 § 1 Kodeksu pracy. Daty okresu wypowiedzenia i przyczynę podajesz sam, a urlop albo zwolnienie z obowiązku świadczenia pracy pojawia się tylko w wybranym wariancie.\n\nPo zakupie dokument masz na swoim koncie w BiznesDOK.\n\nLink w bio → Dokumenty.\n\n#wypowiedzenie #umowaopracę #pracodawca #kadry #prawopracy #biznesdok",
+      "link": "https://biznesdok.pl/dokument/wypowiedzenie-umowy-o-prace-przez-pracodawce",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-11-wypowiedzenie-umowy-o-prace-przez-pracodawce-01-fa6c3548.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-11-story-wypowiedzenie-umowy-zlecenia",
+      "kanal": "instagram",
+      "date": "2026-11-11",
+      "time": "12:30",
+      "type": "story",
+      "rubric": "płatny dokument",
+      "status": "planned",
+      "naglowek": "Wypowiedzenie umowy zlecenia przez zleceniodawcę przygotujesz w BiznesDOK.",
+      "podpis": "Relacja (bez opisu), na grafice:\nUmowy zlecenia\nWypowiedzenie umowy zlecenia przez zleceniodawcę przygotujesz w BiznesDOK.\nOkres wypowiedzenia jak w umowie: tygodniowy, dwutygodniowy, miesięczny albo trzymiesięczny.\nbiznesdok.pl/dokument/wypowiedzenie-umowy-zlecenia\nLink: https://biznesdok.pl/dokument/wypowiedzenie-umowy-zlecenia",
+      "link": "https://biznesdok.pl/dokument/wypowiedzenie-umowy-zlecenia",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-11-story-wypowiedzenie-umowy-zlecenia-01-0f4f5cbd.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-12-umowa-o-prace-na-czas-okreslony",
+      "kanal": "instagram",
+      "date": "2026-11-12",
+      "time": "08:30",
+      "type": "feed",
+      "rubric": "płatny dokument",
+      "status": "planned",
+      "naglowek": "Dokumenty przygotowane przez prawników. Dopasowane technologią.",
+      "podpis": "Dokumenty przygotowane przez prawników. Dopasowane technologią.\n\nUmowa o pracę na czas określony: data rozpoczęcia i zakończenia zatrudnienia, stanowisko, wymiar etatu i wynagrodzenie z Twoich odpowiedzi. Przy pełnym lub niepełnym etacie BiznesDOK wybiera postanowienia przygotowane przez prawnika.\n\nPo zakupie dokument masz na swoim koncie w BiznesDOK.\n\nLink w bio → Dokumenty.\n\n#umowaopracę #czasokreślony #pracodawca #kadry #prawopracy #biznesdok",
+      "link": "https://biznesdok.pl/dokument/umowa-o-prace-na-czas-okreslony",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-12-umowa-o-prace-na-czas-okreslony-01-5d9e2c5d.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "linkedin-2026-11-12-seria-ai-przedawnienie-faktury",
+      "kanal": "linkedin",
+      "date": "2026-11-12",
+      "time": "09:00",
+      "type": "linkedin",
+      "rubric": "seria AI",
+      "status": "planned",
+      "naglowek": "Seria „AI zawiodło? Decyduje prawnik”: typowy kłopot i poprawna informacja.",
+      "podpis": "Seria „AI zawiodło? Decyduje prawnik”: typowy kłopot i poprawna informacja.\n\nKłopot: przekonanie, że faktura zawsze przedawnia się po 3 latach, a wysłanie wezwania do zapłaty przerywa przedawnienie.\n\nFakt: cena sprzedaży towarów w ramach przedsiębiorstwa sprzedawcy przedawnia się po 2 latach (art. 554 Kodeksu cywilnego). Samo wezwanie nie przerywa biegu przedawnienia — przerywa go dopiero czynność przed sądem (art. 123 § 1 Kodeksu cywilnego). Źródło: nasz poradnik o odzyskiwaniu pieniędzy za fakturę.\n\nOstateczne wezwanie do zapłaty przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika. Technologia ułatwia, decyduje prawnik.\n\nhttps://biznesdok.pl/dokument/ostateczne-wezwanie-do-zaplaty?utm_source=linkedin&utm_medium=social&utm_campaign=seria-ai-przedawnienie-faktury\n\n#należności #faktura #przedsiębiorca #wezwaniedozapłaty #biznesdok",
+      "link": "https://biznesdok.pl/dokument/ostateczne-wezwanie-do-zaplaty",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/linkedin-2026-11-12-seria-ai-przedawnienie-faktury-01-1ac7442a.jpg"
+      ],
+      "permalink": null,
+      "uwagi": [
+        "strona z linku nie istnieje (HTTP 404)"
+      ]
+    },
+    {
+      "id": "2026-11-12-story-protokol-nzw-wynagrodzenie-czlonka-zarzadu",
+      "kanal": "instagram",
+      "date": "2026-11-12",
+      "time": "12:30",
+      "type": "story",
+      "rubric": "płatny dokument",
+      "status": "planned",
+      "naglowek": "Protokół zgromadzenia wspólników o wynagrodzeniu członka zarządu przygotujesz w BiznesDOK.",
+      "podpis": "Relacja (bez opisu), na grafice:\nDokumenty spółki\nProtokół zgromadzenia wspólników o wynagrodzeniu członka zarządu przygotujesz w BiznesDOK.\nUchwała o wynagrodzeniu prezesa albo członka zarządu z wynikiem głosowania. Wysokość, formę i datę obowiązywania podajesz sam.\nbiznesdok.pl/dokument/protokol-nzw-wynagrodzenie-czlonka-zarzadu\nLink: https://biznesdok.pl/dokument/protokol-nzw-wynagrodzenie-czlonka-zarzadu",
+      "link": "https://biznesdok.pl/dokument/protokol-nzw-wynagrodzenie-czlonka-zarzadu",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-12-story-protokol-nzw-wynagrodzenie-czlonka-zarzadu-01-9dc3f041.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-12-story-wideo-zarzad-dane-po-nip",
+      "kanal": "instagram",
+      "date": "2026-11-12",
+      "time": "12:45",
+      "type": "story",
+      "rubric": "film-demo",
+      "status": "planned",
+      "naglowek": "Wideo: Dane spółki z KRS po NIP",
+      "podpis": "Relacja wideo (bez opisu): Dane spółki z KRS po NIP\nLink: https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
+      "link": "https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/video/film2-zarzad-urywek-1-dane-po-nip.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-13-seria-ai-informacja-o-warunkach-zatrudnienia",
+      "kanal": "instagram",
+      "date": "2026-11-13",
+      "time": "08:30",
+      "type": "carousel",
+      "rubric": "seria AI",
+      "status": "planned",
+      "naglowek": "Seria „AI zawiodło? Decyduje prawnik”: typowy kłopot i poprawna informacja.",
+      "podpis": "Seria „AI zawiodło? Decyduje prawnik”: typowy kłopot i poprawna informacja.\n\nKłopot: przekonanie, że do zatrudnienia pracownika wystarczy sama umowa o pracę. Fakt: pracodawca przekazuje też informację o warunkach zatrudnienia — w ciągu 7 dni od dopuszczenia do pracy. Źródło: nasz poradnik o zatrudnieniu pracownika na umowę o pracę.\n\nW BiznesDOK umowę o pracę na czas nieokreślony przygotujesz razem z informacją o warunkach zatrudnienia, w jednym pliku, na wzorze przygotowanym przez prawnika. Technologia ułatwia, decyduje prawnik.\n\nLink w bio → Poradniki.\n\n#prawopracy #umowaopracę #pracodawca #kadry #przedsiębiorca #biznesdok",
+      "link": "https://biznesdok.pl/dokument/umowa-o-prace-na-czas-nieokreslony",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-13-seria-ai-informacja-o-warunkach-zatrudnienia-01-be62c29f.jpg",
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-13-seria-ai-informacja-o-warunkach-zatrudnienia-02-be62c29f.jpg",
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-13-seria-ai-informacja-o-warunkach-zatrudnienia-03-be62c29f.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-13-story-weryfikacja",
+      "kanal": "instagram",
+      "date": "2026-11-13",
+      "time": "12:30",
+      "type": "story",
+      "rubric": "bezpłatne narzędzie",
+      "status": "planned",
+      "naglowek": "Dokument z identyfikatorem BD sprawdzisz w BiznesDOK.",
+      "podpis": "Relacja (bez opisu), na grafice:\nNarzędzie BiznesDOK\nDokument z identyfikatorem BD sprawdzisz w BiznesDOK.\nWeryfikacja sprawdza, czy dokument o podanym identyfikatorze BD-RRRR-NNNNNN został przygotowany w BiznesDOK. Bezpłatnie.\nbiznesdok.pl/weryfikacja\nLink: https://biznesdok.pl/weryfikacja",
+      "link": "https://biznesdok.pl/weryfikacja",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-13-story-weryfikacja-01-e01b84d9.jpg"
+      ],
+      "permalink": null,
       "uwagi": []
     }
   ]
