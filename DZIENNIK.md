@@ -71,3 +71,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-10-30 08:46 · LinkedIn opublikowany · 2026-10-29-seria-ai-informacja-o-warunkach-zatrudnienia · https://www.linkedin.com/feed/update/urn:li:share:7521481129716035584
 - 2026-11-02 08:45 · feed · 2026-11-02-rezygnacja-czlonka-zarzadu · https://www.instagram.com/p/DfOzTpUoSB5/
 - 2026-11-02 08:45 · BŁĄD · 2026-11-02-story-uchwala-o-odwolaniu-czlonka-zarzadu · Graph API 17841415756005690/media_publish: {"message":"The requested resource does not exist","type":"OAuthException","code":24,"error_subcode":2207006,"is_transient":false,"error_user_title":"Nie znaleziono elementu multimedialnego","error_user_msg":"Nie udało się odnaleźć elementu multimedialnego 18 152 329 498 525 201.","fbtrace_id":"AfisUcvtcuX63lYWbSvhT2d"}
+- 2026-11-02 08:46 · story · 2026-11-02-story-uchwala-o-odwolaniu-czlonka-zarzadu · https://www.instagram.com/stories/biznesdok.pl/4021377765596947802
