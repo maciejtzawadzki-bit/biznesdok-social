@@ -3,7 +3,7 @@
   "date": "2026-11-02",
   "time": "12:30",
   "type": "story",
-  "status": "planned",
+  "status": "error",
   "pillar": "płatny dokument",
   "temat": "uchwala-o-odwolaniu-czlonka-zarzadu",
   "link": "https://biznesdok.pl/dokument/uchwala-o-odwolaniu-czlonka-zarzadu",
@@ -16,5 +16,6 @@
       "note": "biznesdok.pl/dokument/uchwala-o-odwolaniu-czlonka-zarzadu"
     }
   ],
-  "caption": ""
+  "caption": "",
+  "error": "Graph API 17841415756005690/media_publish: {\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Nie znaleziono elementu multimedialnego\",\"error_user_msg\":\"Nie udało się odnaleźć elementu multimedialnego 18 152 329 498 525 201.\",\"fbtrace_id\":\"AfisUcvtcuX63lYWbSvhT2d\"}"
 }
