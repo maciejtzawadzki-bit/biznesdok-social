@@ -3,7 +3,7 @@
   "date": "2026-11-03",
   "time": "08:30",
   "type": "carousel",
-  "status": "error",
+  "status": "planned",
   "pillar": "poradnik + dokumenty",
   "temat": "poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
   "link": "https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
@@ -54,6 +54,5 @@
       "note": "Pełny poradnik: link w bio"
     }
   ],
-  "caption": "Zmiana w zarządzie spółki z o.o. łatwo utknąć na drobiazgu. W karuzeli: cztery błędy z poradnika BiznesDOK i termin wniosku do Krajowego Rejestru Sądowego (KRS).\n\nDokumenty do zmiany w zarządzie — uchwały, zgodę na powołanie, oświadczenie o adresach i listę osób uprawnionych — przygotujesz w BiznesDOK na wzorach przygotowanych przez prawnika. To poradnik ogólny, nie ocena konkretnej sprawy.\n\nPełny poradnik: link w bio → Poradniki.\n\n#spółkazoo #zarząd #krs #członekzarządu #wnioseknakrs #biznesdok",
-  "error": "Graph API 17841415756005690/media_publish: {\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Nie można opublikować\",\"error_user_msg\":\"Ten element multimedialny nie jest jeszcze gotowy do publikacji. Poczekaj chwilę.\",\"fbtrace_id\":\"A7mVsgAs1NKD0ffx__xUXQs\"}"
+  "caption": "Zmiana w zarządzie spółki z o.o. łatwo utknąć na drobiazgu. W karuzeli: cztery błędy z poradnika BiznesDOK i termin wniosku do Krajowego Rejestru Sądowego (KRS).\n\nDokumenty do zmiany w zarządzie — uchwały, zgodę na powołanie, oświadczenie o adresach i listę osób uprawnionych — przygotujesz w BiznesDOK na wzorach przygotowanych przez prawnika. To poradnik ogólny, nie ocena konkretnej sprawy.\n\nPełny poradnik: link w bio → Poradniki.\n\n#spółkazoo #zarząd #krs #członekzarządu #wnioseknakrs #biznesdok"
 }
