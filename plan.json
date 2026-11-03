@@ -1,5 +1,5 @@
 {
-  "zaktualizowano": "2026-11-03T07:46:09.799Z",
+  "zaktualizowano": "2026-11-03T07:46:52.251Z",
   "posty": [
     {
       "id": "2026-10-27-poradnik-odzyskanie-pieniedzy-za-fakture",
@@ -238,13 +238,11 @@
       "time": "09:00",
       "type": "linkedin",
       "rubric": "seria produktowa — dokument spółki",
-      "status": "planned",
+      "status": "handed",
       "naglowek": "Informację o adresie siedziby udziałowca przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.",
       "podpis": "Informację o adresie siedziby udziałowca przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.\n\nDokument dotyczy sytuacji, gdy jedynym udziałowcem spółki z o.o. jest osoba prawna. Jak to działa:\n• podajesz NIP udziałowca,\n• BiznesDOK wyszukuje udziałowca po NIP i uzupełnia jego dane,\n• dane spółki również pobierasz po NIP,\n• dokument gotowy jest w PDF albo Word.\n\nZamiast składać dokument z pustego wzoru, odpowiadasz na pytania kreatora — resztę uzupełnia BiznesDOK.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nhttps://biznesdok.pl/dokument/informacja-o-adresie-siedziby-udzialowca?utm_source=linkedin&utm_medium=social&utm_campaign=informacja-o-adresie-siedziby-udzialowca\n\n#spółkazoo #udziałowiec #wspólnik #przedsiębiorca #biznesdok",
       "link": "https://biznesdok.pl/dokument/informacja-o-adresie-siedziby-udzialowca",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/linkedin-2026-11-03-informacja-o-adresie-siedziby-udzialowca-01-6327490b.jpg"
-      ],
+      "obrazy": [],
       "permalink": null,
       "uwagi": []
     },
@@ -270,14 +268,12 @@
       "time": "12:45",
       "type": "story",
       "rubric": "film-demo",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Wideo: Kilka faktur w jednym wezwaniu — kwoty sumują się automatycznie",
       "podpis": "Relacja wideo (bez opisu): Kilka faktur w jednym wezwaniu — kwoty sumują się automatycznie\nLink: https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
       "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/video/film1-wezwanie-urywek-2-kilka-faktur.jpg"
-      ],
-      "permalink": null,
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4022101798987302989",
       "uwagi": []
     },
     {
