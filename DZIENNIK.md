@@ -75,3 +75,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-11-03 08:44 · BŁĄD · 2026-11-03-poradnik-zmiana-zarzadu-bledy · Graph API 17841415756005690/media_publish: {"message":"Media ID is not available","type":"OAuthException","code":9007,"error_subcode":2207027,"is_transient":false,"error_user_title":"Nie można opublikować","error_user_msg":"Ten element multimedialny nie jest jeszcze gotowy do publikacji. Poczekaj chwilę.","fbtrace_id":"A7mVsgAs1NKD0ffx__xUXQs"}
 - 2026-11-03 08:44 · story · 2026-11-03-story-uchwala-o-powolaniu-czlonka-zarzadu · https://www.instagram.com/stories/biznesdok.pl/4022101656347823197
 - 2026-11-03 08:44 · story (wideo) · 2026-11-03-story-wideo-wezwanie-kilka-faktur · https://www.instagram.com/stories/biznesdok.pl/4022101798987302989
+- 2026-11-03 08:45 · LinkedIn · 2026-11-03-informacja-o-adresie-siedziby-udzialowca · przekazany do Buffer na 2026-11-03T08:00:00.000Z
