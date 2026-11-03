@@ -1,36 +1,6 @@
 {
-  "zaktualizowano": "2026-11-02T07:47:35.813Z",
+  "zaktualizowano": "2026-11-03T07:45:31.255Z",
   "posty": [
-    {
-      "id": "2026-10-26-ostateczne-wezwanie-do-zaplaty",
-      "kanal": "instagram",
-      "date": "2026-10-26",
-      "time": "08:30",
-      "type": "feed",
-      "rubric": "seria produktowa",
-      "status": "published",
-      "naglowek": "Dokumenty przygotowane przez prawników. Dopasowane technologią.",
-      "podpis": "Dokumenty przygotowane przez prawników. Dopasowane technologią.\n\nOstateczne wezwanie do zapłaty: podajesz NIP, dodajesz faktury, odsetki wyliczają się same, a gotowy dokument dostajesz w PDF albo Word. Płacisz dopiero po wypełnieniu formularza.\n\nPo zakupie dokument masz na swoim koncie w BiznesDOK.\n\nLink w bio → Dokumenty.\n\n#wezwaniedozapłaty #faktura #należności #przedsiębiorca #firma #biznesdok",
-      "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
-      "obrazy": [],
-      "permalink": "https://www.instagram.com/p/De8xro9IIbI/",
-      "uwagi": []
-    },
-    {
-      "id": "2026-10-26-story-wypowiedzenie-zmieniajace",
-      "kanal": "instagram",
-      "date": "2026-10-26",
-      "time": "12:30",
-      "type": "story",
-      "rubric": "płatny dokument",
-      "status": "published",
-      "naglowek": "Nowe warunki pracy lub płacy w gotowym wypowiedzeniu zmieniającym.",
-      "podpis": "Relacja (bez opisu), na grafice:\nWypowiedzenie zmieniające\nNowe warunki pracy lub płacy w gotowym wypowiedzeniu zmieniającym.\nPodajesz dotychczasowe i proponowane warunki, daty i przyczynę. Treść przygotowana przez prawnika.\nbiznesdok.pl/dokument/wypowiedzenie-zmieniajace-warunki-pracy-lub-placy\nLink: https://biznesdok.pl/dokument/wypowiedzenie-zmieniajace-warunki-pracy-lub-placy",
-      "link": "https://biznesdok.pl/dokument/wypowiedzenie-zmieniajace-warunki-pracy-lub-placy",
-      "obrazy": [],
-      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4016303610393547265",
-      "uwagi": []
-    },
     {
       "id": "2026-10-27-poradnik-odzyskanie-pieniedzy-za-fakture",
       "kanal": "instagram",
@@ -248,7 +218,7 @@
       "time": "08:30",
       "type": "carousel",
       "rubric": "poradnik + dokumenty",
-      "status": "planned",
+      "status": "error",
       "naglowek": "Zmiana w zarządzie spółki z o.o. łatwo utknąć na drobiazgu. W karuzeli: cztery błędy z poradnika BiznesDOK i termin wniosku do Krajowego Rejestru Sądowego (KRS)",
       "podpis": "Zmiana w zarządzie spółki z o.o. łatwo utknąć na drobiazgu. W karuzeli: cztery błędy z poradnika BiznesDOK i termin wniosku do Krajowego Rejestru Sądowego (KRS).\n\nDokumenty do zmiany w zarządzie — uchwały, zgodę na powołanie, oświadczenie o adresach i listę osób uprawnionych — przygotujesz w BiznesDOK na wzorach przygotowanych przez prawnika. To poradnik ogólny, nie ocena konkretnej sprawy.\n\nPełny poradnik: link w bio → Poradniki.\n\n#spółkazoo #zarząd #krs #członekzarządu #wnioseknakrs #biznesdok",
       "link": "https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
