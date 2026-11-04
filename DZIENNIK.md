@@ -79,3 +79,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-11-03 08:47 · carousel · 2026-11-03-poradnik-zmiana-zarzadu-bledy · https://www.instagram.com/p/DfRYWtcDflo/
 - 2026-11-04 08:44 · feed · 2026-11-04-zgoda-na-powolanie-do-zarzadu · https://www.instagram.com/p/DfT8yUJj_Y5/
 - 2026-11-04 08:44 · story · 2026-11-04-story-umowa-zlecenia · https://www.instagram.com/stories/biznesdok.pl/4022826373357608697
+- 2026-11-04 08:45 · LinkedIn opublikowany · 2026-11-03-informacja-o-adresie-siedziby-udzialowca · https://www.linkedin.com/feed/update/urn:li:share:7523293024903442432

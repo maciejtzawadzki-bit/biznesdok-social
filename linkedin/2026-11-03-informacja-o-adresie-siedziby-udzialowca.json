@@ -3,7 +3,7 @@
   "date": "2026-11-03",
   "time": "09:00",
   "type": "feed",
-  "status": "handed",
+  "status": "published",
   "pillar": "seria produktowa — dokument spółki",
   "temat": "informacja-o-adresie-siedziby-udzialowca",
   "link": "https://biznesdok.pl/dokument/informacja-o-adresie-siedziby-udzialowca",
@@ -21,5 +21,7 @@
   "buffer": {
     "postId": "6ae991323b00665c737f623e",
     "dueAt": "2026-11-03T08:00:00.000Z"
-  }
+  },
+  "publishedAt": "2026-11-03T08:00:33.848Z",
+  "permalink": "https://www.linkedin.com/feed/update/urn:li:share:7523293024903442432"
 }
