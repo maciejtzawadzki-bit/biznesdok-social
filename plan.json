@@ -1,5 +1,5 @@
 {
-  "zaktualizowano": "2026-11-04T07:45:25.753Z",
+  "zaktualizowano": "2026-11-04T07:45:58.984Z",
   "posty": [
     {
       "id": "2026-10-28-umowa-o-wspolpracy-biznesowej",
@@ -173,12 +173,12 @@
       "time": "09:00",
       "type": "linkedin",
       "rubric": "seria produktowa — dokument spółki",
-      "status": "handed",
+      "status": "published",
       "naglowek": "Informację o adresie siedziby udziałowca przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.",
       "podpis": "Informację o adresie siedziby udziałowca przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.\n\nDokument dotyczy sytuacji, gdy jedynym udziałowcem spółki z o.o. jest osoba prawna. Jak to działa:\n• podajesz NIP udziałowca,\n• BiznesDOK wyszukuje udziałowca po NIP i uzupełnia jego dane,\n• dane spółki również pobierasz po NIP,\n• dokument gotowy jest w PDF albo Word.\n\nZamiast składać dokument z pustego wzoru, odpowiadasz na pytania kreatora — resztę uzupełnia BiznesDOK.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nhttps://biznesdok.pl/dokument/informacja-o-adresie-siedziby-udzialowca?utm_source=linkedin&utm_medium=social&utm_campaign=informacja-o-adresie-siedziby-udzialowca\n\n#spółkazoo #udziałowiec #wspólnik #przedsiębiorca #biznesdok",
       "link": "https://biznesdok.pl/dokument/informacja-o-adresie-siedziby-udzialowca",
       "obrazy": [],
-      "permalink": null,
+      "permalink": "https://www.linkedin.com/feed/update/urn:li:share:7523293024903442432",
       "uwagi": []
     },
     {
@@ -233,14 +233,12 @@
       "time": "12:30",
       "type": "story",
       "rubric": "płatny dokument",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Umowę zlecenia przygotujesz w BiznesDOK.",
       "podpis": "Relacja (bez opisu), na grafice:\nUmowy zlecenia\nUmowę zlecenia przygotujesz w BiznesDOK.\nDane firmy po NIP, czas określony lub nieokreślony, stawka godzinowa lub miesięczna. Kwota zapisana także słownie.\nbiznesdok.pl/dokument/umowa-zlecenia\nLink: https://biznesdok.pl/dokument/umowa-zlecenia",
       "link": "https://biznesdok.pl/dokument/umowa-zlecenia",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-04-story-umowa-zlecenia-01-f221d40e.jpg"
-      ],
-      "permalink": null,
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4022826373357608697",
       "uwagi": []
     },
     {
