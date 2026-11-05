@@ -83,3 +83,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-11-05 08:44 · feed · 2026-11-05-informacja-o-adresie-siedziby-udzialowca · https://www.instagram.com/p/DfWhiLcFPq4/
 - 2026-11-05 08:44 · story · 2026-11-05-story-ksiega-udzialow · https://www.instagram.com/stories/biznesdok.pl/4023550907103696030
 - 2026-11-05 08:44 · story (wideo) · 2026-11-05-story-wideo-wezwanie-gotowy-dokument · https://www.instagram.com/stories/biznesdok.pl/4023551038132966182
+- 2026-11-05 08:45 · LinkedIn · 2026-11-05-ksiega-udzialow · przekazany do Buffer na 2026-11-05T08:00:00.000Z
