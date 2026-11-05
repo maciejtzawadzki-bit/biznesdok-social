@@ -3,7 +3,7 @@
   "date": "2026-11-05",
   "time": "12:30",
   "type": "story",
-  "status": "planned",
+  "status": "published",
   "pillar": "płatny dokument",
   "temat": "ksiega-udzialow",
   "link": "https://biznesdok.pl/dokument/ksiega-udzialow",
@@ -16,5 +16,8 @@
       "note": "biznesdok.pl/dokument/ksiega-udzialow"
     }
   ],
-  "caption": ""
+  "caption": "",
+  "publishedAt": "2026-11-05T07:44:32.696Z",
+  "permalink": "https://www.instagram.com/stories/biznesdok.pl/4023550907103696030",
+  "mediaId": "17934658467414412"
 }
