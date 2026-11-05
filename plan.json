@@ -1,5 +1,5 @@
 {
-  "zaktualizowano": "2026-11-05T07:44:49.344Z",
+  "zaktualizowano": "2026-11-05T07:45:28.928Z",
   "posty": [
     {
       "id": "2026-10-29-porozumienie-rozwiazanie-umowy-zlecenia",
@@ -250,14 +250,12 @@
       "time": "12:30",
       "type": "story",
       "rubric": "płatny dokument",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Księgę udziałów przygotujesz w BiznesDOK.",
       "podpis": "Relacja (bez opisu), na grafice:\nDokumenty spółki\nKsięgę udziałów przygotujesz w BiznesDOK.\nWspólnicy, liczba i wartość udziałów oraz zmiany ich własności. Łączną wartość udziałów każdego wspólnika liczy BiznesDOK.\nbiznesdok.pl/dokument/ksiega-udzialow\nLink: https://biznesdok.pl/dokument/ksiega-udzialow",
       "link": "https://biznesdok.pl/dokument/ksiega-udzialow",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-05-story-ksiega-udzialow-01-122983f4.jpg"
-      ],
-      "permalink": null,
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4023550907103696030",
       "uwagi": []
     },
     {
