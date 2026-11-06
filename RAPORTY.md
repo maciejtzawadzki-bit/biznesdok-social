@@ -55,3 +55,22 @@
 - Tydzień od 2026-11-09: brak Subskrypcji w ostatnich 2 tygodniach.
 - Płatne dokumenty bez publikacji w 28 dniach: 2 z 25 (protokol-z-posiedzenia-zarzadu, protokol-nzw-zgoda-na-zbycie-udzialow).
 - Tematy w sezonie: kalkulator-dni-roboczych.
+
+## 2026-11-06 (tydzień 02.11–06.11)
+
+- Obserwujący: 6 (media: 26)
+- Opublikowano: 5 postów w feedzie (rezygnacja członka zarządu, karuzela o błędach przy zmianie zarządu, zgoda na powołanie do zarządu, informacja o adresie siedziby udziałowca, lista osób uprawnionych do powołania zarządu) oraz odcinek serii AI z 30.10 (zasięg 4). Zasięg: 3, 20, 3, 4, 2 (dane z piątku rano niepełne); polubienia 2–3, zapisy/udostępnienia/komentarze 0.
+- Najlepszy post: karuzela z poradnika o zmianie zarządu (zasięg 20 — kilkukrotnie więcej niż pojedyncze dokumenty).
+- Wniosek: karuzele z poradników zasięgowo wyprzedzają pojedyncze dokumenty; na 16–20.11 zostaje karuzela z poradnika (wtorek) i dokumenty z przewagą płatnych, w piątek Subskrypcja.
+
+### Zgodność treści (2026-11-06)
+### Zgodność treści (2026-11-06)
+- Wyszło (7 dni): seria AI 1, bezpłatne narzędzie 1, wideo 3, płatny dokument 7, poradnik 1.
+- Plan (14 dni): Instagram — płatny dokument 14, poradnik 2, wideo 1, seria AI 1, bezpłatne narzędzie 2, Subskrypcja 1; LinkedIn — 4.
+- Powtórki tematu w 21 dni wśród opublikowanych: 0.
+- Posty zablokowane przez kontrolę: 0.
+- Tydzień od 2026-11-02: proporcje zgodne.
+- Tydzień od 2026-11-09: brak Subskrypcji w ostatnich 2 tygodniach.
+- Tydzień od 2026-11-16: proporcje zgodne.
+- Płatne dokumenty bez publikacji w 28 dniach: 0 z 25.
+- Tematy w sezonie: kalkulator-dni-roboczych.

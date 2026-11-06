@@ -1,0 +1,20 @@
+{
+  "id": "2026-11-18-story-protokol-z-posiedzenia-zarzadu",
+  "date": "2026-11-18",
+  "time": "12:30",
+  "type": "story",
+  "status": "planned",
+  "pillar": "płatny dokument",
+  "temat": "protokol-z-posiedzenia-zarzadu",
+  "link": "https://biznesdok.pl/dokument/protokol-z-posiedzenia-zarzadu",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Dokumenty spółki",
+      "text": "Protokół z posiedzenia zarządu o przyjęciu regulaminu [[przygotujesz w BiznesDOK.]]",
+      "sub": "Uchwała zarządu i dzień, od którego regulamin obowiązuje. Od 1 do 5 członków zarządu.",
+      "note": "biznesdok.pl/dokument/protokol-z-posiedzenia-zarzadu"
+    }
+  ],
+  "caption": ""
+}

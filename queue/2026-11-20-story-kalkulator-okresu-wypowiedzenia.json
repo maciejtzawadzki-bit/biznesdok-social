@@ -1,0 +1,20 @@
+{
+  "id": "2026-11-20-story-kalkulator-okresu-wypowiedzenia",
+  "date": "2026-11-20",
+  "time": "12:30",
+  "type": "story",
+  "status": "planned",
+  "pillar": "bezpłatne narzędzie",
+  "temat": "kalkulator-okresu-wypowiedzenia",
+  "link": "https://biznesdok.pl/kalkulator-okresu-wypowiedzenia",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Bezpłatne narzędzie",
+      "text": "Okres wypowiedzenia umowy o pracę i dzień jej rozwiązania [[policzysz bezpłatnie.]]",
+      "sub": "Także gdy staż rośnie w trakcie wypowiedzenia. Bez konta i bez e-maila.",
+      "note": "biznesdok.pl/kalkulator-okresu-wypowiedzenia"
+    }
+  ],
+  "caption": ""
+}

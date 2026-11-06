@@ -1,0 +1,58 @@
+{
+  "id": "2026-11-17-poradnik-wezwanie-bledy",
+  "date": "2026-11-17",
+  "time": "08:30",
+  "type": "carousel",
+  "status": "planned",
+  "pillar": "poradnik + dokumenty",
+  "temat": "poradniki/jak-odzyskac-pieniadze-za-fakture-wezwanie-do-zaplaty",
+  "link": "https://biznesdok.pl/poradniki/jak-odzyskac-pieniadze-za-fakture-wezwanie-do-zaplaty",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Poradnik",
+      "text": "Wezwanie do zapłaty działa, gdy [[da się je udowodnić.]]",
+      "size": 84
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Na co uważać",
+      "size": 56,
+      "text": "Cztery błędy w wezwaniu",
+      "items": [
+        [
+          "Brak faktur, kwoty i terminu",
+          "dłużnik nie wie, czego się od niego oczekuje"
+        ],
+        [
+          "Brak dowodu doręczenia",
+          "zwykły e-mail albo list zwykły bez potwierdzenia"
+        ],
+        [
+          "Jedna stawka odsetek na cały okres",
+          "stawki zmieniały się w czasie"
+        ],
+        [
+          "Groźby ponad to, co możesz zrobić",
+          "zapowiedź kroków, których nie zamierzasz podjąć"
+        ]
+      ]
+    },
+    {
+      "layout": "headline",
+      "eyebrow": "Dlaczego to ważne",
+      "size": 76,
+      "text": "Udokumentowane wezwanie może [[mieć znaczenie dla kosztów]] procesu.",
+      "sub": "Pokazuje, że dłużnik miał możliwość zapłaty bez sądu (art. 101 Kodeksu postępowania cywilnego)."
+    },
+    {
+      "layout": "headline",
+      "eyebrow": "Dokumenty",
+      "size": 80,
+      "text": "Wezwanie do zapłaty [[przygotujesz w BiznesDOK.]]",
+      "sub": "Odsetki policzysz w bezpłatnym kalkulatorze, a wezwanie z listą faktur — na wzorze przygotowanym przez prawnika.",
+      "note": "Pełny poradnik: link w bio"
+    }
+  ],
+  "caption": "Wezwanie do zapłaty łatwo osłabić drobiazgiem. W karuzeli: cztery błędy z poradnika BiznesDOK i powód, dla którego warto udokumentować wezwanie przed pozwem.\n\nOstateczne wezwanie do zapłaty przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika, a odsetki policzysz w bezpłatnym kalkulatorze. To poradnik ogólny, nie ocena konkretnej sprawy.\n\nPełny poradnik: link w bio → Poradniki.\n\n#wezwaniedozapłaty #faktura #należności #przedsiębiorca #firma #biznesdok"
+}
