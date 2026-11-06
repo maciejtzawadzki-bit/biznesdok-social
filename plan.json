@@ -1,5 +1,5 @@
 {
-  "zaktualizowano": "2026-11-06T07:45:13.807Z",
+  "zaktualizowano": "2026-11-06T12:51:43.722Z",
   "posty": [
     {
       "id": "2026-10-30-seria-ai-krs-oplata",
@@ -480,6 +480,213 @@
       "link": "https://biznesdok.pl/weryfikacja",
       "obrazy": [
         "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-13-story-weryfikacja-01-e01b84d9.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-16-ostateczne-wezwanie-do-zaplaty",
+      "kanal": "instagram",
+      "date": "2026-11-16",
+      "time": "08:30",
+      "type": "feed",
+      "rubric": "płatny dokument",
+      "status": "planned",
+      "naglowek": "Dokumenty przygotowane przez prawników. Dopasowane technologią.",
+      "podpis": "Dokumenty przygotowane przez prawników. Dopasowane technologią.\n\nOstateczne wezwanie do zapłaty: dane firm uzupełniają się po NIP, kilka faktur trafia do jednego wezwania, a kwoty sumują się automatycznie. Odsetki za opóźnienie w transakcjach handlowych wyliczają się z terminów zapłaty i stawek ustawowych, a kwotę możesz ręcznie skorygować.\n\nW dokumencie jest termin zapłaty, numer rachunku i informacja o dalszych krokach. Dostajesz PDF albo edytowalny Word, a płacisz dopiero po wypełnieniu formularza.\n\nLink w bio → Dokumenty.\n\n#wezwaniedozapłaty #faktura #należności #przedsiębiorca #b2b #biznesdok",
+      "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-16-ostateczne-wezwanie-do-zaplaty-01-0c28bd43.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-16-story-wypowiedzenie-zmieniajace",
+      "kanal": "instagram",
+      "date": "2026-11-16",
+      "time": "12:30",
+      "type": "story",
+      "rubric": "płatny dokument",
+      "status": "planned",
+      "naglowek": "Wypowiedzenie zmieniające, czyli pismo z nowymi warunkami pracy lub płacy, przygotujesz w BiznesDOK.",
+      "podpis": "Relacja (bez opisu), na grafice:\nZatrudnienie\nWypowiedzenie zmieniające, czyli pismo z nowymi warunkami pracy lub płacy, przygotujesz w BiznesDOK.\nDotychczasowe i proponowane warunki w czytelnym zestawieniu.\nbiznesdok.pl/dokument/wypowiedzenie-zmieniajace-warunki-pracy-lub-placy\nLink: https://biznesdok.pl/dokument/wypowiedzenie-zmieniajace-warunki-pracy-lub-placy",
+      "link": "https://biznesdok.pl/dokument/wypowiedzenie-zmieniajace-warunki-pracy-lub-placy",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-16-story-wypowiedzenie-zmieniajace-01-9b6b9843.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-17-poradnik-wezwanie-bledy",
+      "kanal": "instagram",
+      "date": "2026-11-17",
+      "time": "08:30",
+      "type": "carousel",
+      "rubric": "poradnik + dokumenty",
+      "status": "planned",
+      "naglowek": "Wezwanie do zapłaty łatwo osłabić drobiazgiem. W karuzeli: cztery błędy z poradnika BiznesDOK i powód, dla którego warto udokumentować wezwanie przed pozwem.",
+      "podpis": "Wezwanie do zapłaty łatwo osłabić drobiazgiem. W karuzeli: cztery błędy z poradnika BiznesDOK i powód, dla którego warto udokumentować wezwanie przed pozwem.\n\nOstateczne wezwanie do zapłaty przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika, a odsetki policzysz w bezpłatnym kalkulatorze. To poradnik ogólny, nie ocena konkretnej sprawy.\n\nPełny poradnik: link w bio → Poradniki.\n\n#wezwaniedozapłaty #faktura #należności #przedsiębiorca #firma #biznesdok",
+      "link": "https://biznesdok.pl/poradniki/jak-odzyskac-pieniadze-za-fakture-wezwanie-do-zaplaty",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-17-poradnik-wezwanie-bledy-01-194f4c81.jpg",
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-17-poradnik-wezwanie-bledy-02-194f4c81.jpg",
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-17-poradnik-wezwanie-bledy-03-194f4c81.jpg",
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-17-poradnik-wezwanie-bledy-04-194f4c81.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "linkedin-2026-11-17-protokol-nadzwyczajnego-zgromadzenia-wspolnikow",
+      "kanal": "linkedin",
+      "date": "2026-11-17",
+      "time": "09:00",
+      "type": "linkedin",
+      "rubric": "seria produktowa — dokument spółki",
+      "status": "planned",
+      "naglowek": "Protokół nadzwyczajnego zgromadzenia wspólników (NZW) o zmianie w zarządzie przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.",
+      "podpis": "Protokół nadzwyczajnego zgromadzenia wspólników (NZW) o zmianie w zarządzie przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.\n\nJak to działa:\n• wybierasz wariant: samo odwołanie albo odwołanie i powołanie nowego członka zarządu,\n• porządek obrad i treść uchwały dopasowują się do wybranego wariantu,\n• dane spółki pobierasz po NIP,\n• liczbę ważnych głosów liczy BiznesDOK.\n\nZamiast składać protokół z kilku wzorów, wybierasz wariant i uzupełniasz dane w kreatorze — resztę przygotowuje BiznesDOK.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nhttps://biznesdok.pl/dokument/protokol-nadzwyczajnego-zgromadzenia-wspolnikow?utm_source=linkedin&utm_medium=social&utm_campaign=protokol-nadzwyczajnego-zgromadzenia-wspolnikow\n\n#spółkazoo #zarząd #wspólnicy #przedsiębiorca #biznesdok",
+      "link": "https://biznesdok.pl/dokument/protokol-nadzwyczajnego-zgromadzenia-wspolnikow",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/linkedin-2026-11-17-protokol-nadzwyczajnego-zgromadzenia-wspolnikow-01-99a9d4b8.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-17-story-protokol-nzw-zgoda-na-zbycie-udzialow",
+      "kanal": "instagram",
+      "date": "2026-11-17",
+      "time": "12:30",
+      "type": "story",
+      "rubric": "płatny dokument",
+      "status": "planned",
+      "naglowek": "Protokół z uchwałą o zgodzie na zbycie udziałów przygotujesz w BiznesDOK.",
+      "podpis": "Relacja (bez opisu), na grafice:\nWspólnicy i udziały\nProtokół z uchwałą o zgodzie na zbycie udziałów przygotujesz w BiznesDOK.\nGdy wspólnicy zgadzają się na sprzedaż udziałów, także ze zrzeczeniem się prawa pierwszeństwa.\nbiznesdok.pl/dokument/protokol-nzw-zgoda-na-zbycie-udzialow\nLink: https://biznesdok.pl/dokument/protokol-nzw-zgoda-na-zbycie-udzialow",
+      "link": "https://biznesdok.pl/dokument/protokol-nzw-zgoda-na-zbycie-udzialow",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-17-story-protokol-nzw-zgoda-na-zbycie-udzialow-01-0d23cfa7.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-18-umowa-o-wspolpracy-biznesowej",
+      "kanal": "instagram",
+      "date": "2026-11-18",
+      "time": "08:30",
+      "type": "feed",
+      "rubric": "płatny dokument",
+      "status": "planned",
+      "naglowek": "Dokumenty przygotowane przez prawników. Dopasowane technologią.",
+      "podpis": "Dokumenty przygotowane przez prawników. Dopasowane technologią.\n\nUmowa o współpracy B2B: dane obu firm uzupełniają się po NIP, z komparycją dla spółki albo jednoosobowej działalności. Wynagrodzenie wybierasz jako ryczałt miesięczny albo stawkę godzinową netto, a kwota jest zapisana także słownie.\n\nSamodzielność wykonawcy i cywilnoprawny charakter współpracy są zapisane wprost. Termin wypowiedzenia i zakaz konkurencji wybierasz opcjonalnie. Dostajesz PDF albo edytowalny Word.\n\nLink w bio → Dokumenty.\n\n#umowab2b #współpraca #kontrakt #przedsiębiorca #firma #biznesdok",
+      "link": "https://biznesdok.pl/dokument/umowa-o-wspolpracy-biznesowej",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-18-umowa-o-wspolpracy-biznesowej-01-84a760b4.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-18-story-protokol-z-posiedzenia-zarzadu",
+      "kanal": "instagram",
+      "date": "2026-11-18",
+      "time": "12:30",
+      "type": "story",
+      "rubric": "płatny dokument",
+      "status": "planned",
+      "naglowek": "Protokół z posiedzenia zarządu o przyjęciu regulaminu przygotujesz w BiznesDOK.",
+      "podpis": "Relacja (bez opisu), na grafice:\nDokumenty spółki\nProtokół z posiedzenia zarządu o przyjęciu regulaminu przygotujesz w BiznesDOK.\nUchwała zarządu i dzień, od którego regulamin obowiązuje. Od 1 do 5 członków zarządu.\nbiznesdok.pl/dokument/protokol-z-posiedzenia-zarzadu\nLink: https://biznesdok.pl/dokument/protokol-z-posiedzenia-zarzadu",
+      "link": "https://biznesdok.pl/dokument/protokol-z-posiedzenia-zarzadu",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-18-story-protokol-z-posiedzenia-zarzadu-01-fdda7907.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-19-umowa-o-prace-na-czas-nieokreslony",
+      "kanal": "instagram",
+      "date": "2026-11-19",
+      "time": "08:30",
+      "type": "feed",
+      "rubric": "płatny dokument",
+      "status": "planned",
+      "naglowek": "Dokumenty przygotowane przez prawników. Dopasowane technologią.",
+      "podpis": "Dokumenty przygotowane przez prawników. Dopasowane technologią.\n\nUmowa o pracę na czas nieokreślony: dane firmy uzupełniają się po NIP, wynagrodzenie jest zapisane słownie z groszami, a do umowy dołączasz załącznik z zakresem obowiązków pracownika.\n\nInformacja o warunkach zatrudnienia trafia do jednego pliku z umową. Miejsce pracy, świadczenie urlopowe, PPK czy praca zmianowa — do umowy trafia właściwy zapis przygotowany przez prawnika.\n\nLink w bio → Dokumenty.\n\n#umowaopracę #zatrudnienie #pracodawca #kadry #przedsiębiorca #biznesdok",
+      "link": "https://biznesdok.pl/dokument/umowa-o-prace-na-czas-nieokreslony",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-19-umowa-o-prace-na-czas-nieokreslony-01-39108ec5.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "linkedin-2026-11-19-rezygnacja-czlonka-zarzadu",
+      "kanal": "linkedin",
+      "date": "2026-11-19",
+      "time": "09:00",
+      "type": "linkedin",
+      "rubric": "seria produktowa — dokument spółki",
+      "status": "planned",
+      "naglowek": "Rezygnację członka zarządu przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.",
+      "podpis": "Rezygnację członka zarządu przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.\n\nJak to działa:\n• członek zarządu składa pismo o rezygnacji z funkcji,\n• w piśmie wskazujesz datę rezygnacji,\n• pismo jest przygotowane do doręczenia spółce,\n• dane spółki pobierasz po NIP.\n\nGdy w spółce zmienia się skład zarządu, wystarczy uzupełnić dane w kreatorze — gotowe pismo przygotowuje BiznesDOK.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nhttps://biznesdok.pl/dokument/rezygnacja-czlonka-zarzadu?utm_source=linkedin&utm_medium=social&utm_campaign=rezygnacja-czlonka-zarzadu\n\n#spółkazoo #zarząd #wspólnicy #przedsiębiorca #biznesdok",
+      "link": "https://biznesdok.pl/dokument/rezygnacja-czlonka-zarzadu",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/linkedin-2026-11-19-rezygnacja-czlonka-zarzadu-01-9f469dee.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-19-story-aneks-do-umowy",
+      "kanal": "instagram",
+      "date": "2026-11-19",
+      "time": "12:30",
+      "type": "story",
+      "rubric": "płatny dokument",
+      "status": "planned",
+      "naglowek": "Porozumienie zmieniające etat i wynagrodzenie od wskazanego dnia przygotujesz w BiznesDOK.",
+      "podpis": "Relacja (bez opisu), na grafice:\nZatrudnienie\nPorozumienie zmieniające etat i wynagrodzenie od wskazanego dnia przygotujesz w BiznesDOK.\nDla umowy na czas nieokreślony, określony albo na okres próbny.\nbiznesdok.pl/dokument/aneks-do-umowy\nLink: https://biznesdok.pl/dokument/aneks-do-umowy",
+      "link": "https://biznesdok.pl/dokument/aneks-do-umowy",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-19-story-aneks-do-umowy-01-c3b5ac90.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-20-subskrypcja",
+      "kanal": "instagram",
+      "date": "2026-11-20",
+      "time": "08:30",
+      "type": "feed",
+      "rubric": "Subskrypcja",
+      "status": "planned",
+      "naglowek": "Dokumenty przygotowane przez prawników. Dopasowane technologią.",
+      "podpis": "Dokumenty przygotowane przez prawników. Dopasowane technologią.\n\nSubskrypcja BiznesDOK: wszystkie płatne dokumenty w PDF i Word, bez limitu dokumentów, na potrzeby Twojej firmy. Nowe dokumenty dochodzą do Subskrypcji bez dopłat.\n\nRezygnujesz w każdej chwili — dostęp masz do końca opłaconego miesiąca, a przygotowane dokumenty zostają w „Moje dokumenty” także po rezygnacji. To ten sam kreator i ta sama treść przygotowana przez prawników co przy zakupie pojedynczego dokumentu.\n\nLink w bio → Dokumenty.\n\n#subskrypcja #dokumentydlafirm #przedsiębiorca #firma #biznesdok",
+      "link": "https://biznesdok.pl/subskrypcja",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-20-subskrypcja-01-739c8a37.jpg"
+      ],
+      "permalink": null,
+      "uwagi": []
+    },
+    {
+      "id": "2026-11-20-story-kalkulator-okresu-wypowiedzenia",
+      "kanal": "instagram",
+      "date": "2026-11-20",
+      "time": "12:30",
+      "type": "story",
+      "rubric": "bezpłatne narzędzie",
+      "status": "planned",
+      "naglowek": "Okres wypowiedzenia umowy o pracę i dzień jej rozwiązania policzysz bezpłatnie.",
+      "podpis": "Relacja (bez opisu), na grafice:\nBezpłatne narzędzie\nOkres wypowiedzenia umowy o pracę i dzień jej rozwiązania policzysz bezpłatnie.\nTakże gdy staż rośnie w trakcie wypowiedzenia. Bez konta i bez e-maila.\nbiznesdok.pl/kalkulator-okresu-wypowiedzenia\nLink: https://biznesdok.pl/kalkulator-okresu-wypowiedzenia",
+      "link": "https://biznesdok.pl/kalkulator-okresu-wypowiedzenia",
+      "obrazy": [
+        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-20-story-kalkulator-okresu-wypowiedzenia-01-adb48dc4.jpg"
       ],
       "permalink": null,
       "uwagi": []
