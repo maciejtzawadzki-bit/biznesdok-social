@@ -85,3 +85,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-11-05 08:44 · story (wideo) · 2026-11-05-story-wideo-wezwanie-gotowy-dokument · https://www.instagram.com/stories/biznesdok.pl/4023551038132966182
 - 2026-11-05 08:45 · LinkedIn · 2026-11-05-ksiega-udzialow · przekazany do Buffer na 2026-11-05T08:00:00.000Z
 - 2026-11-06 08:43 · feed · 2026-11-06-lista-osob-uprawnionych-do-powolania-zarzadu · https://www.instagram.com/p/DfZGSteEZeQ/
+- 2026-11-06 08:43 · story · 2026-11-06-story-kalkulator-odsetek · https://www.instagram.com/stories/biznesdok.pl/4024275553959921002

@@ -3,7 +3,7 @@
   "date": "2026-11-06",
   "time": "12:30",
   "type": "story",
-  "status": "planned",
+  "status": "published",
   "pillar": "bezpłatne narzędzie",
   "temat": "kalkulator-odsetek",
   "link": "https://biznesdok.pl/kalkulator-odsetek",
@@ -16,5 +16,8 @@
       "note": "biznesdok.pl/kalkulator-odsetek"
     }
   ],
-  "caption": ""
+  "caption": "",
+  "publishedAt": "2026-11-06T07:44:18.055Z",
+  "permalink": "https://www.instagram.com/stories/biznesdok.pl/4024275553959921002",
+  "mediaId": "18015626684967972"
 }
