@@ -1,36 +1,6 @@
 {
-  "zaktualizowano": "2026-11-07T11:00:34.900Z",
+  "zaktualizowano": "2026-11-10T12:33:33.495Z",
   "posty": [
-    {
-      "id": "2026-11-02-rezygnacja-czlonka-zarzadu",
-      "kanal": "instagram",
-      "date": "2026-11-02",
-      "time": "08:30",
-      "type": "feed",
-      "rubric": "płatny dokument",
-      "status": "published",
-      "naglowek": "Dokumenty przygotowane przez prawników. Dopasowane technologią.",
-      "podpis": "Dokumenty przygotowane przez prawników. Dopasowane technologią.\n\nRezygnacja członka zarządu: pismo o rezygnacji z funkcji z określoną datą, do doręczenia spółce. Dane spółki pobierasz po NIP.\n\nPo zakupie dokument masz na swoim koncie w BiznesDOK.\n\nLink w bio → Dokumenty.\n\n#spółkazoo #zarząd #rezygnacja #członekzarządu #przedsiębiorca #biznesdok",
-      "link": "https://biznesdok.pl/dokument/rezygnacja-czlonka-zarzadu",
-      "obrazy": [],
-      "permalink": "https://www.instagram.com/p/DfOzTpUoSB5/",
-      "uwagi": []
-    },
-    {
-      "id": "2026-11-02-story-uchwala-o-odwolaniu-czlonka-zarzadu",
-      "kanal": "instagram",
-      "date": "2026-11-02",
-      "time": "12:30",
-      "type": "story",
-      "rubric": "płatny dokument",
-      "status": "published",
-      "naglowek": "Uchwałę o odwołaniu członka zarządu przygotujesz w BiznesDOK.",
-      "podpis": "Relacja (bez opisu), na grafice:\nDokumenty spółki\nUchwałę o odwołaniu członka zarządu przygotujesz w BiznesDOK.\nGdy wspólnicy odwołują członka zarządu — z dniem odwołania i wynikiem głosowania.\nbiznesdok.pl/dokument/uchwala-o-odwolaniu-czlonka-zarzadu\nLink: https://biznesdok.pl/dokument/uchwala-o-odwolaniu-czlonka-zarzadu",
-      "link": "https://biznesdok.pl/dokument/uchwala-o-odwolaniu-czlonka-zarzadu",
-      "obrazy": [],
-      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4021377765596947802",
-      "uwagi": []
-    },
     {
       "id": "2026-11-03-poradnik-zmiana-zarzadu-bledy",
       "kanal": "instagram",
@@ -226,7 +196,9 @@
         "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-09-lista-wspolnikow-01-ab6b8867.jpg"
       ],
       "permalink": null,
-      "uwagi": []
+      "uwagi": [
+        "termin minął, a post nie jest opublikowany"
+      ]
     },
     {
       "id": "2026-11-09-story-oswiadczenie-zarzadu-o-adresach-czlonkow-zarzadu",
@@ -243,7 +215,9 @@
         "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-09-story-oswiadczenie-zarzadu-o-adresach-czlonkow-zarzadu-01-c26c6257.jpg"
       ],
       "permalink": null,
-      "uwagi": []
+      "uwagi": [
+        "termin minął, a post nie jest opublikowany"
+      ]
     },
     {
       "id": "2026-11-10-poradnik-zatrudnienie-7-dni",
