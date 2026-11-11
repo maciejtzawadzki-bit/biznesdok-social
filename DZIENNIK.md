@@ -92,3 +92,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-11-11 10:08 · feed · 2026-11-09-lista-wspolnikow · https://www.instagram.com/p/DfmH6mwDV5h/
 - 2026-11-11 10:08 · carousel · 2026-11-10-poradnik-zatrudnienie-7-dni · https://www.instagram.com/p/DfmH-YYGf9-/
 - 2026-11-11 10:08 · story · 2026-11-11-story-wypowiedzenie-umowy-zlecenia · https://www.instagram.com/stories/biznesdok.pl/4027942150419045115
+- 2026-11-11 10:09 · LinkedIn · 2026-11-10-lista-wspolnikow · przekazany do Buffer na 2026-11-11T09:12:14.312Z

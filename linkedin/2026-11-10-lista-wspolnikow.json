@@ -3,7 +3,7 @@
   "date": "2026-11-10",
   "time": "09:00",
   "type": "feed",
-  "status": "planned",
+  "status": "handed",
   "pillar": "seria produktowa — dokument spółki",
   "temat": "lista-wspolnikow",
   "link": "https://biznesdok.pl/dokument/lista-wspolnikow",
@@ -16,5 +16,10 @@
       "sub": "Stan na wskazany dzień, do złożenia w Krajowym Rejestrze Sądowym."
     }
   ],
-  "caption": "Listę wspólników przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.\n\nJak to działa:\n• podajesz dzień, na który ma być stan wspólników,\n• dane spółki pobierasz po NIP,\n• łączną wartość udziałów każdego wspólnika liczy BiznesDOK,\n• dokument jest gotowy do złożenia w Krajowym Rejestrze Sądowym (KRS).\n\nZamiast przepisywać dane z różnych dokumentów, wpisujesz je raz w kreatorze — resztę przygotowuje BiznesDOK.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nhttps://biznesdok.pl/dokument/lista-wspolnikow?utm_source=linkedin&utm_medium=social&utm_campaign=lista-wspolnikow\n\n#spółkazoo #wspólnicy #udziały #przedsiębiorca #biznesdok"
+  "caption": "Listę wspólników przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.\n\nJak to działa:\n• podajesz dzień, na który ma być stan wspólników,\n• dane spółki pobierasz po NIP,\n• łączną wartość udziałów każdego wspólnika liczy BiznesDOK,\n• dokument jest gotowy do złożenia w Krajowym Rejestrze Sądowym (KRS).\n\nZamiast przepisywać dane z różnych dokumentów, wpisujesz je raz w kreatorze — resztę przygotowuje BiznesDOK.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nhttps://biznesdok.pl/dokument/lista-wspolnikow?utm_source=linkedin&utm_medium=social&utm_campaign=lista-wspolnikow\n\n#spółkazoo #wspólnicy #udziały #przedsiębiorca #biznesdok",
+  "handedAt": "2026-11-11T09:09:15.229Z",
+  "buffer": {
+    "postId": "6af430bb60e4cf0fafb65227",
+    "dueAt": "2026-11-11T09:12:14.312Z"
+  }
 }
