@@ -89,3 +89,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-11-06 08:44 · LinkedIn opublikowany · 2026-11-05-ksiega-udzialow · https://www.linkedin.com/feed/update/urn:li:share:7524017800823312384
 - 2026-11-11 10:07 · POMINIĘTY (za stary) · 2026-11-09-story-oswiadczenie-zarzadu-o-adresach-czlonkow-zarzadu
 - 2026-11-11 10:07 · POMINIĘTY (za stary) · 2026-11-10-story-oswiadczenie-zarzadu-o-wniesieniu-kapitalu-zakladowego
+- 2026-11-11 10:08 · feed · 2026-11-09-lista-wspolnikow · https://www.instagram.com/p/DfmH6mwDV5h/
