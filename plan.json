@@ -1,5 +1,5 @@
 {
-  "zaktualizowano": "2026-11-11T09:09:25.276Z",
+  "zaktualizowano": "2026-11-11T09:09:56.367Z",
   "posty": [
     {
       "id": "2026-11-04-zgoda-na-powolanie-do-zarzadu",
@@ -158,20 +158,13 @@
       "time": "08:30",
       "type": "carousel",
       "rubric": "poradnik + dokumenty",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Pierwszy dzień pracy nowej osoby wymaga kilku rzeczy wcześniej. W karuzeli: cztery kroki przed startem i dwa obowiązki w ciągu 7 dni.",
       "podpis": "Pierwszy dzień pracy nowej osoby wymaga kilku rzeczy wcześniej. W karuzeli: cztery kroki przed startem i dwa obowiązki w ciągu 7 dni.\n\nUmowę o pracę razem z informacją o warunkach zatrudnienia przygotujesz w BiznesDOK na wzorach przygotowanych przez prawnika. To poradnik ogólny, nie ocena konkretnej sprawy.\n\nPełny poradnik: link w bio → Poradniki.\n\n#umowaopracę #zatrudnienie #pracodawca #kadry #prawopracy #biznesdok",
       "link": "https://biznesdok.pl/poradniki/zatrudnienie-pracownika-na-umowe-o-prace",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-10-poradnik-zatrudnienie-7-dni-01-e4307b0a.jpg",
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-10-poradnik-zatrudnienie-7-dni-02-e4307b0a.jpg",
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-10-poradnik-zatrudnienie-7-dni-03-e4307b0a.jpg",
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-10-poradnik-zatrudnienie-7-dni-04-e4307b0a.jpg"
-      ],
-      "permalink": null,
-      "uwagi": [
-        "termin minął, a post nie jest opublikowany"
-      ]
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/p/DfmH-YYGf9-/",
+      "uwagi": []
     },
     {
       "id": "linkedin-2026-11-10-lista-wspolnikow",
@@ -180,17 +173,13 @@
       "time": "09:00",
       "type": "linkedin",
       "rubric": "seria produktowa — dokument spółki",
-      "status": "planned",
+      "status": "handed",
       "naglowek": "Listę wspólników przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.",
       "podpis": "Listę wspólników przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.\n\nJak to działa:\n• podajesz dzień, na który ma być stan wspólników,\n• dane spółki pobierasz po NIP,\n• łączną wartość udziałów każdego wspólnika liczy BiznesDOK,\n• dokument jest gotowy do złożenia w Krajowym Rejestrze Sądowym (KRS).\n\nZamiast przepisywać dane z różnych dokumentów, wpisujesz je raz w kreatorze — resztę przygotowuje BiznesDOK.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nhttps://biznesdok.pl/dokument/lista-wspolnikow?utm_source=linkedin&utm_medium=social&utm_campaign=lista-wspolnikow\n\n#spółkazoo #wspólnicy #udziały #przedsiębiorca #biznesdok",
       "link": "https://biznesdok.pl/dokument/lista-wspolnikow",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/linkedin-2026-11-10-lista-wspolnikow-01-909d5fb9.jpg"
-      ],
+      "obrazy": [],
       "permalink": null,
-      "uwagi": [
-        "termin minął, a post nie jest opublikowany"
-      ]
+      "uwagi": []
     },
     {
       "id": "2026-11-10-story-oswiadczenie-zarzadu-o-wniesieniu-kapitalu-zakladowego",
@@ -231,14 +220,12 @@
       "time": "12:30",
       "type": "story",
       "rubric": "płatny dokument",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Wypowiedzenie umowy zlecenia przez zleceniodawcę przygotujesz w BiznesDOK.",
       "podpis": "Relacja (bez opisu), na grafice:\nUmowy zlecenia\nWypowiedzenie umowy zlecenia przez zleceniodawcę przygotujesz w BiznesDOK.\nOkres wypowiedzenia jak w umowie: tygodniowy, dwutygodniowy, miesięczny albo trzymiesięczny.\nbiznesdok.pl/dokument/wypowiedzenie-umowy-zlecenia\nLink: https://biznesdok.pl/dokument/wypowiedzenie-umowy-zlecenia",
       "link": "https://biznesdok.pl/dokument/wypowiedzenie-umowy-zlecenia",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-11-story-wypowiedzenie-umowy-zlecenia-01-0f4f5cbd.jpg"
-      ],
-      "permalink": null,
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4027942150419045115",
       "uwagi": []
     },
     {
