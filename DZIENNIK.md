@@ -95,3 +95,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-11-11 10:09 · LinkedIn · 2026-11-10-lista-wspolnikow · przekazany do Buffer na 2026-11-11T09:12:14.312Z
 - 2026-11-11 10:09 · feed · 2026-11-11-wypowiedzenie-umowy-o-prace-przez-pracodawce · https://www.instagram.com/p/DfmIE5mG5R_/
 - 2026-11-12 08:44 · feed · 2026-11-12-umowa-o-prace-na-czas-okreslony · https://www.instagram.com/p/DfojGSUjj83/
+- 2026-11-12 08:44 · story · 2026-11-12-story-protokol-nzw-wynagrodzenie-czlonka-zarzadu · https://www.instagram.com/stories/biznesdok.pl/4028624349468850661
