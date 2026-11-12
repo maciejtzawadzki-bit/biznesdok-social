@@ -97,3 +97,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-11-12 08:44 · feed · 2026-11-12-umowa-o-prace-na-czas-okreslony · https://www.instagram.com/p/DfojGSUjj83/
 - 2026-11-12 08:44 · story · 2026-11-12-story-protokol-nzw-wynagrodzenie-czlonka-zarzadu · https://www.instagram.com/stories/biznesdok.pl/4028624349468850661
 - 2026-11-12 08:44 · story (wideo) · 2026-11-12-story-wideo-zarzad-dane-po-nip · https://www.instagram.com/stories/biznesdok.pl/4028624495660516889
+- 2026-11-12 08:45 · LinkedIn opublikowany · 2026-11-10-lista-wspolnikow · https://www.linkedin.com/feed/update/urn:li:share:7526210260467019776
