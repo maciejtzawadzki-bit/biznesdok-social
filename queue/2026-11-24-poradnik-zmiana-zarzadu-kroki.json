@@ -1,0 +1,63 @@
+{
+  "id": "2026-11-24-poradnik-zmiana-zarzadu-kroki",
+  "date": "2026-11-24",
+  "time": "08:30",
+  "type": "carousel",
+  "status": "planned",
+  "pillar": "poradnik + dokumenty",
+  "temat": "poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
+  "link": "https://biznesdok.pl/poradniki/zmiana-czlonka-zarzadu-sp-z-o-o",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Poradnik dla spółek",
+      "text": "Zmiana w zarządzie spółki z o.o. [[krok po kroku.]]",
+      "size": 76,
+      "sub": "Od uchwały wspólników do wniosku w Krajowym Rejestrze Sądowym (KRS)."
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Kolejność działań",
+      "size": 52,
+      "text": "Pięć kroków",
+      "items": [
+        [
+          "Uchwała o odwołaniu albo rezygnacja",
+          "wspólnicy odwołują członka zarządu albo on sam rezygnuje"
+        ],
+        [
+          "Uchwała o powołaniu",
+          "gdy ktoś wchodzi na miejsce odwołanego"
+        ],
+        [
+          "Zgoda na powołanie",
+          "nowy członek wskazuje adres do doręczeń"
+        ],
+        [
+          "Oświadczenie o adresach i lista osób uprawnionych",
+          "przygotowuje zarząd"
+        ],
+        [
+          "Wniosek do KRS",
+          "elektronicznie, w ciągu 7 dni od dnia zmiany"
+        ]
+      ]
+    },
+    {
+      "layout": "headline",
+      "eyebrow": "Od kiedy zmiana działa",
+      "size": 76,
+      "text": "Zmiana następuje [[z dniem uchwały,]] nie wpisu.",
+      "sub": "Wpis w KRS potwierdza zmianę, która już nastąpiła."
+    },
+    {
+      "layout": "headline",
+      "eyebrow": "Dokumenty",
+      "size": 80,
+      "text": "Uchwałę o odwołaniu i rezygnację członka zarządu [[przygotujesz w BiznesDOK.]]",
+      "sub": "Także uchwałę o powołaniu, zgodę na powołanie i oświadczenie o adresach — na wzorach przygotowanych przez prawnika.",
+      "note": "Pełny poradnik: link w bio"
+    }
+  ],
+  "caption": "Zmiana w zarządzie spółki z o.o. to kilka dokumentów w określonej kolejności i jeden wniosek do Krajowego Rejestru Sądowego (KRS). W karuzeli: pięć kroków z poradnika BiznesDOK i moment, od którego zmiana działa.\n\nUchwałę o odwołaniu, rezygnację, uchwałę o powołaniu, zgodę na powołanie i oświadczenie o adresach przygotujesz w BiznesDOK na wzorach przygotowanych przez prawnika. To poradnik ogólny, nie ocena konkretnej sprawy.\n\nPełny poradnik: link w bio → Poradniki.\n\n#spółkazoo #zarząd #krs #członekzarządu #uchwała #biznesdok"
+}

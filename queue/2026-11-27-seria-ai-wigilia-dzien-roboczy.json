@@ -1,0 +1,36 @@
+{
+  "id": "2026-11-27-seria-ai-wigilia-dzien-roboczy",
+  "date": "2026-11-27",
+  "time": "08:30",
+  "type": "carousel",
+  "status": "planned",
+  "pillar": "seria AI",
+  "temat": "kalkulator-dni-roboczych",
+  "link": "https://biznesdok.pl/kalkulator-dni-roboczych",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "AI zawiodło? Decyduje prawnik",
+      "text": "„Wigilia jest dniem roboczym, więc termin liczony w grudniu ją obejmuje.”",
+      "size": 64
+    },
+    {
+      "layout": "headline",
+      "eyebrow": "Jak jest naprawdę",
+      "text": "Od 2025 r. Wigilia jest [[dniem wolnym od pracy.]]",
+      "sub": "Termin liczony w dniach roboczych jej nie obejmuje.",
+      "size": 72
+    },
+    {
+      "layout": "headline",
+      "eyebrow": "Decyduje prawnik",
+      "text": "Technologia ułatwia. [[Decyduje prawnik.]]",
+      "sub": "Dni robocze między dwiema datami, bez weekendów i świąt, policzysz w kalkulatorze BiznesDOK — bezpłatnie, bez konta.",
+      "note": "Źródło: biznesdok.pl/kalkulator-dni-roboczych",
+      "size": 84
+    }
+  ],
+  "caption": "Seria „AI zawiodło? Decyduje prawnik”: typowy kłopot i poprawna informacja.\n\nKłopot: przekonanie, że Wigilia jest dniem roboczym, więc termin liczony w grudniu ją obejmuje. Fakt: od 2025 r. Wigilia jest dniem wolnym od pracy. Źródło: kalkulator dni roboczych BiznesDOK.\n\nDni robocze między dwiema datami, bez weekendów i świąt, policzysz w kalkulatorze BiznesDOK — bezpłatnie, bez konta. Technologia ułatwia, decyduje prawnik.\n\nLink w bio → Narzędzia.\n\n#dnirobocze #wigilia #prawopracy #przedsiębiorca #terminy #biznesdok",
+  "seria": "ai-zawiodlo",
+  "temat_serii": "wigilia-dzien-roboczy"
+}

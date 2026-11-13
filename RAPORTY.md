@@ -74,3 +74,20 @@
 - Tydzień od 2026-11-16: proporcje zgodne.
 - Płatne dokumenty bez publikacji w 28 dniach: 0 z 25.
 - Tematy w sezonie: kalkulator-dni-roboczych.
+
+## 2026-11-13 (tydzień 09.11–13.11)
+
+- Obserwujący: 6 (media: 31)
+- Opublikowano: 5 postów w feedzie (lista wspólników, karuzela z poradnika o zatrudnieniu — obowiązki w 7 dni, wypowiedzenie umowy o pracę przez pracodawcę, umowa o pracę na czas określony, odcinek serii AI o informacji o warunkach zatrudnienia) oraz 5 relacji, w tym jedna wideo. Zasięgi feedu: 4, 4, 5, 4, 4; polubienia 2–3, zapisy/udostępnienia/komentarze 0.
+- Najlepszy post: wypowiedzenie umowy o pracę przez pracodawcę (zasięg 5); tydzień bez wyraźnego lidera — karuzele nie powtórzyły wyniku z 03.11 (zasięg 20).
+- Wniosek na kolejny tydzień: zasięgi stoją na poziomie liczby obserwujących, więc o wyniku decyduje temat. Na 23–27.11 wraca blok spółkowy (oświadczenia zarządu, protokół zgromadzenia, uchwała o odwołaniu, rezygnacja) z karuzelą „zmiana w zarządzie krok po kroku” we wtorek i odcinkiem serii AI o Wigilii w piątek — temat sezonowy, z kalkulatorem dni roboczych.
+### Zgodność treści (2026-11-13)
+- Wyszło (7 dni): płatny dokument 6, bezpłatne narzędzie 1, poradnik 1, wideo 1.
+- Plan (14 dni): Instagram — płatny dokument 14, poradnik 2, bezpłatne narzędzie 1, Subskrypcja 1, wideo 1, seria AI 1, bezpłatny dokument 1; LinkedIn — 4.
+- Powtórki tematu w 21 dni wśród opublikowanych: 0.
+- Posty zablokowane przez kontrolę: 0.
+- Tydzień od 2026-11-09: brak Subskrypcji w ostatnich 2 tygodniach.
+- Tydzień od 2026-11-16: proporcje zgodne.
+- Tydzień od 2026-11-23: proporcje zgodne.
+- Płatne dokumenty bez publikacji w 28 dniach: 0 z 25.
+- Tematy w sezonie: brak.
