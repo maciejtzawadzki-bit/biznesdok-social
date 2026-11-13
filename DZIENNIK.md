@@ -99,3 +99,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-11-12 08:44 · story (wideo) · 2026-11-12-story-wideo-zarzad-dane-po-nip · https://www.instagram.com/stories/biznesdok.pl/4028624495660516889
 - 2026-11-12 08:45 · LinkedIn opublikowany · 2026-11-10-lista-wspolnikow · https://www.linkedin.com/feed/update/urn:li:share:7526210260467019776
 - 2026-11-12 08:45 · LinkedIn · 2026-11-12-seria-ai-przedawnienie-faktury · przekazany do Buffer na 2026-11-12T08:00:00.000Z
+- 2026-11-13 08:47 · carousel · 2026-11-13-seria-ai-informacja-o-warunkach-zatrudnienia · https://www.instagram.com/p/DfrISrklDbK/
