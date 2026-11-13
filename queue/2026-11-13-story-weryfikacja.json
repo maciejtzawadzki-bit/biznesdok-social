@@ -3,7 +3,7 @@
   "date": "2026-11-13",
   "time": "12:30",
   "type": "story",
-  "status": "planned",
+  "status": "published",
   "pillar": "bezpłatne narzędzie",
   "temat": "weryfikacja",
   "link": "https://biznesdok.pl/weryfikacja",
@@ -16,5 +16,8 @@
       "note": "biznesdok.pl/weryfikacja"
     }
   ],
-  "caption": ""
+  "caption": "",
+  "publishedAt": "2026-11-13T07:48:06.242Z",
+  "permalink": "https://www.instagram.com/stories/biznesdok.pl/4029350897200514848",
+  "mediaId": "18141530608665391"
 }
