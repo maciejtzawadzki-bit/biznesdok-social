@@ -1,5 +1,5 @@
 {
-  "zaktualizowano": "2026-11-13T07:48:21.138Z",
+  "zaktualizowano": "2026-11-13T07:48:46.391Z",
   "posty": [
     {
       "id": "2026-11-06-lista-osob-uprawnionych-do-powolania-zarzadu",
@@ -158,12 +158,12 @@
       "time": "09:00",
       "type": "linkedin",
       "rubric": "seria AI",
-      "status": "handed",
+      "status": "published",
       "naglowek": "Seria „AI zawiodło? Decyduje prawnik”: typowy kłopot i poprawna informacja.",
       "podpis": "Seria „AI zawiodło? Decyduje prawnik”: typowy kłopot i poprawna informacja.\n\nKłopot: przekonanie, że faktura zawsze przedawnia się po 3 latach, a wysłanie wezwania do zapłaty przerywa przedawnienie.\n\nFakt: cena sprzedaży towarów w ramach przedsiębiorstwa sprzedawcy przedawnia się po 2 latach (art. 554 Kodeksu cywilnego). Samo wezwanie nie przerywa biegu przedawnienia — przerywa go dopiero czynność przed sądem (art. 123 § 1 Kodeksu cywilnego). Źródło: nasz poradnik o odzyskiwaniu pieniędzy za fakturę.\n\nOstateczne wezwanie do zapłaty przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika. Technologia ułatwia, decyduje prawnik.\n\nhttps://biznesdok.pl/dokument/ostateczne-wezwanie-do-zaplaty?utm_source=linkedin&utm_medium=social&utm_campaign=seria-ai-przedawnienie-faktury\n\n#należności #faktura #przedsiębiorca #wezwaniedozapłaty #biznesdok",
       "link": "https://biznesdok.pl/dokument/ostateczne-wezwanie-do-zaplaty",
       "obrazy": [],
-      "permalink": null,
+      "permalink": "https://www.linkedin.com/feed/update/urn:li:share:7526554568219041792",
       "uwagi": []
     },
     {
@@ -218,14 +218,12 @@
       "time": "12:30",
       "type": "story",
       "rubric": "bezpłatne narzędzie",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Dokument z identyfikatorem BD sprawdzisz w BiznesDOK.",
       "podpis": "Relacja (bez opisu), na grafice:\nNarzędzie BiznesDOK\nDokument z identyfikatorem BD sprawdzisz w BiznesDOK.\nWeryfikacja sprawdza, czy dokument o podanym identyfikatorze BD-RRRR-NNNNNN został przygotowany w BiznesDOK. Bezpłatnie.\nbiznesdok.pl/weryfikacja\nLink: https://biznesdok.pl/weryfikacja",
       "link": "https://biznesdok.pl/weryfikacja",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-13-story-weryfikacja-01-e01b84d9.jpg"
-      ],
-      "permalink": null,
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4029350897200514848",
       "uwagi": []
     },
     {
