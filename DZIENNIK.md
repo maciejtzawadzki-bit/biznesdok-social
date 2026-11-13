@@ -101,3 +101,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-11-12 08:45 · LinkedIn · 2026-11-12-seria-ai-przedawnienie-faktury · przekazany do Buffer na 2026-11-12T08:00:00.000Z
 - 2026-11-13 08:47 · carousel · 2026-11-13-seria-ai-informacja-o-warunkach-zatrudnienia · https://www.instagram.com/p/DfrISrklDbK/
 - 2026-11-13 08:47 · story · 2026-11-13-story-weryfikacja · https://www.instagram.com/stories/biznesdok.pl/4029350897200514848
+- 2026-11-13 08:48 · LinkedIn opublikowany · 2026-11-12-seria-ai-przedawnienie-faktury · https://www.linkedin.com/feed/update/urn:li:share:7526554568219041792
