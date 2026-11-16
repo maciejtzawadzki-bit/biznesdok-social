@@ -1,5 +1,5 @@
 {
-  "zaktualizowano": "2026-11-14T11:25:20.036Z",
+  "zaktualizowano": "2026-11-16T07:45:46.871Z",
   "posty": [
     {
       "id": "2026-11-09-lista-wspolnikow",
@@ -203,14 +203,12 @@
       "time": "08:30",
       "type": "feed",
       "rubric": "płatny dokument",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Dokumenty przygotowane przez prawników. Dopasowane technologią.",
       "podpis": "Dokumenty przygotowane przez prawników. Dopasowane technologią.\n\nOstateczne wezwanie do zapłaty: dane firm uzupełniają się po NIP, kilka faktur trafia do jednego wezwania, a kwoty sumują się automatycznie. Odsetki za opóźnienie w transakcjach handlowych wyliczają się z terminów zapłaty i stawek ustawowych, a kwotę możesz ręcznie skorygować.\n\nW dokumencie jest termin zapłaty, numer rachunku i informacja o dalszych krokach. Dostajesz PDF albo edytowalny Word, a płacisz dopiero po wypełnieniu formularza.\n\nLink w bio → Dokumenty.\n\n#wezwaniedozapłaty #faktura #należności #przedsiębiorca #b2b #biznesdok",
       "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-16-ostateczne-wezwanie-do-zaplaty-01-0c28bd43.jpg"
-      ],
-      "permalink": null,
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/p/Dfy2W4clRk0/",
       "uwagi": []
     },
     {
