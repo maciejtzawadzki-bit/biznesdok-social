@@ -103,3 +103,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-11-13 08:47 · story · 2026-11-13-story-weryfikacja · https://www.instagram.com/stories/biznesdok.pl/4029350897200514848
 - 2026-11-13 08:48 · LinkedIn opublikowany · 2026-11-12-seria-ai-przedawnienie-faktury · https://www.linkedin.com/feed/update/urn:li:share:7526554568219041792
 - 2026-11-16 08:44 · feed · 2026-11-16-ostateczne-wezwanie-do-zaplaty · https://www.instagram.com/p/Dfy2W4clRk0/
+- 2026-11-16 08:44 · story · 2026-11-16-story-wypowiedzenie-zmieniajace · https://www.instagram.com/stories/biznesdok.pl/4031523828313041173
