@@ -105,3 +105,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-11-16 08:44 · feed · 2026-11-16-ostateczne-wezwanie-do-zaplaty · https://www.instagram.com/p/Dfy2W4clRk0/
 - 2026-11-16 08:44 · story · 2026-11-16-story-wypowiedzenie-zmieniajace · https://www.instagram.com/stories/biznesdok.pl/4031523828313041173
 - 2026-11-17 08:44 · carousel · 2026-11-17-poradnik-wezwanie-bledy · https://www.instagram.com/p/Df1bJaPHyVA/
+- 2026-11-17 08:44 · story · 2026-11-17-story-protokol-nzw-zgoda-na-zbycie-udzialow · https://www.instagram.com/stories/biznesdok.pl/4032248570002125650
