@@ -107,3 +107,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-11-17 08:44 · carousel · 2026-11-17-poradnik-wezwanie-bledy · https://www.instagram.com/p/Df1bJaPHyVA/
 - 2026-11-17 08:44 · story · 2026-11-17-story-protokol-nzw-zgoda-na-zbycie-udzialow · https://www.instagram.com/stories/biznesdok.pl/4032248570002125650
 - 2026-11-17 08:45 · LinkedIn · 2026-11-17-protokol-nadzwyczajnego-zgromadzenia-wspolnikow · przekazany do Buffer na 2026-11-17T08:00:00.000Z
+- 2026-11-18 08:44 · feed · 2026-11-18-umowa-o-wspolpracy-biznesowej · https://www.instagram.com/p/Df3_8Dij0sk/
