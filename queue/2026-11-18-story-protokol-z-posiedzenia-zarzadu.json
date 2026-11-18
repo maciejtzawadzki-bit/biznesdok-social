@@ -3,7 +3,7 @@
   "date": "2026-11-18",
   "time": "12:30",
   "type": "story",
-  "status": "planned",
+  "status": "published",
   "pillar": "płatny dokument",
   "temat": "protokol-z-posiedzenia-zarzadu",
   "link": "https://biznesdok.pl/dokument/protokol-z-posiedzenia-zarzadu",
@@ -16,5 +16,8 @@
       "note": "biznesdok.pl/dokument/protokol-z-posiedzenia-zarzadu"
     }
   ],
-  "caption": ""
+  "caption": "",
+  "publishedAt": "2026-11-18T07:45:15.813Z",
+  "permalink": "https://www.instagram.com/stories/biznesdok.pl/4032973336086377994",
+  "mediaId": "18114317126076194"
 }
