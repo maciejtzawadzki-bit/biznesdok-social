@@ -3,7 +3,7 @@
   "date": "2026-11-17",
   "time": "09:00",
   "type": "feed",
-  "status": "handed",
+  "status": "published",
   "pillar": "seria produktowa — dokument spółki",
   "temat": "protokol-nadzwyczajnego-zgromadzenia-wspolnikow",
   "link": "https://biznesdok.pl/dokument/protokol-nadzwyczajnego-zgromadzenia-wspolnikow",
@@ -21,5 +21,7 @@
   "buffer": {
     "postId": "6afc060ea32748743215417d",
     "dueAt": "2026-11-17T08:00:00.000Z"
-  }
+  },
+  "publishedAt": "2026-11-17T08:00:27.451Z",
+  "permalink": "https://www.linkedin.com/feed/update/urn:li:share:7528366428392181774"
 }
