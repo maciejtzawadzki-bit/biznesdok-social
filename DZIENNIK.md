@@ -112,3 +112,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-11-18 08:45 · LinkedIn opublikowany · 2026-11-17-protokol-nadzwyczajnego-zgromadzenia-wspolnikow · https://www.linkedin.com/feed/update/urn:li:share:7528366428392181774
 - 2026-11-19 08:45 · feed · 2026-11-19-umowa-o-prace-na-czas-nieokreslony · https://www.instagram.com/p/Df6kykrjYzc/
 - 2026-11-19 08:45 · story · 2026-11-19-story-aneks-do-umowy · https://www.instagram.com/stories/biznesdok.pl/4033698337043405003
+- 2026-11-19 08:45 · LinkedIn · 2026-11-19-rezygnacja-czlonka-zarzadu · przekazany do Buffer na 2026-11-19T08:00:00.000Z

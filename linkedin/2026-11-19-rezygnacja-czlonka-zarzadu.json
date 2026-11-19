@@ -3,7 +3,7 @@
   "date": "2026-11-19",
   "time": "09:00",
   "type": "feed",
-  "status": "planned",
+  "status": "handed",
   "pillar": "seria produktowa — dokument spółki",
   "temat": "rezygnacja-czlonka-zarzadu",
   "link": "https://biznesdok.pl/dokument/rezygnacja-czlonka-zarzadu",
@@ -16,5 +16,10 @@
       "sub": "Pismo z określoną datą, do doręczenia spółce."
     }
   ],
-  "caption": "Rezygnację członka zarządu przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.\n\nJak to działa:\n• członek zarządu składa pismo o rezygnacji z funkcji,\n• w piśmie wskazujesz datę rezygnacji,\n• pismo jest przygotowane do doręczenia spółce,\n• dane spółki pobierasz po NIP.\n\nGdy w spółce zmienia się skład zarządu, wystarczy uzupełnić dane w kreatorze — gotowe pismo przygotowuje BiznesDOK.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nhttps://biznesdok.pl/dokument/rezygnacja-czlonka-zarzadu?utm_source=linkedin&utm_medium=social&utm_campaign=rezygnacja-czlonka-zarzadu\n\n#spółkazoo #zarząd #wspólnicy #przedsiębiorca #biznesdok"
+  "caption": "Rezygnację członka zarządu przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.\n\nJak to działa:\n• członek zarządu składa pismo o rezygnacji z funkcji,\n• w piśmie wskazujesz datę rezygnacji,\n• pismo jest przygotowane do doręczenia spółce,\n• dane spółki pobierasz po NIP.\n\nGdy w spółce zmienia się skład zarządu, wystarczy uzupełnić dane w kreatorze — gotowe pismo przygotowuje BiznesDOK.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nhttps://biznesdok.pl/dokument/rezygnacja-czlonka-zarzadu?utm_source=linkedin&utm_medium=social&utm_campaign=rezygnacja-czlonka-zarzadu\n\n#spółkazoo #zarząd #wspólnicy #przedsiębiorca #biznesdok",
+  "handedAt": "2026-11-19T07:45:49.432Z",
+  "buffer": {
+    "postId": "6afea92db7fe0c41dda7ad93",
+    "dueAt": "2026-11-19T08:00:00.000Z"
+  }
 }
