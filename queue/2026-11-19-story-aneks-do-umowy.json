@@ -3,7 +3,7 @@
   "date": "2026-11-19",
   "time": "12:30",
   "type": "story",
-  "status": "planned",
+  "status": "published",
   "pillar": "płatny dokument",
   "temat": "aneks-do-umowy",
   "link": "https://biznesdok.pl/dokument/aneks-do-umowy",
@@ -16,5 +16,8 @@
       "note": "biznesdok.pl/dokument/aneks-do-umowy"
     }
   ],
-  "caption": ""
+  "caption": "",
+  "publishedAt": "2026-11-19T07:45:45.458Z",
+  "permalink": "https://www.instagram.com/stories/biznesdok.pl/4033698337043405003",
+  "mediaId": "17983949253133788"
 }
