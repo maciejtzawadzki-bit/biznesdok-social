@@ -1,0 +1,20 @@
+{
+  "id": "2026-11-30-story-zgoda-na-powolanie-do-zarzadu",
+  "date": "2026-11-30",
+  "time": "12:30",
+  "type": "story",
+  "status": "planned",
+  "pillar": "płatny dokument",
+  "temat": "zgoda-na-powolanie-do-zarzadu",
+  "link": "https://biznesdok.pl/dokument/zgoda-na-powolanie-do-zarzadu",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Dokumenty spółki",
+      "text": "Zgoda na powołanie do zarządu: [[przygotujesz ją w BiznesDOK.]]",
+      "sub": "Pisemna zgoda osoby powoływanej, z funkcją i adresem do doręczeń. Potrzebna m.in. do zgłoszenia zmiany w Krajowym Rejestrze Sądowym.",
+      "note": "biznesdok.pl/dokument/zgoda-na-powolanie-do-zarzadu"
+    }
+  ],
+  "caption": ""
+}

@@ -91,3 +91,20 @@
 - Tydzień od 2026-11-23: proporcje zgodne.
 - Płatne dokumenty bez publikacji w 28 dniach: 0 z 25.
 - Tematy w sezonie: brak.
+
+## 2026-11-20 (tydzień 16.11–20.11)
+
+- Obserwujący: 6 (media: 39)
+- Opublikowano: 5 postów w feedzie (ostateczne wezwanie do zapłaty, karuzela o błędach przy wezwaniu, umowa o współpracy B2B, umowa o pracę na czas nieokreślony, Subskrypcja). Zasięgi: 3, 4, 3, 2, 1 (dane z piątku rano niepełne); polubienia 1–3, zapisy/udostępnienia/komentarze 0.
+- Najlepszy post: karuzela z poradnika o błędach przy wezwaniu do zapłaty (zasięg 4).
+- Wniosek na kolejny tydzień: zasięgi nadal na poziomie liczby obserwujących. Na 30.11–04.12 blok zatrudnienia w sezonie (koniec roku), uchwała i zgoda na powołanie do zarządu, w piątek bezpłatny wniosek urlopowy przed świętami. Subskrypcja wraca dopiero po 21 dniach od 20.11.
+### Zgodność treści (2026-11-20)
+- Wyszło (7 dni): seria AI 1, bezpłatne narzędzie 1, płatny dokument 7, poradnik 1.
+- Plan (14 dni): Instagram — płatny dokument 14, poradnik 2, wideo 1, seria AI 1, bezpłatny dokument 2, bezpłatne narzędzie 1; LinkedIn — 4.
+- Powtórki tematu w 21 dni wśród opublikowanych: 0.
+- Posty zablokowane przez kontrolę: 0.
+- Tydzień od 2026-11-16: proporcje zgodne.
+- Tydzień od 2026-11-23: proporcje zgodne.
+- Tydzień od 2026-11-30: brak Subskrypcji w ostatnich 2 tygodniach.
+- Płatne dokumenty bez publikacji w 28 dniach: 0 z 25.
+- Tematy w sezonie: umowa-o-prace-na-czas-okreslony, wypowiedzenie-umowy-o-prace-przez-pracodawce, zgoda-na-wykorzystanie-wizerunku, kalkulator-okresu-wypowiedzenia.

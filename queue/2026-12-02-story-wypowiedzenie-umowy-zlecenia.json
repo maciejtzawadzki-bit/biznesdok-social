@@ -1,0 +1,20 @@
+{
+  "id": "2026-12-02-story-wypowiedzenie-umowy-zlecenia",
+  "date": "2026-12-02",
+  "time": "12:30",
+  "type": "story",
+  "status": "planned",
+  "pillar": "płatny dokument",
+  "temat": "wypowiedzenie-umowy-zlecenia",
+  "link": "https://biznesdok.pl/dokument/wypowiedzenie-umowy-zlecenia",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Zlecenia",
+      "text": "Wypowiedzenie zlecenia przez firmę: [[przygotujesz je w BiznesDOK.]]",
+      "sub": "Gdy to firma kończy zlecenie. Okres wypowiedzenia jak w umowie: od tygodnia do trzech miesięcy.",
+      "note": "biznesdok.pl/dokument/wypowiedzenie-umowy-zlecenia"
+    }
+  ],
+  "caption": ""
+}

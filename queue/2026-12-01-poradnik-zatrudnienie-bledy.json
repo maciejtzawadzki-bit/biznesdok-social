@@ -1,0 +1,58 @@
+{
+  "id": "2026-12-01-poradnik-zatrudnienie-bledy",
+  "date": "2026-12-01",
+  "time": "08:30",
+  "type": "carousel",
+  "status": "planned",
+  "pillar": "poradnik + dokumenty",
+  "temat": "poradniki/zatrudnienie-pracownika-na-umowe-o-prace",
+  "link": "https://biznesdok.pl/poradniki/zatrudnienie-pracownika-na-umowe-o-prace",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Poradnik dla pracodawców",
+      "text": "Zatrudnienie pracownika: cztery błędy, [[które łatwo popełnić.]]",
+      "size": 76
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Najczęstsze błędy",
+      "size": 52,
+      "text": "Czego unikać",
+      "items": [
+        [
+          "Praca przed umową",
+          "dopuszczenie do pracy przed podpisaniem umowy albo przed badaniami"
+        ],
+        [
+          "Informacja po terminie",
+          "informacja o warunkach zatrudnienia przekazana po 7 dniach albo wcale"
+        ],
+        [
+          "Płaca poniżej minimalnej",
+          "wynagrodzenie niższe niż minimalne przy pełnym etacie"
+        ],
+        [
+          "Spóźnione zgłoszenie",
+          "zgłoszenie do ubezpieczeń w ZUS po 7 dniach od powstania obowiązku"
+        ]
+      ]
+    },
+    {
+      "layout": "headline",
+      "eyebrow": "Zasada na start",
+      "size": 76,
+      "text": "Umowa na piśmie [[przed dopuszczeniem do pracy.]]",
+      "sub": "Dotyczy też badań wstępnych i szkolenia BHP."
+    },
+    {
+      "layout": "headline",
+      "eyebrow": "Dokumenty",
+      "size": 80,
+      "text": "Umowę o pracę z informacją o warunkach zatrudnienia [[przygotujesz w BiznesDOK.]]",
+      "sub": "Na czas określony albo nieokreślony — na wzorach przygotowanych przez prawnika.",
+      "note": "Pełny poradnik: link w bio"
+    }
+  ],
+  "caption": "Poradnik o zatrudnieniu pracownika pokazuje też, co najczęściej idzie nie tak. W karuzeli: cztery błędy pracodawców i zasada, od której warto zacząć.\n\nUmowę o pracę razem z informacją o warunkach zatrudnienia przygotujesz w BiznesDOK na wzorach przygotowanych przez prawnika. To poradnik ogólny, nie ocena konkretnej sprawy.\n\nPełny poradnik: link w bio → Poradniki.\n\n#umowaopracę #zatrudnienie #pracodawca #kadry #prawopracy #biznesdok"
+}
