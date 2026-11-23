@@ -116,3 +116,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-11-20 08:44 · feed · 2026-11-20-subskrypcja · https://www.instagram.com/p/Df9JdIkkcg2/
 - 2026-11-20 08:44 · story · 2026-11-20-story-kalkulator-okresu-wypowiedzenia · https://www.instagram.com/stories/biznesdok.pl/4034422561005395024
 - 2026-11-20 08:44 · LinkedIn opublikowany · 2026-11-19-rezygnacja-czlonka-zarzadu · https://www.linkedin.com/feed/update/urn:li:share:7529091201329864705
+- 2026-11-23 08:44 · feed · 2026-11-23-oswiadczenie-zarzadu-o-adresach-czlonkow-zarzadu · https://www.instagram.com/p/DgE36UfoWpb/
