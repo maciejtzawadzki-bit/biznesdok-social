@@ -1,5 +1,5 @@
 {
-  "zaktualizowano": "2026-11-25T07:44:53.059Z",
+  "zaktualizowano": "2026-11-25T07:45:31.943Z",
   "posty": [
     {
       "id": "2026-11-18-umowa-o-wspolpracy-biznesowej",
@@ -158,12 +158,12 @@
       "time": "09:00",
       "type": "linkedin",
       "rubric": "seria produktowa — dokument spółki",
-      "status": "handed",
+      "status": "published",
       "naglowek": "Uchwałę wspólników o odwołaniu członka zarządu przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.",
       "podpis": "Uchwałę wspólników o odwołaniu członka zarządu przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.\n\nCo zawiera dokument:\n• dzień odwołania i wynik głosowania — liczbę ważnych głosów BiznesDOK liczy sam,\n• opcjonalnie przyczynę odwołania i zastrzeżenie o umowie ze spółką, z poprawną numeracją punktów,\n• dane spółki pobrane po NIP.\n\nUchwała przydaje się, gdy wspólnicy odwołują członka zarządu — a potem zarząd zgłasza zmianę do Krajowego Rejestru Sądowego (KRS).\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nhttps://biznesdok.pl/dokument/uchwala-o-odwolaniu-czlonka-zarzadu?utm_source=linkedin&utm_medium=social&utm_campaign=uchwala-o-odwolaniu-czlonka-zarzadu\n\n#spółkazoo #zarząd #wspólnicy #krs #biznesdok",
       "link": "https://biznesdok.pl/dokument/uchwala-o-odwolaniu-czlonka-zarzadu",
       "obrazy": [],
-      "permalink": null,
+      "permalink": "https://www.linkedin.com/feed/update/urn:li:share:7530903137566654464",
       "uwagi": []
     },
     {
@@ -203,14 +203,12 @@
       "time": "12:30",
       "type": "story",
       "rubric": "płatny dokument",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Protokół zgromadzenia wspólników z uchwałą o odwołaniu i powołaniu zarządu przygotujesz w BiznesDOK.",
       "podpis": "Relacja (bez opisu), na grafice:\nDokumenty spółki\nProtokół zgromadzenia wspólników z uchwałą o odwołaniu i powołaniu zarządu przygotujesz w BiznesDOK.\nWariant: samo odwołanie albo odwołanie i powołanie nowego członka zarządu. Liczbę ważnych głosów liczy BiznesDOK.\nbiznesdok.pl/dokument/protokol-nadzwyczajnego-zgromadzenia-wspolnikow\nLink: https://biznesdok.pl/dokument/protokol-nadzwyczajnego-zgromadzenia-wspolnikow",
       "link": "https://biznesdok.pl/dokument/protokol-nadzwyczajnego-zgromadzenia-wspolnikow",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-25-story-protokol-nadzwyczajnego-zgromadzenia-wspolnikow-01-09f19384.jpg"
-      ],
-      "permalink": null,
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4038046405302611682",
       "uwagi": []
     },
     {
