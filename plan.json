@@ -1,51 +1,6 @@
 {
-  "zaktualizowano": "2026-11-24T07:46:25.970Z",
+  "zaktualizowano": "2026-11-25T07:44:53.059Z",
   "posty": [
-    {
-      "id": "2026-11-17-poradnik-wezwanie-bledy",
-      "kanal": "instagram",
-      "date": "2026-11-17",
-      "time": "08:30",
-      "type": "carousel",
-      "rubric": "poradnik + dokumenty",
-      "status": "published",
-      "naglowek": "Wezwanie do zapłaty łatwo osłabić drobiazgiem. W karuzeli: cztery błędy z poradnika BiznesDOK i powód, dla którego warto udokumentować wezwanie przed pozwem.",
-      "podpis": "Wezwanie do zapłaty łatwo osłabić drobiazgiem. W karuzeli: cztery błędy z poradnika BiznesDOK i powód, dla którego warto udokumentować wezwanie przed pozwem.\n\nOstateczne wezwanie do zapłaty przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika, a odsetki policzysz w bezpłatnym kalkulatorze. To poradnik ogólny, nie ocena konkretnej sprawy.\n\nPełny poradnik: link w bio → Poradniki.\n\n#wezwaniedozapłaty #faktura #należności #przedsiębiorca #firma #biznesdok",
-      "link": "https://biznesdok.pl/poradniki/jak-odzyskac-pieniadze-za-fakture-wezwanie-do-zaplaty",
-      "obrazy": [],
-      "permalink": "https://www.instagram.com/p/Df1bJaPHyVA/",
-      "uwagi": []
-    },
-    {
-      "id": "linkedin-2026-11-17-protokol-nadzwyczajnego-zgromadzenia-wspolnikow",
-      "kanal": "linkedin",
-      "date": "2026-11-17",
-      "time": "09:00",
-      "type": "linkedin",
-      "rubric": "seria produktowa — dokument spółki",
-      "status": "published",
-      "naglowek": "Protokół nadzwyczajnego zgromadzenia wspólników (NZW) o zmianie w zarządzie przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.",
-      "podpis": "Protokół nadzwyczajnego zgromadzenia wspólników (NZW) o zmianie w zarządzie przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.\n\nJak to działa:\n• wybierasz wariant: samo odwołanie albo odwołanie i powołanie nowego członka zarządu,\n• porządek obrad i treść uchwały dopasowują się do wybranego wariantu,\n• dane spółki pobierasz po NIP,\n• liczbę ważnych głosów liczy BiznesDOK.\n\nZamiast składać protokół z kilku wzorów, wybierasz wariant i uzupełniasz dane w kreatorze — resztę przygotowuje BiznesDOK.\n\nTy podajesz dane. BiznesDOK przygotowuje resztę. Dokumenty przygotowane przez prawników, dopasowane technologią.\n\nhttps://biznesdok.pl/dokument/protokol-nadzwyczajnego-zgromadzenia-wspolnikow?utm_source=linkedin&utm_medium=social&utm_campaign=protokol-nadzwyczajnego-zgromadzenia-wspolnikow\n\n#spółkazoo #zarząd #wspólnicy #przedsiębiorca #biznesdok",
-      "link": "https://biznesdok.pl/dokument/protokol-nadzwyczajnego-zgromadzenia-wspolnikow",
-      "obrazy": [],
-      "permalink": "https://www.linkedin.com/feed/update/urn:li:share:7528366428392181774",
-      "uwagi": []
-    },
-    {
-      "id": "2026-11-17-story-protokol-nzw-zgoda-na-zbycie-udzialow",
-      "kanal": "instagram",
-      "date": "2026-11-17",
-      "time": "12:30",
-      "type": "story",
-      "rubric": "płatny dokument",
-      "status": "published",
-      "naglowek": "Protokół z uchwałą o zgodzie na zbycie udziałów przygotujesz w BiznesDOK.",
-      "podpis": "Relacja (bez opisu), na grafice:\nWspólnicy i udziały\nProtokół z uchwałą o zgodzie na zbycie udziałów przygotujesz w BiznesDOK.\nGdy wspólnicy zgadzają się na sprzedaż udziałów, także ze zrzeczeniem się prawa pierwszeństwa.\nbiznesdok.pl/dokument/protokol-nzw-zgoda-na-zbycie-udzialow\nLink: https://biznesdok.pl/dokument/protokol-nzw-zgoda-na-zbycie-udzialow",
-      "link": "https://biznesdok.pl/dokument/protokol-nzw-zgoda-na-zbycie-udzialow",
-      "obrazy": [],
-      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4032248570002125650",
-      "uwagi": []
-    },
     {
       "id": "2026-11-18-umowa-o-wspolpracy-biznesowej",
       "kanal": "instagram",
@@ -233,14 +188,12 @@
       "time": "08:30",
       "type": "feed",
       "rubric": "płatny dokument",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Dokumenty przygotowane przez prawników. Dopasowane technologią.",
       "podpis": "Dokumenty przygotowane przez prawników. Dopasowane technologią.\n\nUmowa zlecenia w BiznesDOK: dane Twojej firmy pobierasz po NIP z Krajowego Rejestru Sądowego (KRS) albo CEIDG, a do umowy trafia brzmienie przygotowane przez prawnika. Wybierasz czas określony lub nieokreślony, stawkę godzinową lub miesięczną i okres wypowiedzenia. Gotowy dokument dostajesz jako PDF do wydruku albo edytowalny Word.\n\nPo zakupie dokument masz na swoim koncie w BiznesDOK.\n\nLink w bio → Dokumenty.\n\n#umowazlecenia #zlecenie #pracodawca #przedsiębiorca #umowy #biznesdok",
       "link": "https://biznesdok.pl/dokument/umowa-zlecenia",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/2026-11-25-umowa-zlecenia-01-db7d2a08.jpg"
-      ],
-      "permalink": null,
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/p/DgKBbMpCUbI/",
       "uwagi": []
     },
     {
