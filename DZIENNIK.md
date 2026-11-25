@@ -123,3 +123,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-11-24 08:45 · LinkedIn · 2026-11-24-uchwala-o-odwolaniu-czlonka-zarzadu · przekazany do Buffer na 2026-11-24T08:00:00.000Z
 - 2026-11-25 08:44 · feed · 2026-11-25-umowa-zlecenia · https://www.instagram.com/p/DgKBbMpCUbI/
 - 2026-11-25 08:44 · story · 2026-11-25-story-protokol-nadzwyczajnego-zgromadzenia-wspolnikow · https://www.instagram.com/stories/biznesdok.pl/4038046405302611682
+- 2026-11-25 08:44 · LinkedIn opublikowany · 2026-11-24-uchwala-o-odwolaniu-czlonka-zarzadu · https://www.linkedin.com/feed/update/urn:li:share:7530903137566654464
