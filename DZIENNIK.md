@@ -121,3 +121,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-11-24 08:44 · carousel · 2026-11-24-poradnik-zmiana-zarzadu-kroki · https://www.instagram.com/p/DgHcu1OjLOL/
 - 2026-11-24 08:44 · story · 2026-11-24-story-porozumienie-w-sprawie-rozwiazania-umowy-zlecenia · https://www.instagram.com/stories/biznesdok.pl/4037322098360011512
 - 2026-11-24 08:45 · LinkedIn · 2026-11-24-uchwala-o-odwolaniu-czlonka-zarzadu · przekazany do Buffer na 2026-11-24T08:00:00.000Z
+- 2026-11-25 08:44 · feed · 2026-11-25-umowa-zlecenia · https://www.instagram.com/p/DgKBbMpCUbI/
