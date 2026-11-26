@@ -127,3 +127,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-11-26 08:44 · feed · 2026-11-26-rezygnacja-czlonka-zarzadu · https://www.instagram.com/p/DgMmTuSmF5L/
 - 2026-11-26 08:44 · story · 2026-11-26-story-uchwala-o-odwolaniu-czlonka-zarzadu · https://www.instagram.com/stories/biznesdok.pl/4038771597418403822
 - 2026-11-26 08:44 · story (wideo) · 2026-11-26-story-wideo-wezwanie-kilka-faktur · https://www.instagram.com/stories/biznesdok.pl/4038772279908408811
+- 2026-11-26 08:47 · LinkedIn · 2026-11-26-seria-ai-wigilia-dzien-roboczy · przekazany do Buffer na 2026-11-26T08:00:00.000Z
