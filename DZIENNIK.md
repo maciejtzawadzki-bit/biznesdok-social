@@ -126,3 +126,4 @@ Wynik: **sukces** — pełna ścieżka (render → push media na `main` → obra
 - 2026-11-25 08:44 · LinkedIn opublikowany · 2026-11-24-uchwala-o-odwolaniu-czlonka-zarzadu · https://www.linkedin.com/feed/update/urn:li:share:7530903137566654464
 - 2026-11-26 08:44 · feed · 2026-11-26-rezygnacja-czlonka-zarzadu · https://www.instagram.com/p/DgMmTuSmF5L/
 - 2026-11-26 08:44 · story · 2026-11-26-story-uchwala-o-odwolaniu-czlonka-zarzadu · https://www.instagram.com/stories/biznesdok.pl/4038771597418403822
+- 2026-11-26 08:44 · story (wideo) · 2026-11-26-story-wideo-wezwanie-kilka-faktur · https://www.instagram.com/stories/biznesdok.pl/4038772279908408811
