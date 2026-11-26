@@ -1,5 +1,5 @@
 {
-  "zaktualizowano": "2026-11-26T07:46:12.737Z",
+  "zaktualizowano": "2026-11-26T07:47:39.305Z",
   "posty": [
     {
       "id": "2026-11-19-umowa-o-prace-na-czas-nieokreslony",
@@ -203,13 +203,11 @@
       "time": "09:00",
       "type": "linkedin",
       "rubric": "seria AI",
-      "status": "planned",
+      "status": "handed",
       "naglowek": "Seria „AI zawiodło? Decyduje prawnik”: typowy kłopot i poprawna informacja.",
       "podpis": "Seria „AI zawiodło? Decyduje prawnik”: typowy kłopot i poprawna informacja.\n\nKłopot: przekonanie, że Wigilia jest dniem roboczym, więc termin liczony w grudniu ją obejmuje.\n\nFakt: od 2025 r. Wigilia jest dniem wolnym od pracy. Źródło: kalkulator dni roboczych BiznesDOK, który to uwzględnia.\n\nDni robocze między dwiema datami — bez weekendów i świąt — policzysz w kalkulatorze BiznesDOK bezpłatnie, bez konta i bez e-maila. Technologia ułatwia, decyduje prawnik.\n\nhttps://biznesdok.pl/kalkulator-dni-roboczych?utm_source=linkedin&utm_medium=social&utm_campaign=seria-ai-wigilia-dzien-roboczy\n\n#dnirobocze #terminy #prawopracy #przedsiębiorca #biznesdok",
       "link": "https://biznesdok.pl/kalkulator-dni-roboczych",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/plan/linkedin-2026-11-26-seria-ai-wigilia-dzien-roboczy-01-ec81c280.jpg"
-      ],
+      "obrazy": [],
       "permalink": null,
       "uwagi": []
     },
@@ -235,14 +233,12 @@
       "time": "12:45",
       "type": "story",
       "rubric": "film-demo",
-      "status": "planned",
+      "status": "published",
       "naglowek": "Wideo: Kilka faktur w jednym wezwaniu — kwoty sumują się automatycznie",
       "podpis": "Relacja wideo (bez opisu): Kilka faktur w jednym wezwaniu — kwoty sumują się automatycznie\nLink: https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
       "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
-      "obrazy": [
-        "https://raw.githubusercontent.com/maciejtzawadzki-bit/biznesdok-social/main/media/video/film1-wezwanie-urywek-2-kilka-faktur.jpg"
-      ],
-      "permalink": null,
+      "obrazy": [],
+      "permalink": "https://www.instagram.com/stories/biznesdok.pl/4038772279908408811",
       "uwagi": []
     },
     {
