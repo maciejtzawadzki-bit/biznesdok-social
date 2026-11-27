@@ -1,0 +1,36 @@
+{
+  "id": "2026-12-11-seria-ai-przedawnienie-faktury",
+  "date": "2026-12-11",
+  "time": "08:30",
+  "type": "carousel",
+  "status": "planned",
+  "pillar": "seria AI",
+  "temat": "ostateczne-wezwanie-do-zaplaty",
+  "link": "https://biznesdok.pl/ostateczne-wezwanie-do-zaplaty",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "AI zawiodło? Decyduje prawnik",
+      "text": "„Faktura zawsze przedawnia się po 3 latach, a wezwanie do zapłaty przerywa przedawnienie.”",
+      "size": 60
+    },
+    {
+      "layout": "headline",
+      "eyebrow": "Jak jest naprawdę",
+      "text": "Cena towarów przedawnia się po [[2 latach,]] a wezwanie nie przerywa przedawnienia.",
+      "size": 64,
+      "sub": "Przerywa je dopiero czynność przed sądem (art. 554 i art. 123 § 1 Kodeksu cywilnego)."
+    },
+    {
+      "layout": "headline",
+      "eyebrow": "Decyduje prawnik",
+      "text": "Technologia ułatwia. [[Decyduje prawnik.]]",
+      "size": 84,
+      "sub": "Ostateczne wezwanie do zapłaty przygotujesz w BiznesDOK na wzorze przygotowanym przez prawnika.",
+      "note": "Źródło: poradnik na biznesdok.pl"
+    }
+  ],
+  "caption": "Seria „AI zawiodło? Decyduje prawnik”: typowy kłopot i poprawna informacja.\n\nKłopot: przekonanie, że faktura zawsze przedawnia się po 3 latach, a wysłanie wezwania do zapłaty przerywa przedawnienie.\n\nFakt: cena sprzedaży towarów w ramach przedsiębiorstwa sprzedawcy przedawnia się po 2 latach (art. 554 Kodeksu cywilnego). Samo wezwanie nie przerywa biegu przedawnienia — przerywa go dopiero czynność przed sądem (art. 123 § 1 Kodeksu cywilnego). Źródło: poradnik BiznesDOK o odzyskiwaniu pieniędzy za fakturę.\n\nTechnologia ułatwia, decyduje prawnik.\n\nLink w bio → Dokumenty.\n\n#przedawnienie #faktura #należności #przedsiębiorca #prawnik #biznesdok",
+  "seria": "ai-zawiodlo",
+  "temat_serii": "przedawnienie-faktury"
+}

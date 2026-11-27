@@ -1,0 +1,55 @@
+{
+  "id": "2026-12-08-poradnik-odsetki-i-rekompensata",
+  "date": "2026-12-08",
+  "time": "08:30",
+  "type": "carousel",
+  "status": "planned",
+  "pillar": "poradnik + dokumenty",
+  "temat": "poradniki/jak-odzyskac-pieniadze-za-fakture-wezwanie-do-zaplaty",
+  "link": "https://biznesdok.pl/poradniki/jak-odzyskac-pieniadze-za-fakture-wezwanie-do-zaplaty",
+  "slides": [
+    {
+      "layout": "headline",
+      "eyebrow": "Poradnik",
+      "text": "Do niezapłaconej faktury możesz doliczyć [[odsetki i rekompensatę.]]",
+      "size": 76,
+      "sub": "W transakcjach handlowych, gdy dłużnikiem jest przedsiębiorca albo podmiot publiczny."
+    },
+    {
+      "layout": "list",
+      "eyebrow": "Co przysługuje wierzycielowi",
+      "size": 52,
+      "text": "Trzy rzeczy do sprawdzenia",
+      "items": [
+        [
+          "Odsetki za opóźnienie",
+          "liczone od dnia następnego po terminie zapłaty"
+        ],
+        [
+          "Rekompensata za koszty odzyskiwania",
+          "od 40 do 100 euro, zależnie od wartości należności"
+        ],
+        [
+          "Wobec konsumenta",
+          "ustawa o transakcjach handlowych nie ma zastosowania"
+        ]
+      ]
+    },
+    {
+      "layout": "headline",
+      "eyebrow": "Stawka odsetek",
+      "text": "Stawka [[zmienia się w czasie,]] więc liczysz każdy okres osobno.",
+      "size": 72,
+      "sub": "To stopa referencyjna Narodowego Banku Polskiego powiększona o 10 punktów procentowych, ogłaszana dla kolejnych półroczy."
+    },
+    {
+      "layout": "headline",
+      "eyebrow": "Narzędzia",
+      "text": "Odsetki policzysz w kalkulatorze, a wezwanie z listą faktur [[przygotujesz w BiznesDOK.]]",
+      "size": 72,
+      "sub": "Na wzorze przygotowanym przez prawnika.",
+      "note": "Pełny poradnik: link w bio"
+    }
+  ],
+  "caption": "Odsetki i rekompensata to część należności, o której łatwo zapomnieć. W karuzeli: co wynika z poradnika BiznesDOK dla należności między przedsiębiorcami i dlaczego stawka odsetek nie jest stała.\n\nRekompensata za koszty odzyskiwania przysługuje w transakcjach handlowych bez wezwania, a jej wysokość zależy od wartości należności. To poradnik ogólny, nie ocena konkretnej sprawy.\n\nPełny poradnik: link w bio → Poradniki.\n\n#faktura #odsetki #należności #przedsiębiorca #firma #biznesdok"
+}

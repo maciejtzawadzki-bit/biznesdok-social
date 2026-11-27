@@ -108,3 +108,20 @@
 - Tydzień od 2026-11-30: brak Subskrypcji w ostatnich 2 tygodniach.
 - Płatne dokumenty bez publikacji w 28 dniach: 0 z 25.
 - Tematy w sezonie: umowa-o-prace-na-czas-okreslony, wypowiedzenie-umowy-o-prace-przez-pracodawce, zgoda-na-wykorzystanie-wizerunku, kalkulator-okresu-wypowiedzenia.
+
+## 2026-11-27 (tydzień 23.11–27.11)
+
+- Obserwujący: 6 (media: 49)
+- Opublikowano: 5 postów w feedzie (oświadczenie zarządu o adresach, karuzela „zmiana w zarządzie krok po kroku”, umowa zlecenia, rezygnacja członka zarządu, odcinek serii AI o Wigilii) oraz relacje, w tym jedna wideo. Zasięgi feedu: 3, 8, 4, 4, 3; polubienia 1–3, udostępnienie 1 (seria AI), zapisy i komentarze 0.
+- Najlepszy post: karuzela o zmianie w zarządzie (zasięg 8, najwyższy od 03.11).
+- Wniosek na kolejny tydzień: karuzele z poradnika dają najwyższe zasięgi, więc 08.12 wraca karuzela z poradnika (odsetki i rekompensata). Na 07–11.12 koniec roku: wezwanie do zapłaty i zatrudnienie w sezonie, w piątek odcinek serii AI o przedawnieniu faktury i Subskrypcja w relacji (21 dni po poprzedniej).
+### Zgodność treści (2026-11-27)
+- Wyszło (7 dni): bezpłatne narzędzie 1, Subskrypcja 1, płatny dokument 7, poradnik 1, wideo 1.
+- Plan (14 dni): Instagram — płatny dokument 14, poradnik 2, bezpłatne narzędzie 1, bezpłatny dokument 1, seria AI 1, Subskrypcja 1; LinkedIn — 4.
+- Powtórki tematu w 21 dni wśród opublikowanych: 0.
+- Posty zablokowane przez kontrolę: 0.
+- Tydzień od 2026-11-23: proporcje zgodne.
+- Tydzień od 2026-11-30: brak Subskrypcji w ostatnich 2 tygodniach.
+- Tydzień od 2026-12-07: proporcje zgodne.
+- Płatne dokumenty bez publikacji w 28 dniach: 0 z 25.
+- Tematy w sezonie: umowa-o-prace-na-czas-okreslony, wypowiedzenie-umowy-o-prace-przez-pracodawce, zgoda-na-wykorzystanie-wizerunku, kalkulator-okresu-wypowiedzenia.
