@@ -3,7 +3,7 @@
   "date": "2026-11-26",
   "time": "09:00",
   "type": "feed",
-  "status": "handed",
+  "status": "published",
   "pillar": "seria AI",
   "temat": "kalkulator-dni-roboczych",
   "seria": "ai-zawiodlo",
@@ -22,5 +22,7 @@
   "buffer": {
     "postId": "6b07e40417fc84b971b2c05f",
     "dueAt": "2026-11-26T08:00:00.000Z"
-  }
+  },
+  "publishedAt": "2026-11-26T08:00:30.885Z",
+  "permalink": "https://www.linkedin.com/feed/update/urn:li:share:7531627933782765568"
 }
